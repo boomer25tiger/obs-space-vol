@@ -921,3 +921,27 @@ alongside this file as `DECISIONS-as-run.md`.
      record and item 145 documents its two occurrences.
 152. THE GIT AUTHOR IS SET LOCALLY FOR THIS REPOSITORY. The commit author matches the
      paper byline. The global identity is unchanged.
+
+## 2026-08-22, S23C final correction and push
+
+153. THE PLACEBO SENTENCE IN SECTION 5.4 IS CORRECTED. It read that the raw effect is
+     "roughly half subset variation". The artifact gives a raw rate of 0.6875 against a
+     placebo of 0.4792, so the placebo accounts for roughly seventy percent of the raw
+     rate and the excess is 0.2083. The original phrasing understated the placebo and
+     overstated what survives it. The correction was supplied by the author after S23B
+     flagged the discrepancy without editing supplied text, which was the correct
+     handling.
+154. COMMIT AUTHORSHIP USES A GITHUB NOREPLY ADDRESS. The commit email is permanent and
+     indexed once pushed. The paper byline carries the author's name where it belongs.
+     The global git identity is unchanged.
+155. THE OBJECT STORE IS PRUNED BEFORE THE FIRST PUSH. 1,213 unreachable loose objects,
+     268 MB against 15.86 MB of tracked content, are residue from an aborted `git add -A`
+     over the raw extract in S18. They are unreachable from any commit and `data/` holds
+     the source, so pruning loses nothing.
+156. DECISIONS-as-run.md RETAINS TWO ABSOLUTE PATHS BY DESIGN. It is committed unmodified
+     as the original record and item 145 documents the two occurrences that are
+     generalised everywhere else. The README states this so it is not read as an
+     oversight.
+157. THE COMMIT EMAIL IS 208218876+boomer25tiger@users.noreply.github.com, confirmed by
+     the author. S23C halted rather than inferring it from the authenticated session,
+     which is the correct handling of a value that is permanent once pushed.

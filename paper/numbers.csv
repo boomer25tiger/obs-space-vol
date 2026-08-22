@@ -737,3 +737,5 @@ n_conditions_before,8.0,paper/k_table.csv,count of chosen==before,S23B,registere
 n_conditions_after,5.0,paper/k_table.csv,count of chosen==after,S23B,registered in S23B for Section 5,False
 n_fire_before,5.0,paper/k_table.csv,FIRES among chosen==before,S23B,registered in S23B for Section 5,False
 n_material_after,3.0,paper/k_table.csv,DOES NOT FIRE among chosen==after,S23B,registered in S23B for Section 5,False
+k1_raw_rate_rth,0.6875,sessions/s09-application/results/phase12_summary.json,bc_rate_rth,S09,registered in S23C for Section 5.4,False
+k1_placebo_rate_rth,0.4791666666666667,sessions/s09-application/results/phase12_summary.json,dc_rate_rth,S09,registered in S23C for Section 5.4,False

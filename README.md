@@ -34,6 +34,9 @@ prompts themselves are not in the repository; what they fixed is, in
 `DECISIONS.md`. `DECISIONS.md` is the pre-registration record, rewritten in S22
 from session-instruction voice into record voice, and `DECISIONS-as-run.md` is
 the unmodified original against which that rewrite was checked figure by figure.
+Because it is committed unmodified as the original record, `DECISIONS-as-run.md`
+retains the two absolute home-directory paths that item 145 generalises everywhere
+else in the repository.
 
 ## Repository contents
 
