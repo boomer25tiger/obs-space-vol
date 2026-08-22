@@ -1,0 +1,52 @@
+# Raw vendor data is not published (DECISIONS item 130). The manifest of input
+# hashes is published in its place.
+data/
+*.dbn
+*.dbn.zst
+
+# Environments
+.venv/
+.venv-broken-*/
+venvs/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Derived caches: large, regenerable from source and the raw data
+sessions/*/cache/
+
+# LaTeX build products
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.fdb_latexmk
+paper/*.fls
+paper/*.log
+paper/*.out
+paper/p[0-9].log
+paper/bib.log
+paper/build.log
+
+# OS
+.DS_Store
+
+# Derived binary panels and bar tables in results/. Large, regenerable from the
+# raw data and the published source; the CSV/JSON artifacts the paper cites are
+# tracked. raw_pre2024.npy is the Phase-0 extract of vendor data and falls under
+# item 130 with the raw files.
+sessions/*/results/*.npz
+sessions/*/results/*.npy
+sessions/*/results/*.parquet
+sessions/*/results/p4tmp/
+sessions/*/results/cache/
+sessions/*/results/raw/
+
+# S23 pre-commit audit additions
+*.parquet
+*.zst
+*.npz
+*.npy
+cache/
+.venv-broken-20260819/
+# No tracked file may exceed 50 MB; the audit in results/S23-report.md lists the
+# ten largest tracked files. Anything above that ceiling is excluded by name here.
