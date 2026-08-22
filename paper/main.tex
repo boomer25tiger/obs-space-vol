@@ -1,0 +1,67 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+% T1 encoding: with OT1 the \_ in an artifact path is drawn as a rule rather
+% than a glyph, so it renders correctly but extracts from the PDF as a space.
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,booktabs,array,graphicx,natbib,url}
+% Paragraphs keep their first-line indent; the skip is added for legibility
+% because consecutive paragraphs were running together too tightly.
+\setlength{\parskip}{5pt plus 1.5pt minus 1pt}
+\usepackage[hidelinks]{hyperref}
+\graphicspath{{../figures/}}
+\title{Observation-space volatility evaluation:\\
+measuring proxy reliability and locating where it matters}
+\author{Cristian Gualy}
+\date{22 August 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+\noindent
+Realized variance is measured with error, and the size of that error is
+normally computed from sampling theory rather than measured. We fit
+$\operatorname{Var}(\log RV_M) = c + A M^{b}$ across sampling grids on ES and NQ
+futures and on SPY at two venues. The exponent $b$ lies between $-0.41$ and
+$-0.97$ against a sampling-theory reference of $-1.13$ to $-1.21$; the reference % numbers.csv: b[ES/RTH/B0/30min], b[NQ/RTH/B0/1day], b_ref[SPY/ARCX/TICK], b_ref[ES/RTH/B0/1h]
+falls outside the $95$ percent bootstrap interval in $18$ of $18$ cells and in
+all $54$ fits across three proxies. Proxy error decays with sampling frequency % numbers.csv: n_cells_ref_outside_95, n_cells_total, n_proxy_fits
+more slowly than theory requires. We read reliability from the fitted intercept,
+which assumes nothing about that decay, and use thirteen pre-registered kill
+conditions to separate the decisions it changes from those it does not.
+Volatility-target sizing moves by $1.008$ percent; the variance-to-volatility
+convexity adjustment is overstated by $5.9$ to $134.3$ percent. % numbers.csv: convex_overstatement[NQ/GLOBEX/1day], convex_overstatement[ES/RTH/30min]
+\end{abstract}
+\input{sections/01_introduction}
+\input{sections/02_data}
+\input{sections/03_exponent}
+\input{sections/04_estimator}
+\input{sections/05_kill}
+\input{sections/06_insertion}
+\input{sections/07_practical}
+\input{sections/08_limitations}
+\begin{figure}[htbp]\centering
+\includegraphics[width=\textwidth]{fig1.pdf}
+\caption{$\operatorname{Var}(\log RV_M)$ against $M$ on log axes. Left: the twelve futures cells passing the tightened screen, points read from
+\texttt{s08-final/results/phase4\_lambda.csv} and fitted curves from
+\texttt{s10-exponent-audit/results/phase1\_bootstrap.csv}. Right: both SPY venues
+under traded-tick sampling, points from
+\texttt{s07-completion-and-spy/results/phase6\_spy\_grid\_\{ARCX,XNAS\}.csv}.
+Dashed lines are trigamma$(M/2)$ on each grid. Twelve futures cells and two SPY
+venues pass the screen, fourteen in total; the twelve futures cells are six
+distinct cells under two boundary treatments that give identical fits.}
+\label{fig:scaling}
+\end{figure}
+\begin{figure}[htbp]\centering
+\includegraphics[width=0.62\textwidth]{fig2.pdf}
+\caption{Misclassification against reliability. The curve is
+$\arccos(\sqrt{\lambda})/\pi$. Open circles mark the analytic rate at each cell's
+measured $\lambda$; squares mark the empirical rate against a finest-grid
+noise-robust proxy, which is a lower bound because the two series share a window.
+Read from \texttt{s14-applications/results/phase1\_k8\_rates.csv} and
+\texttt{s09-application/results/phase3\_sizing\_params.csv}.}
+\label{fig:mis}
+\end{figure}
+\clearpage
+\bibliographystyle{plainnat}
+\bibliography{refs}
+\end{document}

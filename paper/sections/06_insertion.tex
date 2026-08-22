@@ -1,0 +1,67 @@
+\section{Insertion into a regime classifier}\label{sec:insertion}
+
+A measured reliability is of use only where it can enter a decision, and we test
+the two points at which it can enter a regime classifier built on a rolling
+two-state Gaussian hidden Markov model, in the specification of \citet{blake2025}. Neither
+insertion works, and the two failures share a common cause that has nothing to do
+with the size of $\lambda$.
+
+\subsection{Shrinkage of the observable}
+
+The natural insertion is to shrink the observable toward its unconditional mean
+with weight $\lambda$, replacing $\log RV_M$ with
+$(1-\lambda)\mu + \lambda \log RV_M$ before classification. The specification
+standardises the observable within each rolling window, and for any window $W$
+the shrunk series has mean $(1-\lambda)\mu + \lambda\,\overline{x}_W$ and
+standard deviation $\lambda\, s_W$, so the relation
+\begin{equation}\label{eq:affine}
+\frac{z - \overline{z}_W}{s_W(z)} \;=\; \frac{x - \overline{x}_W}{s_W(x)}
+\end{equation}
+holds identically for every $\lambda > 0$, leaving the standardised input
+unchanged and the classification unable to move. Across all eight cells the two
+arms differ in $0$ states, and the reduction in misclassification is $0.00$ % numbers.csv: k11_red_vs_A1[ES/GLOBEX/1day]
+percentage points in every cell, in sample and out. % numbers.csv: k11_red_vs_A1[NQ/RTH/30min]
+
+Equation~\eqref{eq:affine} is not specific to reliability shrinkage but holds for
+any affine transformation of the observable, so the entire class of linear proxy
+corrections applied upstream of a standardising classifier is annihilated, not
+attenuated. The recoverable band is empty, not small, and the conclusion is
+available analytically, before any classification has been run.
+
+\subsection{Noise in the observation equation}
+
+The remaining route is to hand the model the noise instead of the correction,
+decomposing the emission variance in each state into a state variance plus a
+known observation-noise variance $v = (1-\lambda)\operatorname{Var}(\log RV_M)$
+and holding $v$ fixed while the rest is estimated. On synthetic data with known
+state variance and known added noise the estimator behaves as intended, in that
+the free-variance model recovers the total emission variance and the fixed-noise
+model recovers the state variance by subtracting $v$, with the state means of the
+two agreeing to ten decimal places.
+
+That correctness is what defeats the exercise. With
+$\sigma_k^2 = \max(\text{total}_k - v, 0)$ the emission variance is
+$\max(\text{total}_k, v)$, so the fixed-noise model is the free-variance model
+equipped with a variance floor at $v$, identical to it wherever both states clear
+that floor. The floor is far from idle, since at the headline scaling it binds in
+$46{,}120$ of $72{,}619$ windows, or $63.5$ percent, and moves $18{,}311$ % numbers.csv: k12_windows_binding_s100_ext, k12_windows_total_s100_ext, k12_binding_share_s100_ext
+in-sample states. Even so, the maximum reduction in misclassification is $0.00$ % numbers.csv: k12_states_differ_insample_s100_ext
+percentage points in every cell at every scaling, and where the floor binds % numbers.csv: k12_max_reduction_pp
+hardest the classification degrades.
+
+The reason is that a variance floor cannot sharpen a discrimination. Where both
+states carry the same known uncertainty, knowing how uncertain an observation is
+tells a two-state model nothing, because the common term enters both emission
+densities and cancels in the posterior ratio. Only the floor survives that
+cancellation, and it widens both densities and pulls marginal observations toward
+the nearer state mean.
+
+\subsection{Scope of the negative results}
+
+Both results are specific to a discrete-state model with state-independent noise,
+and a model whose latent variable is continuous does not share the cancellation.
+In a
+stochastic volatility state-space model with a log-variance signal equation and a
+known observation-error variance, the noise enters a filtering recursion and not
+a two-way likelihood ratio. We have not tested such a model and make no claim
+about its behaviour.

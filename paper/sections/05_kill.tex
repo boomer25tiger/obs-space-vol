@@ -1,0 +1,90 @@
+% S23B, DECISIONS item 150. Section 5 was a stub through S18 to S23 under item 131.
+% The body below is the text supplied with the S23B prompt, converted verbatim.
+\section{Kill conditions}\label{sec:conditions}
+
+% The HAR family the attenuation condition operates on is \citet{corsi2009}
+% and its quarticity-augmented form \citep{bpq2016}.
+\nocite{corsi2009,bpq2016}
+
+Thirteen conditions were pre-registered, each with its threshold fixed before the
+measurement it adjudicates and its null abstract drafted before any result was
+seen. Table~\ref{tab:kill} gives all thirteen. A condition fires when the null
+holds, which is to say when the measured quantity falls inside the threshold and
+reliability does not change the decision.
+
+Two of the thirteen concern the measurement itself. K2 asks whether any
+reliability estimator is grid-invariant and fires, in the sense that none is: the
+ratio of largest to smallest implied $\operatorname{Var}(\log IV)$ across a grid
+runs from $1.05$ for the best estimator to $1.97$ for the worst. K3 asks whether % k_table.csv: K2 margin
+the scaling result survives its own uncertainty and stands, with the reference
+inside the interval in $0$ of $54$ fits. The remaining eleven are applications. % numbers.csv: n_proxy_ref_inside_95, n_proxy_fits
+
+\input{sections/05_conditions_table}
+
+\subsection{What separates them}
+
+Proxy noise is second-order where the loss surface is smooth in the corrected
+quantity, or where the contamination averages away as the estimation window
+lengthens. It is first-order where the quantity of interest depends on the
+variance of the estimate rather than its level, and where more data therefore
+does not reduce the contamination. The distinction is not about the size of
+$\lambda$, which is the same in both cases, and it predicts which side a new
+application falls on.
+
+\subsection{The second-order cases}
+
+Volatility-target sizing is quadratic in the shrinkage weight near its optimum, so
+a first-order error in $\lambda$ produces a second-order loss: replacing the
+textbook weight with the measured one moves out-of-sample tracking error by at
+most $1.008$ percent against a $5$ percent threshold, in the same direction in % k_table.csv: K4 margin
+every cell, at every point of an eightfold cost sweep. Inverse-MSE combination
+weights move by $0.50$ percent in the same metric, because the proxy noise % k_table.csv: K6 margin
+variance is common to every model in the set and cancels from the relative
+weights to first order. Inverse-volatility risk parity moves the allocation by a
+mean absolute weight deviation of $0.000145$ against a $0.02$ threshold, and the % k_table.csv: K8 margin
+reason generalises: the bias in $\mathbb{E}[1/\hat{\sigma}]$ scales as one over
+the averaging window, so monthly rebalancing on a twenty-one-session estimate
+divides it by twenty-one. Risk limits fire on the stop-out at a spurious breach
+rate of $0.966$ percent against $1$ percent, and we report the leverage cap as % k_table.csv: K5 margin
+untested rather than as passing, since it bound in $0$ of $2{,}524$ decision
+points and would first bind at $1.434$ times a ten percent target. % numbers.csv: k5_cap_first_binds
+
+\subsection{The first-order cases}
+
+The variance-to-volatility convexity adjustment depends on
+$\operatorname{Var}(\log IV)$ directly, and substituting the proxy overstates it
+by between $5.9$ and $134.3$ percent, which exceeds its $5$ percent threshold in % numbers.csv: convex_overstatement[NQ/GLOBEX/1day], convex_overstatement[ES/RTH/30min]
+every cell. Averaging over more windows improves the estimate of a contaminated
+population quantity and does not decontaminate it. A regime threshold placed at
+the median has no curvature to absorb the error, and misclassification runs
+between $7.9$ and $13.6$ percent against a $5$ percent threshold. Proxy noise in % numbers.csv: mis_analytic[NQ/GLOBEX/insample], mis_analytic[ES/GLOBEX/insample]
+the estimation of the Hurst exponent enters as a nugget that does not vanish at
+short lags, and correcting for the measured $\lambda$ shifts $H$ by between
+$0.026$ and $0.213$ on a fixed lag window against a $0.02$ threshold. % k_table.csv: K11 margin
+
+\subsection{The two indeterminate conditions}
+
+K1 asks whether the reliability correction changes model confidence set
+composition. Composition differs in $20.8$ percent of comparisons on the clean % numbers.csv: k1_excess_rth
+geometry after subtracting a placebo scheme that conditions on a variable with no
+proxy content, so the raw effect is roughly half subset variation. What remains
+does not track $\lambda$ across horizons, running $12.5$, $43.8$ and $6.3$ percent % numbers.csv: k1_excess[1day], k1_excess[1h], k1_excess[30min]
+as reliability falls from $1.001$ to $0.856$ to $0.713$, which is not the ordering % numbers.csv: k1_lam_intercept[1day], k1_lam_intercept[1h], k1_lam_intercept[30min]
+the mechanism predicts. We report it as indeterminate rather than as either
+result. K10 asks whether the attenuation of HAR persistence coefficients is
+material. The daily coefficient shifts by between $4.8$ and $116$ percent
+depending on which construction supplies the measurement-error covariance, and % k_table.csv: K10 margin
+the two constructions bracket the $10$ percent threshold from either side. The
+bracket is the same one that leaves the composition of $A M^{b}$ unresolved in
+Section 4.2, resurfacing inside an application.
+
+\subsection{The criterion's record}
+
+Eight conditions were selected before the criterion of Section 5.1 was
+articulated and five of them fire. Five were selected after it and three return % numbers.csv: n_conditions_before, n_fire_before, n_conditions_after, n_material_after
+material effects. We note the ordering because the criterion was derived from the
+first eight and tested on the last five, not because five of thirteen is a rate
+worth reporting. Two of the five later conditions test whether the measured
+coefficient can be inserted at all rather than whether it matters, and Section 6
+takes those up separately.
+

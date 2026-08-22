@@ -1,0 +1,84 @@
+\section{The intercept estimator}\label{sec:estimator}
+
+The scaling result of Section~\ref{sec:exponent} removes the assumption on which
+the conventional reliability estimators rest. Where
+$\operatorname{Var}(\log RV_M)$ fails to decay at the rate sampling theory
+requires, an estimator that substitutes the theoretical sampling variance for the
+measured one substitutes a quantity the data contradict. We read reliability off
+the fitted intercept directly, and devote the rest of this section to what that
+choice costs.
+
+Writing the fit of \eqref{eq:scaling} as $\operatorname{Var}(\log RV_M) = c + A M^{b}$,
+the intercept $c$ is the $M \to \infty$ limit and estimates
+$\operatorname{Var}(\log IV)$. That suggests the definition
+\begin{equation}\label{eq:lambda}
+\lambda_M \;=\; \frac{c}{\operatorname{Var}(\log RV_M)} ,
+\end{equation}
+for the share of observed log-variance dispersion attributable to the integrated
+variance and not to the proxy. Equation~\eqref{eq:lambda} invokes no assumption
+about how proxy error scales in $M$, drawing only on the fitted limit and on the
+variance observed directly at the grid point of interest. That narrow property is
+the whole of its claim to preference over the alternatives.
+
+Two conventional estimators are available for comparison, the first forming
+$\lambda$ from contiguous half-window subsamples and the second the asymptotic
+variance of the truncated estimator keyed to realized quarticity, both bounded in
+$(0,1]$ by construction. Across the $128$ (cell, $M$) rows of the
+extended grid the subsample estimator falls outside those bounds $14$ times, the % numbers.csv: bound_violations_E2, bound_violations_n_rows
+asymptotic-variance estimator $0$ times, and equation~\eqref{eq:lambda} $4$ % numbers.csv: bound_violations_E4
+times. On the only criterion available without knowledge of the truth, then, the % numbers.csv: bound_violations_intercept
+intercept route is better behaved than one conventional estimator and worse
+behaved than the other. We record that ranking and do not select on it.
+
+\subsection{Identifiability}
+
+In the functional form of \eqref{eq:scaling} the intercept and the exponent are
+strongly correlated, and over the bootstrap draws the correlation between $c$ and
+$b$ ranges from $-0.065$ to $-0.973$, with the asymptotic correlation at the % numbers.csv: corr_cb_min, corr_cb_max
+optimum running from $-0.748$ to $-0.993$. The worst values arise in the % numbers.csv: corr_cb_asym_min, corr_cb_asym_max
+five-point grids, where three parameters are fitted to five observations. The
+bootstrap interval on $b$
+already carries that coupling, since it resamples the sessions and refits all
+three parameters jointly. The median standard error on $b$ is $0.054$, against a % numbers.csv: median_b_se
+median gap to the reference of $9.6$ times that figure. Coupled parameters widen % numbers.csv: ratio_median_gap_to_median_se
+an interval without displacing it, so the coupling introduces no bias in $b$. It
+does mean that $c$ is not estimated independently of the shape assumed for the
+decay, and every $\lambda$ reported below inherits that dependence.
+
+The tightened admissibility screen of Section~\ref{sec:exponent} requires at
+least twice as many grid points as parameters, together with $|b| > 0.01$,
+$A > 0$ and $b < 0$. It admits $14$ of $18$ fits, against $26$ of $34$ under the % numbers.csv: n_screen_pass, n_screen_rows_extended, n_screen_pass_old, n_screen_rows_all
+sign-only screen that preceded it, the four exclusions being the thirty-minute
+cells with their five grid points. On the restricted grid the screen admits
+nothing at all, and $\lambda$ is undefined at all four RTH intraday cells,
+because a three-parameter fit there is left with a single grid point. % numbers.csv: lambda[ES/RTH/1h/restricted_S05] = MISSING
+
+\subsection{Composition of $A M^{b}$}
+
+Equation~\eqref{eq:lambda} treats the entire excess of
+$\operatorname{Var}(\log RV_M)$ over $c$ as proxy error, which is an assumption
+the data do not support cleanly. Proxy error can also be measured directly, as
+the variance of $\log RV_M$ minus the log of a finest-grid flat-top realized
+kernel \citep{bnhls2008} computed on the same windows. That measurement gives
+between $9.1$ and $41.8$ percent of the fitted $A M^{b}$ at the same grid point, % numbers.csv: v_ratio_min, v_ratio_max
+smaller by a factor of $2.4$ to $11$. % numbers.csv: v_ratio_measured_to_fitted[ES/GLOBEX]
+
+Neither figure bounds the truth on its own. The fitted term is an upper bound on
+the noise, because it absorbs any component of the excess that belongs to the
+price process itself and is not error in measuring that process, and
+Section~\ref{sec:exponent} establishes within-window volatility dispersion as one
+such component. The kernel difference is a lower bound, because the kernel is
+computed from the same window and the same price path, so its error is positively
+correlated with the proxy's and the difference between them understates both. The
+two constructions bracket $\lambda$, and the bracket does not close.
+
+The benign reading of that gap is that a common scaling separates the two
+measurements, and that they would agree once the kernel's own error were
+accounted for. The cell-by-cell pattern does not support that reading, since the
+ratio varies by a factor of $4.6$ across the four cells, from $0.091$ at
+ES/GLOBEX to $0.418$ at NQ/RTH, and is ordered by the very reliability the % numbers.csv: v_ratio_measured_to_fitted[ES/GLOBEX], v_ratio_measured_to_fitted[NQ/RTH]
+estimator is attempting to measure. A common scaling would not produce that
+ordering. We
+report $\lambda$ from the fitted term throughout, state plainly that the fitted
+term is an upper bound on the noise share and the reported $\lambda$ therefore a
+lower bound, and leave the composition unresolved.

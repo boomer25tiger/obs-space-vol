@@ -1,0 +1,66 @@
+\section{Limitations}\label{sec:limitations}
+
+\paragraph{The composition of $A M^{b}$:} Equation~\eqref{eq:lambda} attributes
+the whole excess over the fitted intercept to proxy error, whereas direct
+measurement of that error against a finest-grid realized kernel gives between
+$9.1$ and $41.8$ percent of the same quantity. The fitted term is an upper bound % numbers.csv: v_ratio_min, v_ratio_max
+on the noise and the kernel difference a lower bound, and the two differ by a
+factor of $2.4$ to $11$, and every $\lambda$ we report should be read as a lower % numbers.csv: v_ratio_measured_to_fitted[ES/GLOBEX], v_ratio_measured_to_fitted[NQ/RTH]
+bound. Resolving the composition would require measuring proxy error against an
+instrument that does not share the window, which we have not done.
+
+\paragraph{Two correlated instruments:} The futures evidence is ES and NQ, two
+equity index contracts on the same exchange whose realized variances are strongly
+related, and the independent weight in the cross-sectional evidence is carried by
+SPY alone, at two venues under traded-tick sampling. Where a result is said to
+hold in $18$ cells, $16$ of those cells are two instruments observed in eight % numbers.csv: n_cells_total
+configurations.
+
+\paragraph{Cluster saturation:} Every trend $p$-value in this paper comes from a
+wild cluster bootstrap with Rademacher weights and the null
+imposed \citep{cgm2008}, clustering on eight distinct cells. At $G = 8$ there are
+$2^{7} = 128$ distinct values of the statistic, and the smallest attainable
+two-sided $p$-value is $0.0078$. The reported values of $0.0076$ and $0.0036$ sit % numbers.csv: rademacher_floor_G8, trend_p[year_only], trend_p[year_plus_cond]
+at or below that floor, so the test is saturated and none of these values
+constitutes conventional evidence at any nominal level. The design does support
+the point estimate and its sign, which is $-0.0469$ per year uncontrolled and % numbers.csv: trend_beta[year_only]
+$-0.0105$ per year once fit conditioning enters, with a variance inflation factor % numbers.csv: trend_beta[year_plus_cond]
+of $1.27$ on the year term. Four fifths of the uncontrolled trend is attributable % numbers.csv: trend_vif[year_plus_cond]
+to fits becoming less well identified in high-volatility years.
+
+\paragraph{Holdout openings:} The holdout was opened seven times, for % numbers.csv: holdout_read_count
+sizing and the candidate set out of sample, re-evaluation of three candidates
+after a predictor-construction defect; risk limits and combination weights; risk
+parity; regime misclassification; regime classification under an observable-side
+correction; and measurement error in the emission. No parameter, threshold, rule
+or specification was changed after any holdout number had been seen, and each
+opening was pre-registered before the read. The programme is not single-use on
+the holdout, and we do not describe it as such.
+
+\paragraph{The thirty-minute inversion:} One cell runs $48.5$ percent
+misclassification in sample against $26.5$ percent out of sample, which inverts
+the usual direction, since performance at chance in sample is followed by
+performance better than chance on the holdout. Label instability under close
+state means is present, and is located where it would be expected. In sample,
+$17.4$ percent of
+windows carry a state-mean gap below $0.25$, against $6.9$ percent in the
+holdout. Restricting attention to well-separated windows nonetheless moves the
+two rates by only $0.67$ and $-0.04$ percentage points, about three percent of a
+$21.95$ point inversion, and mean state separation is $1.709$ in sample against
+$1.668$ out. Neither candidate accounts for the inversion, and we leave it
+unexplained.
+
+\paragraph{Partial mechanism:} Calibrated within-window volatility
+dispersion reproduces the observed exponent on GLOBEX geometry at every Hurst
+index tested and on RTH geometry at some. Three candidate mechanisms have been
+tested against the RTH residual and rejected. Independent heavy-tailed
+innovations account for $8.6$ percent of the gap and lie inside seed noise; a
+fixed-position dominant return moves the exponent nowhere, at any position or
+amplitude; and the roughness of the within-window path has a total range across
+Hurst indices smaller than its own between-seed dispersion. A localized feature would
+need to carry between $16.1$ and $32.3$ percent of window realized variance to % numbers.csv: required_share[NQ/RTH], required_share[ES/GLOBEX]
+supply the observed floor, against measured shares between $0.41$ and $4.04$
+percent. That is a shortfall of $4.0$ to $71.5$ times in share and, since the
+floor goes as the square, of $16$ to $5{,}100$ times in the quantity supplied. % numbers.csv: share_ratio[NQ/RTH], share_ratio[ES/GLOBEX]
+The class of localized mechanisms can be retired, and the source of the RTH
+residual is not established here.

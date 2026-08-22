@@ -1,0 +1,70 @@
+\section{Introduction}\label{sec:intro}
+
+Every evaluation of a volatility forecast, every reliability correction to an
+information coefficient, and every model comparison conducted on a realized loss
+\citep{patton2011,hln2011} takes place in an observation space whose coordinates
+carry measurement error, since realized variance only estimates integrated
+variance. In applied practice, however, the magnitude of that error is almost
+never measured; it is computed from a sampling-theory formula and thereafter
+treated as known.
+
+The quantity at issue is the reliability coefficient
+\begin{equation}\label{eq:reliability}
+\lambda \;=\; \frac{\operatorname{Var}\!\left(\log IV\right)}
+                   {\operatorname{Var}\!\left(\log RV_M\right)},
+\end{equation}
+which measures the share of observed dispersion in the log proxy attributable to
+the latent integrated variance. Wherever $\lambda$ appears in the applied
+literature, the denominator of \eqref{eq:reliability} is not estimated from the
+data but supplied by theory, the value supplied being the sampling variance
+predicted for a proxy built from $M$ returns, which is $2/M$
+asymptotically \citep{bns2002}, or $\psi'(M/2)$ exactly under Gaussian returns
+and constant within-window volatility. That substitution predicts how proxy error
+behaves without measuring how it behaves, and the prediction can be tested
+against the sampling grid.
+
+The substitution does not survive the test. Fitting
+\begin{equation}\label{eq:scaling0}
+\operatorname{Var}\!\left(\log RV_M\right) \;=\; c + A\,M^{b}
+\end{equation}
+across sampling grids yields $b$ between $-0.41$ and $-0.97$, whereas fitting the % numbers.csv: b[ES/RTH/B0/30min], b[NQ/RTH/B0/1day]
+same functional form to $\psi'(M/2)$ over the identical grid points returns a
+reference between $-1.13$ and $-1.21$. The reference falls outside the $95$ % numbers.csv: b_ref[SPY/ARCX/TICK], b_ref[ES/RTH/B0/1h]
+percent bootstrap interval on $b$ in $18$ of $18$ cells, and in all $54$ fits % numbers.csv: n_cells_ref_outside_95, n_cells_total
+obtained when realized variance is replaced by the flat-top realized kernel of
+\citet{bnhls2008} or the two-scale estimator of \citet{zma2005}. % numbers.csv: n_proxy_fits, n_proxy_ref_inside_95
+Proxy error does decay as the sampling frequency rises, but not at the rate
+sampling theory requires, and the median gap between the fitted exponent and its
+reference is $9.6$ times the median standard error on the exponent. % numbers.csv: ratio_median_gap_to_median_se
+
+With the denominator substitution unavailable, reliability has to be read from
+the data and not imposed upon them. We estimate $\lambda$ from the fitted
+intercept of \eqref{eq:scaling0}, which requires no assumption about the rate at
+which proxy error decays, and we report the cost of that choice alongside its
+motivation. The intercept route violates the unit interval in $4$ of $128$ grid % numbers.csv: bound_violations_intercept, bound_violations_n_rows
+rows, against $14$ for the subsample estimator and $0$ for the % numbers.csv: bound_violations_E2, bound_violations_E4
+asymptotic-variance estimator, so it is better behaved than one conventional
+alternative and worse behaved than the other.
+
+Having measured $\lambda$, we ask where the measurement changes a decision, and
+we separate the cases using the thirteen pre-registered kill conditions of
+Table~\ref{tab:kill}, each with its threshold fixed before the measurement it
+adjudicates. Proxy noise proves to
+be second-order wherever the loss surface is smooth or the contamination averages
+away over the estimation window, as it does for volatility-target sizing, which
+moves by at most $1.008$ percent in relative tracking error, and for
+inverse-volatility risk parity at monthly rebalancing, which moves by $0.0038$
+percent. Proxy noise is first-order, by contrast, wherever the quantity of
+interest depends on the variance of the estimate and additional data does not
+reduce the contamination, and there the variance-to-volatility convexity
+adjustment is overstated by between $5.9$ and $134.3$ percent, while a regime % numbers.csv: convex_overstatement[NQ/GLOBEX/1day], convex_overstatement[ES/RTH/30min]
+threshold placed at the median misclassifies between $7.9$ and $13.6$ percent of % numbers.csv: mis_analytic[NQ/GLOBEX/insample], mis_analytic[ES/GLOBEX/insample]
+days.
+
+Beyond the question of magnitude, we establish two settings in which the measured
+coefficient cannot be inserted at all. Within-window standardisation annihilates
+any affine correction to an observable exactly, so no such correction survives
+the transformation that regime classifiers routinely apply, and a known
+state-independent noise variance entered into the emission of a two-state model
+adds no discrimination. Both are negative results about insertion, not about
+measurement.

@@ -1,0 +1,25 @@
+\begin{table}[!ht]\centering\footnotesize
+\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.15}
+\setlength{\abovetopsep}{6pt}
+\caption{Kill conditions and their determinations.\protect\footnotemark{} Generated from the determination artifacts listed in \texttt{paper/k\_table.csv}; the margin column gives the measured quantity against its pre-registered threshold, and the final column records whether the application was selected before or after the first-order criterion was articulated.}\label{tab:kill}
+\begin{tabular}{@{}ll>{\raggedright\arraybackslash}p{3.3cm}>{\raggedright\arraybackslash}p{3.0cm}>{\raggedright\arraybackslash}p{4.3cm}c@{}}
+\toprule
+Paper & Session & Content & Determination & Margin & Selected \\
+\midrule
+K1 & K1/K2 & reliability correction does not change MCS composition & INDETER\-MINATE & excess 20.8pp on clean geometry, not tracking lambda & before \\  % source: sessions/s09-application/results/phase12_summary.json [K2, excess_rth]
+K2 & K2 (grid) & no reliability estimator is grid-invariant & FIRES & lambda*Var(log RV) max/min ratio 1.05 best, 1.97 worst & before \\  % source: specs/SPEC-obs-space-vol-eval.md [section 7 null abstract]
+K3 & K3 (scaling) & proxy-error scaling inconsistent with sampling theory & STANDS & reference inside the 95\% interval in 0 of 54 proxy fits & before \\  % source: sessions/s11-extensions/results/phase7_summary.json [ref_inside_by_proxy]
+K4 & K3 (sizing) & sizing consequence null & FIRES & max R2-vs-R3 relative TE difference 1.008\% vs 5\% & before \\  % source: sessions/s09-application/results/phase7_k3.json [extended.K3]
+K5 & K4 & risk-limit breaches & stop-out FIRES; cap UN\-TESTED & spurious 0.966\% vs 1\%; cap bound 0 of 2524 & before \\  % source: sessions/s12-correction/results/phase4_k4.json [stop_out, leverage_cap]
+K6 & K5 & inverse-MSE combination weights & FIRES & max relative TE difference 0.50\% vs 5\% & before \\  % source: sessions/s11-extensions/results/phase8910_summary.json [K5]
+K7 & K6 & variance-to-volatility convexity adjustment & DOES NOT FIRE & overstatement 5.9-134.3\% vs 5\% & before \\  % source: sessions/s12-correction/results/phase1_k6.json [K6]
+K8 & K7 & inverse-volatility risk parity & FIRES & mean $|$dw$|$ 0.000145 vs 0.02 & before \\  % source: sessions/s13-extension/results/phase2_k7.json [K7]
+K9 & K8 & regime misclassification at a median threshold & DOES NOT FIRE & analytic 7.9-13.6\% vs 5\% & after \\  % source: sessions/s14-applications/results/phase1_k8.json [K8]
+K10 & K9 & HAR persistence attenuation & INDETER\-MINATE & daily shift 4.8-116\% vs 10\%, spanning the threshold on the Sigma\_E choice & after \\  % source: sessions/s15-confounds/results/s15_summary.json [K9]
+K11 & K10 & Hurst exponent bias from proxy noise & DOES NOT FIRE & shift 0.026-0.213 vs 0.02 on a fixed lag window & after \\  % source: sessions/s15-confounds/results/s15_summary.json [K10]
+K12 & K11 & regime classification under an observable-side correction & DOES NOT FIRE & 0.00pp from the correction; effect is A3 not being A2 & after \\  % source: sessions/s16-regime/results/phase4_k11_final.json [K11]
+K13 & K12 & measurement error in the emission & FIRES & 0.00pp maximum reduction at every scaling, floor binding in 63\% of windows & after \\  % source: sessions/s17-emission/results/phase345_summary.json [K12]
+\bottomrule
+\end{tabular}
+\end{table}
+\footnotetext{The session record uses overlapping labels. Item~61 relabelled the MCS-composition condition K2 while the specification already used K2 for grid invariance, and two distinct conditions were both called K3. The paper renumbers K1--K13 in the order shown; the repository retains the original labels, given here in the second column.}

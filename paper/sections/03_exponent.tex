@@ -1,0 +1,174 @@
+% ============================================================================
+% DRAFTED IN S20, NOT SUPPLIED. The S18, S19 and S20 briefs each stated that the
+% text of this section was supplied with the prompt; on all three occasions no
+% text followed. Rather than ship a third empty section, this body is drafted
+% from the artifacts in the register of Sections 4 and 6 through 8. It is the
+% author's to replace wholesale when the intended text arrives; nothing else in
+% the document depends on its wording, only on its result.
+% Cell counts here are the artifact values: twelve futures cells and two SPY
+% venues pass the tightened screen, fourteen of eighteen fits.
+% Prose revised in S21 to the register of the realized-variance literature.
+% ============================================================================
+\section{The proxy-error scaling exponent}\label{sec:exponent}
+
+\subsection{Specification and estimation}
+
+For a window divided into $M$ sub-bars, realized variance is
+$RV_M = \sum_{i=1}^{M} r_i^2$, whose logarithm carries the log integrated
+variance together with an error that shrinks as $M$ grows. Across a grid of
+sampling frequencies, the observed dispersion of $\log RV_M$ should then
+decompose into a component that does not depend on the grid and a component that
+vanishes along it. We fit that decomposition directly,
+\begin{equation}\label{eq:scaling}
+\operatorname{Var}\!\left(\log RV_M\right) \;=\; c \;+\; A\,M^{b},
+\end{equation}
+by nonlinear least squares over the grid points of each cell, taking the variance
+at each $M$ across the sessions of the estimation sample. The intercept $c$ is the
+$M \to \infty$ limit and estimates $\operatorname{Var}(\log IV)$, while the term
+$A M^{b}$ measures what the choice of sampling grid contributes to the dispersion
+actually observed. Throughout, a cell denotes one instrument observed under one
+session geometry, one boundary treatment and one horizon, which gives sixteen
+futures cells alongside the two SPY venues, eighteen fits in all.
+
+\subsection{The sampling-theory reference}
+
+Under Gaussian returns and volatility held constant within the window,
+$M \cdot RV_M / IV$ is distributed as $\chi^2_M$, so that
+\begin{equation}\label{eq:trigamma}
+\operatorname{Var}\!\left(\log RV_M\right) \;=\; \psi'\!\left(M/2\right),
+\end{equation}
+where $\psi'$ is the trigamma function, equal to $2/M$ to leading
+order \citep{bns2002}. The exponent implied by \eqref{eq:trigamma} is not $-1$,
+because the leading-order approximation is not what a finite grid delivers.
+Fitting \eqref{eq:scaling} to \eqref{eq:trigamma} over the same grid points a
+cell actually uses returns $-1.1444$ on the RTH daily grid, $-1.1386$ on Globex % numbers.csv: trigamma_ref_fit[RTH_1day], trigamma_ref_fit[GLOBEX_1day]
+daily, $-1.2097$ at the hourly horizon and $-1.1971$ at thirty minutes. We use % numbers.csv: trigamma_ref_fit[RTH_1h], trigamma_ref_fit[RTH_30min]
+the grid-matched reference throughout, and every comparison reported below is
+between two fits of the same functional form taken over the same points.
+
+Where the data satisfy the assumption behind \eqref{eq:trigamma}, the estimator
+recovers that reference. A synthetic arm with i.i.d.\ lognormal integrated
+variance and Gaussian innovations, passed through the identical aggregation and
+fitting code, returns $-1.1850$ on Globex daily, $-1.2451$ on RTH daily, % numbers.csv: arm_b[A0/GLOBEX_1day], arm_b[A0/RTH_1day]
+$-1.1928$ hourly and $-1.2168$ at thirty minutes. Each of these sits within seed % numbers.csv: arm_b[A0/RTH_1h], arm_b[A0/RTH_30min]
+dispersion of the analytic value for its grid, which establishes that the code
+path does not itself manufacture the departure reported below.
+
+\subsection{Fitted exponents}
+
+\begin{table}[htbp]\centering\footnotesize
+\caption{Fitted exponent by cell, with the bootstrap interval from $2{,}000$
+joint resamples over sessions and the grid-matched reference. Boundary treatments
+B0 and B1 give identical fits and are shown once. RMSE and the condition number
+describe the fit at each cell. Read from
+\texttt{sessions/s10-exponent-audit/results/phase1\_bootstrap.csv}.}
+\label{tab:exponent}
+\begin{tabular}{lccccc}
+\toprule
+Cell & $b$ & $95\%$ interval & Reference & RMSE & Condition \\
+\midrule
+ES/GLOBEX 1day & $-0.4427$ & $[-0.5508,\,-0.3398]$ & $-1.1377$ & $0.0499$ & $25.0$ \\ % numbers.csv: b[ES/GLOBEX/B0/1day], b_lo[...], b_hi[...], b_ref[...], rmse[...], cond[...]
+NQ/GLOBEX 1day & $-0.6886$ & $[-0.8022,\,-0.5780]$ & $-1.1377$ & $0.0365$ & $39.0$ \\ % numbers.csv: b[NQ/GLOBEX/B0/1day] and companions
+ES/RTH 1day    & $-0.6274$ & $[-0.7558,\,-0.4982]$ & $-1.1444$ & $0.0291$ & $36.5$ \\ % numbers.csv: b[ES/RTH/B0/1day] and companions
+NQ/RTH 1day    & $-0.9744$ & $[-1.1255,\,-0.8353]$ & $-1.1444$ & $0.0162$ & $70.5$ \\ % numbers.csv: b[NQ/RTH/B0/1day] and companions
+ES/RTH 1h      & $-0.4658$ & $[-0.5345,\,-0.4004]$ & $-1.2097$ & $0.0151$ & $37.4$ \\ % numbers.csv: b[ES/RTH/B0/1h] and companions
+NQ/RTH 1h      & $-0.8032$ & $[-0.8944,\,-0.7150]$ & $-1.2097$ & $0.0119$ & $48.4$ \\ % numbers.csv: b[NQ/RTH/B0/1h] and companions
+ES/RTH 30min   & $-0.4111$ & $[-0.4843,\,-0.3422]$ & $-1.1971$ & $0.0045$ & $97.8$ \\ % numbers.csv: b[ES/RTH/B0/30min] and companions
+NQ/RTH 30min   & $-0.7010$ & $[-0.7976,\,-0.6092]$ & $-1.1971$ & $0.0053$ & $73.9$ \\ % numbers.csv: b[NQ/RTH/B0/30min] and companions
+SPY/ARCX tick  & $-0.5333$ & $[-0.6807,\,-0.3896]$ & $-1.1262$ & $0.0558$ & $23.2$ \\ % numbers.csv: b[SPY/ARCX/TICK] and companions
+SPY/XNAS tick  & $-0.5985$ & $[-0.7628,\,-0.4468]$ & $-1.1262$ & $0.0590$ & $27.3$ \\ % numbers.csv: b[SPY/XNAS/TICK] and companions
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table~\ref{tab:exponent} reports the fitted exponent, its bootstrap interval and
+the grid-matched reference for every cell, and Figure~\ref{fig:scaling} plots the
+same fits against $M$ on log axes. Across the futures cells the exponent lies
+between $-0.4111$ and $-0.9744$, and % numbers.csv: b[ES/RTH/B0/30min], b[NQ/RTH/B0/1day]
+the two SPY venues return $-0.5333$ and $-0.5985$. The grid-matched reference % numbers.csv: b[SPY/ARCX/TICK], b[SPY/XNAS/TICK]
+falls outside the $95$ percent bootstrap interval in $18$ of $18$ cells. Whether % numbers.csv: n_cells_ref_outside_95, n_cells_total
+a separation of that size is large relative to the precision of the fit is
+settled by comparing the two directly, and the median standard error on $b$ is
+$0.0536$ against a median gap to the reference of $0.5169$, a ratio of $9.6$. % numbers.csv: median_b_se, median_gap_b_to_ref, ratio_median_gap_to_median_se
+Proxy error does decay as the sampling frequency rises, but it does not decay at
+the rate sampling theory requires, and the shortfall is roughly an order of
+magnitude larger than the uncertainty attaching to any individual fit.
+
+\subsection{Admissibility of the fits}
+
+Three parameters fitted to a short grid can return an exponent that is an artifact
+of the fit and not a feature of the data. We admit a fit only where $A > 0$,
+$b < 0$, the grid carries at least twice as many points as the model has
+parameters, and $|b| > 0.01$. Of these four conditions, the two governing grid
+length and magnitude are the ones that bind. Of $18$ fits on the extended grids, % numbers.csv: n_screen_rows_extended
+$14$ pass, and these comprise $12$ futures cells, being six distinct cells under % numbers.csv: n_screen_pass, n_futures_pass, n_distinct_futures_cells_pass
+two boundary treatments that give identical fits, together with both SPY venues. % numbers.csv: n_spy_pass
+The four exclusions are the thirty-minute cells, whose grids carry only five
+points. Under the sign-only screen used before this one, $26$ of $34$ fits % numbers.csv: n_screen_pass_old, n_screen_rows_all
+pass, among them a Globex daily fit on the restricted grid with
+$b = -1.23 \times 10^{-4}$ and a condition number of $5 \times 10^{11}$, which
+the conditions on point count and magnitude remove.
+
+Intercept and exponent are strongly correlated in \eqref{eq:scaling}, and over
+the bootstrap draws the correlation between $c$ and $b$ runs from $-0.065$ to % numbers.csv: corr_cb_max, corr_cb_min
+$-0.973$, with the worst values arising in the five-point grids. The reported
+interval on $b$ already carries that coupling, since the bootstrap resamples the
+sessions and refits all three parameters jointly rather than profiling one at a
+time.
+
+\subsection{Candidate explanations for the departure}
+
+Several explanations for the departure are available that do not require
+abandoning sampling theory, and each is tested in turn below.
+
+\paragraph{Grid dependence:} Dropping each grid point in turn and refitting
+moves $b$ by a median of $0.019$ and by at most $0.232$, against a median gap to % numbers.csv: loo_deviation_median, loo_deviation_max, median_gap_b_to_ref
+the reference of $0.5169$, so no single point in the grid carries the result. The
+most influential point is an endpoint of the grid in all $18$ cells, which is the % numbers.csv: loo_endpoint_cells, loo_n_cells
+pattern a power law produces, since the extreme frequencies exert the greatest
+leverage on a fitted slope.
+
+\paragraph{Pooling across calendar years:} Fitting within each calendar year returns an
+exponent steeper than the pooled one in every cell, by a mean of $0.176$, so part % numbers.csv: mean_year_minus_pooled
+of the departure is attributable to pooling heterogeneous years. Pooling accounts
+for a mean $36.0$ percent of the pooled-to-reference gap, with a range of $23.6$ % numbers.csv: pooling_share_mean, pooling_share_min
+to $61.1$ percent across cells. That leaves a residual of $0.357$ lying in the % numbers.csv: pooling_share_max, residual_gap_mean
+same direction in every cell.
+
+\paragraph{Alternative proxies:} Fitting \eqref{eq:scaling}
+to the flat-top realized kernel of \citet{bnhls2008} and to the two-scale
+estimator of \citet{zma2005} on identical windows gives mean exponents of
+$-0.5214$ and $-0.4953$ respectively, against $-0.6311$ for realized variance. % numbers.csv: mean_b_RK, mean_b_TSRV, mean_b_RV
+The noise-robust proxies are on average flatter, not steeper; across all $54$ % numbers.csv: n_proxy_fits
+fits the reference lies inside the bootstrap interval $0$ times, and removing % numbers.csv: n_proxy_ref_inside_95
+microstructure noise by two independently published methods does not recover the
+sampling-theory exponent.
+
+\paragraph{Heavy tails and localized features:} Replacing the Gaussian
+innovation with a Student-$t$ standardised to unit variance, at the tail index
+measured on this sample, moves the exponent from $-1.2091$ to $-1.1420$ on Globex % numbers.csv: A5_b[GLOBEX/gaussian], A5_b[GLOBEX/nu2.95]
+and from $-1.1847$ to $-1.0885$ on RTH, which is within seed dispersion and % numbers.csv: A5_b[RTH/gaussian], A5_b[RTH/nu2.95]
+nowhere near the observed range. A single dominant return placed at a fixed
+position inside the window leaves the exponent between $-1.0743$ and $-1.1752$ % numbers.csv: A7_b[ES/GLOBEX/start], A7_b[NQ/RTH/start]
+wherever that position is set. The whole class of explanation can in any case be
+retired analytically, since a feature carrying share $s$ of realized variance
+contributes an $M$-invariant floor of $2s^2$, and supplying the measured excess
+would then require $s$ between $16.1$ and $32.3$ percent against shares running % numbers.csv: required_share[NQ/RTH], required_share[ES/GLOBEX]
+from $0.41$ to $4.04$ percent, short by a factor of $4.0$ to $71.5$. % numbers.csv: share_ratio[NQ/RTH], share_ratio[ES/GLOBEX]
+
+One mechanism does move the exponent into the observed range. Within-window
+volatility dispersion, calibrated to the measured ratio of realized quarticity to
+squared realized variance, reproduces the observed exponent on Globex geometry at
+every Hurst index tested, and on RTH geometry at some but not all of them. The
+mechanism is established for one session geometry and only partial for the other.
+The roughness of the within-window path, as distinct from its dispersion, moves
+the exponent by less than its own between-seed dispersion and cannot account for
+the residual.
+
+We are less confident in the calibration than in the arm. It matches a single
+moment ratio, and the mapping from that ratio to a dispersion is a choice of
+specification rather than a measurement, so a different within-window volatility
+process matching the same ratio need not reproduce the exponent. The dispersion
+figures are outputs of the calibration and not observations, since the volatility
+path within a window is never observed. We take the direction as established and
+the magnitude as conditional on the parameterisation.

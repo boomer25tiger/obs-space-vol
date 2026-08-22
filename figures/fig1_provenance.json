@@ -1,0 +1,18 @@
+{
+ "rows_futures_grid": 128,
+ "rows_fits": 18,
+ "rows_screen": 34,
+ "n_cells_passing_screen": 12,
+ "rows_spy": [
+  16,
+  16
+ ],
+ "sources": {
+  "futures_grid": "sessions/s08-final/results/phase4_lambda.csv",
+  "fits": "sessions/s10-exponent-audit/results/phase1_bootstrap.csv",
+  "screen": "sessions/s10-exponent-audit/results/phase2_screen.csv",
+  "spy_arcx": "sessions/s07-completion-and-spy/results/phase6_spy_grid_ARCX.csv",
+  "spy_xnas": "sessions/s07-completion-and-spy/results/phase6_spy_grid_XNAS.csv"
+ },
+ "computed": "c + A*M**b (equation 3, parameters read from the fits artifact) and trigamma(M/2); nothing else"
+}

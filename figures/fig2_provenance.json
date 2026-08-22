@@ -1,0 +1,14 @@
+{
+ "rows_k8": 8,
+ "rows_lambda": 32,
+ "n_marked": 4,
+ "sources": {
+  "k8": "sessions/s14-applications/results/phase1_k8_rates.csv",
+  "lam": "sessions/s09-application/results/phase3_sizing_params.csv"
+ },
+ "gap_prop_range_pct": [
+  50.15450618891026,
+  77.48483197563382
+ ],
+ "computed": "arccos(sqrt(lambda))/pi over a lambda grid; all plotted points read from artifacts"
+}

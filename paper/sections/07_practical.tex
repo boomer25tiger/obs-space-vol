@@ -1,0 +1,91 @@
+\section{Practical implications}\label{sec:practical}
+
+\subsection{Sampling frequency for the convexity adjustment}
+
+A variance swap strike converts to a volatility swap strike through a convexity
+adjustment that depends on $\operatorname{Var}(\log IV)$. Under lognormal $V$ the
+relation is exact and requires no expansion,
+\begin{equation}\label{eq:kvol}
+K_{\mathrm{vol}} \;=\; \mathbb{E}\!\left[\sqrt{V}\right] \;=\; \sqrt{\mathbb{E}[V]}\,
+\exp\!\left(-s^{2}/8\right), \qquad s^{2} = \operatorname{Var}(\log V).
+\end{equation}
+The second-order expansion in $\operatorname{Var}(V)/\mathbb{E}[V]^{2}$ of
+\citet{brockhaus2000}, commonly used in its place, departs from
+equation~\eqref{eq:kvol} by ten percent at $\kappa = 0.182$. The measured $\kappa$ % numbers.csv: convex_kappa_boundary
+in this sample runs from $1.26$ to $6.84$, and at the upper end of that range the % numbers.csv: convex_kappa_measured_lo, convex_kappa_measured_hi
+expansion returns a negative strike, so we use equation~\eqref{eq:kvol}
+throughout.
+
+Substituting $\operatorname{Var}(\log RV_M)$ for $\operatorname{Var}(\log IV)$
+overstates the adjustment by between $5.9$ and $134.3$ percent at % numbers.csv: convex_overstatement[NQ/GLOBEX/1day], convex_overstatement[ES/RTH/30min]
+five-minute-equivalent sampling. Since the overstatement is a function of the
+sampling frequency the practitioner chooses, Table~\ref{tab:freq} states, for
+each cell, the frequency at which the overstatement falls below five percent.
+
+\begin{table}[htbp]\centering\footnotesize
+\caption{Sampling required for the convexity bias to fall below five percent.}
+\label{tab:freq}
+\begin{tabular}{lcc}
+\toprule
+Cell & Bias at five-minute sampling & Sub-bar length required \\
+\midrule
+ES/GLOBEX 1day & $19.3\%$ & $1$ minute \\ % numbers.csv: convex_overstatement[ES/GLOBEX/1day], freq_required_min[ES/GLOBEX/1day]
+NQ/GLOBEX 1day & $5.9\%$  & $1$ minute \\ % numbers.csv: convex_overstatement[NQ/GLOBEX/1day], freq_required_min[NQ/GLOBEX/1day]
+ES/RTH 1day    & $17.6\%$ & $1$ minute \\ % numbers.csv: convex_overstatement[ES/RTH/1day], freq_required_min[ES/RTH/1day]
+NQ/RTH 1day    & $6.9\%$  & $1$ minute \\ % numbers.csv: convex_overstatement[NQ/RTH/1day], freq_required_min[NQ/RTH/1day]
+NQ/RTH 1h      & $21.0\%$ & $1$ minute \\ % numbers.csv: convex_overstatement[NQ/RTH/1h], freq_required_min[NQ/RTH/1h]
+ES/RTH 1h      & $62.6\%$ & unreachable \\ % numbers.csv: convex_overstatement[ES/RTH/1h], freq_required_min[ES/RTH/1h] = MISSING
+ES/RTH 30min   & $134.3\%$ & unreachable \\ % numbers.csv: convex_overstatement[ES/RTH/30min], freq_required_min[ES/RTH/30min] = MISSING
+NQ/RTH 30min   & $42.1\%$ & unreachable \\ % numbers.csv: convex_overstatement[NQ/RTH/30min], freq_required_min[NQ/RTH/30min] = MISSING
+\bottomrule
+\end{tabular}
+\end{table}
+
+One-minute sampling suffices at the daily horizon on both instruments and under
+both session geometries, but nowhere else. At the thirty-minute horizon on either
+instrument, and at the hourly horizon on ES, no frequency available in the grid
+brings the bias under five percent. A thirty-minute window does not contain
+enough returns for the proxy's own dispersion to fall below the quantity being
+measured. A practitioner pricing a volatility swap on a thirty-minute horizon
+cannot remedy the bias by sampling faster.
+
+No options data is held, and we report a bias in the adjustment term without any
+claim about executable profit.
+
+\subsection{Misclassification at a median threshold}
+
+Where a decision turns on a threshold placed inside the distribution rather than
+in its tail, the misclassification rate follows from reliability alone. With
+thresholds at the respective medians and lognormal noise, the correlation between
+$\log RV_M$ and $\log IV$ is $\sqrt{\lambda}$, and the bivariate normal orthant
+probability gives
+\begin{equation}\label{eq:mis}
+\Pr\left[\text{disagree}\right] \;=\; \frac{\arccos\!\sqrt{\lambda}}{\pi}.
+\end{equation}
+Equation~\eqref{eq:mis} is exact under those assumptions and is plotted in
+Figure~\ref{fig:mis}. A practitioner who has measured $\lambda$ for their own
+series can read the implied rate off the figure directly.
+
+The measured cells sit between $7.9$ and $13.6$ percent, while the empirical rate % numbers.csv: mis_analytic[NQ/GLOBEX/insample], mis_analytic[ES/GLOBEX/insample]
+measured against a finest-grid noise-robust proxy is lower, falling between $50$
+and $77$ percent below the analytic value. The two series are computed from the
+same window and their errors are positively correlated, so the empirical figure
+should be read as a lower bound. Moving the classification boundary from the
+median to the two tercile boundaries raises the empirical rate to between $6.0$ % numbers.csv: mis_tercile_min, mis_tercile_max
+and $11.9$ percent. The mechanism there is the count of boundaries, not the
+density at them, since two boundaries admit more disagreements than one. For a
+unimodal distribution the tercile boundaries sit further from the mode than the
+median does.
+
+\subsection{Volatility-target sizing}
+
+We recommend against correcting volatility-target sizing for measured
+reliability. On the holdout, replacing the textbook shrinkage weight with the
+measured one changes tracking error by at most $1.008$ percent in relative terms,
+in the same direction in every cell and at every point of a cost sweep spanning
+an eightfold range of transaction cost. Reliability at five-minute-equivalent
+sampling runs from $0.40$ to $0.94$ against a textbook $0.67$ to $0.99$, so the % numbers.csv: lambda[ES/RTH/30min/extended], lambda[NQ/GLOBEX/1day/extended], lambda_theory[ES/RTH/30min/extended], lambda_theory[NQ/GLOBEX/1day/extended]
+gap being corrected is real and large, but it does not move a position far enough
+to matter at a ten percent volatility target with daily rebalancing. The same holds
+for inverse-volatility risk parity at monthly rebalancing, where averaging the
+estimate over twenty-one sessions divides the bias term by twenty-one.
