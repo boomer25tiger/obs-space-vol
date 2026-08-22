@@ -1,0 +1,12 @@
+symbol,artifact,location,note
+lambda[ES/RTH/1h/restricted_S05],sessions/s09-application/results/phase3_sizing_params.csv,"root=ES,geom=RTH,horizon=1h,range=restricted_S05, col=lam_intercept",undefined on this range
+lambda_theory[ES/RTH/1h/restricted_S05],sessions/s09-application/results/phase3_sizing_params.csv,"...,range=restricted_S05, col=lam_theory",
+lambda[ES/RTH/30min/restricted_S05],sessions/s09-application/results/phase3_sizing_params.csv,"root=ES,geom=RTH,horizon=30min,range=restricted_S05, col=lam_intercept",undefined on this range
+lambda_theory[ES/RTH/30min/restricted_S05],sessions/s09-application/results/phase3_sizing_params.csv,"...,range=restricted_S05, col=lam_theory",
+lambda[NQ/RTH/1h/restricted_S05],sessions/s09-application/results/phase3_sizing_params.csv,"root=NQ,geom=RTH,horizon=1h,range=restricted_S05, col=lam_intercept",undefined on this range
+lambda_theory[NQ/RTH/1h/restricted_S05],sessions/s09-application/results/phase3_sizing_params.csv,"...,range=restricted_S05, col=lam_theory",
+lambda[NQ/RTH/30min/restricted_S05],sessions/s09-application/results/phase3_sizing_params.csv,"root=NQ,geom=RTH,horizon=30min,range=restricted_S05, col=lam_intercept",undefined on this range
+lambda_theory[NQ/RTH/30min/restricted_S05],sessions/s09-application/results/phase3_sizing_params.csv,"...,range=restricted_S05, col=lam_theory",
+freq_required_min[ES/RTH/1h],sessions/s13-extension/results/phase4_frequency_guide.csv,"ES/RTH/1h, col=minutes_per_sub_bar_required",no grid frequency reaches 5 percent
+freq_required_min[ES/RTH/30min],sessions/s13-extension/results/phase4_frequency_guide.csv,"ES/RTH/30min, col=minutes_per_sub_bar_required",no grid frequency reaches 5 percent
+freq_required_min[NQ/RTH/30min],sessions/s13-extension/results/phase4_frequency_guide.csv,"NQ/RTH/30min, col=minutes_per_sub_bar_required",no grid frequency reaches 5 percent

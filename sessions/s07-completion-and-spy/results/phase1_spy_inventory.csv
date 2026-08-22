@@ -1,0 +1,15 @@
+venue,file,bytes,sha256,fmt,consumed
+ARCX.PILLAR,metadata.json,691,22e6da23624c40ce9ec39e19bba438b459e5b25264cfe703f433a529cd3e28ca,JSON,True
+ARCX.PILLAR,manifest.json,1481,04228fe423f06295cccb54a7ae4c754cbb93f482f4b56a1e210267db2bf3d18a,JSON,True
+ARCX.PILLAR,condition.json,259536,9ec61e9a4cc80fcf503c273ae92f7f2b32d1aad353a578ab04f85a1c2e68c08b,JSON,True
+ARCX.PILLAR,arcx-pillar-20180501-20260813.ohlcv-1s.dbn.zst,463107973,4781c9fd46a3449e7f33a6e0116c7a7c03263a5b3bada77116463b3b587ae4a1,DBN v3 zstd,True
+XNAS.ITCH,metadata.json,689,5c6f1b0224c0880be33e79398bf12ea9b3ee00e4e3f117ccba49c9bd268a38c6,JSON,True
+XNAS.ITCH,manifest.json,1475,01f15c8116a6e51760cb14f166242068fdbef33dc3ed11c8c2f5fed1b2146e9f,JSON,True
+XNAS.ITCH,condition.json,259559,d8fa5ee9741f6d24ffcff8e1eefdc5a83287380b7dd0b05dac5e896f09487f32,JSON,True
+XNAS.ITCH,xnas-itch-20180501-20260813.ohlcv-1s.dbn.zst,449348270,2ccba77f0fd5be52f0de0230d3cb4e332e362b296d51f672586a36bdbfc0c1ab,DBN v3 zstd,True
+(derived),data/arca_daily.parquet,95723,,parquet/json,False
+(derived),data/arca_raw.parquet,530501830,,parquet/json,False
+(derived),data/arca_stats.json,269,,parquet/json,False
+(derived),data/nasdaq_daily.parquet,95386,,parquet/json,False
+(derived),data/nasdaq_raw.parquet,502870484,,parquet/json,False
+(derived),data/nasdaq_stats.json,269,,parquet/json,False

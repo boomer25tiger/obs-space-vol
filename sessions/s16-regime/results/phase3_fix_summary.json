@@ -1,0 +1,7 @@
+{
+ "timers": {
+  "phase3_fix": 722.4
+ },
+ "n_a1_a3_differ_total": 0,
+ "defect": "first run built the holdout via ho_series, which is wlen=None and yields daily windows only; the 1h and 30min cells were affected and the four 1day cells were not"
+}

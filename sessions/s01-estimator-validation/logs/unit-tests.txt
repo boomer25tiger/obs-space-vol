@@ -1,0 +1,32 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.13.13, pytest-9.1.1, pluggy-1.6.0 -- <REPO>/.venv/bin/python3
+cachedir: .pytest_cache
+rootdir: <REPO>/sessions/s01-estimator-validation/src
+collecting ... collected 16 items
+
+tests/test_units.py::test_u1_fbm_variance_scaling[0.1] PASSED
+tests/test_units.py::test_u1_fbm_variance_scaling[0.3] PASSED
+tests/test_units.py::test_u1_fbm_variance_scaling[0.5] PASSED
+tests/test_units.py::test_u1_fbm_variance_scaling[0.7] PASSED
+tests/test_units.py::test_u1_fbm_variance_scaling[0.9] PASSED
+tests/test_units.py::test_u2_fgn_autocovariance[0.1] PASSED
+tests/test_units.py::test_u2_fgn_autocovariance[0.3] PASSED
+tests/test_units.py::test_u2_fgn_autocovariance[0.7] PASSED
+tests/test_units.py::test_u2_fgn_autocovariance[0.9] PASSED
+tests/test_units.py::test_u3_var_rv_over_iv[13] PASSED
+tests/test_units.py::test_u3_var_rv_over_iv[78] PASSED
+tests/test_units.py::test_u3_var_rv_over_iv[195] PASSED
+tests/test_units.py::test_u3_var_rv_over_iv[345] PASSED
+tests/test_units.py::test_u4_range_estimator_expectations PASSED
+tests/test_units.py::test_u5_known_lambda_ar1 U5/AR1 arm d (misspecified, record only) L1-5: recovery 1.0358
+U5/AR1 arm d (misspecified, record only) L1-10: recovery 1.1068
+U5/AR1 arm d (misspecified, record only) L1-22: recovery 1.2573
+U5/AR1 arm d (misspecified, record only) L2-22: recovery 1.4780
+PASSED
+tests/test_units.py::test_u5_known_lambda_fgn U5/fGn arm d L1-5: mean recovery 0.9863 (per-draw sd 0.0486, n=15)
+U5/fGn arm d L1-10: mean recovery 0.9902 (per-draw sd 0.0452, n=15)
+U5/fGn arm d L1-22: mean recovery 0.9966 (per-draw sd 0.0661, n=15)
+U5/fGn arm d L2-22: mean recovery 1.0177 (per-draw sd 0.1399, n=15)
+PASSED
+
+============================= 16 passed in 45.79s ==============================

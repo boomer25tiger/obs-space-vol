@@ -1,0 +1,30 @@
+{
+ "n_files": 1697,
+ "total_bytes": 1481728593,
+ "checksum_seconds": 17.2,
+ "phase1_seconds": 22.0,
+ "core_pkg_times": {
+  "numpy-2.5.2": "2026-08-18 13:14:43",
+  "pytest-9.1.1": "2026-08-18 13:16:04",
+  "scipy-1.18.0": "2026-08-18 13:17:12",
+  "pandas-3.0.5": "2026-08-18 13:17:20",
+  "matplotlib-3.11.1": "2026-08-18 13:21:40"
+ },
+ "later_pkg_times": {
+  "pypdf-6.16.1": "2026-08-18 17:22:46",
+  "zstandard-0.25.0": "2026-08-18 18:24:02",
+  "databento_dbn-0.65.0": "2026-08-18 18:39:42",
+  "pyarrow-25.0.1": "2026-08-18 18:39:42",
+  "databento-0.83.0": "2026-08-18 18:41:15",
+  "patsy-1.0.2": "2026-08-18 21:24:34",
+  "statsmodels-0.14.6": "2026-08-18 21:24:47",
+  "arch-8.0.0": "2026-08-18 21:25:31"
+ },
+ "threads": {
+  "OMP_NUM_THREADS": "(unset)",
+  "MKL_NUM_THREADS": "(unset)",
+  "OPENBLAS_NUM_THREADS": "(unset)",
+  "VECLIB_MAXIMUM_THREADS": "(unset)",
+  "NUMEXPR_NUM_THREADS": "(unset)"
+ }
+}

@@ -1,0 +1,64 @@
+=== noise and bias per asset ===
+{
+ "ES": {
+  "noise_var_logRV": 0.15127833063199528,
+  "v_single_day": 0.03781958265799882,
+  "v_lookback": 0.0018009325075237534,
+  "lam_intercept": 0.8397800078923314,
+  "bias_exact_single": 1.0190897137421018,
+  "bias_exact_lookback": 1.0009008717952153,
+  "bias_2nd_single": 1.0189097913289995,
+  "expansion_valid_single": true
+ },
+ "NQ": {
+  "noise_var_logRV": 0.051452370299718074,
+  "v_single_day": 0.012863092574929519,
+  "v_lookback": 0.0006125282178537866,
+  "lam_intercept": 0.9312843759268288,
+  "bias_exact_single": 1.0064522730925984,
+  "bias_exact_lookback": 1.0003063110125672,
+  "bias_2nd_single": 1.0064315462874647,
+  "expansion_valid_single": true
+ }
+}
+expansion departs from exact by 10 percent at Var(log sigma_hat) = 0.3754
+
+=== books ===
+-- is_v_lookback: naive vol 0.1472 corrected 0.1472 rel 0.0039% | mean|dw| 0.000145 max 0.000149 | overweighted ES
+-- is_v_single_day: naive vol 0.1474 corrected 0.1475 rel 0.0814% | mean|dw| 0.003023 max 0.003119 | overweighted ES
+-- ho_v_lookback: naive vol 0.1455 corrected 0.1455 rel 0.0038% | mean|dw| 0.000145 max 0.000148 | overweighted ES
+-- ho_v_single_day: naive vol 0.1441 corrected 0.1442 rel 0.0788% | mean|dw| 0.003036 max 0.003103 | overweighted ES
+
+=== cost sweep (holdout, base case) ===
+weighting  corrected     naive  rel_diff_pct
+ticks                                       
+0.5         0.147177  0.147165      0.008358
+1.0         0.294355  0.294330      0.008358
+2.0         0.588709  0.588660      0.008358
+4.0         1.177418  1.177320      0.008358
+
+=== illustration ===
+           leg              cell  lam_intercept  noise_var_logRV  v_single_day  v_lookback  bias_exact_single  bias_exact_lookback
+ lowest_lambda   ES/RTH/B0/30min       0.395824         1.239022      0.309755    0.014750           1.167515             1.007402
+highest_lambda NQ/GLOBEX/B0/1day       0.939947         0.053935      0.013484    0.000642           1.006765             1.000321
+bias ratio single-day 1.15967, lookback 1.00708
+
+{
+ "threshold_weight": 0.02,
+ "threshold_vol": 0.05,
+ "mean_abs_weight_deviation": 0.00014489810487097797,
+ "max_abs_weight_deviation": 0.0001481718474977134,
+ "overweighted_asset": "ES",
+ "weight_criterion_met": true,
+ "rel_vol_diff_pct": 0.0037636922108675902,
+ "vol_criterion_met": true,
+ "vol_criterion_met_all_sweep_points": true,
+ "single_day_bound": {
+  "mean_abs_weight_deviation": 0.003036462342041791,
+  "rel_vol_diff_pct": 0.07879048430132546
+ },
+ "lookback": 21,
+ "rebalance": 21,
+ "K7": "FIRES"
+}
+PHASE2 DONE 1s

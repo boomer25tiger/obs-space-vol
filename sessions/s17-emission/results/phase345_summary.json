@@ -1,0 +1,99 @@
+{
+ "K12": {
+  "threshold_pp": 1.0,
+  "reduction_pp_by_cell": {
+   "ES/GLOBEX/1day": 0.0,
+   "ES/RTH/1day": 0.0,
+   "ES/RTH/1h": -0.6977992485238865,
+   "ES/RTH/30min": -0.41599570585078016,
+   "NQ/GLOBEX/1day": 0.0,
+   "NQ/RTH/1day": 0.0,
+   "NQ/RTH/1h": 0.0,
+   "NQ/RTH/30min": -0.026838432635534204
+  },
+  "max_reduction_pp": 0.0,
+  "min_reduction_pp": -0.6977992485238865,
+  "all_below_1pp": true,
+  "n_cells": 8,
+  "states_differ_total_holdout": 891,
+  "states_differ_total_insample": 18311,
+  "windows_binding_total": 46120,
+  "windows_total": 72619,
+  "sensitivity": {
+   "scale_0.25": {
+    "max_reduction_pp": 0.0,
+    "states_differ": 0,
+    "windows_binding": 22033
+   },
+   "scale_0.50": {
+    "max_reduction_pp": 0.0,
+    "states_differ": 20,
+    "windows_binding": 34276
+   },
+   "scale_0.75": {
+    "max_reduction_pp": 0.0,
+    "states_differ": 272,
+    "windows_binding": 49723
+   },
+   "scale_1.00": {
+    "max_reduction_pp": 0.0,
+    "states_differ": 891,
+    "windows_binding": 46120
+   }
+  },
+  "K12": "FIRES"
+ },
+ "validation": {
+  "seed": 20260841,
+  "n": 3000,
+  "v_true": 0.3,
+  "mu_true": [
+   -0.7,
+   0.8
+  ],
+  "s2_true": [
+   0.12249999999999998,
+   0.30250000000000005
+  ],
+  "total_var_true": [
+   0.4225,
+   0.6025
+  ],
+  "free_mu": [
+   -0.7165030550890396,
+   0.8146847397033768
+  ],
+  "free_var": [
+   0.42250943741721214,
+   0.5762946729571353
+  ],
+  "fixednoise_mu": [
+   -0.7165030551824336,
+   0.8146847405829376
+  ],
+  "fixednoise_s2": [
+   0.12250943720870688,
+   0.2762946717947404
+  ],
+  "fixednoise_total_var": [
+   0.4225094372087069,
+   0.5762946717947404
+  ],
+  "s2_abs_error": [
+   9.437208706900013e-06,
+   0.02620532820525967
+  ],
+  "free_recovers_total": [
+   9.437417212154742e-06,
+   0.026205327042864712
+  ],
+  "state_accuracy_free": 0.98,
+  "state_accuracy_fixednoise": 0.98,
+  "n_bind": 0
+ },
+ "timers": {
+  "phase3": 5395.1,
+  "phase4_hmm": 732.6,
+  "allocation": 0.3
+ }
+}

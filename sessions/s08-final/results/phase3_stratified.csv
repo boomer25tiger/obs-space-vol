@@ -1,0 +1,10 @@
+dimension,level,n,n_differ,share
+horizon,1day,32,21,0.65625
+horizon,1h,20,13,0.65
+horizon,30min,20,14,0.7
+root,ES,40,31,0.775
+root,NQ,32,17,0.53125
+geom,GLOBEX,24,15,0.625
+geom,RTH,48,33,0.6875
+quantile,0.8,36,24,0.6666666666666666
+quantile,0.9,36,24,0.6666666666666666

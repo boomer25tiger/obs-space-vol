@@ -1,0 +1,187 @@
+=== PHASE 1: K10 lag-selection decomposition ===
+root   geom   q  n_lags_surviving  lags_dropped  H_naive_all  H_naive_subset  H_corrected_subset  shift_from_lag_selection  shift_from_nugget  share_lag_selection  share_nugget
+  ES GLOBEX 0.5                39             1       0.1887          0.1834              0.3968                   -0.0053             0.2134              -0.0254        1.0254
+  ES GLOBEX 1.0                39             1       0.1857          0.1805              0.3676                   -0.0052             0.1871              -0.0286        1.0286
+  ES GLOBEX 2.0                39             1       0.1819          0.1775              0.3273                   -0.0044             0.1498              -0.0302        1.0302
+  NQ GLOBEX 0.5                40             0       0.1670          0.1670              0.2070                    0.0000             0.0400               0.0000        1.0000
+  NQ GLOBEX 1.0                40             0       0.1649          0.1649              0.2020                    0.0000             0.0371               0.0000        1.0000
+  NQ GLOBEX 2.0                40             0       0.1603          0.1603              0.1920                    0.0000             0.0316               0.0000        1.0000
+  ES    RTH 0.5                40             0       0.1680          0.1680              0.3521                    0.0000             0.1841               0.0000        1.0000
+  ES    RTH 1.0                40             0       0.1690          0.1690              0.3471                    0.0000             0.1781               0.0000        1.0000
+  ES    RTH 2.0                40             0       0.1738          0.1738              0.3380                    0.0000             0.1642               0.0000        1.0000
+  NQ    RTH 0.5                40             0       0.1479          0.1479              0.1839                    0.0000             0.0360               0.0000        1.0000
+  NQ    RTH 1.0                40             0       0.1503          0.1503              0.1862                    0.0000             0.0358               0.0000        1.0000
+  NQ    RTH 2.0                40             0       0.1560          0.1560              0.1914                    0.0000             0.0354               0.0000        1.0000
+
+common lag window across all cells and all q: 2..40 (39 lags)
+root   geom   q  H_common_naive  H_common_corrected  common_shift  rmse_common_naive  rmse_common_corrected
+  ES GLOBEX 0.5          0.1834              0.3968        0.2134             0.0093                 0.0419
+  ES GLOBEX 1.0          0.1805              0.3676        0.1871             0.0155                 0.0697
+  ES GLOBEX 2.0          0.1775              0.3273        0.1498             0.0248                 0.1047
+  NQ GLOBEX 0.5          0.1588              0.1904        0.0317             0.0083                 0.0113
+  NQ GLOBEX 1.0          0.1577              0.1876        0.0299             0.0141                 0.0194
+  NQ GLOBEX 2.0          0.1552              0.1816        0.0265             0.0243                 0.0331
+  ES    RTH 0.5          0.1662              0.2909        0.1247             0.0062                 0.0195
+  ES    RTH 1.0          0.1663              0.2854        0.1191             0.0109                 0.0361
+  ES    RTH 2.0          0.1711              0.2840        0.1129             0.0216                 0.0699
+  NQ    RTH 0.5          0.1449              0.1759        0.0310             0.0068                 0.0092
+  NQ    RTH 1.0          0.1470              0.1777        0.0307             0.0111                 0.0159
+  NQ    RTH 2.0          0.1533              0.1838        0.0305             0.0187                 0.0275
+
+=== nugget over-subtraction sensitivity ===
+nugget_scale       0.25    0.50    0.75    1.00
+root geom   q                                  
+ES   GLOBEX 0.5  0.2200  0.2685  0.3881  0.3968
+            1.0  0.2149  0.2589  0.3491  0.3676
+            2.0  0.2075  0.2438  0.3051  0.3273
+     RTH    0.5  0.1897  0.2192  0.2632  0.3521
+            1.0  0.1904  0.2192  0.2621  0.3471
+            2.0  0.1947  0.2226  0.2631  0.3380
+NQ   GLOBEX 0.5  0.1753  0.1845  0.1950  0.2070
+            1.0  0.1727  0.1813  0.1910  0.2020
+            2.0  0.1671  0.1745  0.1828  0.1920
+     RTH    0.5  0.1554  0.1637  0.1731  0.1839
+            1.0  0.1578  0.1661  0.1755  0.1862
+            2.0  0.1635  0.1717  0.1810  0.1914
+
+{
+ "common_lag_window": [
+  2,
+  40
+ ],
+ "n_common_lags": 39,
+ "lags_dropped_by_cell": {
+  "ES/GLOBEX/q0.5": 1,
+  "ES/GLOBEX/q1.0": 1,
+  "ES/GLOBEX/q2.0": 1,
+  "NQ/GLOBEX/q0.5": 0,
+  "NQ/GLOBEX/q1.0": 0,
+  "NQ/GLOBEX/q2.0": 0,
+  "ES/RTH/q0.5": 0,
+  "ES/RTH/q1.0": 0,
+  "ES/RTH/q2.0": 0,
+  "NQ/RTH/q0.5": 0,
+  "NQ/RTH/q1.0": 0,
+  "NQ/RTH/q2.0": 0
+ },
+ "max_share_lag_selection": 0.0,
+ "min_share_lag_selection": -0.030226140041389373,
+ "max_abs_shift_from_lag_selection": 0.005279808663962798,
+ "n_rows_lag_selection_majority": 0,
+ "n_rows": 12,
+ "max_common_shift": 0.21343232292536954,
+ "min_common_shift": 0.026451556611297444,
+ "all_common_shift_above_0p02": true,
+ "threshold": 0.02,
+ "K10_survives": true
+}
+
+=== PHASE 2: K9 conditioning and the classical assumption ===
+root   geom  cond_Sxx  min_eig_Sxx  cond_full  min_eig_full  v_fitted  var_err_measured  ratio_measured_to_fitted  rho_err_level     t_rho  frac_classical
+  ES GLOBEX  34.74331      0.07959   58.29914       0.04544   0.17101           0.01561                   0.09130       -0.36686 -17.41849         0.86542
+  NQ GLOBEX  33.25956      0.07592   36.72919       0.06773   0.05393           0.01460                   0.27067       -0.16945  -7.58479         0.97129
+  ES    RTH  32.99800      0.08526   46.71352       0.05801   0.15128           0.02288                   0.15125       -0.26684 -12.06594         0.92879
+  NQ    RTH  33.57465      0.07390   36.84257       0.06638   0.05145           0.02151                   0.41813       -0.13053  -5.73733         0.98296
+
+=== error correlation with each regressor ===
+root   geom          against     rho     se        t
+  ES GLOBEX            daily -0.1934 0.0222  -8.7060
+  ES GLOBEX           weekly -0.1853 0.0223  -8.3185
+  ES GLOBEX          monthly -0.1928 0.0223  -8.6306
+  ES GLOBEX log_kernel_level -0.3669 0.0211 -17.4185
+  NQ GLOBEX            daily -0.0045 0.0227  -0.1968
+  NQ GLOBEX           weekly -0.0066 0.0227  -0.2926
+  NQ GLOBEX          monthly -0.0373 0.0228  -1.6353
+  NQ GLOBEX log_kernel_level -0.1695 0.0223  -7.5848
+  ES    RTH            daily -0.0970 0.0228  -4.2460
+  ES    RTH           weekly -0.1113 0.0228  -4.8749
+  ES    RTH          monthly -0.1365 0.0229  -5.9711
+  ES    RTH log_kernel_level -0.2668 0.0221 -12.0659
+  NQ    RTH            daily  0.0212 0.0229   0.9248
+  NQ    RTH           weekly  0.0068 0.0230   0.2964
+  NQ    RTH          monthly -0.0312 0.0231  -1.3532
+  NQ    RTH log_kernel_level -0.1305 0.0228  -5.7373
+
+=== coefficients: naive, full correction, partial (classical share only) ===
+root   geom  b_d_naive  b_d_full  b_d_partial  b_d_measured  shift_full  shift_partial  shift_measured  b_w_naive  b_w_full  b_w_partial  b_w_measured
+  ES GLOBEX     0.4984    1.0760       0.9300        0.5239      1.1592         0.8662          0.0512     0.3474   -0.1678      -0.0270        0.3285
+  NQ GLOBEX     0.4627    0.5572       0.5539        0.4850      0.2040         0.1970          0.0480     0.3536    0.2852       0.2877        0.3384
+  ES    RTH     0.4663    0.8192       0.7771        0.4987      0.7566         0.6664          0.0694     0.3700    0.0776       0.1159        0.3472
+  NQ    RTH     0.4229    0.5045       0.5029        0.4535      0.1930         0.1891          0.0725     0.3915    0.3358       0.3370        0.3716
+
+{
+ "threshold": 0.1,
+ "rho_err_level_range": [
+  -0.36685513819926124,
+  -0.13053153819316557
+ ],
+ "max_abs_t_rho": 17.418487960409532,
+ "frac_classical_range": [
+  0.8654173075768009,
+  0.9829615175369262
+ ],
+ "ratio_measured_to_fitted_range": [
+  0.09130365483637558,
+  0.41813053488779434
+ ],
+ "min_eig_Sxx_range": [
+  0.073904847880306,
+  0.08525888719151521
+ ],
+ "min_eig_full_range": [
+  0.04544496945049669,
+  0.06773350757391776
+ ],
+ "cond_full_range": [
+  36.72918612674765,
+  58.2991405979952
+ ],
+ "shift_full_range": [
+  0.1930387496181678,
+  1.1591537944185895
+ ],
+ "shift_partial_range": [
+  0.18912029306487765,
+  0.8661557259170771
+ ],
+ "all_partial_below_10pct": false,
+ "all_full_below_10pct": false,
+ "shift_measured_range": [
+  0.04801908091500828,
+  0.07248077113478923
+ ],
+ "all_measured_below_10pct": true,
+ "n_weekly_sign_flip_measured": 0,
+ "n_weekly_sign_flip_full": 1,
+ "n_weekly_sign_flip_partial": 1,
+ "K9_determination_survives": true
+}
+  year_only                        year=-0.04690 se_cl=0.01119 t=-4.190 p_wcb=0.0076 CI=[-0.07489,-0.02452] VIF=1.00 R2w=0.285
+  year_plus_cond                   year=-0.01046 se_cl=0.00425 t=-2.464 p_wcb=0.0036 CI=[-0.02107,-0.00197] VIF=1.27 R2w=0.921
+  year_plus_cond_plus_Aoverc       year=-0.01036 se_cl=0.00413 t=-2.507 p_wcb=0.0030 CI=[-0.02069,-0.00251] VIF=1.27 R2w=0.922
+
+=== PHASE 3 ===
+                      spec             regressors  n_obs  n_clusters  year_coef  se_ols  se_cluster  t_cluster  p_wcb    ci_lo    ci_hi  vif_year  r2_within    rmse  significant_05
+                 year_only                   year     64           8   -0.04690 0.01003     0.01119   -4.18999 0.0076 -0.07489 -0.02452   1.00000    0.28464 0.17037            True
+            year_plus_cond          year;log_cond     64           8   -0.01046 0.00380     0.00425   -2.46352 0.0036 -0.02107 -0.00197   1.27018    0.92071 0.05672            True
+year_plus_cond_plus_Aoverc year;log_cond;A_over_c     64           8   -0.01036 0.00381     0.00413   -2.50681 0.0030 -0.02069 -0.00251   1.27170    0.92159 0.05641            True
+
+{
+ "nrep": 9999,
+ "master_seed": 20260836,
+ "n_clusters": 8,
+ "rademacher_floor": 0.0078125,
+ "year_coef_no_control": -0.04690369993539321,
+ "year_coef_with_cond": -0.010459327999401474,
+ "year_coef_with_both": -0.01035793510963907,
+ "p_no_control": 0.007600760076007601,
+ "p_with_cond": 0.0036003600360036,
+ "p_with_both": 0.003000300030003,
+ "shrinkage_from_control": 0.777004201932715,
+ "vif_year_with_cond": 1.2701760941569693,
+ "s11_s13_figure": -0.04690369993539321,
+ "eight_cluster_note": "Eight clusters throughout. The wild cluster bootstrap with the null imposed is the recommended small-G correction but is only asymptotically valid in G, and the attainable floor is 2^-7 = 0.00781. No result here is conventional evidence at any nominal level, whichever way it comes out.",
+ "trend_survives_control": true
+}
+
+S15 PHASES 1-3 DONE 42s

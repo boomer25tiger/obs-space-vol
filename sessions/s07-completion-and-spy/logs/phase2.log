@@ -1,0 +1,64 @@
+root   geom horizon  n_windows  n_excluded  n_excluded_with_nonzero_rv  n_zero_rv_remaining
+  ES GLOBEX      1h      42966         207                          42                   24
+  ES GLOBEX   30min      87885         483                          98                   53
+  NQ GLOBEX      1h      42856         192                          42                   22
+  NQ GLOBEX   30min      87660         448                          98                   49
+  ES    RTH      1h      11406          42                          42                    0
+  ES    RTH   30min      22812          84                          84                    0
+  NQ    RTH      1h      11406          42                          42                    0
+  NQ    RTH   30min      22812          84                          84                    0
+rerunning 8 halted cells
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: overflow encountered in scalar multiply
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: overflow encountered in exp
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:115: RuntimeWarning: overflow encountered in scalar multiply
+  F = float(np.exp(xi + ph * logh_next + 0.5 * np.exp(lsu)) * mgf)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:115: RuntimeWarning: overflow encountered in exp
+  F = float(np.exp(xi + ph * logh_next + 0.5 * np.exp(lsu)) * mgf)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: overflow encountered in exp
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:115: RuntimeWarning: overflow encountered in exp
+  F = float(np.exp(xi + ph * logh_next + 0.5 * np.exp(lsu)) * mgf)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:112: RuntimeWarning: overflow encountered in exp
+  * np.exp(t1 ** 2 / (2 * max(1 - 2 * t2, 1e-6)))
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:173: RuntimeWarning: overflow encountered in exp
+  * np.exp(t1 ** 2 / (2 * max(1 - 2 * t2, 1e-6)))
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:115: RuntimeWarning: overflow encountered in exp
+  F = float(np.exp(xi + ph * logh_next + 0.5 * np.exp(lsu)) * mgf)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: overflow encountered in exp
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:182: RuntimeWarning: divide by zero encountered in log
+  return x - np.log(x) - 1.0
+STILL HALTED: [assert_forecasts_positive] cell=NQ/GLOBEX/B0/1h model=M5_RGARCH: 0 non-finite, 71 non-positive, 72 at or below the 1e-300 floor, of 16635 forecasts; min=0
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:115: RuntimeWarning: overflow encountered in exp
+  F = float(np.exp(xi + ph * logh_next + 0.5 * np.exp(lsu)) * mgf)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: overflow encountered in exp
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:115: RuntimeWarning: overflow encountered in exp
+  F = float(np.exp(xi + ph * logh_next + 0.5 * np.exp(lsu)) * mgf)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: overflow encountered in exp
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:112: RuntimeWarning: overflow encountered in exp
+  * np.exp(t1 ** 2 / (2 * max(1 - 2 * t2, 1e-6)))
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:173: RuntimeWarning: overflow encountered in exp
+  * np.exp(t1 ** 2 / (2 * max(1 - 2 * t2, 1e-6)))
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: invalid value encountered in scalar multiply
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:112: RuntimeWarning: overflow encountered in exp
+  * np.exp(t1 ** 2 / (2 * max(1 - 2 * t2, 1e-6)))
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:173: RuntimeWarning: overflow encountered in exp
+  * np.exp(t1 ** 2 / (2 * max(1 - 2 * t2, 1e-6)))
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: invalid value encountered in scalar multiply
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: overflow encountered in scalar multiply
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+STILL HALTED: [assert_forecasts_positive] cell=ES/GLOBEX/B1/1h model=M5_RGARCH: 0 non-finite, 1 non-positive, 1 at or below the 1e-300 floor, of 1384 forecasts; min=0
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:182: RuntimeWarning: divide by zero encountered in log
+  return x - np.log(x) - 1.0
+STILL HALTED: [assert_forecasts_positive] cell=ES/GLOBEX/B1/30min model=M5_RGARCH: 0 non-finite, 72306 non-positive, 72660 at or below the 1e-300 floor, of 78552 forecasts; min=0
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:182: RuntimeWarning: divide by zero encountered in log
+  return x - np.log(x) - 1.0
+STILL HALTED: [assert_forecasts_positive] cell=ES/GLOBEX/B0/1h model=M5_RGARCH: 0 non-finite, 1 non-positive, 1 at or below the 1e-300 floor, of 40795 forecasts; min=0
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:182: RuntimeWarning: divide by zero encountered in log
+  return x - np.log(x) - 1.0

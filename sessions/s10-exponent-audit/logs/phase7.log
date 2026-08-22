@@ -1,0 +1,63 @@
+{
+ "n_windows_pathA": 11406,
+ "n_windows_pathB": 11406,
+ "rv_identical": true,
+ "rsu_identical": true,
+ "r2_insample_alignment": 0.01276153611486536,
+ "n_insample_alignment": 11405,
+ "r2_holdout_alignment": 0.01276153611486536,
+ "n_holdout_alignment": 11405,
+ "alignments_differ": false,
+ "lag_applied": "predictor index t-1, target index t (shift of exactly one window)",
+ "predictor_target_overlap": "none: predictor uses windows 0..T-2 and the target uses windows 1..T-1, and windows are disjoint index blocks of the minute grid by construction in cell_windows / wins",
+ "overlap_check_offset": 1,
+ "windows_are_disjoint_blocks": true,
+ "n_rsu_zero_insample": 3,
+ "share_rsu_zero_insample": 0.0002630194634402946,
+ "floor_log_value": -690.7755278982137,
+ "n_floored_in_regression": 3,
+ "r2_excluding_floored": 0.4285556885824302,
+ "n_excluding_floored": 11402,
+ "r2_raw": 0.01276153611486536,
+ "comparison_candidates": {
+  "RS_down": {
+   "n_zero": 4,
+   "r2_raw": 0.008771496897584663,
+   "r2_excluding_floored": 0.4827490624896424
+  },
+  "Parkinson": {
+   "n_zero": 0,
+   "r2_raw": 0.5524271874941276,
+   "r2_excluding_floored": 0.5524271874941276
+  },
+  "GarmanKlass": {
+   "n_zero": 0,
+   "r2_raw": 0.5630633582178372,
+   "r2_excluding_floored": 0.5630633582178372
+  },
+  "JumpVar": {
+   "n_zero": 5311,
+   "r2_raw": 0.0010249027412155079,
+   "r2_excluding_floored": 0.32992381192243525
+  },
+  "RealizedQuarticity": {
+   "n_zero": 0,
+   "r2_raw": 0.5520649368927352,
+   "r2_excluding_floored": 0.5520649368927352
+  }
+ },
+ "r2_lift_from_dropping_floored": 0.41579415246756485,
+ "r2_floor_replaced_by_min_positive": 0.42867107006735594,
+ "min_positive_rsu": 3.496097633615136e-09
+}
+
+ year    n  n_rsu_zero    share
+ 2016 1434           2 0.001395
+ 2017 1422           0 0.000000
+ 2018 1416           0 0.000000
+ 2019 1422           1 0.000703
+ 2020 1434           0 0.000000
+ 2021 1434           0 0.000000
+ 2022 1428           0 0.000000
+ 2023 1416           0 0.000000
+PHASE7 DONE 1s

@@ -1,0 +1,42 @@
+{
+ "n_obs": 64,
+ "n_clusters": 8,
+ "years": [
+  2016,
+  2017,
+  2018,
+  2019,
+  2020,
+  2021,
+  2022,
+  2023
+ ],
+ "admissible_breaks": [
+  2018,
+  2019,
+  2020,
+  2021,
+  2022
+ ],
+ "rss_intercept_only": 2.596869372782847,
+ "rss_linear": 1.8576837980593677,
+ "rss_break": 1.796784476233603,
+ "linear_slope": -0.04690369993539321,
+ "break_date": 2022,
+ "break_delta": -0.2582125895054377,
+ "F_linear": 21.884890556865436,
+ "F_break_sup": 24.49078890221184,
+ "p_linear_wcb": 0.008600860086008601,
+ "p_break_supF_wcb": 0.0036003600360036,
+ "nrep": 9999,
+ "rss_ratio_break_over_linear": 0.9672176061989757,
+ "prefers": "break",
+ "mean_gap_first": 0.49679039377799417,
+ "mean_gap_last": 0.3236997807347871,
+ "mean_gap_closed": 0.17309061304320703,
+ "share_of_residual_trend_accounts_for": 0.28464488143712685,
+ "share_of_residual_break_accounts_for": 0.30809593464143337,
+ "rademacher_p_floor": 0.0078125,
+ "eight_cluster_note": "Eight clusters. Both p-values come from a wild cluster bootstrap with Rademacher weights and the null imposed, which is the recommended small-G correction but is itself only asymptotically valid in G. The attainable floor is 2^-(8-1) = 0.00781 and no result here should be read as conventional evidence at any nominal level.",
+ "verdict": "LEVEL SHIFT at 2022"
+}

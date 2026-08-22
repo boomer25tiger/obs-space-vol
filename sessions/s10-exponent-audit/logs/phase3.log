@@ -1,0 +1,37 @@
+  ES/GLOBEX/B0/1day          pooled=-0.4427 year_mean=-0.6823 (sd 0.202, 8/8 steeper) ref=-1.1377 share=+0.345
+  ES/GLOBEX/B1/1day          pooled=-0.4427 year_mean=-0.6823 (sd 0.202, 8/8 steeper) ref=-1.1377 share=+0.345
+  NQ/GLOBEX/B0/1day          pooled=-0.6886 year_mean=-0.8159 (sd 0.138, 7/8 steeper) ref=-1.1377 share=+0.284
+  NQ/GLOBEX/B1/1day          pooled=-0.6886 year_mean=-0.8159 (sd 0.138, 7/8 steeper) ref=-1.1377 share=+0.284
+  ES/RTH/B0/1day             pooled=-0.6274 year_mean=-0.8836 (sd 0.375, 6/8 steeper) ref=-1.1444 share=+0.495
+  ES/RTH/B0/1h               pooled=-0.4658 year_mean=-0.6753 (sd 0.214, 8/8 steeper) ref=-1.2097 share=+0.282
+  ES/RTH/B0/30min            pooled=-0.4111 year_mean=-0.5964 (sd 0.144, 7/8 steeper) ref=-1.1971 share=+0.236
+  ES/RTH/B1/1day             pooled=-0.6274 year_mean=-0.8836 (sd 0.375, 6/8 steeper) ref=-1.1444 share=+0.495
+  ES/RTH/B1/1h               pooled=-0.4658 year_mean=-0.6753 (sd 0.214, 8/8 steeper) ref=-1.2097 share=+0.282
+  ES/RTH/B1/30min            pooled=-0.4111 year_mean=-0.5964 (sd 0.144, 7/8 steeper) ref=-1.1971 share=+0.236
+  NQ/RTH/B0/1day             pooled=-0.9744 year_mean=-1.0783 (sd 0.254, 5/8 steeper) ref=-1.1444 share=+0.611
+  NQ/RTH/B0/1h               pooled=-0.8032 year_mean=-0.9073 (sd 0.144, 6/8 steeper) ref=-1.2097 share=+0.256
+  NQ/RTH/B0/30min            pooled=-0.7010 year_mean=-0.8832 (sd 0.136, 7/8 steeper) ref=-1.1971 share=+0.367
+  NQ/RTH/B1/1day             pooled=-0.9744 year_mean=-1.0783 (sd 0.254, 5/8 steeper) ref=-1.1444 share=+0.611
+  NQ/RTH/B1/1h               pooled=-0.8032 year_mean=-0.9073 (sd 0.144, 6/8 steeper) ref=-1.2097 share=+0.256
+  NQ/RTH/B1/30min            pooled=-0.7010 year_mean=-0.8832 (sd 0.136, 7/8 steeper) ref=-1.1971 share=+0.367
+
+{
+ "n_cells": 16,
+ "n_degenerate_subfits": 48,
+ "n_subfits": 192,
+ "cells_year_steeper_all": 4,
+ "mean_year_minus_pooled": -0.17603361206094714,
+ "mean_tercile_minus_pooled": NaN,
+ "share_year_mean": 0.35952093769556803,
+ "share_year_median": 0.31417387163291866,
+ "share_year_min": 0.2357562326876082,
+ "share_year_max": 0.6113459238063959,
+ "n_tercile_subfits_usable": 0,
+ "n_tercile_subfits": 48,
+ "share_tercile_mean": null,
+ "residual_gap_mean": 0.3569093879537217,
+ "timers": {
+  "phase3": 4.3
+ }
+}
+PHASE3 DONE 4s

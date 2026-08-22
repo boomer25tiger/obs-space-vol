@@ -1,0 +1,6 @@
+test,FAIL,PASS,n_lambda_rows_checked
+assert_effective_M,88,36,
+assert_forecasts_positive,46,122,
+assert_lambda_in_unit,3683,0,11568
+assert_loss_finite,35,85,
+assert_range_inputs,8,0,

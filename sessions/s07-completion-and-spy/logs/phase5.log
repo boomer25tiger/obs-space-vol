@@ -1,0 +1,3 @@
+{"venue": "ARCX", "n_sessions": 1415, "n_early_excluded": 12, "n_rows": 20514528, "seconds": 119.1, "corr_fill_vol_pooled": 0.732936967753214, "median_fill": 0.6276923076923077, "mean_fill": 0.6195683609676542}
+{"venue": "XNAS", "n_sessions": 1415, "n_early_excluded": 12, "n_rows": 21487163, "seconds": 92.0, "corr_fill_vol_pooled": 0.7380084869669906, "median_fill": 0.6593162393162393, "mean_fill": 0.648943342091752}
+SPY PANELS DONE 211s

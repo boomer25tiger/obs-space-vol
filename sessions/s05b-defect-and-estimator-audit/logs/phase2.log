@@ -1,0 +1,74 @@
+regenerating 24 of 24 groups
+  1/24 ES/GLOBEX/B0/1day (49.0s)
+  2/24 ES/GLOBEX/B1/1day (49.7s)
+  3/24 NQ/GLOBEX/B0/1day (82.2s)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: overflow encountered in scalar multiply
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:115: RuntimeWarning: overflow encountered in scalar multiply
+  F = float(np.exp(xi + ph * logh_next + 0.5 * np.exp(lsu)) * mgf)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:115: RuntimeWarning: overflow encountered in exp
+  F = float(np.exp(xi + ph * logh_next + 0.5 * np.exp(lsu)) * mgf)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: overflow encountered in exp
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:112: RuntimeWarning: overflow encountered in exp
+  * np.exp(t1 ** 2 / (2 * max(1 - 2 * t2, 1e-6)))
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:173: RuntimeWarning: overflow encountered in exp
+  * np.exp(t1 ** 2 / (2 * max(1 - 2 * t2, 1e-6)))
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: invalid value encountered in scalar multiply
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:115: RuntimeWarning: overflow encountered in exp
+  F = float(np.exp(xi + ph * logh_next + 0.5 * np.exp(lsu)) * mgf)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: overflow encountered in exp
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:115: RuntimeWarning: overflow encountered in exp
+  F = float(np.exp(xi + ph * logh_next + 0.5 * np.exp(lsu)) * mgf)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: overflow encountered in exp
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:115: RuntimeWarning: overflow encountered in exp
+  F = float(np.exp(xi + ph * logh_next + 0.5 * np.exp(lsu)) * mgf)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: overflow encountered in exp
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:115: RuntimeWarning: overflow encountered in exp
+  F = float(np.exp(xi + ph * logh_next + 0.5 * np.exp(lsu)) * mgf)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: overflow encountered in exp
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+  4/24 NQ/GLOBEX/B0/1h (252.1s)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:112: RuntimeWarning: overflow encountered in exp
+  * np.exp(t1 ** 2 / (2 * max(1 - 2 * t2, 1e-6)))
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:173: RuntimeWarning: overflow encountered in exp
+  * np.exp(t1 ** 2 / (2 * max(1 - 2 * t2, 1e-6)))
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: invalid value encountered in scalar multiply
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:112: RuntimeWarning: overflow encountered in exp
+  * np.exp(t1 ** 2 / (2 * max(1 - 2 * t2, 1e-6)))
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:173: RuntimeWarning: overflow encountered in exp
+  * np.exp(t1 ** 2 / (2 * max(1 - 2 * t2, 1e-6)))
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: invalid value encountered in scalar multiply
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: overflow encountered in scalar multiply
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+  5/24 NQ/GLOBEX/B1/1day (21.5s)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:115: RuntimeWarning: overflow encountered in exp
+  F = float(np.exp(xi + ph * logh_next + 0.5 * np.exp(lsu)) * mgf)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: overflow encountered in exp
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+  6/24 ES/GLOBEX/B1/1h (383.7s)
+  7/24 ES/GLOBEX/B0/1h (665.1s)
+  8/24 ES/RTH/B0/1day (25.3s)
+  9/24 ES/RTH/B0/1h (71.7s)
+  10/24 ES/GLOBEX/B1/30min (769.0s)
+  11/24 ES/RTH/B1/1day (14.9s)
+  12/24 NQ/GLOBEX/B1/1h (469.9s)
+  13/24 ES/RTH/B1/1h (67.5s)
+  14/24 NQ/RTH/B0/1day (14.7s)
+  15/24 ES/RTH/B0/30min (120.0s)
+  16/24 ES/GLOBEX/B0/30min (886.3s)
+  17/24 NQ/RTH/B1/1day (11.2s)
+  18/24 ES/RTH/B1/30min (115.0s)
+  19/24 NQ/RTH/B0/1h (69.4s)
+  20/24 NQ/RTH/B1/1h (78.9s)
+  21/24 NQ/RTH/B0/30min (102.2s)
+  22/24 NQ/RTH/B1/30min (91.2s)
+  23/24 NQ/GLOBEX/B0/30min (887.2s)
+  24/24 NQ/GLOBEX/B1/30min (635.8s)
+PHASE2 REGEN DONE 1060s

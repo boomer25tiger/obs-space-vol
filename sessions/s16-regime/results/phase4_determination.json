@@ -1,0 +1,19 @@
+{
+ "criterion_misclass_pp": 1.0,
+ "criterion_sharpe": 0.1,
+ "max_reduction_vs_A1_pp": 0.0,
+ "max_reduction_vs_A2_pp": 19.00161030595813,
+ "all_below_1pp_vs_both": false,
+ "max_sharpe_difference": 0.2593946307392782,
+ "all_sharpe_below_0p10": false,
+ "n_cells": 8,
+ "a1_a3_states_differ_total": 0,
+ "a1_a3_max_prob_diff": 6.539213615042172e-14,
+ "K11": "DOES NOT FIRE",
+ "timers": {
+  "phase2": 1963.4,
+  "phase3_hmm": 2739.5,
+  "allocation": 0.4,
+  "total": 4704.9
+ }
+}

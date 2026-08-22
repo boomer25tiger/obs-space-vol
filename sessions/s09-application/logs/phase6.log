@@ -1,0 +1,91 @@
+GATE {"executable": "~/venvs/obs-space-vol/bin/python", "realpath": "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3.13", "numpy": "2.5.2", "pandas": "3.0.5", "python": "3.13.13", "inside_sync_scope": false}
+extracted 2847047 rows in 2.7s
+{
+ "holdout_raw_rows": 2847047,
+ "rows_unresolved_symbol": 0,
+ "rows_spread_filtered": 373743,
+ "r3_rows_reassigned": 0,
+ "rows_in_holdout": 2473304,
+ "holdout_weekend_trade_dates": 0,
+ "r1_excluded_rth": {
+  "ES": 27,
+  "NQ": 27
+ },
+ "r1_excluded_globex": {
+  "ES": 7,
+  "NQ": 7
+ },
+ "holdout_degraded_dates": [
+  "2024-09-18",
+  "2025-09-17",
+  "2025-09-24",
+  "2025-11-28",
+  "2026-01-31",
+  "2026-03-15",
+  "2026-03-16",
+  "2026-03-21",
+  "2026-04-10",
+  "2026-05-24",
+  "2026-07-30"
+ ],
+ "ledger": {
+  "ES_RTH": {
+   "after_r1": 651,
+   "roll_excluded": 30,
+   "final": 621
+  },
+  "NQ_RTH": {
+   "after_r1": 651,
+   "roll_excluded": 30,
+   "final": 621
+  },
+  "ES_GLOBEX": {
+   "after_r1": 671,
+   "roll_excluded": 30,
+   "final": 641
+  },
+  "NQ_GLOBEX": {
+   "after_r1": 671,
+   "roll_excluded": 30,
+   "final": 641
+  }
+ }
+}
+<REPO>/sessions/s09-application/src/phase6_holdout.py:229: RuntimeWarning: overflow encountered in exp
+  sig=np.sqrt(np.exp(elog)); w=TARGET_D/np.maximum(sig,1e-12)
+
+root   geom          range rule    lam_used         te     turnover   n  cost_0.5t_bps  cost_1.0t_bps  cost_2.0t_bps  cost_4.0t_bps  te_quarterly_mean  te_quarterly_sd  n_quarters  te_quarterly_max
+  ES GLOBEX restricted_S05   R1         NaN   0.377979 7.464471e-02 641   3.028103e-02   6.056206e-02   1.211241e-01   2.422483e-01           0.374191         0.030429          11          0.424210
+  ES GLOBEX restricted_S05   R2    1.000007   0.377979 7.464516e-02 641   3.028121e-02   6.056242e-02   1.211248e-01   2.422497e-01           0.374191         0.030429          11          0.424211
+  ES GLOBEX restricted_S05   R3 -890.210512 106.090285 1.007986e+09 641   4.089084e+08   8.178168e+08   1.635634e+09   3.271267e+09          95.903508        41.782030          11        184.886262
+  ES GLOBEX       extended   R1         NaN   0.377979 7.464471e-02 641   3.028103e-02   6.056206e-02   1.211241e-01   2.422483e-01           0.374191         0.030429          11          0.424210
+  ES GLOBEX       extended   R2    0.993015   0.377719 7.417146e-02 641   3.008905e-02   6.017809e-02   1.203562e-01   2.407124e-01           0.373935         0.030414          11          0.423989
+  ES GLOBEX       extended   R3    0.827225   0.375499 6.282052e-02 641   2.548432e-02   5.096865e-02   1.019373e-01   2.038746e-01           0.371614         0.031178          11          0.420668
+  NQ GLOBEX restricted_S05   R1         NaN   0.344571 5.694669e-02 641   6.347990e-03   1.269598e-02   2.539196e-02   5.078392e-02           0.337402         0.046134          11          0.406625
+  NQ GLOBEX restricted_S05   R2    0.992641   0.344259 5.657362e-02 641   6.306403e-03   1.261281e-02   2.522561e-02   5.045122e-02           0.337072         0.046154          11          0.406400
+  NQ GLOBEX restricted_S05   R3    0.849634   0.341370 4.923561e-02 641   5.488417e-03   1.097683e-02   2.195367e-02   4.390733e-02           0.333837         0.047020          11          0.403515
+  NQ GLOBEX       extended   R1         NaN   0.344571 5.694669e-02 641   6.347990e-03   1.269598e-02   2.539196e-02   5.078392e-02           0.337402         0.046134          11          0.406625
+  NQ GLOBEX       extended   R2    0.993344   0.344288 5.660924e-02 641   6.310374e-03   1.262075e-02   2.524150e-02   5.048299e-02           0.337103         0.046152          11          0.406421
+  NQ GLOBEX       extended   R3    0.939947   0.342490 5.388976e-02 641   6.007226e-03   1.201445e-02   2.402891e-02   4.805781e-02           0.335169         0.046402          11          0.405007
+  ES    RTH restricted_S05   R1         NaN   0.378079 9.070946e-02 621   3.679022e-02   7.358044e-02   1.471609e-01   2.943217e-01           0.376075         0.039352          11          0.441985
+  ES    RTH restricted_S05   R2    0.944992   0.375567 8.628923e-02 621   3.499745e-02   6.999490e-02   1.399898e-01   2.799796e-01           0.373604         0.038843          11          0.442603
+  ES    RTH restricted_S05   R3    0.346640   0.402155 3.456438e-02 621   1.401873e-02   2.803746e-02   5.607491e-02   1.121498e-01           0.396884         0.054732          11          0.522581
+  ES    RTH       extended   R1         NaN   0.378079 9.070946e-02 621   3.679022e-02   7.358044e-02   1.471609e-01   2.943217e-01           0.376075         0.039352          11          0.441985
+  ES    RTH       extended   R2    0.976536   0.376906 8.882929e-02 621   3.602765e-02   7.205531e-02   1.441106e-01   2.882212e-01           0.374926         0.039089          11          0.442237
+  ES    RTH       extended   R3    0.839780   0.373106 7.770744e-02 621   3.151682e-02   6.303364e-02   1.260673e-01   2.521346e-01           0.371084         0.038613          11          0.444053
+  NQ    RTH restricted_S05   R1         NaN   0.335715 6.873657e-02 621   7.661830e-03   1.532366e-02   3.064732e-02   6.129464e-02           0.330473         0.047116          11          0.420428
+  NQ    RTH restricted_S05   R2    0.975134   0.334626 6.722027e-02 621   7.492813e-03   1.498563e-02   2.997125e-02   5.994251e-02           0.329331         0.046989          11          0.419713
+  NQ    RTH restricted_S05   R3    0.897598   0.332329 6.244903e-02 621   6.960980e-03   1.392196e-02   2.784392e-02   5.568784e-02           0.326789         0.047174          11          0.417970
+  NQ    RTH       extended   R1         NaN   0.335715 6.873657e-02 621   7.661830e-03   1.532366e-02   3.064732e-02   6.129464e-02           0.330473         0.047116          11          0.420428
+  NQ    RTH       extended   R2    0.976012   0.334662 6.727391e-02 621   7.498793e-03   1.499759e-02   2.999517e-02   5.999034e-02           0.329368         0.046991          11          0.419737
+  NQ    RTH       extended   R3    0.931284   0.333122 6.453017e-02 621   7.192958e-03   1.438592e-02   2.877183e-02   5.754366e-02           0.327700         0.046995          11          0.418636
+
+         range        partition_is  n  r2_is_mean  r2_oos_mean  degradation_mean  oos_clears_raw  oos_clears_measured
+      extended         clears_both 96    0.479278     0.312942          0.166336              95                   96
+      extended      clears_neither 45    0.003317     0.002650          0.000667               0                    0
+      extended only_after_measured  3    0.014629     0.159622         -0.144993               2                    2
+restricted_S05         clears_both 42    0.518883     0.336721          0.182163              41                   42
+restricted_S05      clears_neither 15    0.005236     0.004092          0.001144               0                    0
+restricted_S05 only_after_measured  1    0.018309     0.002262          0.016047               0                    0
+restricted_S05            raw_only 14    0.533989     0.325213          0.208776              14                    0
+PHASE6 DONE 107.8s

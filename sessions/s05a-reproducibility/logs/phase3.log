@@ -1,0 +1,205 @@
+order written: 120 cells
+  prepped 1/24: ES/GLOBEX/B0/1day n=1453 (17.4s)
+  prepped 2/24: ES/GLOBEX/B1/1day n=1453 (22.0s)
+  prepped 3/24: NQ/GLOBEX/B0/1day n=1448 (36.8s)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: overflow encountered in scalar multiply
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:115: RuntimeWarning: overflow encountered in scalar multiply
+  F = float(np.exp(xi + ph * logh_next + 0.5 * np.exp(lsu)) * mgf)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:115: RuntimeWarning: overflow encountered in exp
+  F = float(np.exp(xi + ph * logh_next + 0.5 * np.exp(lsu)) * mgf)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: overflow encountered in exp
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:115: RuntimeWarning: overflow encountered in exp
+  F = float(np.exp(xi + ph * logh_next + 0.5 * np.exp(lsu)) * mgf)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: overflow encountered in exp
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:112: RuntimeWarning: overflow encountered in exp
+  * np.exp(t1 ** 2 / (2 * max(1 - 2 * t2, 1e-6)))
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:173: RuntimeWarning: overflow encountered in exp
+  * np.exp(t1 ** 2 / (2 * max(1 - 2 * t2, 1e-6)))
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: invalid value encountered in scalar multiply
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:115: RuntimeWarning: overflow encountered in exp
+  F = float(np.exp(xi + ph * logh_next + 0.5 * np.exp(lsu)) * mgf)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: overflow encountered in exp
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:115: RuntimeWarning: overflow encountered in exp
+  F = float(np.exp(xi + ph * logh_next + 0.5 * np.exp(lsu)) * mgf)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: overflow encountered in exp
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:115: RuntimeWarning: overflow encountered in exp
+  F = float(np.exp(xi + ph * logh_next + 0.5 * np.exp(lsu)) * mgf)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: overflow encountered in exp
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:112: RuntimeWarning: overflow encountered in exp
+  * np.exp(t1 ** 2 / (2 * max(1 - 2 * t2, 1e-6)))
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:173: RuntimeWarning: overflow encountered in exp
+  * np.exp(t1 ** 2 / (2 * max(1 - 2 * t2, 1e-6)))
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: invalid value encountered in scalar multiply
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:182: RuntimeWarning: divide by zero encountered in log
+  return x - np.log(x) - 1.0
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:181: RuntimeWarning: divide by zero encountered in divide
+  x = rv / F
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:181: RuntimeWarning: invalid value encountered in divide
+  x = rv / F
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:182: RuntimeWarning: invalid value encountered in subtract
+  return x - np.log(x) - 1.0
+  prepped 4/24: NQ/GLOBEX/B0/1h n=22259 (210.0s)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:112: RuntimeWarning: overflow encountered in exp
+  * np.exp(t1 ** 2 / (2 * max(1 - 2 * t2, 1e-6)))
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:173: RuntimeWarning: overflow encountered in exp
+  * np.exp(t1 ** 2 / (2 * max(1 - 2 * t2, 1e-6)))
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: invalid value encountered in scalar multiply
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: overflow encountered in scalar multiply
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+  prepped 5/24: NQ/GLOBEX/B1/1day n=1448 (21.5s)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:115: RuntimeWarning: overflow encountered in exp
+  F = float(np.exp(xi + ph * logh_next + 0.5 * np.exp(lsu)) * mgf)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: overflow encountered in exp
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:182: RuntimeWarning: divide by zero encountered in log
+  return x - np.log(x) - 1.0
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:181: RuntimeWarning: divide by zero encountered in divide
+  x = rv / F
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:181: RuntimeWarning: invalid value encountered in divide
+  x = rv / F
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:182: RuntimeWarning: invalid value encountered in subtract
+  return x - np.log(x) - 1.0
+  prepped 6/24: ES/GLOBEX/B1/1h n=1403 (278.1s)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:182: RuntimeWarning: divide by zero encountered in log
+  return x - np.log(x) - 1.0
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:181: RuntimeWarning: divide by zero encountered in divide
+  x = rv / F
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:181: RuntimeWarning: invalid value encountered in divide
+  x = rv / F
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:182: RuntimeWarning: invalid value encountered in subtract
+  return x - np.log(x) - 1.0
+  prepped 7/24: ES/GLOBEX/B0/1h n=40996 (459.1s)
+  prepped 8/24: ES/RTH/B0/1day n=1401 (13.8s)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:182: RuntimeWarning: divide by zero encountered in log
+  return x - np.log(x) - 1.0
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:181: RuntimeWarning: divide by zero encountered in divide
+  x = rv / F
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:181: RuntimeWarning: overflow encountered in divide
+  x = rv / F
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:181: RuntimeWarning: invalid value encountered in divide
+  x = rv / F
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:182: RuntimeWarning: invalid value encountered in subtract
+  return x - np.log(x) - 1.0
+  prepped 9/24: ES/GLOBEX/B1/30min n=79538 (521.3s)
+  prepped 10/24: ES/RTH/B0/1h n=10906 (62.6s)
+  prepped 11/24: ES/RTH/B1/1day n=1401 (8.6s)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:181: RuntimeWarning: overflow encountered in divide
+  x = rv / F
+  prepped 12/24: NQ/GLOBEX/B1/1h n=39503 (316.2s)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:182: RuntimeWarning: divide by zero encountered in log
+  return x - np.log(x) - 1.0
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:181: RuntimeWarning: divide by zero encountered in divide
+  x = rv / F
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:181: RuntimeWarning: invalid value encountered in divide
+  x = rv / F
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:182: RuntimeWarning: invalid value encountered in subtract
+  return x - np.log(x) - 1.0
+  prepped 13/24: ES/GLOBEX/B0/30min n=21604 (600.3s)
+  prepped 14/24: ES/RTH/B1/1h n=10906 (62.5s)
+  prepped 15/24: NQ/RTH/B0/1day n=1401 (9.0s)
+  prepped 16/24: ES/RTH/B0/30min n=22312 (111.3s)
+  prepped 17/24: NQ/RTH/B1/1day n=1401 (12.5s)
+  prepped 18/24: NQ/RTH/B0/1h n=10906 (63.7s)
+  prepped 19/24: ES/RTH/B1/30min n=22312 (109.1s)
+  prepped 20/24: NQ/RTH/B0/30min n=22312 (83.1s)
+  prepped 21/24: NQ/RTH/B1/1h n=10906 (51.8s)
+  prepped 22/24: NQ/RTH/B1/30min n=22312 (58.7s)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:182: RuntimeWarning: divide by zero encountered in log
+  return x - np.log(x) - 1.0
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:181: RuntimeWarning: divide by zero encountered in divide
+  x = rv / F
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:181: RuntimeWarning: invalid value encountered in divide
+  x = rv / F
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:182: RuntimeWarning: invalid value encountered in subtract
+  return x - np.log(x) - 1.0
+  prepped 23/24: NQ/GLOBEX/B0/30min n=80900 (686.3s)
+  prepped 24/24: NQ/GLOBEX/B1/30min n=83735 (464.3s)
+losses ready at 765s
+<REPO>/.venv/lib/python3.13/site-packages/numpy/_core/_methods.py:190: RuntimeWarning: overflow encountered in square
+  x = um.square(x, out=x)
+<REPO>/.venv/lib/python3.13/site-packages/numpy/_core/_methods.py:190: RuntimeWarning: overflow encountered in square
+  x = um.square(x, out=x)
+<REPO>/.venv/lib/python3.13/site-packages/numpy/_core/_methods.py:190: RuntimeWarning: overflow encountered in square
+  x = um.square(x, out=x)
+<REPO>/.venv/lib/python3.13/site-packages/numpy/_core/_methods.py:190: RuntimeWarning: overflow encountered in square
+  x = um.square(x, out=x)
+<REPO>/.venv/lib/python3.13/site-packages/numpy/_core/_methods.py:190: RuntimeWarning: overflow encountered in square
+  x = um.square(x, out=x)
+<REPO>/.venv/lib/python3.13/site-packages/numpy/_core/_methods.py:190: RuntimeWarning: overflow encountered in square
+  x = um.square(x, out=x)
+<REPO>/sessions/s05a-reproducibility/src/phase3_seeds.py:77: RuntimeWarning: invalid value encountered in subtract
+  blocksum = csum[b:] - csum[:-b]
+<REPO>/sessions/s05a-reproducibility/src/phase3_seeds.py:77: RuntimeWarning: invalid value encountered in subtract
+  blocksum = csum[b:] - csum[:-b]
+<REPO>/sessions/s05a-reproducibility/src/phase3_seeds.py:94: RuntimeWarning: invalid value encountered in subtract
+  dbar = mu[:, None] - mu[None, :]
+<REPO>/sessions/s05a-reproducibility/src/phase3_seeds.py:94: RuntimeWarning: invalid value encountered in subtract
+  dbar = mu[:, None] - mu[None, :]
+<REPO>/sessions/s05a-reproducibility/src/phase3_seeds.py:77: RuntimeWarning: invalid value encountered in subtract
+  blocksum = csum[b:] - csum[:-b]
+<REPO>/sessions/s05a-reproducibility/src/phase3_seeds.py:77: RuntimeWarning: invalid value encountered in subtract
+  blocksum = csum[b:] - csum[:-b]
+  20/120 cells (790s)
+<REPO>/sessions/s05a-reproducibility/src/phase3_seeds.py:94: RuntimeWarning: invalid value encountered in subtract
+  dbar = mu[:, None] - mu[None, :]
+<REPO>/sessions/s05a-reproducibility/src/phase3_seeds.py:94: RuntimeWarning: invalid value encountered in subtract
+  dbar = mu[:, None] - mu[None, :]
+  40/120 cells (806s)
+<REPO>/sessions/s05a-reproducibility/src/phase3_seeds.py:77: RuntimeWarning: invalid value encountered in subtract
+  blocksum = csum[b:] - csum[:-b]
+<REPO>/sessions/s05a-reproducibility/src/phase3_seeds.py:94: RuntimeWarning: invalid value encountered in subtract
+  dbar = mu[:, None] - mu[None, :]
+  60/120 cells (836s)
+  80/120 cells (852s)
+stage1_SB_SC complete at 872s
+<REPO>/sessions/s05a-reproducibility/src/phase3_seeds.py:77: RuntimeWarning: invalid value encountered in subtract
+  blocksum = csum[b:] - csum[:-b]
+<REPO>/sessions/s05a-reproducibility/src/phase3_seeds.py:77: RuntimeWarning: invalid value encountered in subtract
+  blocksum = csum[b:] - csum[:-b]
+<REPO>/sessions/s05a-reproducibility/src/phase3_seeds.py:77: RuntimeWarning: invalid value encountered in subtract
+  blocksum = csum[b:] - csum[:-b]
+<REPO>/.venv/lib/python3.13/site-packages/numpy/_core/_methods.py:190: RuntimeWarning: overflow encountered in square
+  x = um.square(x, out=x)
+<REPO>/.venv/lib/python3.13/site-packages/numpy/_core/_methods.py:190: RuntimeWarning: overflow encountered in square
+  x = um.square(x, out=x)
+<REPO>/sessions/s05a-reproducibility/src/phase3_seeds.py:94: RuntimeWarning: invalid value encountered in subtract
+  dbar = mu[:, None] - mu[None, :]
+<REPO>/sessions/s05a-reproducibility/src/phase3_seeds.py:77: RuntimeWarning: invalid value encountered in subtract
+  blocksum = csum[b:] - csum[:-b]
+<REPO>/sessions/s05a-reproducibility/src/phase3_seeds.py:94: RuntimeWarning: invalid value encountered in subtract
+  dbar = mu[:, None] - mu[None, :]
+<REPO>/sessions/s05a-reproducibility/src/phase3_seeds.py:94: RuntimeWarning: invalid value encountered in subtract
+  dbar = mu[:, None] - mu[None, :]
+<REPO>/.venv/lib/python3.13/site-packages/numpy/_core/_methods.py:190: RuntimeWarning: overflow encountered in square
+  x = um.square(x, out=x)
+<REPO>/sessions/s05a-reproducibility/src/phase3_seeds.py:94: RuntimeWarning: invalid value encountered in subtract
+  dbar = mu[:, None] - mu[None, :]
+<REPO>/.venv/lib/python3.13/site-packages/numpy/_core/_methods.py:190: RuntimeWarning: overflow encountered in square
+  x = um.square(x, out=x)
+<REPO>/sessions/s05a-reproducibility/src/phase3_seeds.py:77: RuntimeWarning: invalid value encountered in subtract
+  blocksum = csum[b:] - csum[:-b]
+<REPO>/sessions/s05a-reproducibility/src/phase3_seeds.py:94: RuntimeWarning: invalid value encountered in subtract
+  dbar = mu[:, None] - mu[None, :]
+<REPO>/sessions/s05a-reproducibility/src/phase3_seeds.py:77: RuntimeWarning: invalid value encountered in subtract
+  blocksum = csum[b:] - csum[:-b]
+  100/120 cells (913s)
+<REPO>/.venv/lib/python3.13/site-packages/numpy/_core/_methods.py:190: RuntimeWarning: overflow encountered in square
+  x = um.square(x, out=x)
+<REPO>/sessions/s05a-reproducibility/src/phase3_seeds.py:94: RuntimeWarning: invalid value encountered in subtract
+  dbar = mu[:, None] - mu[None, :]
+  120/120 cells (963s)
+stage2_SA complete at 964s
+verdict
+IDENTICAL in all seeds                 58
+DIFFERS in all seeds                   35
+INDETERMINATE (varies across seeds)     3
+PHASE3 DONE 965s

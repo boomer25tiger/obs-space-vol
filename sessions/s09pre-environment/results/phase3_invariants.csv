@@ -1,0 +1,6 @@
+test,fail_S06R,fail_now,pass_S06R,pass_now,fires_now,matches_S06R
+assert_forecasts_positive,46,46,122,122,True,True
+assert_loss_finite,35,35,85,85,True,True
+assert_lambda_in_unit,3683,3683,11568,11568,True,True
+assert_range_inputs,8,8,0,0,True,True
+assert_effective_M,88,88,36,36,True,True

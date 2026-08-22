@@ -1,0 +1,22 @@
+ARCX done 88s
+<REPO>/sessions/s07-completion-and-spy/src/phase6_spy_exponent.py:18: OptimizeWarning: Covariance of the parameters could not be estimated
+  p,_=curve_fit(lambda x,c,A,b: c+A*np.power(x,b),M[ok],y[ok],
+XNAS done 152s
+venue                        fit         c            A          b      rmse  n  M_min   M_max
+ ARCX                   CAL_full  1.557276     1.953715  -0.841003  0.021401 16    5.0 23399.0
+ ARCX                CAL_primary  1.557276     1.953715  -0.841003  0.021401 16    5.0 23399.0
+ ARCX                  TICK_full  1.034294     1.456910  -0.533257  0.055765 15    5.0 23399.0
+ ARCX               TICK_primary  1.034294     1.456910  -0.533257  0.055765 15    5.0 23399.0
+ ARCX         CAL_noisecorr_full  1.556271     1.936551  -0.834890  0.021611 16    5.0 23399.0
+ ARCX                  TRV3_full  2.176179 18807.167629  -6.259734  0.544257 16    5.0 23399.0
+ ARCX         trigamma_reference  0.001471     2.970317  -1.124766  0.001870 16    5.0 23399.0
+ ARCX trigamma_reference_primary  0.001471     2.970317  -1.124766  0.001870 16    5.0 23399.0
+ XNAS                   CAL_full  1.493611     2.620495  -0.839369  0.027335 16    5.0 23399.0
+ XNAS                CAL_primary  1.493611     2.620495  -0.839369  0.027335 16    5.0 23399.0
+ XNAS                  TICK_full  1.043887     1.677089  -0.598538  0.059002 15    5.0 23399.0
+ XNAS               TICK_primary  1.043887     1.677089  -0.598538  0.059002 15    5.0 23399.0
+ XNAS         CAL_noisecorr_full  1.492428     2.600698  -0.834093  0.027646 16    5.0 23399.0
+ XNAS                  TRV3_full 22.456290   -26.057220 -32.586004 79.214548 16    5.0 23399.0
+ XNAS         trigamma_reference  0.001471     2.970317  -1.124766  0.001870 16    5.0 23399.0
+ XNAS trigamma_reference_primary  0.001471     2.970317  -1.124766  0.001870 16    5.0 23399.0
+PHASE6 DONE 152s

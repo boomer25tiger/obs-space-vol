@@ -1,0 +1,47 @@
+{
+ "family_preregistered": 96,
+ "n_computed": 72,
+ "n_halted": 24,
+ "n_differ": 48,
+ "rate_all": 0.6666666666666666,
+ "n_rth": 48,
+ "n_differ_rth": 33,
+ "rate_rth": 0.6875,
+ "prereg_cell": "ES/RTH/B0/30min",
+ "prereg_n_differ": 3,
+ "prereg_n": 4,
+ "median_cell": "ES/RTH/B1/1h",
+ "median_n_differ": 3,
+ "median_n": 4,
+ "differing_cells": [
+  "ES/GLOBEX/B0/1day",
+  "ES/GLOBEX/B0/30min",
+  "ES/GLOBEX/B1/1day",
+  "ES/GLOBEX/B1/1h",
+  "NQ/GLOBEX/B0/1day",
+  "NQ/GLOBEX/B1/1day",
+  "ES/RTH/B0/1day",
+  "ES/RTH/B0/1h",
+  "ES/RTH/B0/30min",
+  "ES/RTH/B1/1day",
+  "ES/RTH/B1/1h",
+  "ES/RTH/B1/30min",
+  "NQ/RTH/B0/1day",
+  "NQ/RTH/B0/1h",
+  "NQ/RTH/B0/30min",
+  "NQ/RTH/B1/1day",
+  "NQ/RTH/B1/1h",
+  "NQ/RTH/B1/30min"
+ ],
+ "K2": "DOES NOT FIRE",
+ "bound_violations": {
+  "E2": 14,
+  "E4": 0,
+  "intercept": 4,
+  "n_rows": 128
+ },
+ "timers": {
+  "phase4": 12.3,
+  "phase2": 10.5
+ }
+}

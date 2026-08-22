@@ -1,0 +1,42 @@
+{
+ "n_comparisons": 72,
+ "n_halted": 24,
+ "bc_differ": 48,
+ "dc_differ": 36,
+ "bc_rate": 0.6666666666666666,
+ "dc_rate": 0.5,
+ "excess_all": 0.16666666666666663,
+ "n_rth": 48,
+ "bc_rate_rth": 0.6875,
+ "dc_rate_rth": 0.4791666666666667,
+ "excess_rth": 0.20833333333333331,
+ "excess_tracks_lambda": false,
+ "K2": "INDETERMINATE",
+ "n_flipped_cells": 19,
+ "n_indeterminate_cells": 7,
+ "excess_rth_excl_indeterminate": 0.24999999999999994,
+ "timers": {
+  "phase1_mcs": 709.3,
+  "phase1": 709.5,
+  "phase2": 123.4
+ }
+}
+
+by horizon (RTH):
+ horizon  n  bc_rate  dc_rate  excess  lam_intercept
+   1day 16   0.6875   0.5625  0.1250       1.000855
+     1h 16   0.7500   0.3125  0.4375       0.856241
+  30min 16   0.6250   0.5625  0.0625       0.713095
+
+stratified:
+ dimension  level  n  bc_rate  dc_rate   excess
+  horizon   1day 32 0.656250 0.656250 0.000000
+  horizon     1h 20 0.650000 0.300000 0.350000
+  horizon  30min 20 0.700000 0.450000 0.250000
+     root     ES 40 0.775000 0.525000 0.250000
+     root     NQ 32 0.531250 0.468750 0.062500
+     geom GLOBEX 24 0.625000 0.541667 0.083333
+     geom    RTH 48 0.687500 0.479167 0.208333
+ quantile    0.8 36 0.666667 0.444444 0.222222
+ quantile    0.9 36 0.666667 0.555556 0.111111
+K2: INDETERMINATE

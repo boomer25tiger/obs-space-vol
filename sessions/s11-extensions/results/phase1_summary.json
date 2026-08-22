@@ -1,0 +1,60 @@
+{
+ "partition_s11": {
+  "n": 144,
+  "clears_under_both": 128,
+  "clears_only_after_measured": 1,
+  "clears_neither": 15,
+  "clears_raw_but_not_measured": 0,
+  "in_flip_band": 1
+ },
+ "partition_s09": {
+  "n": 144,
+  "clears_under_both": 96,
+  "clears_only_after_measured": 3,
+  "clears_neither": 45,
+  "clears_raw_but_not_measured": 0,
+  "in_flip_band": 3
+ },
+ "n_status_changed": 32,
+ "changed_cells": [
+  "ES/GLOBEX/B0/1day JumpVar",
+  "ES/GLOBEX/B1/1day JumpVar",
+  "NQ/GLOBEX/B0/1day JumpVar",
+  "NQ/GLOBEX/B1/1day JumpVar",
+  "ES/RTH/B0/1day JumpVar",
+  "ES/RTH/B0/1h RS_up",
+  "ES/RTH/B0/1h RS_down",
+  "ES/RTH/B0/1h JumpVar",
+  "ES/RTH/B0/30min RS_up",
+  "ES/RTH/B0/30min RS_down",
+  "ES/RTH/B0/30min JumpVar",
+  "ES/RTH/B1/1day JumpVar",
+  "ES/RTH/B1/1h RS_up",
+  "ES/RTH/B1/1h RS_down",
+  "ES/RTH/B1/1h JumpVar",
+  "ES/RTH/B1/30min RS_up",
+  "ES/RTH/B1/30min RS_down",
+  "ES/RTH/B1/30min JumpVar",
+  "NQ/RTH/B0/1day JumpVar",
+  "NQ/RTH/B0/1h RS_up",
+  "NQ/RTH/B0/1h RS_down",
+  "NQ/RTH/B0/1h JumpVar",
+  "NQ/RTH/B0/30min RS_up",
+  "NQ/RTH/B0/30min RS_down",
+  "NQ/RTH/B0/30min JumpVar",
+  "NQ/RTH/B1/1day JumpVar",
+  "NQ/RTH/B1/1h RS_up",
+  "NQ/RTH/B1/1h RS_down",
+  "NQ/RTH/B1/1h JumpVar",
+  "NQ/RTH/B1/30min RS_up",
+  "NQ/RTH/B1/30min RS_down",
+  "NQ/RTH/B1/30min JumpVar"
+ ],
+ "n_dropped_total": 73786,
+ "drop_rule_references_target": false,
+ "drop_rule_statement": "logdrop() reads only the predictor vector; the target is dropped separately and identically for all nine candidates where log RV_{t+1} is undefined, which is a missing-target drop, not selection on the target's value.",
+ "timers": {
+  "insample": 4.4,
+  "holdout": 1.8
+ }
+}

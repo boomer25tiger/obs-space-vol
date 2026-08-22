@@ -1,0 +1,28 @@
+{
+ "relation_exact": "K_vol = E[sqrt V] = sqrt(E[V]) * exp(-s2/8), exact under lognormal V; no expansion, single assumption is lognormality of V.",
+ "relation_expansion": "Brockhaus and Long (2000) second order: K_vol ~ sqrt(E[V]) * (1 - (exp(s2)-1)/8).",
+ "validity_boundary_s2_at_10pct": 0.1673975378836365,
+ "validity_boundary_kappa_at_10pct": 0.18222415079042253,
+ "measured_kappa_range": [
+  1.259902204790218,
+  6.8444633315410295
+ ],
+ "expansion_valid_at_measured_kappa": false,
+ "max_overstatement_prop": 1.3427678095394455,
+ "min_overstatement_prop": 0.059396143417984604,
+ "max_diff_vp": 2.602119161127112,
+ "all_below_5pct": false,
+ "n_cells_above_threshold": 16,
+ "n_cells": 16,
+ "max_ratio_exact_over_BL": 0.6152468726623953,
+ "min_ratio_exact_over_BL": 0.26532373216756083,
+ "s11_void_figures": {
+  "overstatement_443pct": false,
+  "diff_13p96_vol_points": false,
+  "note": "item 95: both are void and are replaced by the exact figures here"
+ },
+ "direction": "Naive s2 exceeds the intercept-route s2 in every cell, so the naive convexity adjustment is too large and the implied volatility-swap strike too low. That favours the side long volatility at the quoted strike.",
+ "no_pnl_claim": "No options data is held. This is a pricing-bias calculation on the adjustment term only; no claim is made about executable P&L.",
+ "threshold": 0.05,
+ "K6": "DOES NOT FIRE"
+}

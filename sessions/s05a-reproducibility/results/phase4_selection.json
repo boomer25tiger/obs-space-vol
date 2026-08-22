@@ -1,0 +1,20 @@
+{
+ "rule": "smallest input row count within each Part; ties by ascending cell identifier, lexical",
+ "selected": [
+  {
+   "part": "A",
+   "cell_id": "ES/RTH/B0/M13/MEDRQ_MEDRV/y2018",
+   "input_rows": 236
+  },
+  {
+   "part": "C",
+   "cell_id": "ES/GLOBEX/B0/1day/M138/y2020/t1",
+   "input_rows": 30
+  },
+  {
+   "part": "E",
+   "cell_id": "ES/RTH/B0/1day/S-B_q0.90",
+   "input_rows": 140
+  }
+ ]
+}

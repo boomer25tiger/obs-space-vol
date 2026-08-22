@@ -1,0 +1,58 @@
+{
+ "n_comparisons": 72,
+ "n_halted": 24,
+ "bc_differ": 48,
+ "dc_differ": 36,
+ "bc_rate": 0.6666666666666666,
+ "dc_rate": 0.5,
+ "excess_all": 0.16666666666666663,
+ "n_rth": 48,
+ "bc_rate_rth": 0.6875,
+ "dc_rate_rth": 0.4791666666666667,
+ "excess_rth": 0.20833333333333331,
+ "excess_tracks_lambda": false,
+ "by_horizon": [
+  {
+   "horizon": "1day",
+   "n": 16,
+   "bc_rate": 0.6875,
+   "dc_rate": 0.5625,
+   "excess": 0.125,
+   "lam_intercept": 1.000855026167171
+  },
+  {
+   "horizon": "1h",
+   "n": 16,
+   "bc_rate": 0.75,
+   "dc_rate": 0.3125,
+   "excess": 0.4375,
+   "lam_intercept": 0.8562407799831788
+  },
+  {
+   "horizon": "30min",
+   "n": 16,
+   "bc_rate": 0.625,
+   "dc_rate": 0.5625,
+   "excess": 0.0625,
+   "lam_intercept": 0.7130945742582158
+  }
+ ],
+ "K2": "INDETERMINATE",
+ "n_flipped_cells": 19,
+ "n_indeterminate_cells": 7,
+ "indeterminate_cells": [
+  "ES/RTH/B0/1day",
+  "ES/RTH/B0/30min",
+  "ES/RTH/B1/1day",
+  "NQ/GLOBEX/B1/1day",
+  "NQ/RTH/B0/1day",
+  "NQ/RTH/B1/1day",
+  "NQ/RTH/B1/1h"
+ ],
+ "excess_rth_excl_indeterminate": 0.24999999999999994,
+ "timers": {
+  "phase1_mcs": 709.3,
+  "phase1": 709.5,
+  "phase2": 123.4
+ }
+}

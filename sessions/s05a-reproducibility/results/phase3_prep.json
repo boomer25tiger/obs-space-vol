@@ -1,0 +1,149 @@
+{
+ "groups": [
+  {
+   "group": "ES/GLOBEX/B0/1day",
+   "n_obs": 1453,
+   "elapsed_s": 17.4,
+   "m5_nonconv": 0
+  },
+  {
+   "group": "ES/GLOBEX/B1/1day",
+   "n_obs": 1453,
+   "elapsed_s": 22.0,
+   "m5_nonconv": 0
+  },
+  {
+   "group": "NQ/GLOBEX/B0/1day",
+   "n_obs": 1448,
+   "elapsed_s": 36.8,
+   "m5_nonconv": 0
+  },
+  {
+   "group": "NQ/GLOBEX/B0/1h",
+   "n_obs": 22259,
+   "elapsed_s": 210.0,
+   "m5_nonconv": 0
+  },
+  {
+   "group": "NQ/GLOBEX/B1/1day",
+   "n_obs": 1448,
+   "elapsed_s": 21.5,
+   "m5_nonconv": 0
+  },
+  {
+   "group": "ES/GLOBEX/B1/1h",
+   "n_obs": 1403,
+   "elapsed_s": 278.1,
+   "m5_nonconv": 0
+  },
+  {
+   "group": "ES/GLOBEX/B0/1h",
+   "n_obs": 40996,
+   "elapsed_s": 459.1,
+   "m5_nonconv": 0
+  },
+  {
+   "group": "ES/RTH/B0/1day",
+   "n_obs": 1401,
+   "elapsed_s": 13.8,
+   "m5_nonconv": 0
+  },
+  {
+   "group": "ES/GLOBEX/B1/30min",
+   "n_obs": 79538,
+   "elapsed_s": 521.3,
+   "m5_nonconv": 0
+  },
+  {
+   "group": "ES/RTH/B0/1h",
+   "n_obs": 10906,
+   "elapsed_s": 62.6,
+   "m5_nonconv": 0
+  },
+  {
+   "group": "ES/RTH/B1/1day",
+   "n_obs": 1401,
+   "elapsed_s": 8.6,
+   "m5_nonconv": 0
+  },
+  {
+   "group": "NQ/GLOBEX/B1/1h",
+   "n_obs": 39503,
+   "elapsed_s": 316.2,
+   "m5_nonconv": 0
+  },
+  {
+   "group": "ES/GLOBEX/B0/30min",
+   "n_obs": 21604,
+   "elapsed_s": 600.3,
+   "m5_nonconv": 0
+  },
+  {
+   "group": "ES/RTH/B1/1h",
+   "n_obs": 10906,
+   "elapsed_s": 62.5,
+   "m5_nonconv": 0
+  },
+  {
+   "group": "NQ/RTH/B0/1day",
+   "n_obs": 1401,
+   "elapsed_s": 9.0,
+   "m5_nonconv": 0
+  },
+  {
+   "group": "ES/RTH/B0/30min",
+   "n_obs": 22312,
+   "elapsed_s": 111.3,
+   "m5_nonconv": 0
+  },
+  {
+   "group": "NQ/RTH/B1/1day",
+   "n_obs": 1401,
+   "elapsed_s": 12.5,
+   "m5_nonconv": 0
+  },
+  {
+   "group": "NQ/RTH/B0/1h",
+   "n_obs": 10906,
+   "elapsed_s": 63.7,
+   "m5_nonconv": 0
+  },
+  {
+   "group": "ES/RTH/B1/30min",
+   "n_obs": 22312,
+   "elapsed_s": 109.1,
+   "m5_nonconv": 0
+  },
+  {
+   "group": "NQ/RTH/B0/30min",
+   "n_obs": 22312,
+   "elapsed_s": 83.1,
+   "m5_nonconv": 0
+  },
+  {
+   "group": "NQ/RTH/B1/1h",
+   "n_obs": 10906,
+   "elapsed_s": 51.8,
+   "m5_nonconv": 0
+  },
+  {
+   "group": "NQ/RTH/B1/30min",
+   "n_obs": 22312,
+   "elapsed_s": 58.7,
+   "m5_nonconv": 0
+  },
+  {
+   "group": "NQ/GLOBEX/B0/30min",
+   "n_obs": 80900,
+   "elapsed_s": 686.3,
+   "m5_nonconv": 0
+  },
+  {
+   "group": "NQ/GLOBEX/B1/30min",
+   "n_obs": 83735,
+   "elapsed_s": 464.3,
+   "m5_nonconv": 0
+  }
+ ],
+ "seconds": 765.2
+}

@@ -1,0 +1,90 @@
+=== K8 median split ===
+root   geom   sample    n  empirical_rate  analytic_rate  lam_intercept  rate_gap_prop  n_episodes  mean_episode_duration
+  ES GLOBEX insample 1953        0.030722       0.136450       0.827225      -0.774848          59               1.016949
+  ES GLOBEX  holdout  641        0.031201       0.136450       0.827225      -0.771336          19               1.052632
+  NQ GLOBEX insample 1948        0.026694       0.078807       0.939947      -0.661272          49               1.061224
+  NQ GLOBEX  holdout  641        0.032761       0.078807       0.939947      -0.584283          20               1.050000
+  ES    RTH insample 1901        0.038927       0.131085       0.839780      -0.703042          66               1.121212
+  ES    RTH  holdout  621        0.030596       0.131085       0.839780      -0.766596          18               1.055556
+  NQ    RTH insample 1901        0.042083       0.084427       0.931284      -0.501545          75               1.066667
+  NQ    RTH  holdout  621        0.051530       0.084427       0.931284      -0.389654          31               1.032258
+
+=== confusion, holdout ===
+root   geom  both_high  spurious_high  spurious_low  both_low
+  ES GLOBEX        288              8            12       333
+  NQ GLOBEX        317             13             8       303
+  ES    RTH        283              9            10       319
+  NQ    RTH        294             25             7       295
+
+=== rate by distance from threshold (in sample) ===
+root   geom   sample  distance_quintile   n  mean_abs_distance  empirical_rate
+  ES GLOBEX insample                  1 391           0.133121        0.153453
+  ES GLOBEX insample                  2 390           0.437144        0.000000
+  ES GLOBEX insample                  3 391           0.759024        0.000000
+  ES GLOBEX insample                  4 390           1.166957        0.000000
+  ES GLOBEX insample                  5 391           1.949250        0.000000
+  NQ GLOBEX insample                  1 390           0.134285        0.130769
+  NQ GLOBEX insample                  2 389           0.417769        0.002571
+  NQ GLOBEX insample                  3 390           0.734842        0.000000
+  NQ GLOBEX insample                  4 389           1.137187        0.000000
+  NQ GLOBEX insample                  5 390           1.872896        0.000000
+  ES    RTH insample                  1 381           0.142971        0.191601
+  ES    RTH insample                  2 380           0.443729        0.002632
+  ES    RTH insample                  3 380           0.796276        0.000000
+  ES    RTH insample                  4 380           1.207151        0.000000
+  ES    RTH insample                  5 380           1.959838        0.000000
+  NQ    RTH insample                  1 381           0.133768        0.204724
+  NQ    RTH insample                  2 380           0.430940        0.005263
+  NQ    RTH insample                  3 380           0.749202        0.000000
+  NQ    RTH insample                  4 380           1.133750        0.000000
+  NQ    RTH insample                  5 380           1.844850        0.000000
+
+=== tercile split ===
+root   geom   sample   split    n  empirical_rate  n_off_by_two  analytic_rate_median_split
+  ES GLOBEX insample tercile 1953        0.064516             0                    0.136450
+  ES GLOBEX  holdout tercile  641        0.067083             0                    0.136450
+  NQ GLOBEX insample tercile 1948        0.059548             0                    0.078807
+  NQ GLOBEX  holdout tercile  641        0.088924             0                    0.078807
+  ES    RTH insample tercile 1901        0.066281             0                    0.131085
+  ES    RTH  holdout tercile  621        0.086957             0                    0.131085
+  NQ    RTH insample tercile 1901        0.068385             0                    0.084427
+  NQ    RTH  holdout tercile  621        0.119163             0                    0.084427
+
+=== switch cost illustration (holdout) ===
+ticks              0.5        1.0        2.0         4.0
+root geom                                               
+ES   GLOBEX  14.893121  29.786242  59.572484  119.144969
+     RTH     17.265986  34.531973  69.063945  138.127891
+NQ   GLOBEX   2.783096   5.566193  11.132385   22.264771
+     RTH      5.550424  11.100849  22.201697   44.403395
+
+{
+ "analytic_relation": "misclassification rate = arccos(sqrt(lambda)) / pi, exact",
+ "assumptions": "joint normality of log IV and the proxy noise, independence of the noise from log IV, thresholds at the respective medians",
+ "max_abs_analytic_vs_empirical_gap_prop": 0.7748483197563383,
+ "lambda_at_10pct_divergence": 0.3,
+ "empirical_rate_range_insample": [
+  0.026694045174537988,
+  0.04208311415044713
+ ],
+ "analytic_rate_range": [
+  0.07880676065922262,
+  0.13645008632664657
+ ],
+ "empirical_rate_range_holdout": [
+  0.030595813204508857,
+  0.05152979066022544
+ ],
+ "tercile_rate_range": [
+  0.059548254620123205,
+  0.11916264090177134
+ ],
+ "max_excess_cost_bps": 138.12789064278826,
+ "all_empirical_below_5pct": false,
+ "all_analytic_below_5pct": false,
+ "threshold": 0.05,
+ "caveat": "The empirical rate compares the five-minute-equivalent RV against the finest-grid realized kernel; neither is integrated variance, so it measures pairwise disagreement. If the kernel carries its own error the empirical rate understates disagreement with the truth, which is why the analytic rate, keyed to the measured reliability, is reported beside it.",
+ "illustration_label": "The two-state allocation is an ILLUSTRATION on measured misclassification, not a strategy backtest. No return series is claimed.",
+ "K8": "DOES NOT FIRE"
+}
+PHASE1 DONE 2s

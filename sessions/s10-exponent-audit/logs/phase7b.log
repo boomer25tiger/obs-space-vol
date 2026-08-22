@@ -1,0 +1,44 @@
+           cell candidate  n_zero  share_zero  r2_floored  r2_repaired     lift
+   ES/RTH/B0/1h     RS_up       3    0.000263    0.012762     0.428671 0.415910
+   ES/RTH/B0/1h   RS_down       4    0.000351    0.008771     0.480848 0.472076
+ES/RTH/B0/30min     RS_up     343    0.015037    0.000009     0.253282 0.253273
+ES/RTH/B0/30min   RS_down     529    0.023191    0.003867     0.321517 0.317651
+   ES/RTH/B1/1h     RS_up       3    0.000263    0.012817     0.433680 0.420863
+   ES/RTH/B1/1h   RS_down       4    0.000351    0.008919     0.486448 0.477528
+ES/RTH/B1/30min     RS_up     341    0.014949    0.000006     0.254197 0.254191
+ES/RTH/B1/30min   RS_down     536    0.023497    0.003644     0.322427 0.318783
+   NQ/RTH/B0/1h     RS_up       2    0.000175    0.009188     0.356351 0.347162
+   NQ/RTH/B0/1h   RS_down       5    0.000438    0.008001     0.412772 0.404771
+NQ/RTH/B0/30min     RS_up     291    0.012757    0.000573     0.183802 0.183229
+NQ/RTH/B0/30min   RS_down     406    0.017798    0.002074     0.250264 0.248190
+   NQ/RTH/B1/1h     RS_up       2    0.000175    0.009197     0.362331 0.353134
+   NQ/RTH/B1/1h   RS_down       5    0.000438    0.008074     0.418497 0.410423
+NQ/RTH/B1/30min     RS_up     294    0.012889    0.000667     0.183878 0.183211
+NQ/RTH/B1/30min   RS_down     406    0.017798    0.002008     0.251666 0.249658
+
+{
+ "n_rows": 96,
+ "n_affected": 32,
+ "affected_candidates": [
+  "JumpVar",
+  "RS_down",
+  "RS_up"
+ ],
+ "n_status_changes": 16,
+ "max_lift": 0.47752808773557565,
+ "median_lift_affected": 0.09708001712752043,
+ "n_cells_rsup_zero": 8,
+ "n_cells_rsdown_zero": 8,
+ "n_cells_jumpvar_zero": 16,
+ "unaffected_candidates": [
+  "GarmanKlass",
+  "Parkinson",
+  "RS_down",
+  "RS_up",
+  "RealizedQuarticity"
+ ],
+ "timers": {
+  "phase7b": 4.0
+ }
+}
+PHASE7b DONE 4s

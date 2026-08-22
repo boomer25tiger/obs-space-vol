@@ -1,0 +1,105 @@
+=== b by year, distinct cells ===
+         distinct      2016      2017      2018      2019      2020      2021      2022      2023
+ES/GLOBEX/B0/1day -0.632834 -0.704025 -0.486384 -0.544303 -0.539931 -0.683176 -1.131404 -0.736294
+   ES/RTH/B0/1day -0.460580 -0.631159 -0.509461 -0.955602 -1.173053 -0.651737 -1.479301 -1.207672
+     ES/RTH/B0/1h -0.483209 -0.563841 -0.662466 -0.671049 -0.594092 -0.578569 -1.179409 -0.670155
+  ES/RTH/B0/30min -0.594236 -0.556844 -0.390376 -0.628952 -0.511389 -0.625401 -0.899620 -0.564468
+NQ/GLOBEX/B0/1day -0.743629 -0.725351 -0.913313 -0.792176 -0.646490 -0.782878 -1.100138 -0.823472
+   NQ/RTH/B0/1day -0.868491 -0.899622 -0.745100 -1.012017 -1.461906 -1.136601 -1.411073 -1.091688
+     NQ/RTH/B0/1h -0.754748 -0.682378 -1.078087 -0.903641 -0.911884 -0.949620 -1.104983 -0.873438
+  NQ/RTH/B0/30min -0.865672 -0.681956 -0.782720 -1.098080 -0.889486 -0.877618 -1.049394 -0.820936
+
+=== gap to reference, endpoints ===
+             cell  year_first  gap_first  year_last  gap_last  gap_closed   b_first    b_last     b_ref
+ES/GLOBEX/B0/1day        2016   0.504840       2023  0.401380    0.103460 -0.632834 -0.736294 -1.137675
+   ES/RTH/B0/1day        2016   0.683793       2023 -0.063299    0.747092 -0.460580 -1.207672 -1.144373
+     ES/RTH/B0/1h        2016   0.726504       2023  0.539558    0.186947 -0.483209 -0.670155 -1.209713
+  ES/RTH/B0/30min        2016   0.602865       2023  0.632632   -0.029768 -0.594236 -0.564468 -1.197101
+NQ/GLOBEX/B0/1day        2016   0.394045       2023  0.314203    0.079842 -0.743629 -0.823472 -1.137675
+   NQ/RTH/B0/1day        2016   0.275883       2023  0.052685    0.223198 -0.868491 -1.091688 -1.144373
+     NQ/RTH/B0/1h        2016   0.454965       2023  0.336274    0.118690 -0.754748 -0.873438 -1.209713
+  NQ/RTH/B0/30min        2016   0.331428       2023  0.376165   -0.044736 -0.865672 -0.820936 -1.197101
+
+=== break search ===
+ tau      rss     delta
+2018 2.194885 -0.183027
+2019 1.935009 -0.210057
+2020 2.008777 -0.191718
+2021 2.050913 -0.190780
+2022 1.796784 -0.258213
+
+{
+ "n_obs": 64,
+ "n_clusters": 8,
+ "years": [
+  2016,
+  2017,
+  2018,
+  2019,
+  2020,
+  2021,
+  2022,
+  2023
+ ],
+ "admissible_breaks": [
+  2018,
+  2019,
+  2020,
+  2021,
+  2022
+ ],
+ "rss_intercept_only": 2.596869372782847,
+ "rss_linear": 1.8576837980593677,
+ "rss_break": 1.796784476233603,
+ "linear_slope": -0.04690369993539321,
+ "break_date": 2022,
+ "break_delta": -0.2582125895054377,
+ "F_linear": 21.884890556865436,
+ "F_break_sup": 24.49078890221184,
+ "p_linear_wcb": 0.008600860086008601,
+ "p_break_supF_wcb": 0.0036003600360036,
+ "nrep": 9999,
+ "rss_ratio_break_over_linear": 0.9672176061989757,
+ "prefers": "break",
+ "mean_gap_first": 0.49679039377799417,
+ "mean_gap_last": 0.3236997807347871,
+ "mean_gap_closed": 0.17309061304320703,
+ "share_of_residual_trend_accounts_for": 0.28464488143712685,
+ "share_of_residual_break_accounts_for": 0.30809593464143337,
+ "rademacher_p_floor": 0.0078125,
+ "eight_cluster_note": "Eight clusters. Both p-values come from a wild cluster bootstrap with Rademacher weights and the null imposed, which is the recommended small-G correction but is itself only asymptotically valid in G. The attainable floor is 2^-(8-1) = 0.00781 and no result here should be read as conventional evidence at any nominal level.",
+ "verdict": "LEVEL SHIFT at 2022"
+}
+
+=== PHASE 4: frequency guide ===
+root   geom btag horizon  n_grid  n_below_5pct  finest_M_below_5pct  coarsest_M_below_5pct  minutes_per_sub_bar_required  best_M  best_overstatement  worst_M  worst_overstatement  at_5min_overstatement
+  ES GLOBEX   B0    1day      10             1               1379.0                 1379.0                      1.000725    1379            0.006357        6             0.865942               0.193038
+  ES GLOBEX   B1    1day      10             1               1379.0                 1379.0                      1.000725    1379            0.006357        6             0.865942               0.193038
+  ES    RTH   B0    1day       8             1                389.0                  389.0                      1.002571     389            0.007548        5             0.712522               0.175912
+  ES    RTH   B0      1h       9             0                  NaN                    NaN                           NaN      60            0.285245        4             1.021927               0.626193
+  ES    RTH   B0   30min       5             0                  NaN                    NaN                           NaN      30            0.714999        5             1.430324               1.342768
+  ES    RTH   B1    1day       8             1                389.0                  389.0                      1.002571     389            0.007548        5             0.712522               0.175912
+  ES    RTH   B1      1h       9             0                  NaN                    NaN                           NaN      60            0.285245        4             1.021927               0.626193
+  ES    RTH   B1   30min       5             0                  NaN                    NaN                           NaN      30            0.714999        5             1.430324               1.342768
+  NQ GLOBEX   B0    1day      10             2               1379.0                  345.0                      1.000725    1379            0.009062        6             0.673988               0.059396
+  NQ GLOBEX   B1    1day      10             2               1379.0                  345.0                      1.000725    1379            0.009062        6             0.673988               0.059396
+  NQ    RTH   B0    1day       8             2                389.0                  195.0                      1.002571     389            0.009021        5             0.642280               0.068684
+  NQ    RTH   B0      1h       9             1                 60.0                   60.0                      1.000000      60            0.048081        4             0.498598               0.209650
+  NQ    RTH   B0   30min       5             0                  NaN                    NaN                           NaN      30            0.140754        5             0.485845               0.420947
+  NQ    RTH   B1    1day       8             2                389.0                  195.0                      1.002571     389            0.009021        5             0.642280               0.068684
+  NQ    RTH   B1      1h       9             1                 60.0                   60.0                      1.000000      60            0.048081        4             0.498598               0.209650
+  NQ    RTH   B1   30min       5             0                  NaN                    NaN                           NaN      30            0.140754        5             0.485845               0.420947
+
+{
+ "threshold": 0.05,
+ "n_rows": 128,
+ "n_below_5pct": 14,
+ "n_cells_with_any_frequency_below_5pct": 10,
+ "n_cells": 16,
+ "min_overstatement_any": 0.006356950489432744,
+ "max_overstatement_any": 1.4303237938273048,
+ "max_bias_vp": 2.771791909288186,
+ "no_pnl_claim": "No options data is held. This is a pricing-bias calculation on the adjustment term only; no claim is made about executable P&L.",
+ "expansion_note": "The Brockhaus-Long column is reported only as a labelled sensitivity; per item 95 it is invalid at the measured kappa and the exact lognormal relation is used throughout."
+}
+PHASE3+4 DONE 13s

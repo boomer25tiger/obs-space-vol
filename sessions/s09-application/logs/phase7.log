@@ -1,0 +1,64 @@
+root   geom          range    te_R1    te_R2      te_R3  rel_te_diff_pct  r3_better  lam_R3_in_unit
+  ES GLOBEX       extended 0.377979 0.377719   0.375499         0.587850       True            True
+  ES GLOBEX restricted_S05 0.377979 0.377979 106.090285     27967.783880      False           False
+  ES    RTH       extended 0.378079 0.376906   0.373106         1.008238       True            True
+  ES    RTH restricted_S05 0.378079 0.375567   0.402155         7.079481      False            True
+  NQ GLOBEX       extended 0.344571 0.344288   0.342490         0.522334       True            True
+  NQ GLOBEX restricted_S05 0.344571 0.344259   0.341370         0.839120       True            True
+  NQ    RTH       extended 0.335715 0.334662   0.333122         0.460202       True            True
+  NQ    RTH restricted_S05 0.335715 0.334626   0.332329         0.686659       True            True
+
+{
+ "restricted_S05": {
+  "n_cells": 4,
+  "n_cells_lambda_in_unit": 3,
+  "max_rel_te_diff_pct": 27967.783880329538,
+  "max_rel_te_diff_pct_valid_lambda": 7.079480620134897,
+  "all_below_5pct": false,
+  "all_below_5pct_valid_lambda": false,
+  "cells_at_or_above_5pct": [
+   "ES/GLOBEX",
+   "ES/RTH"
+  ],
+  "K3": "DOES NOT FIRE"
+ },
+ "extended": {
+  "n_cells": 4,
+  "n_cells_lambda_in_unit": 4,
+  "max_rel_te_diff_pct": 1.0082383626847506,
+  "max_rel_te_diff_pct_valid_lambda": 1.0082383626847506,
+  "all_below_5pct": true,
+  "all_below_5pct_valid_lambda": true,
+  "cells_at_or_above_5pct": [],
+  "K3": "FIRES"
+ },
+ "note_cost_sweep": "Tracking error does not depend on the cost assumption, so the relative R2-vs-R3 tracking-error difference is identical at all four sweep points; the sweep discriminates only the turnover charge, reported alongside."
+}
+
+in-sample vs holdout:
+root   geom          range rule     te_is     te_oos  te_degradation_pct  turnover_is  turnover_oos
+  ES GLOBEX restricted_S05   R1  0.319965   0.377979           18.131117 6.345588e-02  7.464471e-02
+  ES GLOBEX restricted_S05   R2  0.319966   0.377979           18.130921 6.345607e-02  7.464516e-02
+  ES GLOBEX restricted_S05   R3 23.533666 106.090285          350.802203 1.783720e+08  1.007986e+09
+  ES GLOBEX       extended   R1  0.319965   0.377979           18.131117 6.345588e-02  7.464471e-02
+  ES GLOBEX       extended   R2  0.319209   0.377719           18.329744 6.324795e-02  7.417146e-02
+  ES GLOBEX       extended   R3  0.323207   0.375499           16.178910 5.767152e-02  6.282052e-02
+  NQ GLOBEX restricted_S05   R1  0.306424   0.344571           12.449030 5.747952e-02  5.694669e-02
+  NQ GLOBEX restricted_S05   R2  0.305696   0.344259           12.614784 5.727999e-02  5.657362e-02
+  NQ GLOBEX restricted_S05   R3  0.308992   0.341370           10.478729 5.297153e-02  4.923561e-02
+  NQ GLOBEX       extended   R1  0.306424   0.344571           12.449030 5.747952e-02  5.694669e-02
+  NQ GLOBEX       extended   R2  0.305762   0.344288           12.600079 5.729912e-02  5.660924e-02
+  NQ GLOBEX       extended   R3  0.303038   0.342490           13.018733 5.579025e-02  5.388976e-02
+  ES    RTH restricted_S05   R1  0.334427   0.378079           13.053013 1.054867e-01  9.070946e-02
+  ES    RTH restricted_S05   R2  0.329039   0.375567           14.140507 1.025069e-01  8.628923e-02
+  ES    RTH restricted_S05   R3  0.522811   0.402155          -23.078337 5.250517e-02  3.456438e-02
+  ES    RTH       extended   R1  0.334427   0.378079           13.053013 1.054867e-01  9.070946e-02
+  ES    RTH       extended   R2  0.331557   0.376906           13.677448 1.042403e-01  8.882929e-02
+  ES    RTH       extended   R3  0.331999   0.373106           12.381490 9.620991e-02  7.770744e-02
+  NQ    RTH restricted_S05   R1  0.306643   0.335715            9.480482 7.835722e-02  6.873657e-02
+  NQ    RTH restricted_S05   R2  0.304174   0.334626           10.011493 7.742076e-02  6.722027e-02
+  NQ    RTH restricted_S05   R3  0.302901   0.332329            9.715216 7.428769e-02  6.244903e-02
+  NQ    RTH       extended   R1  0.306643   0.335715            9.480482 7.835722e-02  6.873657e-02
+  NQ    RTH       extended   R2  0.304245   0.334662            9.997722 7.745437e-02  6.727391e-02
+  NQ    RTH       extended   R3  0.302248   0.333122           10.214844 7.568970e-02  6.453017e-02
+PHASE7 DONE 4s

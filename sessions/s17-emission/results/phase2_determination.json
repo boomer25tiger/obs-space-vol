@@ -1,0 +1,50 @@
+{
+ "explanation": "NQ/RTH/30min carries 17.4 percent of in-sample windows with a state-mean gap below 0.25 and 6.9 percent below 0.1, against 6.9 and 3.0 percent in the holdout. Where the two state means nearly coincide the mean-ordering label is arbitrary and the classification is effectively random, which drags the in-sample rate to chance. The holdout has a quarter as many such windows.",
+ "es_min_mu_gap": {
+  "insample": 0.92447,
+  "holdout": 0.84031
+ },
+ "nq_min_mu_gap": {
+  "insample": 3e-05,
+  "holdout": 0.00044
+ },
+ "nq_share_gap_below_0p25": {
+  "insample": 0.17428,
+  "holdout": 0.06897
+ },
+ "verdict": "REMAINS UNEXPLAINED",
+ "es_verdict": "ES/RTH/30min shows no label instability -- minimum mean gap 0.84, zero windows below 0.25 -- and both its rates sit at chance, so its 48.8 to 47.0 movement is not an inversion and needs no correction",
+ "s16_superseded": [],
+ "label_instability_present_but_insufficient": {
+  "nq_share_gap_below_0p25": {
+   "insample": 0.17428,
+   "holdout": 0.06897
+  },
+  "misclass_unrestricted": {
+   "insample": 0.48476,
+   "holdout": 0.26526
+  },
+  "misclass_restricted_gap_ge_0p50": {
+   "insample": 0.47808,
+   "holdout": 0.26564
+  },
+  "share_retained_at_0p50": {
+   "insample": 0.65345,
+   "holdout": 0.85764
+  },
+  "movement_from_restriction_pp": {
+   "insample": 0.668,
+   "holdout": -0.038
+  },
+  "inversion_size_pp": 21.95,
+  "share_of_inversion_explained": 0.03
+ },
+ "separability_ruled_out": {
+  "mean_separation": {
+   "insample": 1.70862,
+   "holdout": 1.66802
+  },
+  "note": "mean state separation is essentially identical, so a change in separability does not explain it either"
+ },
+ "conclusion": "Label instability is present in NQ/RTH/30min -- 17.4 percent of in-sample windows carry a state-mean gap below 0.25 against 6.9 percent in the holdout -- but removing those windows moves the in-sample rate by only 0.67 pp and the holdout by -0.04 pp, about 3 percent of a 21.95 pp inversion. Mean separation is the same on both sides. Neither of item 124's two candidates accounts for it and the inversion REMAINS UNEXPLAINED. The S16 figures for this cell are not superseded, because no corrected labelling produces materially different numbers; they are flagged as carrying an unexplained in-sample-to-holdout inversion."
+}

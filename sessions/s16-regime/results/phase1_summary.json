@@ -1,0 +1,22 @@
+{
+ "analytic_result": "A3 is affine in A1 and the item-116 specification z-scores within each rolling window, which annihilates affine transforms exactly. The z-scored HMM input is identical under A1 and A3, the recoverable band under the published specification is EMPTY, and the ceiling on any improvement is exactly zero percentage points.",
+ "max_abs_zscore_difference": 6.328271240363392e-15,
+ "all_identical_to_machine_precision": true,
+ "ceiling_published_spec_pp": 0.0,
+ "diagnostic_note": "The fixed-threshold band below holds the K8 threshold on the raw scale instead of re-deriving it. That changes a component and is therefore a labelled DIAGNOSTIC, not a fourth arm.",
+ "diagnostic_band_share_range": [
+  0.000438365772400491,
+  0.008942661756970016
+ ],
+ "diagnostic_ceiling_pp_range": [
+  0.0438365772400491,
+  0.8942661756970016
+ ],
+ "a2_share_reflipped_range": [
+  0.13032324268855824,
+  0.20075425363971233
+ ],
+ "timers": {
+  "phase1": 0.5
+ }
+}

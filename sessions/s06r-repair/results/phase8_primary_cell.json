@@ -1,0 +1,5 @@
+{
+ "criterion": "largest effective sample, fixed before the comparison",
+ "primary_cell": "ES/RTH/B0/30min",
+ "n_eval": 22312
+}

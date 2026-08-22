@@ -1,0 +1,65 @@
+=== exact vs expansion, validity ===
+  s2     kappa  adj_exact   adj_BL  BL_over_exact  k_vol_factor_exact  k_vol_factor_BL
+0.05  0.051271   0.006231 0.006409       1.028630            0.993769         0.993591
+0.10  0.105171   0.012422 0.013146       1.058296            0.987578         0.986854
+0.20  0.221403   0.024690 0.027675       1.120909            0.975310         0.972325
+0.30  0.349859   0.036806 0.043732       1.188199            0.963194         0.956268
+0.40  0.491825   0.048771 0.061478       1.260557            0.951229         0.938522
+0.50  0.648721   0.060587 0.081090       1.338410            0.939413         0.918910
+0.75  1.117000   0.089490 0.139625       1.560237            0.910510         0.860375
+1.00  1.718282   0.117503 0.214785       1.827911            0.882497         0.785215
+1.50  3.481689   0.170971 0.435211       2.545528            0.829029         0.564789
+2.00  6.389056   0.221199 0.798632       3.610465            0.778801         0.201368
+2.50 11.182494   0.268384 1.397812       5.208246            0.731616        -0.397812
+
+BL departs from exact by 10 percent at s2 = 0.1674, kappa = Var(V)/E[V]^2 = 0.1822
+measured kappa runs 1.26 to 6.84
+
+=== per cell, exact relation ===
+root   geom btag horizon   M  s2_intercept  s2_naive  adj_exact_intercept_vp  adj_exact_intercept_vp_lo  adj_exact_intercept_vp_hi  adj_exact_naive_vp  diff_vp  overstatement_prop  adj_BL_intercept_vp  ratio_exact_over_BL_intercept
+  ES GLOBEX   B0    1day 276      1.033910  1.249853                2.424716                   2.197303                   2.604767            2.892779 0.468062            0.193038             4.530096                       0.535246
+  ES GLOBEX   B1    1day 276      1.033910  1.249853                2.424716                   2.203593                   2.612700            2.892779 0.468062            0.193038             4.530096                       0.535246
+  NQ GLOBEX   B0    1day 276      1.085336  1.154678                2.537333                   2.383343                   2.695033            2.688041 0.150708            0.059396             4.901085                       0.517708
+  NQ GLOBEX   B1    1day 276      1.085336  1.154678                2.537333                   2.381261                   2.688781            2.688041 0.150708            0.059396             4.901085                       0.517708
+  ES    RTH   B0    1day  78      1.080938  1.287169                2.527732                   2.343481                   2.701842            2.972389 0.444658            0.175912             4.868611                       0.519189
+  ES    RTH   B0      1h  12      1.051937  1.788844                2.464276                   2.232571                   2.640581            4.007389 1.543113            0.626193             4.657978                       0.529044
+  ES    RTH   B0   30min   6      0.815322  2.059808                1.937877                   1.532150                   2.234101            4.539996 2.602119            1.342768             3.149756                       0.615247
+  ES    RTH   B1    1day  78      1.080938  1.287169                2.527732                   2.341978                   2.704708            2.972389 0.444658            0.175912             4.868611                       0.519189
+  ES    RTH   B1      1h  12      1.051937  1.788844                2.464276                   2.255730                   2.628228            4.007389 1.543113            0.626193             4.657978                       0.529044
+  ES    RTH   B1   30min   6      0.815322  2.059808                1.937877                   1.534180                   2.217023            4.539996 2.602119            1.342768             3.149756                       0.615247
+  NQ    RTH   B0    1day  78      1.056772  1.134747                2.474872                   2.319446                   2.618943            2.644857 0.169985            0.068684             4.692674                       0.527391
+  NQ    RTH   B0      1h  12      1.424897  1.758752                3.263027                   3.164749                   3.355667            3.947120 0.684093            0.209650             7.893569                       0.413378
+  NQ    RTH   B0   30min   6      1.368436  2.022716                3.144487                   3.016607                   3.249380            4.468149 1.323662            0.420947             7.322998                       0.429399
+  NQ    RTH   B1    1day  78      1.056772  1.134747                2.474872                   2.328730                   2.613370            2.644857 0.169985            0.068684             4.692674                       0.527391
+  NQ    RTH   B1      1h  12      1.424897  1.758752                3.263027                   3.167704                   3.356004            3.947120 0.684093            0.209650             7.893569                       0.413378
+  NQ    RTH   B1   30min   6      1.368436  2.022716                3.144487                   3.016309                   3.251136            4.468149 1.323662            0.420947             7.322998                       0.429399
+
+{
+ "relation_exact": "K_vol = E[sqrt V] = sqrt(E[V]) * exp(-s2/8), exact under lognormal V; no expansion, single assumption is lognormality of V.",
+ "relation_expansion": "Brockhaus and Long (2000) second order: K_vol ~ sqrt(E[V]) * (1 - (exp(s2)-1)/8).",
+ "validity_boundary_s2_at_10pct": 0.1673975378836365,
+ "validity_boundary_kappa_at_10pct": 0.18222415079042253,
+ "measured_kappa_range": [
+  1.259902204790218,
+  6.8444633315410295
+ ],
+ "expansion_valid_at_measured_kappa": false,
+ "max_overstatement_prop": 1.3427678095394455,
+ "min_overstatement_prop": 0.059396143417984604,
+ "max_diff_vp": 2.602119161127112,
+ "all_below_5pct": false,
+ "n_cells_above_threshold": 16,
+ "n_cells": 16,
+ "max_ratio_exact_over_BL": 0.6152468726623953,
+ "min_ratio_exact_over_BL": 0.26532373216756083,
+ "s11_void_figures": {
+  "overstatement_443pct": false,
+  "diff_13p96_vol_points": false,
+  "note": "item 95: both are void and are replaced by the exact figures here"
+ },
+ "direction": "Naive s2 exceeds the intercept-route s2 in every cell, so the naive convexity adjustment is too large and the implied volatility-swap strike too low. That favours the side long volatility at the quoted strike.",
+ "no_pnl_claim": "No options data is held. This is a pricing-bias calculation on the adjustment term only; no claim is made about executable P&L.",
+ "threshold": 0.05,
+ "K6": "DOES NOT FIRE"
+}
+PHASE1 DONE 0.2s

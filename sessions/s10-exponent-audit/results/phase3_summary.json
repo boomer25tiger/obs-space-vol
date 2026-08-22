@@ -1,0 +1,19 @@
+{
+ "n_cells": 16,
+ "n_degenerate_subfits": 48,
+ "n_subfits": 192,
+ "cells_year_steeper_all": 4,
+ "mean_year_minus_pooled": -0.17603361206094714,
+ "mean_tercile_minus_pooled": NaN,
+ "share_year_mean": 0.35952093769556803,
+ "share_year_median": 0.31417387163291866,
+ "share_year_min": 0.2357562326876082,
+ "share_year_max": 0.6113459238063959,
+ "n_tercile_subfits_usable": 0,
+ "n_tercile_subfits": 48,
+ "share_tercile_mean": null,
+ "residual_gap_mean": 0.3569093879537217,
+ "timers": {
+  "phase3": 4.3
+ }
+}

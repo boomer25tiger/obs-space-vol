@@ -1,0 +1,40 @@
+{
+ "distinct_8": {
+  "n_obs": 64,
+  "n_clusters": 8,
+  "beta": -0.046903699935393194,
+  "se_cluster_robust": 0.011194225547231627,
+  "t_cluster_robust": -4.1899906105601605,
+  "p_cluster_robust": 0.004086105866021955,
+  "se_ols_fe": 0.010026166517991937,
+  "p_ols_fe": 1.925458147996004e-05,
+  "p_wild_cluster_bootstrap": 0.006600660066006601,
+  "nrep": 9999,
+  "wcb_ci95_by_inversion": [
+   -0.07600868635819544,
+   -0.024515248840929954
+  ],
+  "reject_at_05": true,
+  "reject_at_01": true
+ },
+ "all_16": {
+  "n_obs": 128,
+  "n_clusters": 16,
+  "beta": -0.046903699935393194,
+  "se_cluster_robust": 0.007915512794579173,
+  "t_cluster_robust": -5.925541547670106,
+  "p_cluster_robust": 2.7839184525754644e-05,
+  "se_ols_fe": 0.00705756308116785,
+  "p_ols_fe": 1.1692867762113963e-09,
+  "p_wild_cluster_bootstrap": 0.0,
+  "nrep": 9999,
+  "wcb_ci95_by_inversion": [
+   -0.06431782808346737,
+   -0.030281123066776924
+  ],
+  "reject_at_05": true,
+  "reject_at_01": true
+ },
+ "small_cluster_note": "Eight clusters. Cluster-robust standard errors are biased downward and the reference t distribution is wrong below roughly thirty clusters; the wild cluster bootstrap with the null imposed is the recommended correction but is itself only asymptotically valid in the number of clusters, and at G=8 the smallest attainable two-sided p-value from Rademacher weights is 2^(1-8) = 0.00781. The p-values below are reported with that floor in mind and no result here should be read as conventional evidence at G=8 regardless of its nominal level.",
+ "rademacher_p_floor": 0.0078125
+}

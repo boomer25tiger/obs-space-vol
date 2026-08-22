@@ -1,0 +1,24 @@
+{
+ "slope": -0.046903699935393194,
+ "se": 0.00705756308116785,
+ "t": -6.6458775353421,
+ "p_value": 1.1692867762113963e-09,
+ "n_obs": 128,
+ "n_cells": 16,
+ "dof": 111,
+ "direction": "steeper over time",
+ "n_cells_positive_slope": 0,
+ "n_cells_significant_05": 2,
+ "n_cells_fitted": 16,
+ "distinct_cells": {
+  "slope": -0.046903699935393194,
+  "se": 0.010026166517991937,
+  "t": -4.678128958981939,
+  "p_value": 1.925458147996004e-05,
+  "n_obs": 64,
+  "n_cells": 8,
+  "se_clustered_by_cell": 0.011194225547231627,
+  "t_clustered": -4.1899906105601605,
+  "p_clustered": 0.004086105866021955
+ }
+}

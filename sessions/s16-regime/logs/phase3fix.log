@@ -1,0 +1,63 @@
+  HOFIX NQ/GLOBEX/1day A2_ma5 n_ho=641 done
+  HOFIX ES/RTH/1day A2_ma5 n_ho=621 done
+  HOFIX ES/GLOBEX/1day A3_shrunk n_ho=641 done
+  HOFIX ES/GLOBEX/1day A2_ma5 n_ho=641 done
+  HOFIX NQ/GLOBEX/1day A3_shrunk n_ho=641 done
+  HOFIX NQ/RTH/1day A2_ma5 n_ho=621 done
+  HOFIX ES/RTH/1day A3_shrunk n_ho=621 done
+  HOFIX ES/GLOBEX/1day A1_raw n_ho=641 done
+  HOFIX ES/RTH/1day A1_raw n_ho=621 done
+  HOFIX NQ/RTH/1day A3_shrunk n_ho=621 done
+  HOFIX NQ/GLOBEX/1day A1_raw n_ho=641 done
+  HOFIX NQ/RTH/1day A1_raw n_ho=621 done
+  HOFIX NQ/RTH/1h A3_shrunk n_ho=3726 done
+  HOFIX NQ/RTH/1h A2_ma5 n_ho=3726 done
+  HOFIX ES/RTH/1h A2_ma5 n_ho=3726 done
+  HOFIX NQ/RTH/1h A1_raw n_ho=3726 done
+  HOFIX ES/RTH/1h A3_shrunk n_ho=3726 done
+  HOFIX ES/RTH/30min A2_ma5 n_ho=7452 done
+  HOFIX ES/RTH/1h A1_raw n_ho=3726 done
+  HOFIX NQ/RTH/30min A2_ma5 n_ho=7452 done
+  HOFIX ES/RTH/30min A3_shrunk n_ho=7452 done
+  HOFIX NQ/RTH/30min A3_shrunk n_ho=7452 done
+  HOFIX ES/RTH/30min A1_raw n_ho=7452 done
+  HOFIX NQ/RTH/30min A1_raw n_ho=7452 done
+
+=== PHASE 3 CORRECTED: holdout at the right horizon ===
+root   geom horizon       arm  windows_per_session    n  misclass  switches  mean_regime_duration  share_high
+  ES GLOBEX    1day    A1_raw                    1  641   0.01248        48              13.08163     0.35569
+  ES GLOBEX    1day    A2_ma5                    1  641   0.11856        32              19.42424     0.40562
+  ES GLOBEX    1day A3_shrunk                    1  641   0.01248        48              13.08163     0.35569
+  NQ GLOBEX    1day    A1_raw                    1  641   0.03276        40              15.63415     0.37129
+  NQ GLOBEX    1day    A2_ma5                    1  641   0.15133        26              23.74074     0.44930
+  NQ GLOBEX    1day A3_shrunk                    1  641   0.03276        40              15.63415     0.37129
+  ES    RTH    1day    A1_raw                    1  621   0.02254        48              12.67347     0.31723
+  ES    RTH    1day    A2_ma5                    1  621   0.11594        30              20.03226     0.33655
+  ES    RTH    1day A3_shrunk                    1  621   0.02254        48              12.67347     0.31723
+  NQ    RTH    1day    A1_raw                    1  621   0.05636        46              13.21277     0.34138
+  NQ    RTH    1day    A2_ma5                    1  621   0.12399        26              23.00000     0.36715
+  NQ    RTH    1day A3_shrunk                    1  621   0.05636        46              13.21277     0.34138
+  ES    RTH      1h    A1_raw                    6 3726   0.05153       362              10.26446     0.44552
+  ES    RTH      1h    A2_ma5                    6 3726   0.14761       182              20.36066     0.47343
+  ES    RTH      1h A3_shrunk                    6 3726   0.05153       362              10.26446     0.44552
+  NQ    RTH      1h    A1_raw                    6 3726   0.07944      1113               3.34470     0.49624
+  NQ    RTH      1h    A2_ma5                    6 3726   0.46028       182              20.36066     0.48739
+  NQ    RTH      1h A3_shrunk                    6 3726   0.07944      1113               3.34470     0.49624
+  ES    RTH   30min    A1_raw                   12 7452   0.47008       669              11.12239     0.47034
+  ES    RTH   30min    A2_ma5                   12 7452   0.48108       367              20.25000     0.47169
+  ES    RTH   30min A3_shrunk                   12 7452   0.47008       669              11.12239     0.47034
+  NQ    RTH   30min    A1_raw                   12 7452   0.26530      1345               5.53640     0.48604
+  NQ    RTH   30min    A2_ma5                   12 7452   0.33145       605              12.29703     0.50013
+  NQ    RTH   30min A3_shrunk                   12 7452   0.26530      1345               5.53640     0.48604
+
+=== A1 vs A3 identity, holdout ===
+root   geom horizon    n  n_differ
+  ES GLOBEX    1day  641         0
+  NQ GLOBEX    1day  641         0
+  ES    RTH    1day  621         0
+  NQ    RTH    1day  621         0
+  ES    RTH      1h 3726         0
+  NQ    RTH      1h 3726         0
+  ES    RTH   30min 7452         0
+  NQ    RTH   30min 7452         0
+PHASE3-FIX DONE 722s

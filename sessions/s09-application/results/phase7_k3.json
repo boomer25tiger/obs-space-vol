@@ -1,0 +1,26 @@
+{
+ "restricted_S05": {
+  "n_cells": 4,
+  "n_cells_lambda_in_unit": 3,
+  "max_rel_te_diff_pct": 27967.783880329538,
+  "max_rel_te_diff_pct_valid_lambda": 7.079480620134897,
+  "all_below_5pct": false,
+  "all_below_5pct_valid_lambda": false,
+  "cells_at_or_above_5pct": [
+   "ES/GLOBEX",
+   "ES/RTH"
+  ],
+  "K3": "DOES NOT FIRE"
+ },
+ "extended": {
+  "n_cells": 4,
+  "n_cells_lambda_in_unit": 4,
+  "max_rel_te_diff_pct": 1.0082383626847506,
+  "max_rel_te_diff_pct_valid_lambda": 1.0082383626847506,
+  "all_below_5pct": true,
+  "all_below_5pct_valid_lambda": true,
+  "cells_at_or_above_5pct": [],
+  "K3": "FIRES"
+ },
+ "note_cost_sweep": "Tracking error does not depend on the cost assumption, so the relative R2-vs-R3 tracking-error difference is identical at all four sweep points; the sweep discriminates only the turnover charge, reported alongside."
+}

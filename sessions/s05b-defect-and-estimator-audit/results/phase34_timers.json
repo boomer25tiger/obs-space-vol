@@ -1,0 +1,13 @@
+{
+ "timers": {
+  "p3_panel_cache": 74.5,
+  "p3_present_masks": 24.7,
+  "p3_zero_audit": 26.0,
+  "p3_nonfinite": 1.1,
+  "p3_named_arrays": 0.9,
+  "p4_grid_cache": 49.9,
+  "total": 177.1
+ },
+ "cache_bytes": 71335825,
+ "cache_files": 136
+}

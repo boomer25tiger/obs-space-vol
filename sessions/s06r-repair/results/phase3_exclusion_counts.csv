@@ -1,0 +1,5 @@
+root,geom,n_sessions,n_holiday_sessions,n_minutes_excluded,share_minutes_excluded,halt_slot
+ES,GLOBEX,1953,52,13110,0.00486431131592422,1140
+NQ,GLOBEX,1948,47,11910,0.004430407999285778,1140
+ES,RTH,1901,0,0,0.0,-1
+NQ,RTH,1901,0,0,0.0,-1

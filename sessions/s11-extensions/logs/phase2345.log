@@ -1,0 +1,136 @@
+=== PHASE 2: grid span ===
+root   geom btag                 truncation  n_grid  M_max  span_ratio         b       cond  screen_tight
+  ES GLOBEX   B0                       full      10   1379       275.8 -0.442672  24.959504          True
+  ES GLOBEX   B0    match_1h_abs_coarse_end       6     46         9.2 -0.710349  63.695004          True
+  ES GLOBEX   B0        match_1h_span_ratio       6     46         9.2 -0.710349  63.695004          True
+  ES GLOBEX   B0 match_30min_abs_coarse_end       5     23         4.6 -0.557818  77.875990         False
+  ES GLOBEX   B0     match_30min_span_ratio       5     23         4.6 -0.557818  77.875990         False
+  ES GLOBEX   B1                       full      10   1379       275.8 -0.442672  24.959504          True
+  ES GLOBEX   B1    match_1h_abs_coarse_end       6     46         9.2 -0.710349  63.695004          True
+  ES GLOBEX   B1        match_1h_span_ratio       6     46         9.2 -0.710349  63.695004          True
+  ES GLOBEX   B1 match_30min_abs_coarse_end       5     23         4.6 -0.557818  77.875990         False
+  ES GLOBEX   B1     match_30min_span_ratio       5     23         4.6 -0.557818  77.875990         False
+  NQ GLOBEX   B0                       full      10   1379       275.8 -0.688582  38.985676          True
+  NQ GLOBEX   B0    match_1h_abs_coarse_end       6     46         9.2 -0.780858  71.901200          True
+  NQ GLOBEX   B0        match_1h_span_ratio       6     46         9.2 -0.780858  71.901200          True
+  NQ GLOBEX   B0 match_30min_abs_coarse_end       5     23         4.6 -0.638868  83.617292         False
+  NQ GLOBEX   B0     match_30min_span_ratio       5     23         4.6 -0.638868  83.617292         False
+  NQ GLOBEX   B1                       full      10   1379       275.8 -0.688582  38.985676          True
+  NQ GLOBEX   B1    match_1h_abs_coarse_end       6     46         9.2 -0.780858  71.901200          True
+  NQ GLOBEX   B1        match_1h_span_ratio       6     46         9.2 -0.780858  71.901200          True
+  NQ GLOBEX   B1 match_30min_abs_coarse_end       5     23         4.6 -0.638868  83.617292         False
+  NQ GLOBEX   B1     match_30min_span_ratio       5     23         4.6 -0.638868  83.617292         False
+  ES    RTH   B0                       full       8    389        77.8 -0.627444  36.519381          True
+  ES    RTH   B0    match_1h_abs_coarse_end       5     26         5.2 -0.929453 116.413460         False
+  ES    RTH   B0        match_1h_span_ratio       5     26         5.2 -0.929453 116.413460         False
+  ES    RTH   B0 match_30min_abs_coarse_end       5     26         5.2 -0.929453 116.413460         False
+  ES    RTH   B0     match_30min_span_ratio       5     26         5.2 -0.929453 116.413460         False
+  ES    RTH   B1                       full       8    389        77.8 -0.627444  36.519381          True
+  ES    RTH   B1    match_1h_abs_coarse_end       5     26         5.2 -0.929453 116.413460         False
+  ES    RTH   B1        match_1h_span_ratio       5     26         5.2 -0.929453 116.413460         False
+  ES    RTH   B1 match_30min_abs_coarse_end       5     26         5.2 -0.929453 116.413460         False
+  ES    RTH   B1     match_30min_span_ratio       5     26         5.2 -0.929453 116.413460         False
+  NQ    RTH   B0                       full       8    389        77.8 -0.974400  70.470272          True
+  NQ    RTH   B0    match_1h_abs_coarse_end       5     26         5.2 -1.013078 137.259879         False
+  NQ    RTH   B0        match_1h_span_ratio       5     26         5.2 -1.013078 137.259879         False
+  NQ    RTH   B0 match_30min_abs_coarse_end       5     26         5.2 -1.013078 137.259879         False
+  NQ    RTH   B0     match_30min_span_ratio       5     26         5.2 -1.013078 137.259879         False
+  NQ    RTH   B1                       full       8    389        77.8 -0.974400  70.470272          True
+  NQ    RTH   B1    match_1h_abs_coarse_end       5     26         5.2 -1.013078 137.259879         False
+  NQ    RTH   B1        match_1h_span_ratio       5     26         5.2 -1.013078 137.259879         False
+  NQ    RTH   B1 match_30min_abs_coarse_end       5     26         5.2 -1.013078 137.259879         False
+  NQ    RTH   B1     match_30min_span_ratio       5     26         5.2 -1.013078 137.259879         False
+
+root btag target_horizon  b_1day_full  b_1day_truncated  b_actual_target  horizon_effect  span_effect  share_from_span  residual_after_span
+  ES   B0             1h    -0.627444         -0.929453        -0.465806       -0.161638     0.302009        -1.868425            -0.463647
+  ES   B0          30min    -0.627444         -0.929453        -0.411108       -0.216336     0.302009        -1.396015            -0.518345
+  ES   B1             1h    -0.627444         -0.929453        -0.465806       -0.161638     0.302009        -1.868425            -0.463647
+  ES   B1          30min    -0.627444         -0.929453        -0.411108       -0.216336     0.302009        -1.396015            -0.518345
+  NQ   B0             1h    -0.974400         -1.013078        -0.803215       -0.171184     0.038678        -0.225942            -0.209862
+  NQ   B0          30min    -0.974400         -1.013078        -0.700950       -0.273449     0.038678        -0.141444            -0.312127
+  NQ   B1             1h    -0.974400         -1.013078        -0.803215       -0.171184     0.038678        -0.225942            -0.209862
+  NQ   B1          30min    -0.974400         -1.013078        -0.700950       -0.273449     0.038678        -0.141444            -0.312127
+
+=== PHASE 3: time trend ===
+             cell  n_years     slope       se  p_value       r2  intercept   b_first    b_last
+ES/GLOBEX/B0/1day        8 -0.041037 0.029175 0.209172 0.247980  82.192196 -0.632834 -0.736294
+ES/GLOBEX/B1/1day        8 -0.041037 0.029175 0.209172 0.247980  82.192196 -0.632834 -0.736294
+   ES/RTH/B0/1day        8 -0.120412 0.038643 0.020689 0.618072 242.289046 -0.460580 -1.207672
+     ES/RTH/B0/1h        8 -0.048307 0.029654 0.154428 0.306659  96.881307 -0.483209 -0.670155
+  ES/RTH/B0/30min        8 -0.024917 0.021824 0.297088 0.178472  49.723141 -0.594236 -0.564468
+   ES/RTH/B1/1day        8 -0.120412 0.038643 0.020689 0.618072 242.289046 -0.460580 -1.207672
+     ES/RTH/B1/1h        8 -0.048307 0.029654 0.154428 0.306659  96.881307 -0.483209 -0.670155
+  ES/RTH/B1/30min        8 -0.024917 0.021824 0.297088 0.178472  49.723141 -0.594236 -0.564468
+NQ/GLOBEX/B0/1day        8 -0.022569 0.021149 0.326951 0.159522  44.763124 -0.743629 -0.823472
+NQ/GLOBEX/B1/1day        8 -0.022569 0.021149 0.326951 0.159522  44.763124 -0.743629 -0.823472
+   NQ/RTH/B0/1day        8 -0.068381 0.031900 0.075772 0.433698 137.017783 -0.868491 -1.091688
+     NQ/RTH/B0/1h        8 -0.030556 0.020497 0.186607 0.270291  60.800421 -0.754748 -0.873438
+  NQ/RTH/B0/30min        8 -0.019049 0.021214 0.403790 0.118472  37.586712 -0.865672 -0.820936
+   NQ/RTH/B1/1day        8 -0.068381 0.031900 0.075772 0.433698 137.017783 -0.868491 -1.091688
+     NQ/RTH/B1/1h        8 -0.030556 0.020497 0.186607 0.270291  60.800421 -0.754748 -0.873438
+  NQ/RTH/B1/30min        8 -0.019049 0.021214 0.403790 0.118472  37.586712 -0.865672 -0.820936
+{
+ "slope": -0.046903699935393194,
+ "se": 0.00705756308116785,
+ "t": -6.6458775353421,
+ "p_value": 1.1692867762113963e-09,
+ "n_obs": 128,
+ "n_cells": 16,
+ "dof": 111,
+ "direction": "steeper over time",
+ "n_cells_positive_slope": 0,
+ "n_cells_significant_05": 2,
+ "n_cells_fitted": 16,
+ "distinct_cells": {
+  "slope": -0.046903699935393194,
+  "se": 0.010026166517991937,
+  "t": -4.678128958981939,
+  "p_value": 1.925458147996004e-05,
+  "n_obs": 64,
+  "n_cells": 8,
+  "se_clustered_by_cell": 0.011194225547231627,
+  "t_clustered": -4.1899906105601605,
+  "p_clustered": 0.004086105866021955
+ }
+}
+
+=== PHASE 4: reliability vs degradation ===
+root   geom horizon  lam_intercept  r2_is_mean  r2_oos_mean  degradation_mean
+  ES GLOBEX    1day       0.827225    0.450880     0.270001          0.180879
+  ES    RTH    1day       0.839780    0.456561     0.299829          0.156732
+  ES    RTH      1h       0.588054    0.383465     0.249817          0.133648
+  ES    RTH   30min       0.395824    0.344611     0.234286          0.110324
+  NQ GLOBEX    1day       0.939947    0.416751     0.248799          0.167952
+  NQ    RTH    1day       0.931284    0.429701     0.283667          0.146034
+  NQ    RTH      1h       0.810175    0.335575     0.197839          0.137736
+  NQ    RTH   30min       0.676534    0.319861     0.211358          0.108503
+{
+ "n_rows_all": 16,
+ "n_distinct_cells": 8,
+ "spearman_rho": 0.7619047619047621,
+ "spearman_p_exact": 0.028004939153071815,
+ "pearson_r": 0.7372495369585983,
+ "pearson_p": 0.03688225099131629,
+ "power_note": "Eight distinct cells (B0 and B1 are duplicates by construction). At n=8 a two-sided Spearman test has roughly 25 percent power to detect rho=0.7 at the 5 percent level, so a null result here is uninformative and a significant one would rest on eight points, four of which share an instrument. This is reported as a descriptive association, not a test."
+}
+
+=== PHASE 5: vol of vol at the five-minute equivalent ===
+root   geom btag horizon   M        c     c_lo     c_hi  sd_log_iv  vol_ratio_1sd  var_log_rv_naive  overstatement_var  overstatement_sd
+  ES GLOBEX   B0    1day 276 1.033910 0.931059 1.116289   1.016813       1.662640          1.249853           0.208861          0.099482
+  ES GLOBEX   B1    1day 276 1.033910 0.933885 1.119938   1.016813       1.662640          1.249853           0.208861          0.099482
+  NQ GLOBEX   B0    1day 276 1.085336 1.015099 1.157910   1.041795       1.683538          1.154678           0.063890          0.031450
+  NQ GLOBEX   B1    1day 276 1.085336 1.014154 1.155020   1.041795       1.683538          1.154678           0.063890          0.031450
+  ES    RTH   B0    1day  78 1.080938 0.997018 1.161058   1.039682       1.681760          1.287169           0.190788          0.091232
+  ES    RTH   B0      1h  12 1.051937 0.946923 1.132776   1.025640       1.669994          1.788844           0.700524          0.304041
+  ES    RTH   B0   30min   6 0.815322 0.637607 0.947611   0.902952       1.570628          2.059808           1.526375          0.589457
+  ES    RTH   B1    1day  78 1.080938 0.996337 1.162383   1.039682       1.681760          1.287169           0.190788          0.091232
+  ES    RTH   B1      1h  12 1.051937 0.957357 1.127085   1.025640       1.669994          1.788844           0.700524          0.304041
+  ES    RTH   B1   30min   6 0.815322 0.638487 0.939925   0.902952       1.570628          2.059808           1.526375          0.589457
+  NQ    RTH   B0    1day  78 1.056772 0.986135 1.122811   1.027994       1.671961          1.134747           0.073786          0.036236
+  NQ    RTH   B0      1h  12 1.424897 1.378058 1.469300   1.193690       1.816379          1.758752           0.234302          0.110991
+  NQ    RTH   B0   30min   6 1.368436 1.307970 1.418376   1.169802       1.794813          2.022716           0.478123          0.215781
+  NQ    RTH   B1    1day  78 1.056772 0.990337 1.120246   1.027994       1.671961          1.134747           0.073786          0.036236
+  NQ    RTH   B1      1h  12 1.424897 1.379463 1.469462   1.193690       1.816379          1.758752           0.234302          0.110991
+  NQ    RTH   B1   30min   6 1.368436 1.307830 1.419215   1.169802       1.794813          2.022716           0.478123          0.215781
+
+PHASE2-5 DONE 2s

@@ -1,0 +1,20 @@
+{
+ "source": "corrected holdout, phase3_classification_fixed.csv",
+ "criterion_misclass_pp": 1.0,
+ "criterion_sharpe": 0.1,
+ "max_reduction_vs_A1_pp": 0.0,
+ "reduction_vs_A2_pp_range": [
+  1.1003757380569024,
+  38.083735909822856
+ ],
+ "n_cells_below_1pp_vs_both": 0,
+ "n_cells": 8,
+ "all_below_1pp_vs_both": false,
+ "max_sharpe_difference": 0.2593946307392782,
+ "n_sweep_points_above_0p10": 8,
+ "n_sweep_points": 16,
+ "all_sharpe_below_0p10": false,
+ "ceiling_from_phase1_pp": 0.0,
+ "attribution": "Every point of the reduction against A2 is A3 not being A2. The reliability correction itself contributes 0.0 pp, which equals the Phase 1 ceiling exactly.",
+ "K11": "DOES NOT FIRE"
+}

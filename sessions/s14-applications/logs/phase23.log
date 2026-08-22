@@ -1,0 +1,112 @@
+=== K9 coefficients ===
+root   geom  noise_v      b_d     se_d     bc_d  rel_shift_daily      b_w      bc_w      b_m     bc_m  persistence_naive  persistence_corr  daily_share_naive  daily_share_corr  cond_Sxx  cond_Sxx_true     rmse
+  ES GLOBEX 0.171009 0.498358 0.026299 1.076032         1.159154 0.347360 -0.167826 0.088357 0.062788           0.934075          0.970994           0.533531          1.108176 34.743306      58.299141 0.580714
+  NQ GLOBEX 0.053935 0.462747 0.026559 0.557170         0.204048 0.353575  0.285202 0.117586 0.099325           0.933907          0.941697           0.495496          0.591666 33.259558      36.729186 0.584578
+  ES    RTH 0.151278 0.466345 0.026854 0.819201         0.756642 0.370020  0.077585 0.091941 0.057387           0.928306          0.954173           0.502362          0.858546 32.998001      46.713523 0.613684
+  NQ    RTH 0.051452 0.422885 0.027186 0.504518         0.193039 0.391454  0.335805 0.117423 0.098499           0.931761          0.938821           0.453855          0.537395 33.574650      36.842574 0.589973
+
+=== forecast under both coefficient sets ===
+root   geom     sample  corrected    naive  rel_rmse_diff_pct
+  ES GLOBEX   insample   0.745094 0.580714          28.306631
+  ES GLOBEX pseudo_oos   0.775128 0.585801          32.319354
+  ES    RTH   insample   0.695914 0.613684          13.399304
+  ES    RTH pseudo_oos   0.657654 0.555071          18.481053
+  NQ GLOBEX   insample   0.591131 0.584578           1.120939
+  NQ GLOBEX pseudo_oos   0.605551 0.589225           2.770618
+  NQ    RTH   insample   0.595539 0.589973           0.943368
+  NQ    RTH pseudo_oos   0.528706 0.515035           2.654303
+
+{
+ "threshold": 0.1,
+ "max_abs_rel_shift_daily": 1.1591537944185895,
+ "rel_shift_daily_by_cell": {
+  "ES/GLOBEX": 1.1591537944185895,
+  "NQ/GLOBEX": 0.20404762993627212,
+  "ES/RTH": 0.7566415159053042,
+  "NQ/RTH": 0.1930387496181678
+ },
+ "all_below_10pct": false,
+ "persistence_naive_range": [
+  0.928305890069176,
+  0.9340746463239584
+ ],
+ "persistence_corr_range": [
+  0.9388213533910328,
+  0.9709939641536081
+ ],
+ "daily_share_shift_range": [
+  0.08353958086814556,
+  0.5746443130171748
+ ],
+ "max_abs_forecast_rmse_diff_pct": 32.319353554091386,
+ "forecast_claim": "The point forecast is NOT claimed to change. The measured RMSE difference between the two coefficient sets is reported above and is the evidence for that statement, not an assertion.",
+ "min_eig_Sxx_true": 0.04544496945049669,
+ "K9": "DOES NOT FIRE"
+}
+
+=== K10 ===
+root   geom   q      lam  var_eps   nugget  H_naive  se_H_naive  H_corrected  delta_H  rmse_naive  rmse_corr  n_lags_used
+  ES GLOBEX 0.5 0.827225 0.215943 0.431886 0.188666    0.003741     0.396818 0.208153    0.009945   0.041950           39
+  ES GLOBEX 1.0 0.827225 0.215943 0.431886 0.185686    0.003203     0.367575 0.181889    0.017029   0.069692           39
+  ES GLOBEX 2.0 0.827225 0.215943 0.431886 0.181934    0.002599     0.327328 0.145394    0.027631   0.104688           39
+  NQ GLOBEX 0.5 0.939947 0.069342 0.138684 0.167015    0.003824     0.207045 0.040030    0.010164   0.016427           40
+  NQ GLOBEX 1.0 0.939947 0.069342 0.138684 0.164949    0.003269     0.202026 0.037077    0.017380   0.028314           40
+  NQ GLOBEX 2.0 0.939947 0.069342 0.138684 0.160335    0.002660     0.191973 0.031638    0.028277   0.044322           40
+  ES    RTH 0.5 0.839780 0.206230 0.412460 0.168004    0.002344     0.352139 0.184135    0.006231   0.048279           40
+  ES    RTH 1.0 0.839780 0.206230 0.412460 0.168978    0.002161     0.347083 0.178104    0.011486   0.096083           40
+  ES    RTH 2.0 0.839780 0.206230 0.412460 0.173829    0.002143     0.338003 0.164174    0.022781   0.170679           40
+  NQ    RTH 0.5 0.931284 0.077975 0.155950 0.147906    0.002658     0.183870 0.035964    0.007065   0.010752           40
+  NQ    RTH 1.0 0.931284 0.077975 0.155950 0.150326    0.002258     0.186154 0.035828    0.012006   0.019844           40
+  NQ    RTH 2.0 0.931284 0.077975 0.155950 0.156045    0.001886     0.191430 0.035386    0.020058   0.035000           40
+
+=== H with the lambda bootstrap interval ===
+root   geom   q       hi       lo    point
+  ES GLOBEX 0.5 0.305459 0.571856 0.396818
+  ES GLOBEX 1.0 0.290515 0.586142 0.367575
+  ES GLOBEX 2.0 0.267883 0.550183 0.327328
+  ES    RTH 0.5 0.236285 0.390639 0.352139
+  ES    RTH 1.0 0.235903 0.493585 0.347083
+  ES    RTH 2.0 0.238524 0.443103 0.338003
+  NQ GLOBEX 0.5 0.167015 0.288520 0.207045
+  NQ GLOBEX 1.0 0.164949 0.271864 0.202026
+  NQ GLOBEX 2.0 0.160335 0.244982 0.191973
+  NQ    RTH 0.5 0.152386 0.241326 0.183870
+  NQ    RTH 1.0 0.154802 0.242937 0.186154
+  NQ    RTH 2.0 0.160501 0.246042 0.191430
+
+=== lags at which the nugget exceeds 10 percent of the increment moment ===
+root   geom   q  max_lag_nugget_above_10pct
+  ES GLOBEX 0.5                          40
+  ES GLOBEX 1.0                          40
+  ES GLOBEX 2.0                          40
+  ES    RTH 0.5                          40
+  ES    RTH 1.0                          40
+  ES    RTH 2.0                          40
+  NQ GLOBEX 0.5                          40
+  NQ GLOBEX 1.0                          40
+  NQ GLOBEX 2.0                          33
+  NQ    RTH 0.5                          40
+  NQ    RTH 1.0                          40
+  NQ    RTH 2.0                          40
+
+{
+ "threshold": 0.02,
+ "max_abs_delta_H": 0.20815251426140674,
+ "min_abs_delta_H": 0.03163800194172037,
+ "all_below_0p02": false,
+ "H_naive_range": [
+  0.14790637258092446,
+  0.18866597132866592
+ ],
+ "H_corrected_range": [
+  0.18386992201903166,
+  0.39681848559007266
+ ],
+ "nugget_share_at_lag1": 1.2586428340626754,
+ "nugget_share_at_lag40": 0.3144799237328436,
+ "n_moving_above_0p5": 0,
+ "n_rows": 12,
+ "cont_das_position": "Cont and Das (2024) argue that measured rough volatility is an artifact of microstructure noise in the volatility proxy and that correcting for it moves H away from the roughness region toward 0.5. That is the position being TESTED here against this programme's own measured reliability, not assumed.",
+ "K10": "DOES NOT FIRE"
+}
+PHASE2+3 DONE 1s

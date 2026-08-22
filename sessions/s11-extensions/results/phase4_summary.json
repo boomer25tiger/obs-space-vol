@@ -1,0 +1,9 @@
+{
+ "n_rows_all": 16,
+ "n_distinct_cells": 8,
+ "spearman_rho": 0.7619047619047621,
+ "spearman_p_exact": 0.028004939153071815,
+ "pearson_r": 0.7372495369585983,
+ "pearson_p": 0.03688225099131629,
+ "power_note": "Eight distinct cells (B0 and B1 are duplicates by construction). At n=8 a two-sided Spearman test has roughly 25 percent power to detect rho=0.7 at the 5 percent level, so a null result here is uninformative and a significant one would rest on eight points, four of which share an instrument. This is reported as a descriptive association, not a test."
+}

@@ -1,0 +1,1149 @@
+item,occurrence,key,line,kind,token,clause
+1,1,1#1,7,number,1,1.
+1,1,1#1,7,number,50,"Screening simulation showed replicate errors correlate by construction through interval overlap, biasing the estimate of measurement-error variance down by ~50% at spacing 2 and ~86% at spacing 15, with microstructure no"
+1,1,1#1,7,number,2,"Screening simulation showed replicate errors correlate by construction through interval overlap, biasing the estimate of measurement-error variance down by ~50% at spacing 2 and ~86% at spacing 15, with microstructure no"
+1,1,1#1,7,number,86,"Screening simulation showed replicate errors correlate by construction through interval overlap, biasing the estimate of measurement-error variance down by ~50% at spacing 2 and ~86% at spacing 15, with microstructure no"
+1,1,1#1,7,number,15,"Screening simulation showed replicate errors correlate by construction through interval overlap, biasing the estimate of measurement-error variance down by ~50% at spacing 2 and ~86% at spacing 15, with microstructure no"
+2,1,2#1,12,number,2,2.
+3,1,3#1,15,number,3,3.
+3,1,3#1,15,number,1,"In the scalar-state scalar-observation case, writing the analysis as x_a = x_b + K(y - x_b) gives d_oa = (1-K)d_ob and d_ab = K*d_ob identically, so the diagnostic returns K for any K."
+4,1,4#1,20,name,Bollerslev,"The reliability parameter lambda is now sourced from the realized-quarticity route of Bollerslev, Patton and Quaedvlieg (2016), which has published asymptotic theory."
+4,1,4#1,20,name,Patton,"The reliability parameter lambda is now sourced from the realized-quarticity route of Bollerslev, Patton and Quaedvlieg (2016), which has published asymptotic theory."
+4,1,4#1,20,name,Quaedvlieg,"The reliability parameter lambda is now sourced from the realized-quarticity route of Bollerslev, Patton and Quaedvlieg (2016), which has published asymptotic theory."
+4,1,4#1,20,number,4,4.
+4,1,4#1,20,number,2016,"The reliability parameter lambda is now sourced from the realized-quarticity route of Bollerslev, Patton and Quaedvlieg (2016), which has published asymptotic theory."
+5,1,5#1,25,number,5,5.
+5,1,5#1,25,number,1974,"Nugget extrapolation is geostatistics (Matheron), three-cornered hat is clock metrology (Gray and Allan 1974)."
+6,1,6#1,30,name,Globex,"The prior draft contained invented tolerances, a geometry inconsistent with the base spec (390 minutes against a full-Globex primary), a success criterion on a quantity that varies across generating processes by construc"
+6,1,6#1,30,number,6,6.
+6,1,6#1,30,number,1,Session 1 pre-registration parameters rewritten after audit.
+6,1,6#1,30,number,390,"The prior draft contained invented tolerances, a geometry inconsistent with the base spec (390 minutes against a full-Globex primary), a success criterion on a quantity that varies across generating processes by construc"
+7,1,7#1,39,path,D6/D7,S01 verdict on D6/D7 is CONDITIONAL.
+7,1,7#1,39,path,ES/NQ,"01} were asserted by the analyst, not measured on ES/NQ."
+7,1,7#1,39,path,pass/fail,S02 therefore reports breakdown thresholds across a wide swept range rather than pass/fail at asserted points.
+7,1,7#1,39,code,S01,S01 verdict on D6/D7 is CONDITIONAL.
+7,1,7#1,39,code,ES,"01} were asserted by the analyst, not measured on ES/NQ."
+7,1,7#1,39,code,NQ,"01} were asserted by the analyst, not measured on ES/NQ."
+7,1,7#1,39,code,S02,S02 therefore reports breakdown thresholds across a wide swept range rather than pass/fail at asserted points.
+7,1,7#1,39,number,7,7.
+7,1,7#1,39,number,0.001,"Noise-to-signal ratios {0.001, 0."
+7,1,7#1,39,number,0.01,"001, 0.01} were asserted by the analyst, not measured on ES/NQ."
+8,1,8#1,42,path,RV/RQ,"Every estimator was fed plain RV/RQ, so D6 and D7 tested the proxy, not the estimator."
+8,1,8#1,42,code,S01,S01 omitted noise-robust and jump-robust volatility proxies entirely.
+8,1,8#1,42,code,RV,"Every estimator was fed plain RV/RQ, so D6 and D7 tested the proxy, not the estimator."
+8,1,8#1,42,code,RQ,"Every estimator was fed plain RV/RQ, so D6 and D7 tested the proxy, not the estimator."
+8,1,8#1,42,code,S02,S02 adds them as the primary proxy arm.
+8,1,8#1,42,number,8,8.
+9,1,9#1,45,code,S01,S01 DGPs hold integrated variance constant within each window (to be verified in code).
+9,1,9#1,45,code,E2,"E2's pass on D1-D4 may therefore be an artifact, since contiguous halves estimate the same quantity only under within-window constancy."
+9,1,9#1,45,code,S02,S02 adds within-window volatility variation and a diurnal profile.
+9,1,9#1,45,number,9,9.
+10,1,10#1,49,code,S01,"This is a compute decision citing S01 evidence, recorded here so it is not mistaken for post-hoc selection."
+10,1,10#1,49,code,S01,The dropped combinations failed on D3 in every case and are documented in S01.
+10,1,10#1,49,number,10,10.
+10,1,10#1,49,number,4,"E1 reduced from 4 arms x 4 lag sets to 2 arms x 2 lag sets for compute reasons, retaining a_exp (baseline) and d_model (best performer on D3, 0."
+10,1,10#1,49,number,4,"E1 reduced from 4 arms x 4 lag sets to 2 arms x 2 lag sets for compute reasons, retaining a_exp (baseline) and d_model (best performer on D3, 0."
+10,1,10#1,49,number,2,"E1 reduced from 4 arms x 4 lag sets to 2 arms x 2 lag sets for compute reasons, retaining a_exp (baseline) and d_model (best performer on D3, 0."
+10,1,10#1,49,number,2,"E1 reduced from 4 arms x 4 lag sets to 2 arms x 2 lag sets for compute reasons, retaining a_exp (baseline) and d_model (best performer on D3, 0."
+10,1,10#1,49,number,0.956,"E1 reduced from 4 arms x 4 lag sets to 2 arms x 2 lag sets for compute reasons, retaining a_exp (baseline) and d_model (best performer on D3, 0.956 at L1-10), at L1-5 and L1-10."
+11,1,11#1,57,path,SCOPE.md,SCOPE.md is not present anywhere in the working tree (checked at session start).
+11,1,11#1,57,code,S03,"S03 validated against the SCOPE figures quoted in the session instructions: 573,473 non-positive prices (matched exactly), ~91-day median front holding (matched: 91 ES / 89 NQ calendar days), 95-100% fill from 2016 (matc"
+11,1,11#1,57,code,ES,"S03 validated against the SCOPE figures quoted in the session instructions: 573,473 non-positive prices (matched exactly), ~91-day median front holding (matched: 91 ES / 89 NQ calendar days), 95-100% fill from 2016 (matc"
+11,1,11#1,57,code,NQ,"S03 validated against the SCOPE figures quoted in the session instructions: 573,473 non-positive prices (matched exactly), ~91-day median front holding (matched: 91 ES / 89 NQ calendar days), 95-100% fill from 2016 (matc"
+11,1,11#1,57,name,New York,"The early-close rule as applied catches every session whose day portion halts before 15:00 New York: 68 per root, a superset of the ~18 designated half-days (day after Thanksgiving, July 3, Christmas Eve), because full-h"
+11,1,11#1,57,number,11,11.
+11,1,11#1,57,number,"573,473","S03 validated against the SCOPE figures quoted in the session instructions: 573,473 non-positive prices (matched exactly), ~91-day median front holding (matched: 91 ES / 89 NQ calendar days), 95-100% fill from 2016 (matc"
+11,1,11#1,57,number,91,"S03 validated against the SCOPE figures quoted in the session instructions: 573,473 non-positive prices (matched exactly), ~91-day median front holding (matched: 91 ES / 89 NQ calendar days), 95-100% fill from 2016 (matc"
+11,1,11#1,57,number,91,"S03 validated against the SCOPE figures quoted in the session instructions: 573,473 non-positive prices (matched exactly), ~91-day median front holding (matched: 91 ES / 89 NQ calendar days), 95-100% fill from 2016 (matc"
+11,1,11#1,57,number,89,"S03 validated against the SCOPE figures quoted in the session instructions: 573,473 non-positive prices (matched exactly), ~91-day median front holding (matched: 91 ES / 89 NQ calendar days), 95-100% fill from 2016 (matc"
+11,1,11#1,57,number,95,"S03 validated against the SCOPE figures quoted in the session instructions: 573,473 non-positive prices (matched exactly), ~91-day median front holding (matched: 91 ES / 89 NQ calendar days), 95-100% fill from 2016 (matc"
+11,1,11#1,57,number,2016,"S03 validated against the SCOPE figures quoted in the session instructions: 573,473 non-positive prices (matched exactly), ~91-day median front holding (matched: 91 ES / 89 NQ calendar days), 95-100% fill from 2016 (matc"
+11,1,11#1,57,number,95.1,"S03 validated against the SCOPE figures quoted in the session instructions: 573,473 non-positive prices (matched exactly), ~91-day median front holding (matched: 91 ES / 89 NQ calendar days), 95-100% fill from 2016 (matc"
+11,1,11#1,57,number,"2,742","1-100%), ~2,742 sessions from 2016 (consistent: 2,066 realized 2016-2023 plus ~675 projected 2024-2026."
+11,1,11#1,57,number,2016,"1-100%), ~2,742 sessions from 2016 (consistent: 2,066 realized 2016-2023 plus ~675 projected 2024-2026."
+11,1,11#1,57,number,"2,066","1-100%), ~2,742 sessions from 2016 (consistent: 2,066 realized 2016-2023 plus ~675 projected 2024-2026."
+11,1,11#1,57,number,2016,"1-100%), ~2,742 sessions from 2016 (consistent: 2,066 realized 2016-2023 plus ~675 projected 2024-2026."
+11,1,11#1,57,number,675,"1-100%), ~2,742 sessions from 2016 (consistent: 2,066 realized 2016-2023 plus ~675 projected 2024-2026."
+11,1,11#1,57,number,2024,"1-100%), ~2,742 sessions from 2016 (consistent: 2,066 realized 2016-2023 plus ~675 projected 2024-2026."
+11,1,11#1,57,number,15,"The early-close rule as applied catches every session whose day portion halts before 15:00 New York: 68 per root, a superset of the ~18 designated half-days (day after Thanksgiving, July 3, Christmas Eve), because full-h"
+11,1,11#1,57,number,00,"The early-close rule as applied catches every session whose day portion halts before 15:00 New York: 68 per root, a superset of the ~18 designated half-days (day after Thanksgiving, July 3, Christmas Eve), because full-h"
+11,1,11#1,57,number,68,"The early-close rule as applied catches every session whose day portion halts before 15:00 New York: 68 per root, a superset of the ~18 designated half-days (day after Thanksgiving, July 3, Christmas Eve), because full-h"
+11,1,11#1,57,number,18,"The early-close rule as applied catches every session whose day portion halts before 15:00 New York: 68 per root, a superset of the ~18 designated half-days (day after Thanksgiving, July 3, Christmas Eve), because full-h"
+11,1,11#1,57,number,3,"The early-close rule as applied catches every session whose day portion halts before 15:00 New York: 68 per root, a superset of the ~18 designated half-days (day after Thanksgiving, July 3, Christmas Eve), because full-h"
+11,1,11#1,57,number,4,"The early-close rule as applied catches every session whose day portion halts before 15:00 New York: 68 per root, a superset of the ~18 designated half-days (day after Thanksgiving, July 3, Christmas Eve), because full-h"
+11,1,11#1,57,number,68,"All 68 are excluded and enumerated; the 18-vs-68 discrepancy is reported, not hidden."
+11,1,11#1,57,number,18,"All 68 are excluded and enumerated; the 18-vs-68 discrepancy is reported, not hidden."
+12,1,12#1,69,path,2/E,NSR denominators: E[IV] in NSR = omega^2/E[IV] is the signature-plot intercept for both N1 and N2 (documented convention; the coarsest-M mean RV is reported alongside as the alternative denominator).
+12,1,12#1,69,code,IV,NSR denominators: E[IV] in NSR = omega^2/E[IV] is the signature-plot intercept for both N1 and N2 (documented convention; the coarsest-M mean RV is reported alongside as the alternative denominator).
+12,1,12#1,69,code,IV,NSR denominators: E[IV] in NSR = omega^2/E[IV] is the signature-plot intercept for both N1 and N2 (documented convention; the coarsest-M mean RV is reported alongside as the alternative denominator).
+12,1,12#1,69,code,RV,NSR denominators: E[IV] in NSR = omega^2/E[IV] is the signature-plot intercept for both N1 and N2 (documented convention; the coarsest-M mean RV is reported alongside as the alternative denominator).
+12,1,12#1,69,code,IV,"N1-vs-N2 disagreement is reported as found; the Hansen-Lunde estimator's noise-dominance premise (2*n*omega^2 >> IV) fails at 1-minute bars, which S02 documented as the E6 degeneracy, and the S03 data confirm: N2 exceeds"
+12,1,12#1,69,code,S02,"N1-vs-N2 disagreement is reported as found; the Hansen-Lunde estimator's noise-dominance premise (2*n*omega^2 >> IV) fails at 1-minute bars, which S02 documented as the E6 degeneracy, and the S03 data confirm: N2 exceeds"
+12,1,12#1,69,code,S03,"N1-vs-N2 disagreement is reported as found; the Hansen-Lunde estimator's noise-dominance premise (2*n*omega^2 >> IV) fails at 1-minute bars, which S02 documented as the E6 degeneracy, and the S03 data confirm: N2 exceeds"
+12,1,12#1,69,name,Hansen,"N1-vs-N2 disagreement is reported as found; the Hansen-Lunde estimator's noise-dominance premise (2*n*omega^2 >> IV) fails at 1-minute bars, which S02 documented as the E6 degeneracy, and the S03 data confirm: N2 exceeds"
+12,1,12#1,69,name,Lunde,"N1-vs-N2 disagreement is reported as found; the Hansen-Lunde estimator's noise-dominance premise (2*n*omega^2 >> IV) fails at 1-minute bars, which S02 documented as the E6 degeneracy, and the S03 data confirm: N2 exceeds"
+12,1,12#1,69,number,12,12.
+12,1,12#1,69,number,2,"N1-vs-N2 disagreement is reported as found; the Hansen-Lunde estimator's noise-dominance premise (2*n*omega^2 >> IV) fails at 1-minute bars, which S02 documented as the E6 degeneracy, and the S03 data confirm: N2 exceeds"
+12,1,12#1,69,number,2,"N1-vs-N2 disagreement is reported as found; the Hansen-Lunde estimator's noise-dominance premise (2*n*omega^2 >> IV) fails at 1-minute bars, which S02 documented as the E6 degeneracy, and the S03 data confirm: N2 exceeds"
+12,1,12#1,69,number,1,"N1-vs-N2 disagreement is reported as found; the Hansen-Lunde estimator's noise-dominance premise (2*n*omega^2 >> IV) fails at 1-minute bars, which S02 documented as the E6 degeneracy, and the S03 data confirm: N2 exceeds"
+13,1,13#1,79,path,1901/1901,"Final counts: RTH 1901/1901 (ES/NQ), GLOBEX 1953/1948."
+13,1,13#1,79,path,ES/NQ,"Final counts: RTH 1901/1901 (ES/NQ), GLOBEX 1953/1948."
+13,1,13#1,79,path,1953/1948,"Final counts: RTH 1901/1901 (ES/NQ), GLOBEX 1953/1948."
+13,1,13#1,79,path,1902/1902,S03's single geometry-blind count was 1902/1902.
+13,1,13#1,79,code,R1,R1 split the early-close rule by geometry.
+13,1,13#1,79,code,RTH,"RTH excludes all 68 early-halting sessions per root (16 designated half-days plus 52 holiday sessions); GLOBEX retains holiday sessions whose overnight is >= 90% complete, excluding only 16 (ES) / 21 (NQ)."
+13,1,13#1,79,code,GLOBEX,"RTH excludes all 68 early-halting sessions per root (16 designated half-days plus 52 holiday sessions); GLOBEX retains holiday sessions whose overnight is >= 90% complete, excluding only 16 (ES) / 21 (NQ)."
+13,1,13#1,79,code,ES,"RTH excludes all 68 early-halting sessions per root (16 designated half-days plus 52 holiday sessions); GLOBEX retains holiday sessions whose overnight is >= 90% complete, excluding only 16 (ES) / 21 (NQ)."
+13,1,13#1,79,code,NQ,"RTH excludes all 68 early-halting sessions per root (16 designated half-days plus 52 holiday sessions); GLOBEX retains holiday sessions whose overnight is >= 90% complete, excluding only 16 (ES) / 21 (NQ)."
+13,1,13#1,79,code,RTH,"Final counts: RTH 1901/1901 (ES/NQ), GLOBEX 1953/1948."
+13,1,13#1,79,code,ES,"Final counts: RTH 1901/1901 (ES/NQ), GLOBEX 1953/1948."
+13,1,13#1,79,code,NQ,"Final counts: RTH 1901/1901 (ES/NQ), GLOBEX 1953/1948."
+13,1,13#1,79,code,GLOBEX,"Final counts: RTH 1901/1901 (ES/NQ), GLOBEX 1953/1948."
+13,1,13#1,79,code,S03,S03's single geometry-blind count was 1902/1902.
+13,1,13#1,79,number,13,13.
+13,1,13#1,79,number,68,"RTH excludes all 68 early-halting sessions per root (16 designated half-days plus 52 holiday sessions); GLOBEX retains holiday sessions whose overnight is >= 90% complete, excluding only 16 (ES) / 21 (NQ)."
+13,1,13#1,79,number,16,"RTH excludes all 68 early-halting sessions per root (16 designated half-days plus 52 holiday sessions); GLOBEX retains holiday sessions whose overnight is >= 90% complete, excluding only 16 (ES) / 21 (NQ)."
+13,1,13#1,79,number,52,"RTH excludes all 68 early-halting sessions per root (16 designated half-days plus 52 holiday sessions); GLOBEX retains holiday sessions whose overnight is >= 90% complete, excluding only 16 (ES) / 21 (NQ)."
+13,1,13#1,79,number,90,"RTH excludes all 68 early-halting sessions per root (16 designated half-days plus 52 holiday sessions); GLOBEX retains holiday sessions whose overnight is >= 90% complete, excluding only 16 (ES) / 21 (NQ)."
+13,1,13#1,79,number,16,"RTH excludes all 68 early-halting sessions per root (16 designated half-days plus 52 holiday sessions); GLOBEX retains holiday sessions whose overnight is >= 90% complete, excluding only 16 (ES) / 21 (NQ)."
+13,1,13#1,79,number,21,"RTH excludes all 68 early-halting sessions per root (16 designated half-days plus 52 holiday sessions); GLOBEX retains holiday sessions whose overnight is >= 90% complete, excluding only 16 (ES) / 21 (NQ)."
+14,1,14#1,87,code,R2,"R2 degraded-condition dates are flagged, not excluded; 16 affected trade dates; all S04 diagnostics reported with and without them."
+14,1,14#1,87,code,S04,"R2 degraded-condition dates are flagged, not excluded; 16 affected trade dates; all S04 diagnostics reported with and without them."
+14,1,14#1,87,number,14,14.
+14,1,14#1,87,number,16,"R2 degraded-condition dates are flagged, not excluded; 16 affected trade dates; all S04 diagnostics reported with and without them."
+15,1,15#1,89,date,2018-08-05,R3 root cause: the weekend trade date 2018-08-05 came from two genuine pre-open prints (ESU8/NQU8) in the Sunday 17:59 halt minute; the +6h convention dates them Sunday.
+15,1,15#1,89,path,ESU8/NQU8,R3 root cause: the weekend trade date 2018-08-05 came from two genuine pre-open prints (ESU8/NQU8) in the Sunday 17:59 halt minute; the +6h convention dates them Sunday.
+15,1,15#1,89,code,R3,R3 root cause: the weekend trade date 2018-08-05 came from two genuine pre-open prints (ESU8/NQU8) in the Sunday 17:59 halt minute; the +6h convention dates them Sunday.
+15,1,15#1,89,code,S04,"Two S04 implementation bugs found and fixed before any diagnostic ran, both logged: an over-broad first patch (pushed Friday prints to Saturday) and an object-dtype boolean inversion that collapsed the GLOBEX early-close"
+15,1,15#1,89,code,GLOBEX,"Two S04 implementation bugs found and fixed before any diagnostic ran, both logged: an over-broad first patch (pushed Friday prints to Saturday) and an object-dtype boolean inversion that collapsed the GLOBEX early-close"
+15,1,15#1,89,code,RTH,"Two S04 implementation bugs found and fixed before any diagnostic ran, both logged: an over-broad first patch (pushed Friday prints to Saturday) and an object-dtype boolean inversion that collapsed the GLOBEX early-close"
+15,1,15#1,89,number,15,15.
+15,1,15#1,89,number,17,R3 root cause: the weekend trade date 2018-08-05 came from two genuine pre-open prints (ESU8/NQU8) in the Sunday 17:59 halt minute; the +6h convention dates them Sunday.
+15,1,15#1,89,number,59,R3 root cause: the weekend trade date 2018-08-05 came from two genuine pre-open prints (ESU8/NQU8) in the Sunday 17:59 halt minute; the +6h convention dates them Sunday.
+15,1,15#1,89,number,2,Patch: weekend-dated bars reassign to the next Monday (2 rows; -1 phantom session per root).
+13,2,13#2,100,code,S04,The S04 reading that a Hill tail index of 2.
+13,2,13#2,100,code,S04,"What the tail index affects is cross-day pooling, averaging, and cross-day asymptotic variance, which is what the S04 concentration statistics measured."
+13,2,13#2,100,name,Hill,The S04 reading that a Hill tail index of 2.
+13,2,13#2,100,name,Hill,"The Hill index is measured on the unconditional 1-minute return distribution, which is a variance mixture across volatility regimes."
+13,2,13#2,100,number,13,13.
+13,2,13#2,100,number,2.95,The S04 reading that a Hill tail index of 2.95-3.
+13,2,13#2,100,number,1,"The Hill index is measured on the unconditional 1-minute return distribution, which is a variance mixture across volatility regimes."
+14,2,14#2,107,path,2/M,"It uses (2/M)*RQ/RV^2, which is scale-free and equals 2/M exactly under constant volatility."
+14,2,14#2,107,path,RQ/RV,"It uses (2/M)*RQ/RV^2, which is scale-free and equals 2/M exactly under constant volatility."
+14,2,14#2,107,path,2/M,"It uses (2/M)*RQ/RV^2, which is scale-free and equals 2/M exactly under constant volatility."
+14,2,14#2,107,code,E4,E4 does not use RQ.
+14,2,14#2,107,code,RQ,E4 does not use RQ.
+14,2,14#2,107,code,RQ,"It uses (2/M)*RQ/RV^2, which is scale-free and equals 2/M exactly under constant volatility."
+14,2,14#2,107,code,RV,"It uses (2/M)*RQ/RV^2, which is scale-free and equals 2/M exactly under constant volatility."
+14,2,14#2,107,code,S04,S04 reported RQ levels and never reported the ratio.
+14,2,14#2,107,code,RQ,S04 reported RQ levels and never reported the ratio.
+14,2,14#2,107,code,E4,The quantity that decides E4 is therefore unmeasured.
+14,2,14#2,107,code,S05,S05 measures it.
+14,2,14#2,107,number,14,14.
+14,2,14#2,107,number,2,"It uses (2/M)*RQ/RV^2, which is scale-free and equals 2/M exactly under constant volatility."
+15,2,15#2,110,code,MCS,"The criterion becomes whether Model Confidence Set composition differs between corrected and uncorrected evaluation, using the published MCS procedure of Hansen, Lunde and Nason (2011) at its conventional significance le"
+15,2,15#2,110,name,Hansen,"The criterion becomes whether Model Confidence Set composition differs between corrected and uncorrected evaluation, using the published MCS procedure of Hansen, Lunde and Nason (2011) at its conventional significance le"
+15,2,15#2,110,name,Lunde,"The criterion becomes whether Model Confidence Set composition differs between corrected and uncorrected evaluation, using the published MCS procedure of Hansen, Lunde and Nason (2011) at its conventional significance le"
+15,2,15#2,110,number,15,15.
+15,2,15#2,110,number,2011,"The criterion becomes whether Model Confidence Set composition differs between corrected and uncorrected evaluation, using the published MCS procedure of Hansen, Lunde and Nason (2011) at its conventional significance le"
+16,1,16#1,117,path,4/5,"97 * xi^(4/5) * n^(3/5) with xi^2 = Var(noise)/IV, applied not tuned."
+16,1,16#1,117,path,3/5,"97 * xi^(4/5) * n^(3/5) with xi^2 = Var(noise)/IV, applied not tuned."
+16,1,16#1,117,code,IV,"97 * xi^(4/5) * n^(3/5) with xi^2 = Var(noise)/IV, applied not tuned."
+16,1,16#1,117,number,16,16.
+16,1,16#1,117,number,0.97,"Realized kernel bandwidth uses the published rule H = 0.97 * xi^(4/5) * n^(3/5) with xi^2 = Var(noise)/IV, applied not tuned."
+16,1,16#1,117,number,2,"97 * xi^(4/5) * n^(3/5) with xi^2 = Var(noise)/IV, applied not tuned."
+17,1,17#1,122,code,S03,"S03, S04 and S05 pinned no environment and, so far as the code shows, logged no seeds."
+17,1,17#1,122,code,S04,"S03, S04 and S05 pinned no environment and, so far as the code shows, logged no seeds."
+17,1,17#1,122,code,S05,"S03, S04 and S05 pinned no environment and, so far as the code shows, logged no seeds."
+17,1,17#1,122,code,S05A,"S05A retrofits what is retrofittable and determines by measurement whether S05 requires a rerun, rather than presuming one."
+17,1,17#1,122,code,S05,"S05A retrofits what is retrofittable and determines by measurement whether S05 requires a rerun, rather than presuming one."
+17,1,17#1,122,number,17,17.
+18,1,18#1,125,code,MCS,Seed recovery is NOT attempted for the MCS bootstrap.
+18,1,18#1,125,number,18,18.
+19,1,19#1,128,path,S03/S04,The S03/S04 pipeline consistency test runs here.
+19,1,19#1,128,code,S03,The S03/S04 pipeline consistency test runs here.
+19,1,19#1,128,code,S04,The S03/S04 pipeline consistency test runs here.
+19,1,19#1,128,code,S03,Two copies of rules 1-4 and 6 exist (S03 pipeline.
+19,1,19#1,128,code,S04,main and the S04 re-execution) and nothing has asserted they agree.
+19,1,19#1,128,code,S04,A failure invalidates S04 and S05 downstream.
+19,1,19#1,128,code,S05,A failure invalidates S04 and S05 downstream.
+19,1,19#1,128,number,19,19.
+19,1,19#1,128,number,1,Two copies of rules 1-4 and 6 exist (S03 pipeline.
+19,1,19#1,128,number,6,Two copies of rules 1-4 and 6 exist (S03 pipeline.
+20,1,20#1,131,code,S05,"Phase 2 comparison span and Phase 4 verification cells are fixed by deterministic rule stated in the session prompt before execution, since neither could be named in advance of reading S05."
+20,1,20#1,131,number,20,20.
+20,1,20#1,131,number,2,"Phase 2 comparison span and Phase 4 verification cells are fixed by deterministic rule stated in the session prompt before execution, since neither could be named in advance of reading S05."
+20,1,20#1,131,number,4,"Phase 2 comparison span and Phase 4 verification cells are fixed by deterministic rule stated in the session prompt before execution, since neither could be named in advance of reading S05."
+20,1,20#1,131,number,3,Phase 3 execution order is fixed for the same reason.
+21,1,21#1,137,code,S05,S05 section 5 reports M4_HARQ QLIKE of order 1e296 with R-squared near -630 and Spearman IC near 0.
+21,1,21#1,137,code,B1,M3_HARJ shows the same pattern in two B1 cells.
+21,1,21#1,137,code,S05B,S05B locates and counts the responsible forecasts.
+21,1,21#1,137,number,21,21.
+21,1,21#1,137,number,5,S05 section 5 reports M4_HARQ QLIKE of order 1e296 with R-squared near -630 and Spearman IC near 0.
+21,1,21#1,137,number,1e296,S05 section 5 reports M4_HARQ QLIKE of order 1e296 with R-squared near -630 and Spearman IC near 0.
+21,1,21#1,137,number,0.82,S05 section 5 reports M4_HARQ QLIKE of order 1e296 with R-squared near -630 and Spearman IC near 0.82 in the same cell.
+22,1,22#1,140,code,S05,S05 Part E returns definite MCS compositions for cells whose section 5 loss column is inf or nan for every model.
+22,1,22#1,140,code,MCS,S05 Part E returns definite MCS compositions for cells whose section 5 loss column is inf or nan for every model.
+22,1,22#1,140,code,S05B,"S05B inspects the array the MCS actually consumes and its non-finite handling, without re-running the MCS."
+22,1,22#1,140,code,MCS,"S05B inspects the array the MCS actually consumes and its non-finite handling, without re-running the MCS."
+22,1,22#1,140,code,MCS,"S05B inspects the array the MCS actually consumes and its non-finite handling, without re-running the MCS."
+22,1,22#1,140,number,22,22.
+22,1,22#1,140,number,5,S05 Part E returns definite MCS compositions for cells whose section 5 loss column is inf or nan for every model.
+23,1,23#1,143,code,S05,S05 section 5 applies one lam_hat per cell without recording which of the six Part C estimators produced it.
+23,1,23#1,143,code,S05B,S05B determines provenance by source inspection.
+23,1,23#1,143,number,23,23.
+23,1,23#1,143,number,5,S05 section 5 applies one lam_hat per cell without recording which of the six Part C estimators produced it.
+24,1,24#1,145,number,24,24.
+24,1,24#1,145,number,5,Every Part E composition and every section 5 metric is treated as unverified until items 21 to 23 are resolved.
+24,1,24#1,145,number,21,Every Part E composition and every section 5 metric is treated as unverified until items 21 to 23 are resolved.
+24,1,24#1,145,number,23,Every Part E composition and every section 5 metric is treated as unverified until items 21 to 23 are resolved.
+25,1,25#1,147,date,2026-08-18,Items 26 to 32 were specified on 2026-08-18 after the S05 report was read.
+25,1,25#1,147,code,S05,Items 26 to 32 were specified on 2026-08-18 after the S05 report was read.
+25,1,25#1,147,code,S05,"They are diagnostic tests of estimator validity, not selections among outcomes, and no result reported in S05 is altered by them."
+25,1,25#1,147,number,25,25.
+25,1,25#1,147,number,26,Items 26 to 32 were specified on 2026-08-18 after the S05 report was read.
+25,1,25#1,147,number,32,Items 26 to 32 were specified on 2026-08-18 after the S05 report was read.
+26,1,26#1,150,code,IV,Var(log IV) is a property of the IV series at a given horizon and cannot depend on the sampling grid used to measure RV.
+26,1,26#1,150,code,IV,Var(log IV) is a property of the IV series at a given horizon and cannot depend on the sampling grid used to measure RV.
+26,1,26#1,150,code,RV,Var(log IV) is a property of the IV series at a given horizon and cannot depend on the sampling grid used to measure RV.
+26,1,26#1,150,number,26,26.
+26,1,26#1,150,number,23,"Grid invariance of lambda_M * Var(log RV_M) is therefore an assumption-free validity test, and is adopted as the empirical basis for resolving item 23 in place of deferring to publication status."
+27,1,27#1,154,code,S03,S03 established that noise is not binding at the 1e-2 scale tested by the S01 and S02 grids.
+27,1,27#1,154,code,S01,S03 established that noise is not binding at the 1e-2 scale tested by the S01 and S02 grids.
+27,1,27#1,154,code,S02,S03 established that noise is not binding at the 1e-2 scale tested by the S01 and S02 grids.
+27,1,27#1,154,code,RV,The measured 4 to 10 percent signature-plot rise is an M-dependent RV distortion and is tested directly here.
+27,1,27#1,154,number,27,27.
+27,1,27#1,154,number,1e-2,S03 established that noise is not binding at the 1e-2 scale tested by the S01 and S02 grids.
+27,1,27#1,154,number,1e-5,It did not establish that noise is immaterial at the 1e-5 scale relative to a target quantity of order 1e-2.
+27,1,27#1,154,number,1e-2,It did not establish that noise is immaterial at the 1e-5 scale relative to a target quantity of order 1e-2.
+27,1,27#1,154,number,4,The measured 4 to 10 percent signature-plot rise is an M-dependent RV distortion and is tested directly here.
+27,1,27#1,154,number,10,The measured 4 to 10 percent signature-plot rise is an M-dependent RV distortion and is tested directly here.
+28,1,28#1,159,path,M/2,"The exact finite-M sampling variance of log RV under constant volatility is trigamma(M/2), not 2/M."
+28,1,28#1,159,path,2/M,"The exact finite-M sampling variance of log RV under constant volatility is trigamma(M/2), not 2/M."
+28,1,28#1,159,path,2/M,trigamma is used throughout and every prior use of 2/M is recorded.
+28,1,28#1,159,code,RV,"The exact finite-M sampling variance of log RV under constant volatility is trigamma(M/2), not 2/M."
+28,1,28#1,159,number,28,28.
+28,1,28#1,159,number,40,"The approximation understates it by 40 percent at M=3, 8."
+28,1,28#1,159,number,3,"The approximation understates it by 40 percent at M=3, 8."
+28,1,28#1,159,number,8.1,"The approximation understates it by 40 percent at M=3, 8.1 percent at M=13 and 0."
+28,1,28#1,159,number,13,1 percent at M=13 and 0.
+28,1,28#1,159,number,0.3,"1 percent at M=13 and 0.3 percent at M=390, so the error concentrates at the coarse end where the elasticity fit takes its leverage."
+28,1,28#1,159,number,390,"3 percent at M=390, so the error concentrates at the coarse end where the elasticity fit takes its leverage."
+29,1,29#1,164,code,S05,"The M grid is extended below the S05 range to M of 5, 6 and 10 where session length divides exactly."
+29,1,29#1,164,code,E2,"M=3 and below are excluded on estimator feasibility, since E2 cannot form non-overlapping subsamples in a three-observation window and E4's quarticity is worthless there."
+29,1,29#1,164,code,E4,"M=3 and below are excluded on estimator feasibility, since E2 cannot form non-overlapping subsamples in a three-observation window and E4's quarticity is worthless there."
+29,1,29#1,164,number,29,29.
+29,1,29#1,164,number,5,"The M grid is extended below the S05 range to M of 5, 6 and 10 where session length divides exactly."
+29,1,29#1,164,number,6,"The M grid is extended below the S05 range to M of 5, 6 and 10 where session length divides exactly."
+29,1,29#1,164,number,10,"The M grid is extended below the S05 range to M of 5, 6 and 10 where session length divides exactly."
+29,1,29#1,164,number,3,"M=3 and below are excluded on estimator feasibility, since E2 cannot form non-overlapping subsamples in a three-observation window and E4's quarticity is worthless there."
+29,1,29#1,164,number,3,Exclusion is NOT on information grounds; M=3 implies lambda near 0.
+29,1,29#1,164,number,0.30,Exclusion is NOT on information grounds; M=3 implies lambda near 0.30 and is the regime section 2.
+29,1,29#1,164,number,2.1,30 and is the regime section 2.1 describes.
+30,1,30#1,170,code,RTH,"Horizons 1day, 1h and 30min are all in scope for RTH."
+30,1,30#1,170,code,RTH,RTH intraday carries the lowest measured lambda in the study and is not dropped for convenience.
+30,1,30#1,170,name,Globex,"Globex 1h and 30min are excluded for the whole session, since their repair belongs to a later session and conditional mid-session scope expansion would not be pre-registered."
+30,1,30#1,170,number,30,30.
+31,1,31#1,174,code,B0,Boundary treatments B0 and B1 both run on the full grid.
+31,1,31#1,174,code,B1,Boundary treatments B0 and B1 both run on the full grid.
+31,1,31#1,174,code,S05,"Measured on the S05 output, switching treatments moves the fitted elasticity by a median 1."
+31,1,31#1,174,number,31,31.
+31,1,31#1,174,number,1.3,"Measured on the S05 output, switching treatments moves the fitted elasticity by a median 1.3 and a maximum 7."
+31,1,31#1,174,number,7.4,"3 and a maximum 7.4 percent, which is not negligible relative to the differences being tested."
+32,1,32#1,177,code,S05,The IC-IR column reported in S05 section 5 has no recorded definition.
+32,1,32#1,177,code,S05B,S05B establishes it by source inspection.
+32,1,32#1,177,number,32,32.
+32,1,32#1,177,number,5,The IC-IR column reported in S05 section 5 has no recorded definition.
+33,1,33#1,184,code,S05B,S05B Phase 3 places 82.
+33,1,33#1,184,code,RTH,"4 percent of Globex zero-variance windows at or after 09:30 New York, concentrated at 13:00, 14:00 and 15:00, while every RTH cell over the same clock minutes contains none."
+33,1,33#1,184,code,S03,"Every Globex result in S03, S04, S05 and S05B is provisional until this resolves."
+33,1,33#1,184,code,S04,"Every Globex result in S03, S04, S05 and S05B is provisional until this resolves."
+33,1,33#1,184,code,S05,"Every Globex result in S03, S04, S05 and S05B is provisional until this resolves."
+33,1,33#1,184,code,S05B,"Every Globex result in S03, S04, S05 and S05B is provisional until this resolves."
+33,1,33#1,184,name,Globex,"4 percent of Globex zero-variance windows at or after 09:30 New York, concentrated at 13:00, 14:00 and 15:00, while every RTH cell over the same clock minutes contains none."
+33,1,33#1,184,name,New York,"4 percent of Globex zero-variance windows at or after 09:30 New York, concentrated at 13:00, 14:00 and 15:00, while every RTH cell over the same clock minutes contains none."
+33,1,33#1,184,name,Globex,"Every Globex result in S03, S04, S05 and S05B is provisional until this resolves."
+33,1,33#1,184,number,33,33.
+33,1,33#1,184,number,3,S05B Phase 3 places 82.
+33,1,33#1,184,number,82.4,"S05B Phase 3 places 82.4 percent of Globex zero-variance windows at or after 09:30 New York, concentrated at 13:00, 14:00 and 15:00, while every RTH cell over the same clock minutes contains none."
+33,1,33#1,184,number,09,"4 percent of Globex zero-variance windows at or after 09:30 New York, concentrated at 13:00, 14:00 and 15:00, while every RTH cell over the same clock minutes contains none."
+33,1,33#1,184,number,30,"4 percent of Globex zero-variance windows at or after 09:30 New York, concentrated at 13:00, 14:00 and 15:00, while every RTH cell over the same clock minutes contains none."
+33,1,33#1,184,number,13,"4 percent of Globex zero-variance windows at or after 09:30 New York, concentrated at 13:00, 14:00 and 15:00, while every RTH cell over the same clock minutes contains none."
+33,1,33#1,184,number,00,"4 percent of Globex zero-variance windows at or after 09:30 New York, concentrated at 13:00, 14:00 and 15:00, while every RTH cell over the same clock minutes contains none."
+33,1,33#1,184,number,14,"4 percent of Globex zero-variance windows at or after 09:30 New York, concentrated at 13:00, 14:00 and 15:00, while every RTH cell over the same clock minutes contains none."
+33,1,33#1,184,number,00,"4 percent of Globex zero-variance windows at or after 09:30 New York, concentrated at 13:00, 14:00 and 15:00, while every RTH cell over the same clock minutes contains none."
+33,1,33#1,184,number,15,"4 percent of Globex zero-variance windows at or after 09:30 New York, concentrated at 13:00, 14:00 and 15:00, while every RTH cell over the same clock minutes contains none."
+33,1,33#1,184,number,00,"4 percent of Globex zero-variance windows at or after 09:30 New York, concentrated at 13:00, 14:00 and 15:00, while every RTH cell over the same clock minutes contains none."
+34,1,34#1,188,name,Globex,"Globex 1day is NOT exempt on the grounds that it contains no zero-variance windows, since it reads the same panel and a column mapping defect would displace returns without creating zeros at daily aggregation."
+34,1,34#1,188,number,34,34.
+35,1,35#1,194,code,S05D,S05D returned determination A.
+35,1,35#1,194,code,ES,"The Globex panel is correct, the zero-variance windows are holiday early closes on the 52 ES and 47 NQ sessions S04's R1 rule retains in GLOBEX and excludes from RTH, and DECISIONS items 33 and 34 are closed with no Glob"
+35,1,35#1,194,code,NQ,"The Globex panel is correct, the zero-variance windows are holiday early closes on the 52 ES and 47 NQ sessions S04's R1 rule retains in GLOBEX and excludes from RTH, and DECISIONS items 33 and 34 are closed with no Glob"
+35,1,35#1,194,code,S04,"The Globex panel is correct, the zero-variance windows are holiday early closes on the 52 ES and 47 NQ sessions S04's R1 rule retains in GLOBEX and excludes from RTH, and DECISIONS items 33 and 34 are closed with no Glob"
+35,1,35#1,194,code,R1,"The Globex panel is correct, the zero-variance windows are holiday early closes on the 52 ES and 47 NQ sessions S04's R1 rule retains in GLOBEX and excludes from RTH, and DECISIONS items 33 and 34 are closed with no Glob"
+35,1,35#1,194,code,GLOBEX,"The Globex panel is correct, the zero-variance windows are holiday early closes on the 52 ES and 47 NQ sessions S04's R1 rule retains in GLOBEX and excludes from RTH, and DECISIONS items 33 and 34 are closed with no Glob"
+35,1,35#1,194,code,RTH,"The Globex panel is correct, the zero-variance windows are holiday early closes on the 52 ES and 47 NQ sessions S04's R1 rule retains in GLOBEX and excludes from RTH, and DECISIONS items 33 and 34 are closed with no Glob"
+35,1,35#1,194,name,Globex,"The Globex panel is correct, the zero-variance windows are holiday early closes on the 52 ES and 47 NQ sessions S04's R1 rule retains in GLOBEX and excludes from RTH, and DECISIONS items 33 and 34 are closed with no Glob"
+35,1,35#1,194,name,Globex,"The Globex panel is correct, the zero-variance windows are holiday early closes on the 52 ES and 47 NQ sessions S04's R1 rule retains in GLOBEX and excludes from RTH, and DECISIONS items 33 and 34 are closed with no Glob"
+35,1,35#1,194,number,35,35.
+35,1,35#1,194,number,52,"The Globex panel is correct, the zero-variance windows are holiday early closes on the 52 ES and 47 NQ sessions S04's R1 rule retains in GLOBEX and excludes from RTH, and DECISIONS items 33 and 34 are closed with no Glob"
+35,1,35#1,194,number,47,"The Globex panel is correct, the zero-variance windows are holiday early closes on the 52 ES and 47 NQ sessions S04's R1 rule retains in GLOBEX and excludes from RTH, and DECISIONS items 33 and 34 are closed with no Glob"
+35,1,35#1,194,number,33,"The Globex panel is correct, the zero-variance windows are holiday early closes on the 52 ES and 47 NQ sessions S04's R1 rule retains in GLOBEX and excludes from RTH, and DECISIONS items 33 and 34 are closed with no Glob"
+35,1,35#1,194,number,34,"The Globex panel is correct, the zero-variance windows are holiday early closes on the 52 ES and 47 NQ sessions S04's R1 rule retains in GLOBEX and excludes from RTH, and DECISIONS items 33 and 34 are closed with no Glob"
+36,1,36#1,198,path,ES/GLOBEX/B0/1day,"439) on ES/GLOBEX/B0/1day, robust to padding exclusion at 8e-04."
+36,1,36#1,198,code,ES,"439) on ES/GLOBEX/B0/1day, robust to padding exclusion at 8e-04."
+36,1,36#1,198,code,GLOBEX,"439) on ES/GLOBEX/B0/1day, robust to padding exclusion at 8e-04."
+36,1,36#1,198,code,B0,"439) on ES/GLOBEX/B0/1day, robust to padding exclusion at 8e-04."
+36,1,36#1,198,number,36,36.
+36,1,36#1,198,number,1.018,Var(log RV_M) = 1.018 + 2.
+36,1,36#1,198,number,2.082,018 + 2.082 M^(-0.
+36,1,36#1,198,number,8e-04,"439) on ES/GLOBEX/B0/1day, robust to padding exclusion at 8e-04."
+37,1,37#1,201,code,S05E,S05E runs one before any estimator is selected or any repair is specified.
+37,1,37#1,201,code,S05E,An estimator selection rule is NOT adopted until S05E returns.
+37,1,37#1,201,number,37,37.
+38,1,38#1,204,code,S05,"The `present` mask is not persisted in the S05 panel npz files, so padding is indistinguishable from a genuine unchanged close for any consumer of those files."
+38,1,38#1,204,code,RV,65 percent of RV and 8e-04 on the fitted exponent.
+38,1,38#1,204,number,38,38.
+38,1,38#1,204,number,0.65,Recorded as an artifact defect; measured exposure at daily aggregation is 0.65 percent of RV and 8e-04 on the fitted exponent.
+38,1,38#1,204,number,8e-04,65 percent of RV and 8e-04 on the fitted exponent.
+39,1,39#1,211,code,MCS,"Forecast positivity after filtering, loss-matrix finiteness before every MCS call, lambda within [0,1], range estimators receiving high and low columns, and effective sub-bar count matching the M passed to any estimator."
+39,1,39#1,211,number,39,39.
+39,1,39#1,211,number,0,"Forecast positivity after filtering, loss-matrix finiteness before every MCS call, lambda within [0,1], range estimators receiving high and low columns, and effective sub-bar count matching the M passed to any estimator."
+39,1,39#1,211,number,1,"Forecast positivity after filtering, loss-matrix finiteness before every MCS call, lambda within [0,1], range estimators receiving high and low columns, and effective sub-bar count matching the M passed to any estimator."
+40,1,40#1,216,name,Bollerslev,"The Bollerslev, Patton and Quaedvlieg insanity filter is applied to M3_HARJ and M4_HARQ, replacing any forecast outside the range of the in-sample realized variance with the in-sample mean."
+40,1,40#1,216,name,Patton,"The Bollerslev, Patton and Quaedvlieg insanity filter is applied to M3_HARJ and M4_HARQ, replacing any forecast outside the range of the in-sample realized variance with the in-sample mean."
+40,1,40#1,216,name,Quaedvlieg,"The Bollerslev, Patton and Quaedvlieg insanity filter is applied to M3_HARJ and M4_HARQ, replacing any forecast outside the range of the in-sample realized variance with the in-sample mean."
+40,1,40#1,216,number,40,40.
+41,1,41#1,221,path,ES/GLOBEX/B1/30min,"At ES/GLOBEX/B1/30min M5_RGARCH returns 69,119 non-positive forecasts of 79,538, and at ES/GLOBEX/B0/30min 21,492 of 21,604 exceed one hundred times the in-sample RV mean."
+41,1,41#1,221,path,ES/GLOBEX/B0/30min,"At ES/GLOBEX/B1/30min M5_RGARCH returns 69,119 non-positive forecasts of 79,538, and at ES/GLOBEX/B0/30min 21,492 of 21,604 exceed one hundred times the in-sample RV mean."
+41,1,41#1,221,code,RGARCH,RGARCH IS NOT FILTERED.
+41,1,41#1,221,code,ES,"At ES/GLOBEX/B1/30min M5_RGARCH returns 69,119 non-positive forecasts of 79,538, and at ES/GLOBEX/B0/30min 21,492 of 21,604 exceed one hundred times the in-sample RV mean."
+41,1,41#1,221,code,GLOBEX,"At ES/GLOBEX/B1/30min M5_RGARCH returns 69,119 non-positive forecasts of 79,538, and at ES/GLOBEX/B0/30min 21,492 of 21,604 exceed one hundred times the in-sample RV mean."
+41,1,41#1,221,code,B1,"At ES/GLOBEX/B1/30min M5_RGARCH returns 69,119 non-positive forecasts of 79,538, and at ES/GLOBEX/B0/30min 21,492 of 21,604 exceed one hundred times the in-sample RV mean."
+41,1,41#1,221,code,ES,"At ES/GLOBEX/B1/30min M5_RGARCH returns 69,119 non-positive forecasts of 79,538, and at ES/GLOBEX/B0/30min 21,492 of 21,604 exceed one hundred times the in-sample RV mean."
+41,1,41#1,221,code,GLOBEX,"At ES/GLOBEX/B1/30min M5_RGARCH returns 69,119 non-positive forecasts of 79,538, and at ES/GLOBEX/B0/30min 21,492 of 21,604 exceed one hundred times the in-sample RV mean."
+41,1,41#1,221,code,B0,"At ES/GLOBEX/B1/30min M5_RGARCH returns 69,119 non-positive forecasts of 79,538, and at ES/GLOBEX/B0/30min 21,492 of 21,604 exceed one hundred times the in-sample RV mean."
+41,1,41#1,221,code,RV,"At ES/GLOBEX/B1/30min M5_RGARCH returns 69,119 non-positive forecasts of 79,538, and at ES/GLOBEX/B0/30min 21,492 of 21,604 exceed one hundred times the in-sample RV mean."
+41,1,41#1,221,code,RGARCH,A filter would replace nearly every forecast with a constant and enter that constant into the confidence set under the name RGARCH.
+41,1,41#1,221,code,S06R,"S06R diagnoses whether the estimated parameters violate stationarity, and where they do, RGARCH is reported as failing to estimate in that cell and the model set is reduced there with the reduction stated in every table."
+41,1,41#1,221,code,RGARCH,"S06R diagnoses whether the estimated parameters violate stationarity, and where they do, RGARCH is reported as failing to estimate in that cell and the model set is reduced there with the reduction stated in every table."
+41,1,41#1,221,number,41,41.
+41,1,41#1,221,number,"69,119","At ES/GLOBEX/B1/30min M5_RGARCH returns 69,119 non-positive forecasts of 79,538, and at ES/GLOBEX/B0/30min 21,492 of 21,604 exceed one hundred times the in-sample RV mean."
+41,1,41#1,221,number,"79,538","At ES/GLOBEX/B1/30min M5_RGARCH returns 69,119 non-positive forecasts of 79,538, and at ES/GLOBEX/B0/30min 21,492 of 21,604 exceed one hundred times the in-sample RV mean."
+41,1,41#1,221,number,"21,492","At ES/GLOBEX/B1/30min M5_RGARCH returns 69,119 non-positive forecasts of 79,538, and at ES/GLOBEX/B0/30min 21,492 of 21,604 exceed one hundred times the in-sample RV mean."
+41,1,41#1,221,number,"21,604","At ES/GLOBEX/B1/30min M5_RGARCH returns 69,119 non-positive forecasts of 79,538, and at ES/GLOBEX/B0/30min 21,492 of 21,604 exceed one hundred times the in-sample RV mean."
+42,1,42#1,228,code,RV,"Excluding on measured RV would condition the evaluation sample on the realized proxy, which is the operation this project's own second result proves is not proxy-robust."
+42,1,42#1,228,code,ES,"The affected windows are the post-halt hours of the 52 ES and 47 NQ holiday sessions S05D identified, all of which are determinable from the CME calendar before the session begins."
+42,1,42#1,228,code,NQ,"The affected windows are the post-halt hours of the 52 ES and 47 NQ holiday sessions S05D identified, all of which are determinable from the CME calendar before the session begins."
+42,1,42#1,228,code,S05D,"The affected windows are the post-halt hours of the 52 ES and 47 NQ holiday sessions S05D identified, all of which are determinable from the CME calendar before the session begins."
+42,1,42#1,228,name,CME,"The affected windows are the post-halt hours of the 52 ES and 47 NQ holiday sessions S05D identified, all of which are determinable from the CME calendar before the session begins."
+42,1,42#1,228,number,42,42.
+42,1,42#1,228,number,52,"The affected windows are the post-halt hours of the 52 ES and 47 NQ holiday sessions S05D identified, all of which are determinable from the CME calendar before the session begins."
+42,1,42#1,228,number,47,"The affected windows are the post-halt hours of the 52 ES and 47 NQ holiday sessions S05D identified, all of which are determinable from the CME calendar before the session begins."
+43,1,43#1,234,code,MCS,"M6_GK is the sole MCS survivor in most GLOBEX cells, so its construction is load-bearing for the composition result."
+43,1,43#1,234,code,GLOBEX,"M6_GK is the sole MCS survivor in most GLOBEX cells, so its construction is load-bearing for the composition result."
+43,1,43#1,234,number,43,43.
+43,1,43#1,234,number,6,SCOPE section 6 confirms four prices per bar are held.
+44,1,44#1,239,code,S01,S01's E3 ERROR-CORRELATION GATE IS RE-RUN on the corrected Parkinson and Garman-Klass series.
+44,1,44#1,239,number,44,44.
+44,1,44#1,239,number,0.805,The 0.805 correlation that triggered exclusion was computed on misconstructed inputs.
+45,1,45#1,242,number,45,45.
+46,1,46#1,246,code,S01,"E1 fails on rough volatility by S01's own record and E1_d violates the [0,1] bound at three or four of nine grid points in every 1day cell."
+46,1,46#1,246,code,E2,"E2 and E4 are retained and BOTH are reported throughout, with each one's valid regime stated from the S05E control: E2 near-unbiased on clean data at mean absolute error 0."
+46,1,46#1,246,code,E4,"E2 and E4 are retained and BOTH are reported throughout, with each one's valid regime stated from the S05E control: E2 near-unbiased on clean data at mean absolute error 0."
+46,1,46#1,246,code,S05E,"E2 and E4 are retained and BOTH are reported throughout, with each one's valid regime stated from the S05E control: E2 near-unbiased on clean data at mean absolute error 0."
+46,1,46#1,246,code,E2,"E2 and E4 are retained and BOTH are reported throughout, with each one's valid regime stated from the S05E control: E2 near-unbiased on clean data at mean absolute error 0."
+46,1,46#1,246,code,E4,"25 under jumps, E4 biased upward at 0."
+46,1,46#1,246,code,MCS,"No further synthetic arms are run to break the tie, since lambda does not enter the MCS at all."
+46,1,46#1,246,number,46,46.
+46,1,46#1,246,number,0,"E1 fails on rough volatility by S01's own record and E1_d violates the [0,1] bound at three or four of nine grid points in every 1day cell."
+46,1,46#1,246,number,1,"E1 fails on rough volatility by S01's own record and E1_d violates the [0,1] bound at three or four of nine grid points in every 1day cell."
+46,1,46#1,246,number,0.006,"E2 and E4 are retained and BOTH are reported throughout, with each one's valid regime stated from the S05E control: E2 near-unbiased on clean data at mean absolute error 0.006 to 0."
+46,1,46#1,246,number,0.012,006 to 0.012 and degrading to 0.
+46,1,46#1,246,number,0.16,012 and degrading to 0.16 to 0.
+46,1,46#1,246,number,0.25,"16 to 0.25 under jumps, E4 biased upward at 0."
+46,1,46#1,246,number,0.045,"25 under jumps, E4 biased upward at 0.045 to 0."
+46,1,46#1,246,number,0.051,045 to 0.051 on clean data and holding at 0.
+46,1,46#1,246,number,0.105,051 on clean data and holding at 0.105 to 0.
+46,1,46#1,246,number,0.128,105 to 0.128 under jumps.
+47,1,47#1,254,number,47,47.
+47,1,47#1,254,number,96,The Part E family size of 96 comparisons is stated explicitly against the effective sample.
+48,1,48#1,260,number,48,48.
+49,1,49#1,263,code,IV,The fitted intercept implies Var(log IV) near 1.
+49,1,49#1,263,code,RV,"02, so sd(log RV) near 1."
+49,1,49#1,263,code,S06R,S06R reports the level against the sample's own volatility range.
+49,1,49#1,263,number,49,49.
+49,1,49#1,263,number,1.02,"The fitted intercept implies Var(log IV) near 1.02, so sd(log RV) near 1."
+49,1,49#1,263,number,1.0,"02, so sd(log RV) near 1.0 and volatility ranging over a factor of about 2."
+49,1,49#1,263,number,2.7,0 and volatility ranging over a factor of about 2.7 per standard deviation.
+50,1,50#1,268,date,2024-01-01,Holdout boundary 2024-01-01 is unchanged and untouched.
+50,1,50#1,268,number,50,50.
+51,1,51#1,272,date,2020-03-09,"Affected sessions identified in S06R Phase 3: 2020-03-09, 03-12, 03-18, 03-23, 03-24, plus 2019-02-27 and 2020-07-01 which sit in the S04 R2 degraded-condition set and are excluded on that documented ground."
+51,1,51#1,272,date,2019-02-27,"Affected sessions identified in S06R Phase 3: 2020-03-09, 03-12, 03-18, 03-23, 03-24, plus 2019-02-27 and 2020-07-01 which sit in the S04 R2 degraded-condition set and are excluded on that documented ground."
+51,1,51#1,272,date,2020-07-01,"Affected sessions identified in S06R Phase 3: 2020-03-09, 03-12, 03-18, 03-23, 03-24, plus 2019-02-27 and 2020-07-01 which sit in the S04 R2 degraded-condition set and are excluded on that documented ground."
+51,1,51#1,272,code,S06R,"Affected sessions identified in S06R Phase 3: 2020-03-09, 03-12, 03-18, 03-23, 03-24, plus 2019-02-27 and 2020-07-01 which sit in the S04 R2 degraded-condition set and are excluded on that documented ground."
+51,1,51#1,272,code,S04,"Affected sessions identified in S06R Phase 3: 2020-03-09, 03-12, 03-18, 03-23, 03-24, plus 2019-02-27 and 2020-07-01 which sit in the S04 R2 degraded-condition set and are excluded on that documented ground."
+51,1,51#1,272,code,R2,"Affected sessions identified in S06R Phase 3: 2020-03-09, 03-12, 03-18, 03-23, 03-24, plus 2019-02-27 and 2020-07-01 which sit in the S04 R2 degraded-condition set and are excluded on that documented ground."
+51,1,51#1,272,number,51,51.
+51,1,51#1,272,number,42,"Circuit-breaker halts are recorded in the exchange log, so excluding them uses the exchange record rather than the realized proxy and stays inside item 42."
+51,1,51#1,272,number,3,"Affected sessions identified in S06R Phase 3: 2020-03-09, 03-12, 03-18, 03-23, 03-24, plus 2019-02-27 and 2020-07-01 which sit in the S04 R2 degraded-condition set and are excluded on that documented ground."
+51,1,51#1,272,number,03,"Affected sessions identified in S06R Phase 3: 2020-03-09, 03-12, 03-18, 03-23, 03-24, plus 2019-02-27 and 2020-07-01 which sit in the S04 R2 degraded-condition set and are excluded on that documented ground."
+51,1,51#1,272,number,03,"Affected sessions identified in S06R Phase 3: 2020-03-09, 03-12, 03-18, 03-23, 03-24, plus 2019-02-27 and 2020-07-01 which sit in the S04 R2 degraded-condition set and are excluded on that documented ground."
+51,1,51#1,272,number,03,"Affected sessions identified in S06R Phase 3: 2020-03-09, 03-12, 03-18, 03-23, 03-24, plus 2019-02-27 and 2020-07-01 which sit in the S04 R2 degraded-condition set and are excluded on that documented ground."
+51,1,51#1,272,number,03,"Affected sessions identified in S06R Phase 3: 2020-03-09, 03-12, 03-18, 03-23, 03-24, plus 2019-02-27 and 2020-07-01 which sit in the S04 R2 degraded-condition set and are excluded on that documented ground."
+52,1,52#1,278,code,S06R,"S06R halted 8 cells because a zero in the warm-up made the lower bound zero, which admits a forecast floored at 1e-300."
+52,1,52#1,278,number,52,52.
+52,1,52#1,278,number,8,"S06R halted 8 cells because a zero in the warm-up made the lower bound zero, which admits a forecast floored at 1e-300."
+52,1,52#1,278,number,1e-300,"S06R halted 8 cells because a zero in the warm-up made the lower bound zero, which admits a forecast floored at 1e-300."
+53,1,53#1,283,code,RGARCH,"RGARCH DIAGNOSIS was run in S06R on 16 cells that exclude every GLOBEX intraday cell, which are the 8 cells where RGARCH produced up to 87 percent non-positive forecasts."
+53,1,53#1,283,code,S06R,"RGARCH DIAGNOSIS was run in S06R on 16 cells that exclude every GLOBEX intraday cell, which are the 8 cells where RGARCH produced up to 87 percent non-positive forecasts."
+53,1,53#1,283,code,GLOBEX,"RGARCH DIAGNOSIS was run in S06R on 16 cells that exclude every GLOBEX intraday cell, which are the 8 cells where RGARCH produced up to 87 percent non-positive forecasts."
+53,1,53#1,283,code,RGARCH,"RGARCH DIAGNOSIS was run in S06R on 16 cells that exclude every GLOBEX intraday cell, which are the 8 cells where RGARCH produced up to 87 percent non-positive forecasts."
+53,1,53#1,283,number,53,53.
+53,1,53#1,283,number,16,"RGARCH DIAGNOSIS was run in S06R on 16 cells that exclude every GLOBEX intraday cell, which are the 8 cells where RGARCH produced up to 87 percent non-positive forecasts."
+53,1,53#1,283,number,8,"RGARCH DIAGNOSIS was run in S06R on 16 cells that exclude every GLOBEX intraday cell, which are the 8 cells where RGARCH produced up to 87 percent non-positive forecasts."
+53,1,53#1,283,number,87,"RGARCH DIAGNOSIS was run in S06R on 16 cells that exclude every GLOBEX intraday cell, which are the 8 cells where RGARCH produced up to 87 percent non-positive forecasts."
+53,1,53#1,283,number,8,"The question is unanswered and is answered here, on those 8 cells."
+54,1,54#1,286,path,ES/RTH/B0/30min,The S06R pre-specified cell ES/RTH/B0/30min stands as reported and is NOT replaced.
+54,1,54#1,286,code,S06R,The S06R pre-specified cell ES/RTH/B0/30min stands as reported and is NOT replaced.
+54,1,54#1,286,code,ES,The S06R pre-specified cell ES/RTH/B0/30min stands as reported and is NOT replaced.
+54,1,54#1,286,code,RTH,The S06R pre-specified cell ES/RTH/B0/30min stands as reported and is NOT replaced.
+54,1,54#1,286,code,B0,The S06R pre-specified cell ES/RTH/B0/30min stands as reported and is NOT replaced.
+54,1,54#1,286,code,MCS,"Largest effective sample selects the cell where the MCS is most powerful and therefore narrows to a singleton under both schemes, which biases toward no difference."
+54,1,54#1,286,number,54,54.
+55,1,55#1,293,code,SPY,SPY REPLICATION.
+55,1,55#1,293,code,SPY,"The proxy-error exponent is refitted on SPY 1-second data, ARCX."
+55,1,55#1,293,code,ARCX.PILLAR,"The proxy-error exponent is refitted on SPY 1-second data, ARCX.PILLAR and XNAS."
+55,1,55#1,293,code,XNAS.ITCH,PILLAR and XNAS.ITCH treated as two independent venue-level replications and never pooled.
+55,1,55#1,293,code,SPY,The SPY grid spans roughly four decades of M against 2.
+55,1,55#1,293,number,55,55.
+55,1,55#1,293,number,1,"The proxy-error exponent is refitted on SPY 1-second data, ARCX."
+55,1,55#1,293,number,2.4,The SPY grid spans roughly four decades of M against 2.4 for futures.
+56,1,56#1,297,code,SPY,SPY CAVEATS FIXED IN ADVANCE.
+56,1,56#1,297,code,ES,"Microstructure noise at 1-second is NOT assumed negligible, unlike ES and NQ at 1-minute; the noise correction is applied and the primary M range is restricted to grid points where the implied bias is below a stated thre"
+56,1,56#1,297,code,NQ,"Microstructure noise at 1-second is NOT assumed negligible, unlike ES and NQ at 1-minute; the noise correction is applied and the primary M range is restricted to grid points where the implied bias is below a stated thre"
+56,1,56#1,297,number,56,56.
+56,1,56#1,297,number,33,Results are labelled two-venue and cover roughly 33 percent of consolidated volume.
+56,1,56#1,297,number,1,"Microstructure noise at 1-second is NOT assumed negligible, unlike ES and NQ at 1-minute; the noise correction is applied and the primary M range is restricted to grid points where the implied bias is below a stated thre"
+56,1,56#1,297,number,1,"Microstructure noise at 1-second is NOT assumed negligible, unlike ES and NQ at 1-minute; the noise correction is applied and the primary M range is restricted to grid points where the implied bias is below a stated thre"
+56,1,56#1,297,number,8.3,"SCOPE section 8.3 does not gate this design because an exponent fit conditions on nothing, and the fill-versus-volatility correlation it requires is reported here as a by-product."
+57,1,57#1,304,date,2024-01-01,"SPY holdout boundary is 2024-01-01, matching futures."
+57,1,57#1,304,code,SPY,"SPY holdout boundary is 2024-01-01, matching futures."
+57,1,57#1,304,number,57,57.
+51,2,51#2,309,date,2020-03-09,"Sessions from S06R Phase 3: 2020-03-09, 03-12, 03-18, 03-23, 03-24, plus 2019-02-27 and 2020-07-01 which sit in the S04 R2 degraded-condition set and are excluded on that documented ground."
+51,2,51#2,309,date,2019-02-27,"Sessions from S06R Phase 3: 2020-03-09, 03-12, 03-18, 03-23, 03-24, plus 2019-02-27 and 2020-07-01 which sit in the S04 R2 degraded-condition set and are excluded on that documented ground."
+51,2,51#2,309,date,2020-07-01,"Sessions from S06R Phase 3: 2020-03-09, 03-12, 03-18, 03-23, 03-24, plus 2019-02-27 and 2020-07-01 which sit in the S04 R2 degraded-condition set and are excluded on that documented ground."
+51,2,51#2,309,code,S06R,"Sessions from S06R Phase 3: 2020-03-09, 03-12, 03-18, 03-23, 03-24, plus 2019-02-27 and 2020-07-01 which sit in the S04 R2 degraded-condition set and are excluded on that documented ground."
+51,2,51#2,309,code,S04,"Sessions from S06R Phase 3: 2020-03-09, 03-12, 03-18, 03-23, 03-24, plus 2019-02-27 and 2020-07-01 which sit in the S04 R2 degraded-condition set and are excluded on that documented ground."
+51,2,51#2,309,code,R2,"Sessions from S06R Phase 3: 2020-03-09, 03-12, 03-18, 03-23, 03-24, plus 2019-02-27 and 2020-07-01 which sit in the S04 R2 degraded-condition set and are excluded on that documented ground."
+51,2,51#2,309,number,51,51.
+51,2,51#2,309,number,42,"Circuit-breaker halts are in the exchange log, so excluding them uses the exchange record rather than the realized proxy and stays inside item 42."
+51,2,51#2,309,number,3,"Sessions from S06R Phase 3: 2020-03-09, 03-12, 03-18, 03-23, 03-24, plus 2019-02-27 and 2020-07-01 which sit in the S04 R2 degraded-condition set and are excluded on that documented ground."
+51,2,51#2,309,number,03,"Sessions from S06R Phase 3: 2020-03-09, 03-12, 03-18, 03-23, 03-24, plus 2019-02-27 and 2020-07-01 which sit in the S04 R2 degraded-condition set and are excluded on that documented ground."
+51,2,51#2,309,number,03,"Sessions from S06R Phase 3: 2020-03-09, 03-12, 03-18, 03-23, 03-24, plus 2019-02-27 and 2020-07-01 which sit in the S04 R2 degraded-condition set and are excluded on that documented ground."
+51,2,51#2,309,number,03,"Sessions from S06R Phase 3: 2020-03-09, 03-12, 03-18, 03-23, 03-24, plus 2019-02-27 and 2020-07-01 which sit in the S04 R2 degraded-condition set and are excluded on that documented ground."
+51,2,51#2,309,number,03,"Sessions from S06R Phase 3: 2020-03-09, 03-12, 03-18, 03-23, 03-24, plus 2019-02-27 and 2020-07-01 which sit in the S04 R2 degraded-condition set and are excluded on that documented ground."
+52,2,52#2,315,code,S06R,"S06R halted 8 cells because a zero in the warm-up made the bound zero, which admits a forecast floored at 1e-300."
+52,2,52#2,315,number,52,52.
+52,2,52#2,315,number,8,"S06R halted 8 cells because a zero in the warm-up made the bound zero, which admits a forecast floored at 1e-300."
+52,2,52#2,315,number,1e-300,"S06R halted 8 cells because a zero in the warm-up made the bound zero, which admits a forecast floored at 1e-300."
+53,2,53#2,319,code,RGARCH,"RGARCH DIAGNOSIS in S06R ran on 16 cells excluding every GLOBEX intraday cell, which are the 8 where RGARCH produced up to 87 percent non-positive forecasts."
+53,2,53#2,319,code,S06R,"RGARCH DIAGNOSIS in S06R ran on 16 cells excluding every GLOBEX intraday cell, which are the 8 where RGARCH produced up to 87 percent non-positive forecasts."
+53,2,53#2,319,code,GLOBEX,"RGARCH DIAGNOSIS in S06R ran on 16 cells excluding every GLOBEX intraday cell, which are the 8 where RGARCH produced up to 87 percent non-positive forecasts."
+53,2,53#2,319,code,RGARCH,"RGARCH DIAGNOSIS in S06R ran on 16 cells excluding every GLOBEX intraday cell, which are the 8 where RGARCH produced up to 87 percent non-positive forecasts."
+53,2,53#2,319,number,53,53.
+53,2,53#2,319,number,16,"RGARCH DIAGNOSIS in S06R ran on 16 cells excluding every GLOBEX intraday cell, which are the 8 where RGARCH produced up to 87 percent non-positive forecasts."
+53,2,53#2,319,number,8,"RGARCH DIAGNOSIS in S06R ran on 16 cells excluding every GLOBEX intraday cell, which are the 8 where RGARCH produced up to 87 percent non-positive forecasts."
+53,2,53#2,319,number,87,"RGARCH DIAGNOSIS in S06R ran on 16 cells excluding every GLOBEX intraday cell, which are the 8 where RGARCH produced up to 87 percent non-positive forecasts."
+53,2,53#2,319,number,8,The question is unanswered and is answered here on those 8.
+54,2,54#2,322,path,ES/RTH/B0/30min,The S06R pre-specified cell ES/RTH/B0/30min stands and is NOT replaced.
+54,2,54#2,322,code,S06R,The S06R pre-specified cell ES/RTH/B0/30min stands and is NOT replaced.
+54,2,54#2,322,code,ES,The S06R pre-specified cell ES/RTH/B0/30min stands and is NOT replaced.
+54,2,54#2,322,code,RTH,The S06R pre-specified cell ES/RTH/B0/30min stands and is NOT replaced.
+54,2,54#2,322,code,B0,The S06R pre-specified cell ES/RTH/B0/30min stands and is NOT replaced.
+54,2,54#2,322,code,MCS,"Largest effective sample selects the cell where the MCS is most powerful and narrows to a singleton under both schemes, biasing toward no difference."
+54,2,54#2,322,number,54,54.
+55,2,55#2,328,path,`~/Downloads/DataBento Data/SPY 1s Data`,"SPY DATA is at `~/Downloads/DataBento Data/SPY 1s Data`, outside the repository."
+55,2,55#2,328,path,`data/`,"The derived parquets under `data/` are NOT consumed, because SCOPE section 3 records them carrying the uncorrected early-close defect in their `_daily_partial` rollup."
+55,2,55#2,328,code,SPY,"SPY DATA is at `~/Downloads/DataBento Data/SPY 1s Data`, outside the repository."
+55,2,55#2,328,code,SPY,"SPY DATA is at `~/Downloads/DataBento Data/SPY 1s Data`, outside the repository."
+55,2,55#2,328,number,55,55.
+55,2,55#2,328,number,3,"The derived parquets under `data/` are NOT consumed, because SCOPE section 3 records them carrying the uncorrected early-close defect in their `_daily_partial` rollup."
+56,2,56#2,333,code,SPY,"SPY FILL IS A LIVE CONFOUND, not a caveat."
+56,2,56#2,333,code,RV,"686 means forward filling concentrates moves into the next traded second, inflating RV in an M-dependent way."
+56,2,56#2,333,code,RV,65 percent of RV and was ignorable.
+56,2,56#2,333,number,56,56.
+56,2,56#2,333,number,0.667,Median fill of 0.667 to 0.
+56,2,56#2,333,number,0.686,"667 to 0.686 means forward filling concentrates moves into the next traded second, inflating RV in an M-dependent way."
+56,2,56#2,333,number,0.65,On futures the same mechanism carried 0.65 percent of RV and was ignorable.
+57,2,57#2,339,code,SPY,"SPY RESULTS ARE TWO-VENUE, covering roughly 33 percent of consolidated volume, labelled as such, with ARCX."
+57,2,57#2,339,code,ARCX.PILLAR,"SPY RESULTS ARE TWO-VENUE, covering roughly 33 percent of consolidated volume, labelled as such, with ARCX.PILLAR and XNAS."
+57,2,57#2,339,code,XNAS.ITCH,PILLAR and XNAS.ITCH treated as independent replications and never pooled.
+57,2,57#2,339,number,57,57.
+57,2,57#2,339,number,33,"SPY RESULTS ARE TWO-VENUE, covering roughly 33 percent of consolidated volume, labelled as such, with ARCX."
+57,2,57#2,339,number,1,Microstructure noise at 1-second is not assumed negligible; the noise correction is applied and the primary M range is restricted to grid points where implied bias stays below 1 percent.
+57,2,57#2,339,number,1,Microstructure noise at 1-second is not assumed negligible; the noise correction is applied and the primary M range is restricted to grid points where implied bias stays below 1 percent.
+57,2,57#2,339,number,8.3,"SCOPE section 8.3 does not gate this design, since an exponent fit conditions on nothing, and its three required measurements are reported here."
+58,1,58#1,346,date,2024-01-01,"SPY holdout boundary is 2024-01-01, matching futures."
+58,1,58#1,346,code,SPY,"SPY holdout boundary is 2024-01-01, matching futures."
+58,1,58#1,346,number,58,58.
+59,1,59#1,350,path,ES/GLOBEX/B0/1day,"S07 measured the damage: the upper bound fired on 14 forecasts at ES/GLOBEX/B0/1day, replacing each with an in-sample mean roughly twenty times too small on the highest-volatility days, moving QLIKE from 0."
+59,1,59#1,350,code,S07,"S07 measured the damage: the upper bound fired on 14 forecasts at ES/GLOBEX/B0/1day, replacing each with an in-sample mean roughly twenty times too small on the highest-volatility days, moving QLIKE from 0."
+59,1,59#1,350,code,ES,"S07 measured the damage: the upper bound fired on 14 forecasts at ES/GLOBEX/B0/1day, replacing each with an in-sample mean roughly twenty times too small on the highest-volatility days, moving QLIKE from 0."
+59,1,59#1,350,code,GLOBEX,"S07 measured the damage: the upper bound fired on 14 forecasts at ES/GLOBEX/B0/1day, replacing each with an in-sample mean roughly twenty times too small on the highest-volatility days, moving QLIKE from 0."
+59,1,59#1,350,code,B0,"S07 measured the damage: the upper bound fired on 14 forecasts at ES/GLOBEX/B0/1day, replacing each with an in-sample mean roughly twenty times too small on the highest-volatility days, moving QLIKE from 0."
+59,1,59#1,350,number,59,59.
+59,1,59#1,350,number,1e-300,"The observed pathology was one-sided, with forecasts driven to the 1e-300 floor and nothing diverging upward, and a two-sided filter was prescribed."
+59,1,59#1,350,number,6.3e-03,"And it was applied to M3_HARJ and M4_HARQ alone, which handicaps the models it touches while M2_HAR keeps forecasts at 6.3e-03 against the same in-sample maximum of 1."
+59,1,59#1,350,number,1.19e-03,3e-03 against the same in-sample maximum of 1.19e-03.
+59,1,59#1,350,number,14,"S07 measured the damage: the upper bound fired on 14 forecasts at ES/GLOBEX/B0/1day, replacing each with an in-sample mean roughly twenty times too small on the highest-volatility days, moving QLIKE from 0."
+59,1,59#1,350,number,0.164,"S07 measured the damage: the upper bound fired on 14 forecasts at ES/GLOBEX/B0/1day, replacing each with an in-sample mean roughly twenty times too small on the highest-volatility days, moving QLIKE from 0.164 to 0."
+59,1,59#1,350,number,0.555,164 to 0.555 and IC from 0.
+59,1,59#1,350,number,0.838,555 and IC from 0.838 to 0.
+59,1,59#1,350,number,0.753,838 to 0.753.
+59,1,59#1,350,number,36,"The flag fired in 36 of 42 combinations, with replaced observations carrying 61 to 71 percent of mean QLIKE in the 1day cells."
+59,1,59#1,350,number,42,"The flag fired in 36 of 42 combinations, with replaced observations carrying 61 to 71 percent of mean QLIKE in the 1day cells."
+59,1,59#1,350,number,61,"The flag fired in 36 of 42 combinations, with replaced observations carrying 61 to 71 percent of mean QLIKE in the 1day cells."
+59,1,59#1,350,number,71,"The flag fired in 36 of 42 combinations, with replaced observations carrying 61 to 71 percent of mean QLIKE in the 1day cells."
+60,1,60#1,360,number,60,60.
+60,1,60#1,360,number,1e-300,A forecast that is non-positive or at or below the 1e-300 floor is replaced by the smallest strictly positive in-sample realized variance.
+61,1,61#1,365,code,MCS,THE MCS LEG IS EVALUATED AS K2.
+61,1,61#1,365,code,K2,THE MCS LEG IS EVALUATED AS K2.
+61,1,61#1,365,code,RTH,"On the clean RTH geometry in S07, composition differed in 7 of 48 comparisons and both pre-specified cells returned no difference at all four comparisons, while the 15 of 24 GLOBEX rate sits where RGARCH is unavailable i"
+61,1,61#1,365,code,S07,"On the clean RTH geometry in S07, composition differed in 7 of 48 comparisons and both pre-specified cells returned no difference at all four comparisons, while the 15 of 24 GLOBEX rate sits where RGARCH is unavailable i"
+61,1,61#1,365,code,GLOBEX,"On the clean RTH geometry in S07, composition differed in 7 of 48 comparisons and both pre-specified cells returned no difference at all four comparisons, while the 15 of 24 GLOBEX rate sits where RGARCH is unavailable i"
+61,1,61#1,365,code,RGARCH,"On the clean RTH geometry in S07, composition differed in 7 of 48 comparisons and both pre-specified cells returned no difference at all four comparisons, while the 15 of 24 GLOBEX rate sits where RGARCH is unavailable i"
+61,1,61#1,365,code,K2,K2 is determined here on repaired losses and reported whichever way it falls.
+61,1,61#1,365,number,61,61.
+61,1,61#1,365,number,7,"On the clean RTH geometry in S07, composition differed in 7 of 48 comparisons and both pre-specified cells returned no difference at all four comparisons, while the 15 of 24 GLOBEX rate sits where RGARCH is unavailable i"
+61,1,61#1,365,number,48,"On the clean RTH geometry in S07, composition differed in 7 of 48 comparisons and both pre-specified cells returned no difference at all four comparisons, while the 15 of 24 GLOBEX rate sits where RGARCH is unavailable i"
+61,1,61#1,365,number,15,"On the clean RTH geometry in S07, composition differed in 7 of 48 comparisons and both pre-specified cells returned no difference at all four comparisons, while the 15 of 24 GLOBEX rate sits where RGARCH is unavailable i"
+61,1,61#1,365,number,24,"On the clean RTH geometry in S07, composition differed in 7 of 48 comparisons and both pre-specified cells returned no difference at all four comparisons, while the 15 of 24 GLOBEX rate sits where RGARCH is unavailable i"
+62,1,62#1,371,code,RGARCH,"RGARCH IS AN IMPLEMENTATION FAILURE, NOT A MODEL FAILURE."
+62,1,62#1,371,code,GLOBEX,The paper states this as a failure of this implementation at intraday GLOBEX horizons and makes no claim about Realized GARCH.
+62,1,62#1,371,number,62,62.
+62,1,62#1,371,number,60.8,"rgarch_ll, persistence reaches 60.8, phi reaches -30574, beta reaches 9."
+62,1,62#1,371,number,9.6e-120,"8, phi reaches -30574, beta reaches 9.6e-120, and 16 of 31 refits converge in one cell."
+62,1,62#1,371,number,16,"6e-120, and 16 of 31 refits converge in one cell."
+62,1,62#1,371,number,31,"6e-120, and 16 of 31 refits converge in one cell."
+63,1,63#1,376,code,E2,"INTERCEPT ROUTE TO LAMBDA, adopted as a third reported column beside E2 and E4."
+63,1,63#1,376,code,E4,"INTERCEPT ROUTE TO LAMBDA, adopted as a third reported column beside E2 and E4."
+63,1,63#1,376,code,IV,"Fitting Var(log RV_M) = c + A M^b gives c as a direct estimate of Var(log IV), so lambda_M = c / Var(log RV_M) at any sampling frequency, with no assumption about how proxy noise scales."
+63,1,63#1,376,code,E2,"With A > 0 and b < 0 the estimate lies in (0,1) BY CONSTRUCTION, which no existing estimator does: E2 and E4 violated the bound at 14 of 248 grid points in S06R and at 3683 rows in the pre-repair artifacts."
+63,1,63#1,376,code,E4,"With A > 0 and b < 0 the estimate lies in (0,1) BY CONSTRUCTION, which no existing estimator does: E2 and E4 violated the bound at 14 of 248 grid points in S06R and at 3683 rows in the pre-repair artifacts."
+63,1,63#1,376,code,S06R,"With A > 0 and b < 0 the estimate lies in (0,1) BY CONSTRUCTION, which no existing estimator does: E2 and E4 violated the bound at 14 of 248 grid points in S06R and at 3683 rows in the pre-repair artifacts."
+63,1,63#1,376,number,63,63.
+63,1,63#1,376,number,0,"With A > 0 and b < 0 the estimate lies in (0,1) BY CONSTRUCTION, which no existing estimator does: E2 and E4 violated the bound at 14 of 248 grid points in S06R and at 3683 rows in the pre-repair artifacts."
+63,1,63#1,376,number,0,"With A > 0 and b < 0 the estimate lies in (0,1) BY CONSTRUCTION, which no existing estimator does: E2 and E4 violated the bound at 14 of 248 grid points in S06R and at 3683 rows in the pre-repair artifacts."
+63,1,63#1,376,number,0,"With A > 0 and b < 0 the estimate lies in (0,1) BY CONSTRUCTION, which no existing estimator does: E2 and E4 violated the bound at 14 of 248 grid points in S06R and at 3683 rows in the pre-repair artifacts."
+63,1,63#1,376,number,1,"With A > 0 and b < 0 the estimate lies in (0,1) BY CONSTRUCTION, which no existing estimator does: E2 and E4 violated the bound at 14 of 248 grid points in S06R and at 3683 rows in the pre-repair artifacts."
+63,1,63#1,376,number,14,"With A > 0 and b < 0 the estimate lies in (0,1) BY CONSTRUCTION, which no existing estimator does: E2 and E4 violated the bound at 14 of 248 grid points in S06R and at 3683 rows in the pre-repair artifacts."
+63,1,63#1,376,number,248,"With A > 0 and b < 0 the estimate lies in (0,1) BY CONSTRUCTION, which no existing estimator does: E2 and E4 violated the bound at 14 of 248 grid points in S06R and at 3683 rows in the pre-repair artifacts."
+63,1,63#1,376,number,3683,"With A > 0 and b < 0 the estimate lies in (0,1) BY CONSTRUCTION, which no existing estimator does: E2 and E4 violated the bound at 14 of 248 grid points in S06R and at 3683 rows in the pre-repair artifacts."
+63,1,63#1,376,number,0,"Fits with A <= 0 or b >= 0 are marked invalid and excluded, since the route is undefined there."
+63,1,63#1,376,number,0,"Fits with A <= 0 or b >= 0 are marked invalid and excluded, since the route is undefined there."
+64,1,64#1,383,code,S08,THE HOLDOUT IS NOT OPENED IN S08.
+64,1,64#1,383,code,S08,"The holdout opens once, at the economic validation of the sizing consequence, because realized tracking error on strategy returns is the quantity that needs it and nothing in S08 does."
+64,1,64#1,383,number,64,64.
+65,1,65#1,387,code,SPY,"SPY IS A ROBUSTNESS PARAGRAPH, not a second instrument leg."
+65,1,65#1,387,code,S07,"Three S07 SPY items are recorded as FAILED MEASUREMENTS rather than results: signature-plot noise returned negative in all twelve venue-year cells, truncated RV returned b of -6."
+65,1,65#1,387,code,SPY,"Three S07 SPY items are recorded as FAILED MEASUREMENTS rather than results: signature-plot noise returned negative in all twelve venue-year cells, truncated RV returned b of -6."
+65,1,65#1,387,code,RV,"Three S07 SPY items are recorded as FAILED MEASUREMENTS rather than results: signature-plot noise returned negative in all twelve venue-year cells, truncated RV returned b of -6."
+65,1,65#1,387,number,65,65.
+65,1,65#1,387,number,1.034,"Traded-tick is the primary convention on the intercept-agreement argument, since it recovers 1.034 against the futures range of 1."
+65,1,65#1,387,number,1.02,034 against the futures range of 1.02 to 1.
+65,1,65#1,387,number,1.08,02 to 1.08 while calendar-time forward fill recovers 1.
+65,1,65#1,387,number,1.557,08 while calendar-time forward fill recovers 1.557 for the same object.
+65,1,65#1,387,number,0.54,59 at RMSE 0.54 and 79.
+65,1,65#1,387,number,79.2,"54 and 79.2, and several stratified fits are degenerate with intercepts of -141."
+66,1,66#1,398,code,E2,"Item 29 barred M of 5, 6 and 10 from headline lambda values on the stated ground that E2 cannot form non-overlapping subsamples in a tiny window and E4's quarticity is worthless there."
+66,1,66#1,398,code,E4,"Item 29 barred M of 5, 6 and 10 from headline lambda values on the stated ground that E2 cannot form non-overlapping subsamples in a tiny window and E4's quarticity is worthless there."
+66,1,66#1,398,number,66,66.
+66,1,66#1,398,number,29,"ITEM 29 AMENDED, disclosed."
+66,1,66#1,398,number,29,"Item 29 barred M of 5, 6 and 10 from headline lambda values on the stated ground that E2 cannot form non-overlapping subsamples in a tiny window and E4's quarticity is worthless there."
+66,1,66#1,398,number,5,"Item 29 barred M of 5, 6 and 10 from headline lambda values on the stated ground that E2 cannot form non-overlapping subsamples in a tiny window and E4's quarticity is worthless there."
+66,1,66#1,398,number,6,"Item 29 barred M of 5, 6 and 10 from headline lambda values on the stated ground that E2 cannot form non-overlapping subsamples in a tiny window and E4's quarticity is worthless there."
+66,1,66#1,398,number,10,"Item 29 barred M of 5, 6 and 10 from headline lambda values on the stated ground that E2 cannot form non-overlapping subsamples in a tiny window and E4's quarticity is worthless there."
+66,1,66#1,398,number,29,"The intercept route postdates item 29 and uses neither mechanism, needing only the fitted intercept from the whole grid and the directly observed Var(log RV_M)."
+67,1,67#1,405,code,K2,K2 IS NOT REPORTABLE WITHOUT A PLACEBO.
+67,1,67#1,405,number,67,67.
+67,1,67#1,405,number,68.8,The clean-geometry rate of 68.8 percent does not track lambda across horizons (65.
+67,1,67#1,405,number,65.6,"8 percent does not track lambda across horizons (65.6, 65."
+67,1,67#1,405,number,65.0,"6, 65.0, 70."
+67,1,67#1,405,number,70.0,"0, 70.0 percent against reliability of 0."
+67,1,67#1,405,number,0.840,"0 percent against reliability of 0.840, 0."
+67,1,67#1,405,number,0.588,"840, 0.588, 0."
+67,1,67#1,405,number,0.396,"588, 0.396), which is not what the section 2."
+67,1,67#1,405,number,2.2,"396), which is not what the section 2.2 mechanism predicts."
+68,1,68#1,413,path,M/2,R2 textbook shrinkage at lam_theory = c / (c + trigamma(M/2)).
+68,1,68#1,413,code,R1,"R1 no shrinkage, using the raw forecast."
+68,1,68#1,413,code,R2,R2 textbook shrinkage at lam_theory = c / (c + trigamma(M/2)).
+68,1,68#1,413,code,R3,R3 measured shrinkage at lam_intercept.
+68,1,68#1,413,code,IV,Shrinkage applies in logs: E[log IV] = (1-lam)*mu_insample + lam*log(forecast).
+68,1,68#1,413,number,68,68.
+68,1,68#1,413,number,10,"Annualized volatility target 10 percent, daily rebalance, forecast from the M2_HAR model at five-minute-equivalent sampling."
+68,1,68#1,413,number,1,Shrinkage applies in logs: E[log IV] = (1-lam)*mu_insample + lam*log(forecast).
+69,1,69#1,419,code,ES,50 for ES and $5.
+69,1,69#1,419,code,NQ,00 for NQ.
+69,1,69#1,419,number,69,69.
+69,1,69#1,419,number,0.5,"Secondary is turnover, mean absolute change in position weight, priced across the pre-registered round-turn cost sweep of 0.5, 1."
+69,1,69#1,419,number,1.0,"5, 1.0, 2."
+69,1,69#1,419,number,2.0,"0, 2.0 and 4."
+69,1,69#1,419,number,4.0,0 and 4.0 ticks per leg at the SCOPE section 4 tick values of $12.
+69,1,69#1,419,number,4,0 ticks per leg at the SCOPE section 4 tick values of $12.
+69,1,69#1,419,number,12.50,0 ticks per leg at the SCOPE section 4 tick values of $12.50 for ES and $5.
+69,1,69#1,419,number,5.00,50 for ES and $5.00 for NQ.
+70,1,70#1,424,code,RV,"Candidates for forward realized variance: realized semivariance up, realized semivariance down, jump variation as RV minus bipower, Parkinson range, Garman-Klass range, volume surprise against a time-of-day norm, ES-NQ c"
+70,1,70#1,424,code,ES,"Candidates for forward realized variance: realized semivariance up, realized semivariance down, jump variation as RV minus bipower, Parkinson range, Garman-Klass range, volume surprise against a time-of-day norm, ES-NQ c"
+70,1,70#1,424,code,NQ,"Candidates for forward realized variance: realized semivariance up, realized semivariance down, jump variation as RV minus bipower, Parkinson range, Garman-Klass range, volume surprise against a time-of-day norm, ES-NQ c"
+70,1,70#1,424,number,70,70.
+70,1,70#1,424,number,0.02,Retention threshold R-squared >= 0.02 on the evaluation sample.
+71,1,71#1,433,code,K3,K3 KILL CONDITION.
+71,1,71#1,433,code,R2,"If the tracking error difference between R2 and R3 is below 5 percent in relative terms in every cell and at every point of the cost sweep, K3 fires and the sizing consequence is reported as a pre-registered null using t"
+71,1,71#1,433,code,R3,"If the tracking error difference between R2 and R3 is below 5 percent in relative terms in every cell and at every point of the cost sweep, K3 fires and the sizing consequence is reported as a pre-registered null using t"
+71,1,71#1,433,code,K3,"If the tracking error difference between R2 and R3 is below 5 percent in relative terms in every cell and at every point of the cost sweep, K3 fires and the sizing consequence is reported as a pre-registered null using t"
+71,1,71#1,433,code,K3,"K3 is evaluated on the holdout, not in sample."
+71,1,71#1,433,number,71,71.
+71,1,71#1,433,number,5,"If the tracking error difference between R2 and R3 is below 5 percent in relative terms in every cell and at every point of the cost sweep, K3 fires and the sizing consequence is reported as a pre-registered null using t"
+72,1,72#1,437,date,2024-01-01,"HOLDOUT OPENS ONCE, in Phase 6, for ES and NQ from 2024-01-01 to 2026-08-14."
+72,1,72#1,437,date,2026-08-14,"HOLDOUT OPENS ONCE, in Phase 6, for ES and NQ from 2024-01-01 to 2026-08-14."
+72,1,72#1,437,code,ES,"HOLDOUT OPENS ONCE, in Phase 6, for ES and NQ from 2024-01-01 to 2026-08-14."
+72,1,72#1,437,code,NQ,"HOLDOUT OPENS ONCE, in Phase 6, for ES and NQ from 2024-01-01 to 2026-08-14."
+72,1,72#1,437,number,72,72.
+72,1,72#1,437,number,6,"HOLDOUT OPENS ONCE, in Phase 6, for ES and NQ from 2024-01-01 to 2026-08-14."
+73,1,73#1,442,code,S09,NO FURTHER MEASUREMENT SESSION FOLLOWS S09.
+73,1,73#1,442,code,SPY,"Roughness, vol-of-vol from the fitted intercept, the overnight leg, SPY as a second instrument, and cross-sectional reliability are recorded as further work and not pursued."
+73,1,73#1,442,number,73,73.
+74,1,74#1,445,date,2026-08-19,THE S09 INTEGRITY SCAN OF 2026-08-19 IS VOID.
+74,1,74#1,445,path,PREREG.md,"Verification on the same day found every flagged file intact: PREREG.md returns 4716 bytes under `wc -c`, all seven S02 source files carry real sizes, no migration process was running, the volume was at 33 percent capaci"
+74,1,74#1,445,path,"`, all seven S02 source files carry real sizes, no migration
+    process was running, the volume was at 33 percent capacity, and numpy 2.5.2 imports
+    cleanly in `","md returns 4716 bytes under `wc -c`, all seven S02 source files carry real sizes, no migration process was running, the volume was at 33 percent capacity, and numpy 2.5.2 imports cleanly in `."
+74,1,74#1,445,path,"`. The scan hashed several gigabytes including the 460 MB Databento
+    archive, exceeded its command timeout, and returned the empty-string digest for every
+    read it failed to complete. `","venv`. The scan hashed several gigabytes including the 460 MB Databento archive, exceeded its command timeout, and returned the empty-string digest for every read it failed to complete. `S09-integrity-scan."
+74,1,74#1,445,path,S09-integrity-scan.txt,`S09-integrity-scan.txt` is retained as a record of the fault and its contents carry no evidential weight.
+74,1,74#1,445,code,S09,THE S09 INTEGRITY SCAN OF 2026-08-19 IS VOID.
+74,1,74#1,445,code,S02,"md returns 4716 bytes under `wc -c`, all seven S02 source files carry real sizes, no migration process was running, the volume was at 33 percent capacity, and numpy 2."
+74,1,74#1,445,code,S09,`S09-integrity-scan.
+74,1,74#1,445,name,numpy,"md returns 4716 bytes under `wc -c`, all seven S02 source files carry real sizes, no migration process was running, the volume was at 33 percent capacity, and numpy 2."
+74,1,74#1,445,name,Databento,"The scan hashed several gigabytes including the 460 MB Databento archive, exceeded its command timeout, and returned the empty-string digest for every read it failed to complete."
+74,1,74#1,445,number,74,74.
+74,1,74#1,445,number,61,It reported 61 of 142 sampled artifacts hashing to the SHA-256 of the empty string and concluded storage failure.
+74,1,74#1,445,number,142,It reported 61 of 142 sampled artifacts hashing to the SHA-256 of the empty string and concluded storage failure.
+74,1,74#1,445,number,4716,"md returns 4716 bytes under `wc -c`, all seven S02 source files carry real sizes, no migration process was running, the volume was at 33 percent capacity, and numpy 2."
+75,1,75#1,454,code,S05A,"Where file verification is needed, `wc -c` gives true byte counts in seconds and the S05A manifest is the reference."
+75,1,75#1,454,number,75,75.
+76,1,76#1,457,date,2026-08-19,"ENVIRONMENT EVENT, 2026-08-19."
+76,1,76#1,457,path,core/dtypes/common.py,The project virtual environment failed on pandas with an internal inconsistency between core/dtypes/common.py and core/dtypes/ missing.
+76,1,76#1,457,path,core/dtypes,py and core/dtypes/ missing.
+76,1,76#1,457,path,missing.py,"py and core/dtypes/ missing.py, and its pip was unusable."
+76,1,76#1,457,path,requirements.lock,"The environment was rebuilt from requirements.lock rather than patched, and the broken environment was retained at ."
+76,1,76#1,457,path,ES/GLOBEX/B0/1day,Equivalence was verified by recomputing the ES/GLOBEX/B0/1day intercept fit against stored values.
+76,1,76#1,457,code,ES,Equivalence was verified by recomputing the ES/GLOBEX/B0/1day intercept fit against stored values.
+76,1,76#1,457,code,GLOBEX,Equivalence was verified by recomputing the ES/GLOBEX/B0/1day intercept fit against stored values.
+76,1,76#1,457,code,B0,Equivalence was verified by recomputing the ES/GLOBEX/B0/1day intercept fit against stored values.
+76,1,76#1,457,code,S09-PRE,Phase 1 of S09-PRE records whether the installed versions matched the lock before the rebuild; a mismatch means the environment drifted after S05A and sessions S05B through S08 did not run under the environment their run
+76,1,76#1,457,code,S05A,Phase 1 of S09-PRE records whether the installed versions matched the lock before the rebuild; a mismatch means the environment drifted after S05A and sessions S05B through S08 did not run under the environment their run
+76,1,76#1,457,code,S05B,Phase 1 of S09-PRE records whether the installed versions matched the lock before the rebuild; a mismatch means the environment drifted after S05A and sessions S05B through S08 did not run under the environment their run
+76,1,76#1,457,code,S08,Phase 1 of S09-PRE records whether the installed versions matched the lock before the rebuild; a mismatch means the environment drifted after S05A and sessions S05B through S08 did not run under the environment their run
+76,1,76#1,457,name,pandas,The project virtual environment failed on pandas with an internal inconsistency between core/dtypes/common.
+76,1,76#1,457,number,76,76.
+76,1,76#1,457,number,1,Phase 1 of S09-PRE records whether the installed versions matched the lock before the rebuild; a mismatch means the environment drifted after S05A and sessions S05B through S08 did not run under the environment their run
+77,1,77#1,466,date,2026-08-19,"DECISIONS ITEMS 66-75 WERE LOST once already, appended during the aborted S09 run of 2026-08-19 and absent on later inspection."
+77,1,77#1,466,path,DECISIONS.md,Any session appending to DECISIONS.md verifies by grep that its append persisted before proceeding.
+77,1,77#1,466,code,S09,"DECISIONS ITEMS 66-75 WERE LOST once already, appended during the aborted S09 run of 2026-08-19 and absent on later inspection."
+77,1,77#1,466,number,77,77.
+77,1,77#1,466,number,66,"DECISIONS ITEMS 66-75 WERE LOST once already, appended during the aborted S09 run of 2026-08-19 and absent on later inspection."
+78,1,78#1,469,path,"` alone is insufficient for file verification. In S09-PRE
+    the damaged pandas/core/dtypes/common.py returned 56,234 bytes under `","`wc -c` alone is insufficient for file verification. In S09-PRE the damaged pandas/core/dtypes/common.py returned 56,234 bytes under `wc -c` while yielding zero lines and erroring on `tail`, because byte count is metadat"
+78,1,78#1,469,path,"`, because byte count is metadata and
+    survives the loss of the data blocks. File verification pairs `","py returned 56,234 bytes under `wc -c` while yielding zero lines and erroring on `tail`, because byte count is metadata and survives the loss of the data blocks. File verification pairs `wc -c` with `wc -l`, and a file w"
+78,1,78#1,469,code,S09-PRE,In S09-PRE the damaged pandas/core/dtypes/common.
+78,1,78#1,469,name,pandas,In S09-PRE the damaged pandas/core/dtypes/common.
+78,1,78#1,469,number,78,78.
+78,1,78#1,469,number,75,ITEM 75 IS AMENDED.
+79,1,79#1,474,date,2026-08-19,"The failure of 2026-08-19 is most consistent with eviction under Optimize Mac Storage on a volume with 25 GiB free, and the pip vendored pygments file that failed in the morning read normally by afternoon, which corrupti"
+79,1,79#1,474,path,~/venvs/obs-space-vol,"THE PROJECT ENVIRONMENT LIVES OUTSIDE THE iCLOUD SYNC SCOPE, at ~/venvs/obs-space-vol."
+79,1,79#1,474,number,79,79.
+79,1,79#1,474,number,25,"The failure of 2026-08-19 is most consistent with eviction under Optimize Mac Storage on a volume with 25 GiB free, and the pip vendored pygments file that failed in the morning read normally by afternoon, which corrupti"
+80,1,80#1,485,code,S10,"S10 runs because the headline exponent has never carried an uncertainty estimate: S08 Phase 4 bootstrapped c and reported c_lo and c_hi, and reported nothing for b."
+80,1,80#1,485,code,S08,"S10 runs because the headline exponent has never carried an uncertainty estimate: S08 Phase 4 bootstrapped c and reported c_lo and c_hi, and reported nothing for b."
+80,1,80#1,485,code,S10,S10 adds no new data and opens no holdout.
+80,1,80#1,485,number,80,80.
+80,1,80#1,485,number,73,ITEM 73 IS AMENDED.
+80,1,80#1,485,number,4,"S10 runs because the headline exponent has never carried an uncertainty estimate: S08 Phase 4 bootstrapped c and reported c_lo and c_hi, and reported nothing for b."
+81,1,81#1,490,number,81,81.
+81,1,81#1,490,number,0.49,The sign survives; the magnitude moves by up to 0.49 on the same cell and the same data.
+82,1,82#1,497,code,S05E,S05E Phase 3 found within-year b steeper than pooled in 16 of 16 cells by a mean of 0.
+82,1,82#1,497,number,82,82.
+82,1,82#1,497,number,3,S05E Phase 3 found within-year b steeper than pooled in 16 of 16 cells by a mean of 0.
+82,1,82#1,497,number,16,S05E Phase 3 found within-year b steeper than pooled in 16 of 16 cells by a mean of 0.
+82,1,82#1,497,number,16,S05E Phase 3 found within-year b steeper than pooled in 16 of 16 cells by a mean of 0.
+82,1,82#1,497,number,0.182,"S05E Phase 3 found within-year b steeper than pooled in 16 of 16 cells by a mean of 0.182 and steeper within volatility tercile in 15 of 16, so roughly a quarter of the headline anomaly is a pooling artifact by the proje"
+82,1,82#1,497,number,15,"182 and steeper within volatility tercile in 15 of 16, so roughly a quarter of the headline anomaly is a pooling artifact by the project's own measurement."
+82,1,82#1,497,number,16,"182 and steeper within volatility tercile in 15 of 16, so roughly a quarter of the headline anomaly is a pooling artifact by the project's own measurement."
+83,1,83#1,502,path,M/2,trigamma(M/2) assumes Gaussian returns.
+83,1,83#1,502,path,1/M,"With heavy tails, RV built from few returns is dominated by the largest squared return, inflating Var(log RV_M) at coarse M and decaying more slowly than 1/M."
+83,1,83#1,502,code,S04,S04 measured a tail index of 2.
+83,1,83#1,502,code,RV,"With heavy tails, RV built from few returns is dominated by the largest squared return, inflating Var(log RV_M) at coarse M and decaying more slowly than 1/M."
+83,1,83#1,502,code,A0,"Arms A0 through A4 all use Gaussian innovations, so the arm that would catch this does not exist."
+83,1,83#1,502,code,A4,"Arms A0 through A4 all use Gaussian innovations, so the arm that would catch this does not exist."
+83,1,83#1,502,name,Gaussian,trigamma(M/2) assumes Gaussian returns.
+83,1,83#1,502,name,Gaussian,"0, while adding calibrated jumps to Gaussian synthetic moved b by only 0."
+83,1,83#1,502,name,Gaussian,"Arms A0 through A4 all use Gaussian innovations, so the arm that would catch this does not exist."
+83,1,83#1,502,number,83,83.
+83,1,83#1,502,number,2.95,S04 measured a tail index of 2.95 to 3.
+83,1,83#1,502,number,3.67,95 to 3.67.
+83,1,83#1,502,number,3,Supporting evidence already held: truncation at 3 local SD moves the elasticity toward -1 by a mean of 0.
+83,1,83#1,502,number,0.415,Supporting evidence already held: truncation at 3 local SD moves the elasticity toward -1 by a mean of 0.415 with 10 of 16 cells reaching -1.
+83,1,83#1,502,number,10,415 with 10 of 16 cells reaching -1.
+83,1,83#1,502,number,16,415 with 10 of 16 cells reaching -1.
+83,1,83#1,502,number,0.11,"0, while adding calibrated jumps to Gaussian synthetic moved b by only 0.11."
+84,1,84#1,510,code,S05E,"S05E's A4 arm generated roughness ACROSS sessions while holding volatility constant WITHIN them, and within-window variation is the only place a roughness effect on realized variance can live."
+84,1,84#1,510,code,A4,"S05E's A4 arm generated roughness ACROSS sessions while holding volatility constant WITHIN them, and within-window variation is the only place a roughness effect on realized variance can live."
+84,1,84#1,510,code,A4,A4's negative result is empty and is withdrawn.
+84,1,84#1,510,number,84,84.
+84,1,84#1,510,number,5,Roughness is tested here only if Phase 5 leaves the gap open.
+85,1,85#1,515,path,ES/RTH/1h,RS-UP AT ES/RTH/1h IS UNDER SUSPICION.
+85,1,85#1,515,code,ES,RS-UP AT ES/RTH/1h IS UNDER SUSPICION.
+85,1,85#1,515,code,RTH,RS-UP AT ES/RTH/1h IS UNDER SUSPICION.
+85,1,85#1,515,number,85,85.
+85,1,85#1,515,number,0.0128,It moved from in-sample R-squared 0.0128 to out-of-sample 0.
+85,1,85#1,515,number,0.237,0128 to out-of-sample 0.237 and 0.
+85,1,85#1,515,number,0.240,237 and 0.240 while the 96 candidates clearing under both degraded from 0.
+85,1,85#1,515,number,96,240 while the 96 candidates clearing under both degraded from 0.
+85,1,85#1,515,number,0.479,240 while the 96 candidates clearing under both degraded from 0.479 to 0.
+85,1,85#1,515,number,0.313,479 to 0.313.
+86,1,86#1,523,path,phase5_signals.py,"78 by log(max(v,1e-300)) at phase5_signals.py:104 and phase6_holdout."
+86,1,86#1,523,path,phase6_holdout.py,"py:104 and phase6_holdout.py:330, moving R-squared from 0."
+86,1,86#1,523,code,S10,"S10 Phase 7 found three windows of 11,406 with RS-up exactly zero mapped to -690."
+86,1,86#1,523,number,86,86.
+86,1,86#1,523,number,7,"S10 Phase 7 found three windows of 11,406 with RS-up exactly zero mapped to -690."
+86,1,86#1,523,number,"11,406","S10 Phase 7 found three windows of 11,406 with RS-up exactly zero mapped to -690."
+86,1,86#1,523,number,1e-300,"78 by log(max(v,1e-300)) at phase5_signals."
+86,1,86#1,523,number,104,py:104 and phase6_holdout.
+86,1,86#1,523,number,330,"py:330, moving R-squared from 0."
+86,1,86#1,523,number,0.0128,"py:330, moving R-squared from 0.0128 to 0."
+86,1,86#1,523,number,0.4286,0128 to 0.4286.
+86,1,86#1,523,number,60,"The justification is NOT item 60's insanity filter: zero upside semivariance is a legitimate observation, not an error, and substituting any value invents data."
+87,1,87#1,531,code,S09,THE S09 PHASE 5 PARTITION IS VOID and is recomputed here.
+87,1,87#1,531,number,87,87.
+87,1,87#1,531,number,5,THE S09 PHASE 5 PARTITION IS VOID and is recomputed here.
+87,1,87#1,531,number,32,The defect reaches 32 of 96 candidate-cells and flips retention in 16.
+87,1,87#1,531,number,96,The defect reaches 32 of 96 candidate-cells and flips retention in 16.
+87,1,87#1,531,number,16,The defect reaches 32 of 96 candidate-cells and flips retention in 16.
+88,1,88#1,533,code,S09,The holdout was opened once in S09 under defective predictor construction.
+88,1,88#1,533,code,S11,"S11 re-evaluates ONLY the candidates the defect touched, with no change to any threshold, rule, sizing parameter or specification."
+88,1,88#1,533,number,88,88.
+89,1,89#1,538,path,Q/P-squared,"Within-window volatility dispersion is measurable from the excess of Q/P-squared over its constant-volatility value, which Part A reports at 0."
+89,1,89#1,538,code,S10,S10 Phase 6 flagged sigma_w as its weakest assumption.
+89,1,89#1,538,code,S11,S11 calibrates sigma_w per cell to reproduce the measured ratio and re-tests the S10 roughness rejection against calibrated variation.
+89,1,89#1,538,code,S10,S11 calibrates sigma_w per cell to reproduce the measured ratio and re-tests the S10 roughness rejection against calibrated variation.
+89,1,89#1,538,number,89,89.
+89,1,89#1,538,number,6,S10 Phase 6 flagged sigma_w as its weakest assumption.
+89,1,89#1,538,number,0.81,"Within-window volatility dispersion is measurable from the excess of Q/P-squared over its constant-volatility value, which Part A reports at 0.81 to 1."
+89,1,89#1,538,number,1.48,81 to 1.48 against trigamma.
+90,1,90#1,543,number,90,90.
+91,1,91#1,547,number,91,91.
+92,1,92#1,553,code,K4,"K4, RISK-LIMIT BREACHES."
+92,1,92#1,553,code,K4,"K4 FIRES if the spurious breach rate under the proxy is below 1 percent of decision points in every cell, or if the cost of spurious breaches is below 1 basis point at every cost-sweep point."
+92,1,92#1,553,number,92,92.
+92,1,92#1,553,number,2,Leverage cap 2.
+92,1,92#1,553,number,1,0x and stop-out at realized volatility above 1.
+92,1,92#1,553,number,1,"K4 FIRES if the spurious breach rate under the proxy is below 1 percent of decision points in every cell, or if the cost of spurious breaches is below 1 basis point at every cost-sweep point."
+92,1,92#1,553,number,1,"K4 FIRES if the spurious breach rate under the proxy is below 1 percent of decision points in every cell, or if the cost of spurious breaches is below 1 basis point at every cost-sweep point."
+93,1,93#1,557,code,K5,"K5, COMBINATION WEIGHTS."
+93,1,93#1,557,code,K5,K5 FIRES if the mean absolute weight change is below 0.
+93,1,93#1,557,number,93,93.
+93,1,93#1,557,number,0.02,"K5 FIRES if the mean absolute weight change is below 0.02 in every cell, or if the resulting out-of-sample tracking-error difference is below 5 percent relative in every cell at every cost-sweep point, matching item 71's"
+93,1,93#1,557,number,5,"02 in every cell, or if the resulting out-of-sample tracking-error difference is below 5 percent relative in every cell at every cost-sweep point, matching item 71's threshold."
+93,1,93#1,557,number,71,"02 in every cell, or if the resulting out-of-sample tracking-error difference is below 5 percent relative in every cell at every cost-sweep point, matching item 71's threshold."
+94,1,94#1,562,code,K6,"K6, CONVEXITY."
+94,1,94#1,562,code,K6,K6 FIRES if the proportional overstatement of the convexity adjustment from naive Var(log IV) is below 5 percent in every cell.
+94,1,94#1,562,code,IV,K6 FIRES if the proportional overstatement of the convexity adjustment from naive Var(log IV) is below 5 percent in every cell.
+94,1,94#1,562,number,94,94.
+94,1,94#1,562,number,5,K6 FIRES if the proportional overstatement of the convexity adjustment from naive Var(log IV) is below 5 percent in every cell.
+95,1,95#1,567,path,mu/2,"Under lognormal V the exact relation requires no expansion: E[sqrt(V)] = exp(mu/2 + s2/8) and sqrt(E[V]) = exp(mu/2 + s2/4), so K_vol = sqrt(E[V]) * exp(-s2/8)."
+95,1,95#1,567,path,s2/8,"Under lognormal V the exact relation requires no expansion: E[sqrt(V)] = exp(mu/2 + s2/8) and sqrt(E[V]) = exp(mu/2 + s2/4), so K_vol = sqrt(E[V]) * exp(-s2/8)."
+95,1,95#1,567,path,mu/2,"Under lognormal V the exact relation requires no expansion: E[sqrt(V)] = exp(mu/2 + s2/8) and sqrt(E[V]) = exp(mu/2 + s2/4), so K_vol = sqrt(E[V]) * exp(-s2/8)."
+95,1,95#1,567,path,s2/4,"Under lognormal V the exact relation requires no expansion: E[sqrt(V)] = exp(mu/2 + s2/8) and sqrt(E[V]) = exp(mu/2 + s2/4), so K_vol = sqrt(E[V]) * exp(-s2/8)."
+95,1,95#1,567,path,s2/8,"Under lognormal V the exact relation requires no expansion: E[sqrt(V)] = exp(mu/2 + s2/8) and sqrt(E[V]) = exp(mu/2 + s2/4), so K_vol = sqrt(E[V]) * exp(-s2/8)."
+95,1,95#1,567,code,S11,THE S11 PHASE 10 CONVEXITY MAGNITUDE IS VOID.
+95,1,95#1,567,code,K6,"The K6 DETERMINATION is expected to survive since a hand recompute gives roughly 19 percent overstatement against a 5 percent threshold, but the reported 443 percent and 13."
+95,1,95#1,567,name,Brockhaus,It applied the Brockhaus-Long second-order expansion K_vol = sqrt(E[V]) * (1 - (exp(s2)-1)/8) at measured s2 of 1.
+95,1,95#1,567,name,Long,It applied the Brockhaus-Long second-order expansion K_vol = sqrt(E[V]) * (1 - (exp(s2)-1)/8) at measured s2 of 1.
+95,1,95#1,567,number,95,95.
+95,1,95#1,567,number,10,THE S11 PHASE 10 CONVEXITY MAGNITUDE IS VOID.
+95,1,95#1,567,number,1,It applied the Brockhaus-Long second-order expansion K_vol = sqrt(E[V]) * (1 - (exp(s2)-1)/8) at measured s2 of 1.
+95,1,95#1,567,number,8,It applied the Brockhaus-Long second-order expansion K_vol = sqrt(E[V]) * (1 - (exp(s2)-1)/8) at measured s2 of 1.
+95,1,95#1,567,number,1.03,It applied the Brockhaus-Long second-order expansion K_vol = sqrt(E[V]) * (1 - (exp(s2)-1)/8) at measured s2 of 1.03 to 2.
+95,1,95#1,567,number,2.05,"03 to 2.05, where Var(V)/E[V]^2 = exp(s2)-1 runs 1."
+95,1,95#1,567,number,2,"05, where Var(V)/E[V]^2 = exp(s2)-1 runs 1."
+95,1,95#1,567,number,1.8,"05, where Var(V)/E[V]^2 = exp(s2)-1 runs 1.8 to 6."
+95,1,95#1,567,number,6.8,8 to 6.8.
+95,1,95#1,567,number,85,The expansion needs that quantity small and is subtracting up to 85 percent of the strike.
+95,1,95#1,567,number,2.05,At s2 = 2.05 the exact factor is 0.
+95,1,95#1,567,number,0.774,05 the exact factor is 0.774 against the expansion's 0.
+95,1,95#1,567,number,0.154,"774 against the expansion's 0.154, a factor of five."
+95,1,95#1,567,number,19,"The K6 DETERMINATION is expected to survive since a hand recompute gives roughly 19 percent overstatement against a 5 percent threshold, but the reported 443 percent and 13."
+95,1,95#1,567,number,5,"The K6 DETERMINATION is expected to survive since a hand recompute gives roughly 19 percent overstatement against a 5 percent threshold, but the reported 443 percent and 13."
+95,1,95#1,567,number,443,"The K6 DETERMINATION is expected to survive since a hand recompute gives roughly 19 percent overstatement against a 5 percent threshold, but the reported 443 percent and 13."
+95,1,95#1,567,number,13.96,"The K6 DETERMINATION is expected to survive since a hand recompute gives roughly 19 percent overstatement against a 5 percent threshold, but the reported 443 percent and 13.96 volatility points are void."
+96,1,96#1,577,path,RQ/RV,The calibration target RQ/RV^2 has a constant-volatility value of exactly 1 and Part A measured 1.
+96,1,96#1,577,path,RQ/RV,"Either the bisection converged on a far branch, or it solved against a different target than Part A measured, or RQ/RV^2 is far flatter in sigma_w than expected."
+96,1,96#1,577,path,RQ/RV,Verified here by reporting implied RQ/RV^2 at the calibrated value beside Part A's measurement per cell.
+96,1,96#1,577,code,S11,THE S11 PHASE 6 MECHANISM CLAIM IS PROVISIONAL PENDING CALIBRATION VERIFICATION.
+96,1,96#1,577,code,RQ,The calibration target RQ/RV^2 has a constant-volatility value of exactly 1 and Part A measured 1.
+96,1,96#1,577,code,RV,The calibration target RQ/RV^2 has a constant-volatility value of exactly 1 and Part A measured 1.
+96,1,96#1,577,code,RQ,"Either the bisection converged on a far branch, or it solved against a different target than Part A measured, or RQ/RV^2 is far flatter in sigma_w than expected."
+96,1,96#1,577,code,RV,"Either the bisection converged on a far branch, or it solved against a different target than Part A measured, or RQ/RV^2 is far flatter in sigma_w than expected."
+96,1,96#1,577,code,RQ,Verified here by reporting implied RQ/RV^2 at the calibrated value beside Part A's measurement per cell.
+96,1,96#1,577,code,RV,Verified here by reporting implied RQ/RV^2 at the calibrated value beside Part A's measurement per cell.
+96,1,96#1,577,number,96,96.
+96,1,96#1,577,number,6,THE S11 PHASE 6 MECHANISM CLAIM IS PROVISIONAL PENDING CALIBRATION VERIFICATION.
+96,1,96#1,577,number,1.495,Calibrated sigma_w of 1.495 to 4.
+96,1,96#1,577,number,4.805,495 to 4.805 implies within-window volatility varying by up to exp(4.
+96,1,96#1,577,number,4.8,805 implies within-window volatility varying by up to exp(4.8) in logs.
+96,1,96#1,577,number,2,The calibration target RQ/RV^2 has a constant-volatility value of exactly 1 and Part A measured 1.
+96,1,96#1,577,number,1,The calibration target RQ/RV^2 has a constant-volatility value of exactly 1 and Part A measured 1.
+96,1,96#1,577,number,1.1,The calibration target RQ/RV^2 has a constant-volatility value of exactly 1 and Part A measured 1.1 to 1.
+96,1,96#1,577,number,1.5,"1 to 1.5, which under lognormal within-window volatility is reproduced near sigma_w = 0."
+96,1,96#1,577,number,0.6,"5, which under lognormal within-window volatility is reproduced near sigma_w = 0.6, not 4."
+96,1,96#1,577,number,4.8,"6, not 4.8."
+96,1,96#1,577,number,2,"Either the bisection converged on a far branch, or it solved against a different target than Part A measured, or RQ/RV^2 is far flatter in sigma_w than expected."
+96,1,96#1,577,number,2,Verified here by reporting implied RQ/RV^2 at the calibrated value beside Part A's measurement per cell.
+97,1,97#1,585,code,S11,THE S11 PHASE 3 TREND p-VALUE IS NOT TRUSTWORTHY AS STATED.
+97,1,97#1,585,number,97,97.
+97,1,97#1,585,number,3,THE S11 PHASE 3 TREND p-VALUE IS NOT TRUSTWORTHY AS STATED.
+97,1,97#1,585,number,0.047,The point estimate of 0.047 per year stands; the t of -4.
+97,1,97#1,585,number,0.004,19 and p of 0.004 are replaced by wild cluster bootstrap.
+98,1,98#1,589,code,K4,K4 IS RESTATED BY LIMIT.
+98,1,98#1,589,code,K4,"K4 is reported per limit, with the cap recorded as untested at this target and the level at which it would begin to bind reported."
+98,1,98#1,589,number,98,98.
+98,1,98#1,589,number,2,The leverage cap at 2.
+98,1,98#1,589,number,"2,524","0x never bound across 2,524 decision points, so only the stop-out was exercised."
+99,1,99#1,593,code,K4,"K4's MISSED-BREACH ASYMMETRY, observed in S11 and not written into item 92."
+99,1,99#1,593,code,S11,"K4's MISSED-BREACH ASYMMETRY, observed in S11 and not written into item 92."
+99,1,99#1,593,number,99,99.
+99,1,99#1,593,number,92,"K4's MISSED-BREACH ASYMMETRY, observed in S11 and not written into item 92."
+99,1,99#1,593,number,0.81,Missed breach rate of 0.81 to 2.
+99,1,99#1,593,number,2.25,"81 to 2.25 percent exceeds the spurious rate in three of four cells, because noise inflates estimated volatility and shrinks the position that would otherwise breach."
+100,1,100#1,601,path,NQ/RTH,"S12 narrowed S11's claim: the A6 exponent lands inside the observed range at 6 of 6 Hurst indices for both GLOBEX cells, 3 of 6 for NQ/RTH and 1 of 6 for ES/RTH."
+100,1,100#1,601,path,ES/RTH,"S12 narrowed S11's claim: the A6 exponent lands inside the observed range at 6 of 6 Hurst indices for both GLOBEX cells, 3 of 6 for NQ/RTH and 1 of 6 for ES/RTH."
+100,1,100#1,601,code,S12,"S12 narrowed S11's claim: the A6 exponent lands inside the observed range at 6 of 6 Hurst indices for both GLOBEX cells, 3 of 6 for NQ/RTH and 1 of 6 for ES/RTH."
+100,1,100#1,601,code,S11,"S12 narrowed S11's claim: the A6 exponent lands inside the observed range at 6 of 6 Hurst indices for both GLOBEX cells, 3 of 6 for NQ/RTH and 1 of 6 for ES/RTH."
+100,1,100#1,601,code,A6,"S12 narrowed S11's claim: the A6 exponent lands inside the observed range at 6 of 6 Hurst indices for both GLOBEX cells, 3 of 6 for NQ/RTH and 1 of 6 for ES/RTH."
+100,1,100#1,601,code,GLOBEX,"S12 narrowed S11's claim: the A6 exponent lands inside the observed range at 6 of 6 Hurst indices for both GLOBEX cells, 3 of 6 for NQ/RTH and 1 of 6 for ES/RTH."
+100,1,100#1,601,code,NQ,"S12 narrowed S11's claim: the A6 exponent lands inside the observed range at 6 of 6 Hurst indices for both GLOBEX cells, 3 of 6 for NQ/RTH and 1 of 6 for ES/RTH."
+100,1,100#1,601,code,RTH,"S12 narrowed S11's claim: the A6 exponent lands inside the observed range at 6 of 6 Hurst indices for both GLOBEX cells, 3 of 6 for NQ/RTH and 1 of 6 for ES/RTH."
+100,1,100#1,601,code,ES,"S12 narrowed S11's claim: the A6 exponent lands inside the observed range at 6 of 6 Hurst indices for both GLOBEX cells, 3 of 6 for NQ/RTH and 1 of 6 for ES/RTH."
+100,1,100#1,601,code,RTH,"S12 narrowed S11's claim: the A6 exponent lands inside the observed range at 6 of 6 Hurst indices for both GLOBEX cells, 3 of 6 for NQ/RTH and 1 of 6 for ES/RTH."
+100,1,100#1,601,code,GLOBEX,"The mechanism explains GLOBEX and largely fails on RTH, which is the cleaner geometry."
+100,1,100#1,601,code,RTH,"The mechanism explains GLOBEX and largely fails on RTH, which is the cleaner geometry."
+100,1,100#1,601,code,RTH,Something else drives the RTH anomaly and S13 tests one candidate.
+100,1,100#1,601,code,S13,Something else drives the RTH anomaly and S13 tests one candidate.
+100,1,100#1,601,name,Hurst,"S12 narrowed S11's claim: the A6 exponent lands inside the observed range at 6 of 6 Hurst indices for both GLOBEX cells, 3 of 6 for NQ/RTH and 1 of 6 for ES/RTH."
+100,1,100#1,601,number,100,100.
+100,1,100#1,601,number,6,"S12 narrowed S11's claim: the A6 exponent lands inside the observed range at 6 of 6 Hurst indices for both GLOBEX cells, 3 of 6 for NQ/RTH and 1 of 6 for ES/RTH."
+100,1,100#1,601,number,6,"S12 narrowed S11's claim: the A6 exponent lands inside the observed range at 6 of 6 Hurst indices for both GLOBEX cells, 3 of 6 for NQ/RTH and 1 of 6 for ES/RTH."
+100,1,100#1,601,number,3,"S12 narrowed S11's claim: the A6 exponent lands inside the observed range at 6 of 6 Hurst indices for both GLOBEX cells, 3 of 6 for NQ/RTH and 1 of 6 for ES/RTH."
+100,1,100#1,601,number,6,"S12 narrowed S11's claim: the A6 exponent lands inside the observed range at 6 of 6 Hurst indices for both GLOBEX cells, 3 of 6 for NQ/RTH and 1 of 6 for ES/RTH."
+100,1,100#1,601,number,1,"S12 narrowed S11's claim: the A6 exponent lands inside the observed range at 6 of 6 Hurst indices for both GLOBEX cells, 3 of 6 for NQ/RTH and 1 of 6 for ES/RTH."
+100,1,100#1,601,number,6,"S12 narrowed S11's claim: the A6 exponent lands inside the observed range at 6 of 6 Hurst indices for both GLOBEX cells, 3 of 6 for NQ/RTH and 1 of 6 for ES/RTH."
+101,1,101#1,606,code,RTH,THE OPEN-BAR CANDIDATE FOR RTH.
+101,1,101#1,606,code,S04,S04 measured the 09:30 bar at 25.
+101,1,101#1,606,code,S10,"heavy tails S10 tested and rejected, and it is RTH-specific by construction, since GLOBEX windows open at 18:00 into quiet."
+101,1,101#1,606,code,RTH,"heavy tails S10 tested and rejected, and it is RTH-specific by construction, since GLOBEX windows open at 18:00 into quiet."
+101,1,101#1,606,code,GLOBEX,"heavy tails S10 tested and rejected, and it is RTH-specific by construction, since GLOBEX windows open at 18:00 into quiet."
+101,1,101#1,606,code,A7,Arm A7 places one amplitude-matched dominant return at a fixed within-window position.
+101,1,101#1,606,code,A7,"Pre-registered reading: if A7 moves b into the observed range on RTH geometry and not on GLOBEX, the RTH residual is an open-bar effect."
+101,1,101#1,606,code,RTH,"Pre-registered reading: if A7 moves b into the observed range on RTH geometry and not on GLOBEX, the RTH residual is an open-bar effect."
+101,1,101#1,606,code,GLOBEX,"Pre-registered reading: if A7 moves b into the observed range on RTH geometry and not on GLOBEX, the RTH residual is an open-bar effect."
+101,1,101#1,606,code,RTH,"Pre-registered reading: if A7 moves b into the observed range on RTH geometry and not on GLOBEX, the RTH residual is an open-bar effect."
+101,1,101#1,606,number,101,101.
+101,1,101#1,606,number,09,S04 measured the 09:30 bar at 25.
+101,1,101#1,606,number,30,S04 measured the 09:30 bar at 25.
+101,1,101#1,606,number,25.9,S04 measured the 09:30 bar at 25.9 times the base extreme rate.
+101,1,101#1,606,number,18,"heavy tails S10 tested and rejected, and it is RTH-specific by construction, since GLOBEX windows open at 18:00 into quiet."
+101,1,101#1,606,number,00,"heavy tails S10 tested and rejected, and it is RTH-specific by construction, since GLOBEX windows open at 18:00 into quiet."
+102,1,102#1,613,path,1/sigma_hat,"Inverse-volatility weighting qualifies, since E[1/sigma_hat] exceeds 1/sigma by approximately Var(log sigma_hat)/2 to second order, so an asset measured with more proxy noise is systematically overweighted."
+102,1,102#1,613,path,1/sigma,"Inverse-volatility weighting qualifies, since E[1/sigma_hat] exceeds 1/sigma by approximately Var(log sigma_hat)/2 to second order, so an asset measured with more proxy noise is systematically overweighted."
+102,1,102#1,613,code,ES,ES and NQ carry measured reliability of 0.
+102,1,102#1,613,code,NQ,ES and NQ carry measured reliability of 0.
+102,1,102#1,613,code,RTH,"93 at RTH daily, so a two-asset book between them is biased by a computable amount."
+102,1,102#1,613,number,102,102.
+102,1,102#1,613,number,2,"Inverse-volatility weighting qualifies, since E[1/sigma_hat] exceeds 1/sigma by approximately Var(log sigma_hat)/2 to second order, so an asset measured with more proxy noise is systematically overweighted."
+102,1,102#1,613,number,0.84,ES and NQ carry measured reliability of 0.84 and 0.
+102,1,102#1,613,number,0.93,"84 and 0.93 at RTH daily, so a two-asset book between them is biased by a computable amount."
+103,1,103#1,620,code,K7,"K7, RISK PARITY."
+103,1,103#1,620,code,ES,"Two-asset inverse-volatility book, ES and NQ, RTH daily, monthly rebalance, naive weights from proxy-based volatility against weights corrected for the measured reliability difference."
+103,1,103#1,620,code,NQ,"Two-asset inverse-volatility book, ES and NQ, RTH daily, monthly rebalance, naive weights from proxy-based volatility against weights corrected for the measured reliability difference."
+103,1,103#1,620,code,RTH,"Two-asset inverse-volatility book, ES and NQ, RTH daily, monthly rebalance, naive weights from proxy-based volatility against weights corrected for the measured reliability difference."
+103,1,103#1,620,code,K7,K7 FIRES if the mean absolute weight deviation from the corrected allocation is below 0.
+103,1,103#1,620,number,103,103.
+103,1,103#1,620,number,0.02,"K7 FIRES if the mean absolute weight deviation from the corrected allocation is below 0.02, or if the out-of-sample difference in realized portfolio volatility is below 5 percent relative at every cost-sweep point."
+103,1,103#1,620,number,5,"02, or if the out-of-sample difference in realized portfolio volatility is below 5 percent relative at every cost-sweep point."
+104,1,104#1,626,code,S13,"S13 tests whether the closing is a smooth decline or a level shift at a date, since a break at 2020 implies a different account from a continuous trend."
+104,1,104#1,626,number,104,104.
+104,1,104#1,626,number,0.38,047 per year over eight years the total movement is about 0.38 against a residual gap of 0.
+104,1,104#1,626,number,0.357,38 against a residual gap of 0.357.
+104,1,104#1,626,number,2020,"S13 tests whether the closing is a smooth decline or a level shift at a date, since a break at 2020 implies a different account from a continuous trend."
+105,1,105#1,630,code,K7,"THE HOLDOUT IS READ ONCE MORE, in Phase 2 only, for the K7 application."
+105,1,105#1,630,code,S09,"Disclosed in the paper alongside the S09 and S11 reads as a fourth opening, with the running count stated rather than described as single-use."
+105,1,105#1,630,code,S11,"Disclosed in the paper alongside the S09 and S11 reads as a fourth opening, with the running count stated rather than described as single-use."
+105,1,105#1,630,number,105,105.
+105,1,105#1,630,number,2,"THE HOLDOUT IS READ ONCE MORE, in Phase 2 only, for the K7 application."
+106,1,106#1,637,code,K3,"K3, K4, K5 and K7 all fired because volatility targeting, risk limits, combination weights and risk parity sit where the loss surface is smooth or the contamination averages away with the estimation window."
+106,1,106#1,637,code,K4,"K3, K4, K5 and K7 all fired because volatility targeting, risk limits, combination weights and risk parity sit where the loss surface is smooth or the contamination averages away with the estimation window."
+106,1,106#1,637,code,K5,"K3, K4, K5 and K7 all fired because volatility targeting, risk limits, combination weights and risk parity sit where the loss surface is smooth or the contamination averages away with the estimation window."
+106,1,106#1,637,code,K7,"K3, K4, K5 and K7 all fired because volatility targeting, risk limits, combination weights and risk parity sit where the loss surface is smooth or the contamination averages away with the estimation window."
+106,1,106#1,637,code,S11,"The operative criterion, established by S11 and S13, is that proxy noise is first-order only where the quantity of interest depends on the VARIANCE of the estimate and where more data does not reduce the contamination."
+106,1,106#1,637,code,S13,"The operative criterion, established by S11 and S13, is that proxy noise is first-order only where the quantity of interest depends on the VARIANCE of the estimate and where more data does not reduce the contamination."
+106,1,106#1,637,code,S14,S14 selects on that criterion.
+106,1,106#1,637,number,106,106.
+107,1,107#1,644,code,K8,"K8, REGIME MISCLASSIFICATION."
+107,1,107#1,644,code,K4,"Days classified into volatility states by a threshold at the in-sample median of log realized variance, which unlike K4's leverage cap sits inside the distribution and binds at every decision point."
+107,1,107#1,644,code,K8,K8 FIRES if the misclassification rate against the best available integrated- variance estimate is below 5 percent in every cell.
+107,1,107#1,644,number,107,107.
+107,1,107#1,644,number,5,K8 FIRES if the misclassification rate against the best available integrated- variance estimate is below 5 percent in every cell.
+108,1,108#1,649,path,1/5,"HAR regressors are noisy proxies, so coefficients are attenuated by errors in variables, and the daily, weekly and monthly components carry noise variance in the ratio 1, 1/5, 1/22, so the daily coefficient is attenuated"
+108,1,108#1,649,path,1/22,"HAR regressors are noisy proxies, so coefficients are attenuated by errors in variables, and the daily, weekly and monthly components carry noise variance in the ratio 1, 1/5, 1/22, so the daily coefficient is attenuated"
+108,1,108#1,649,code,K9,"K9, HAR PERSISTENCE ATTENUATION."
+108,1,108#1,649,code,HAR,"K9, HAR PERSISTENCE ATTENUATION."
+108,1,108#1,649,code,HAR,"HAR regressors are noisy proxies, so coefficients are attenuated by errors in variables, and the daily, weekly and monthly components carry noise variance in the ratio 1, 1/5, 1/22, so the daily coefficient is attenuated"
+108,1,108#1,649,code,K9,K9 FIRES if the corrected daily coefficient differs from the naive by less than 10 percent relative in every cell.
+108,1,108#1,649,number,108,108.
+108,1,108#1,649,number,1,"HAR regressors are noisy proxies, so coefficients are attenuated by errors in variables, and the daily, weekly and monthly components carry noise variance in the ratio 1, 1/5, 1/22, so the daily coefficient is attenuated"
+108,1,108#1,649,number,10,K9 FIRES if the corrected daily coefficient differs from the naive by less than 10 percent relative in every cell.
+109,1,109#1,657,code,K10,"K10, HURST BIAS."
+109,1,109#1,657,code,K10,K10 FIRES if corrected H differs from naive H by less than 0.
+109,1,109#1,657,number,109,109.
+109,1,109#1,657,number,0.02,K10 FIRES if corrected H differs from naive H by less than 0.02 in every cell.
+110,1,110#1,663,code,K8,"THE HOLDOUT IS READ ONCE MORE, in Phase 1 only, for K8."
+110,1,110#1,663,number,110,110.
+110,1,110#1,663,number,1,"THE HOLDOUT IS READ ONCE MORE, in Phase 1 only, for K8."
+111,1,111#1,669,code,K10,K10 CARRIES A LAG-SELECTION CONFOUND.
+111,1,111#1,669,code,ES,208 shift on ES is therefore lag selection rather than nugget subtraction.
+111,1,111#1,669,name,Hurst,No Hurst figure is reportable until naive H is refitted on exactly the surviving lag subset.
+111,1,111#1,669,number,111,111.
+111,1,111#1,669,number,126,"The nugget reaches 126 percent of the increment moment at lag 1, so corrected S(Delta) goes negative at short lags and those lags drop from the corrected regression."
+111,1,111#1,669,number,1,"The nugget reaches 126 percent of the increment moment at lag 1, so corrected S(Delta) goes negative at short lags and those lags drop from the corrected regression."
+111,1,111#1,669,number,0.208,An unknown share of the 0.208 shift on ES is therefore lag selection rather than nugget subtraction.
+112,1,112#1,677,path,ES/GLOBEX,A daily coefficient moving +116 percent with the weekly coefficient flipping sign on ES/GLOBEX is consistent with over-correction.
+112,1,112#1,677,code,K9,K9 ASSUMES CLASSICAL MEASUREMENT ERROR AND THE PROGRAMME'S CENTRAL FINDING DISPUTES IT.
+112,1,112#1,677,code,IV,"Sigma_E takes v from A*M^b, treating the whole excess over Var(log IV) as error independent of the true regressor."
+112,1,112#1,677,code,S11,"44 rather than M^-1 and S11 attributes part of it to within-window volatility dispersion, a price-process property."
+112,1,112#1,677,code,ES,A daily coefficient moving +116 percent with the weekly coefficient flipping sign on ES/GLOBEX is consistent with over-correction.
+112,1,112#1,677,code,GLOBEX,A daily coefficient moving +116 percent with the weekly coefficient flipping sign on ES/GLOBEX is consistent with over-correction.
+112,1,112#1,677,number,112,112.
+112,1,112#1,677,number,116,A daily coefficient moving +116 percent with the weekly coefficient flipping sign on ES/GLOBEX is consistent with over-correction.
+113,1,113#1,685,code,S14,S14 Phase 5 shows log condition number explaining 91 percent of within-cell year deviations at t = -23.
+113,1,113#1,685,number,113,113.
+113,1,113#1,685,number,5,S14 Phase 5 shows log condition number explaining 91 percent of within-cell year deviations at t = -23.
+113,1,113#1,685,number,91,S14 Phase 5 shows log condition number explaining 91 percent of within-cell year deviations at t = -23.
+113,1,113#1,685,number,2022,"5, and the 2022 dummy shrinking 80 percent once it enters."
+113,1,113#1,685,number,80,"5, and the 2022 dummy shrinking 80 percent once it enters."
+114,1,114#1,692,code,S15,NO FURTHER MEASUREMENT SESSION FOLLOWS S15.
+114,1,114#1,692,number,114,114.
+115,1,115#1,697,code,S16,S16 runs because K8 measured a misclassification rate of 7.
+115,1,115#1,697,code,K8,S16 runs because K8 measured a misclassification rate of 7.
+115,1,115#1,697,number,115,115.
+115,1,115#1,697,number,114,"ITEM 114 IS AMENDED, disclosed."
+115,1,115#1,697,number,7.9,S16 runs because K8 measured a misclassification rate of 7.9 to 13.
+115,1,115#1,697,number,13.6,9 to 13.6 percent and a spurious switching cost reaching 138 basis points without ever testing whether correcting the observable reduces either.
+115,1,115#1,697,number,138,6 percent and a spurious switching cost reaching 138 basis points without ever testing whether correcting the observable reduces either.
+116,1,116#1,702,path,N/n,"03236): Gaussian HMM on a z-scored smoothed realized-volatility series, rolling window of 441 observations stepped forward one at a time, RV from 5-minute returns scaled by N/n for short sessions, two regimes."
+116,1,116#1,702,code,RV,"03236): Gaussian HMM on a z-scored smoothed realized-volatility series, rolling window of 441 observations stepped forward one at a time, RV from 5-minute returns scaled by N/n for short sessions, two regimes."
+116,1,116#1,702,name,Blake,"Specification from Blake, Gandhi and Jakkula (arXiv 2510."
+116,1,116#1,702,name,Gandhi,"Specification from Blake, Gandhi and Jakkula (arXiv 2510."
+116,1,116#1,702,name,Jakkula,"Specification from Blake, Gandhi and Jakkula (arXiv 2510."
+116,1,116#1,702,name,Gaussian,"03236): Gaussian HMM on a z-scored smoothed realized-volatility series, rolling window of 441 observations stepped forward one at a time, RV from 5-minute returns scaled by N/n for short sessions, two regimes."
+116,1,116#1,702,number,116,116.
+116,1,116#1,702,number,2510.03236,"Specification from Blake, Gandhi and Jakkula (arXiv 2510.03236): Gaussian HMM on a z-scored smoothed realized-volatility series, rolling window of 441 observations stepped forward one at a time, RV from 5-minute returns "
+116,1,116#1,702,number,441,"03236): Gaussian HMM on a z-scored smoothed realized-volatility series, rolling window of 441 observations stepped forward one at a time, RV from 5-minute returns scaled by N/n for short sessions, two regimes."
+116,1,116#1,702,number,5,"03236): Gaussian HMM on a z-scored smoothed realized-volatility series, rolling window of 441 observations stepped forward one at a time, RV from 5-minute returns scaled by N/n for short sessions, two regimes."
+117,1,117#1,709,code,RV,"That paper states its 5-minute prices are free of microstructure noise and that its RV captures the full variability of prices at high frequency, then applies a 5-day moving average to the observable stating the purpose "
+117,1,117#1,709,code,S16,S16 replaces it with a shrinkage whose weight is the measured reliability.
+117,1,117#1,709,number,117,117.
+117,1,117#1,709,number,5,"That paper states its 5-minute prices are free of microstructure noise and that its RV captures the full variability of prices at high frequency, then applies a 5-day moving average to the observable stating the purpose "
+117,1,117#1,709,number,5,"That paper states its 5-minute prices are free of microstructure noise and that its RV captures the full variability of prices at high frequency, then applies a 5-day moving average to the observable stating the purpose "
+118,1,118#1,715,code,A1,"A1 raw log realized variance, no smoothing."
+118,1,118#1,715,code,A2,A2 the published 5-day moving average.
+118,1,118#1,715,code,A3,"A3 shrinkage E[log IV | log RV] = (1-lam)*mu_insample + lam*log RV with lam from the intercept route, both admissible ranges reported per item 66."
+118,1,118#1,715,code,IV,"A3 shrinkage E[log IV | log RV] = (1-lam)*mu_insample + lam*log RV with lam from the intercept route, both admissible ranges reported per item 66."
+118,1,118#1,715,code,RV,"A3 shrinkage E[log IV | log RV] = (1-lam)*mu_insample + lam*log RV with lam from the intercept route, both admissible ranges reported per item 66."
+118,1,118#1,715,code,RV,"A3 shrinkage E[log IV | log RV] = (1-lam)*mu_insample + lam*log RV with lam from the intercept route, both admissible ranges reported per item 66."
+118,1,118#1,715,number,118,118.
+118,1,118#1,715,number,5,A2 the published 5-day moving average.
+118,1,118#1,715,number,1,"A3 shrinkage E[log IV | log RV] = (1-lam)*mu_insample + lam*log RV with lam from the intercept route, both admissible ranges reported per item 66."
+118,1,118#1,715,number,66,"A3 shrinkage E[log IV | log RV] = (1-lam)*mu_insample + lam*log RV with lam from the intercept route, both admissible ranges reported per item 66."
+119,1,119#1,720,code,K11,"K11, REGIME CLASSIFICATION UNDER CORRECTION."
+119,1,119#1,720,code,K8,"Primary metric is misclassification against the finest-grid noise-robust proxy, as in K8."
+119,1,119#1,720,code,K11,"K11 FIRES if A3 reduces misclassification by less than 1 percentage point against BOTH A1 and A2 in every cell, or if the allocation Sharpe difference is below 0."
+119,1,119#1,720,code,A3,"K11 FIRES if A3 reduces misclassification by less than 1 percentage point against BOTH A1 and A2 in every cell, or if the allocation Sharpe difference is below 0."
+119,1,119#1,720,code,A1,"K11 FIRES if A3 reduces misclassification by less than 1 percentage point against BOTH A1 and A2 in every cell, or if the allocation Sharpe difference is below 0."
+119,1,119#1,720,code,A2,"K11 FIRES if A3 reduces misclassification by less than 1 percentage point against BOTH A1 and A2 in every cell, or if the allocation Sharpe difference is below 0."
+119,1,119#1,720,number,119,119.
+119,1,119#1,720,number,1,"K11 FIRES if A3 reduces misclassification by less than 1 percentage point against BOTH A1 and A2 in every cell, or if the allocation Sharpe difference is below 0."
+119,1,119#1,720,number,0.10,"K11 FIRES if A3 reduces misclassification by less than 1 percentage point against BOTH A1 and A2 in every cell, or if the allocation Sharpe difference is below 0.10 at every cost-sweep point."
+120,1,120#1,726,code,K11,"That band is reported per cell first, so the result is interpretable whichever way K11 falls."
+120,1,120#1,726,number,120,120.
+121,1,121#1,730,number,121,121.
+121,1,121#1,730,number,3,"HOLDOUT OPENS A SIXTH TIME, in Phase 3 only."
+122,1,122#1,735,code,S17,"RESULT HIERARCHY, FIXED HERE AND NOT SUBJECT TO REVISION BY S17."
+122,1,122#1,735,code,S07,"The primary results are the proxy-error scaling exponent (S07-S15), the intercept estimator for lambda (S08, S15), and the first-order criterion separating decisions where proxy noise matters from those where it does not"
+122,1,122#1,735,code,S15,"The primary results are the proxy-error scaling exponent (S07-S15), the intercept estimator for lambda (S08, S15), and the first-order criterion separating decisions where proxy noise matters from those where it does not"
+122,1,122#1,735,code,S08,"The primary results are the proxy-error scaling exponent (S07-S15), the intercept estimator for lambda (S08, S15), and the first-order criterion separating decisions where proxy noise matters from those where it does not"
+122,1,122#1,735,code,S15,"The primary results are the proxy-error scaling exponent (S07-S15), the intercept estimator for lambda (S08, S15), and the first-order criterion separating decisions where proxy noise matters from those where it does not"
+122,1,122#1,735,code,S11,"The primary results are the proxy-error scaling exponent (S07-S15), the intercept estimator for lambda (S08, S15), and the first-order criterion separating decisions where proxy noise matters from those where it does not"
+122,1,122#1,735,code,S13,"The primary results are the proxy-error scaling exponent (S07-S15), the intercept estimator for lambda (S08, S15), and the first-order criterion separating decisions where proxy noise matters from those where it does not"
+122,1,122#1,735,code,S14,"The primary results are the proxy-error scaling exponent (S07-S15), the intercept estimator for lambda (S08, S15), and the first-order criterion separating decisions where proxy noise matters from those where it does not"
+122,1,122#1,735,code,K1,K1 through K11 are applications of that criterion and are secondary.
+122,1,122#1,735,code,K11,K1 through K11 are applications of that criterion and are secondary.
+122,1,122#1,735,code,S17,"A negative S17 result bears on where the parameter can be inserted, not on whether it was measured correctly."
+122,1,122#1,735,code,S17,The report states this ordering explicitly and does not lead with S17.
+122,1,122#1,735,number,122,122.
+123,1,123#1,742,path,ES/GLOBEX/1day,"On ES/GLOBEX/1day, A1 switches 48 times across 621 holdout windows, so a pure two-day shift mislabels about 96 days or 15."
+123,1,123#1,742,path,NQ/RTH/1h,"At NQ/RTH/1h the arms run on different time scales entirely, A1 switching 1,113 times at mean duration 3."
+123,1,123#1,742,code,S16,THE S16 A2 FINDING IS PROVISIONAL PENDING LAG ALIGNMENT.
+123,1,123#1,742,code,A2,THE S16 A2 FINDING IS PROVISIONAL PENDING LAG ALIGNMENT.
+123,1,123#1,742,code,ES,"On ES/GLOBEX/1day, A1 switches 48 times across 621 holdout windows, so a pure two-day shift mislabels about 96 days or 15."
+123,1,123#1,742,code,GLOBEX,"On ES/GLOBEX/1day, A1 switches 48 times across 621 holdout windows, so a pure two-day shift mislabels about 96 days or 15."
+123,1,123#1,742,code,A1,"On ES/GLOBEX/1day, A1 switches 48 times across 621 holdout windows, so a pure two-day shift mislabels about 96 days or 15."
+123,1,123#1,742,code,A2,5 percent against an observed A2-minus-A1 gap of 10.
+123,1,123#1,742,code,A1,5 percent against an observed A2-minus-A1 gap of 10.
+123,1,123#1,742,code,NQ,"At NQ/RTH/1h the arms run on different time scales entirely, A1 switching 1,113 times at mean duration 3."
+123,1,123#1,742,code,RTH,"At NQ/RTH/1h the arms run on different time scales entirely, A1 switching 1,113 times at mean duration 3."
+123,1,123#1,742,code,A1,"At NQ/RTH/1h the arms run on different time scales entirely, A1 switching 1,113 times at mean duration 3."
+123,1,123#1,742,code,A2,3 against A2's 182 at 20.
+123,1,123#1,742,code,A2,"4, with A2 at 46."
+123,1,123#1,742,code,A2,The claim that the published smoothing raises misclassification is not established until A2 is compared against a reference smoothed identically and against the minimum over integer lag shifts.
+123,1,123#1,742,number,123,123.
+123,1,123#1,742,number,5,A 5-day trailing moving average lags by roughly two days.
+123,1,123#1,742,number,48,"On ES/GLOBEX/1day, A1 switches 48 times across 621 holdout windows, so a pure two-day shift mislabels about 96 days or 15."
+123,1,123#1,742,number,621,"On ES/GLOBEX/1day, A1 switches 48 times across 621 holdout windows, so a pure two-day shift mislabels about 96 days or 15."
+123,1,123#1,742,number,96,"On ES/GLOBEX/1day, A1 switches 48 times across 621 holdout windows, so a pure two-day shift mislabels about 96 days or 15."
+123,1,123#1,742,number,15.5,"On ES/GLOBEX/1day, A1 switches 48 times across 621 holdout windows, so a pure two-day shift mislabels about 96 days or 15.5 percent against an observed A2-minus-A1 gap of 10."
+123,1,123#1,742,number,10.6,"5 percent against an observed A2-minus-A1 gap of 10.6 points, meaning phase lag alone predicts MORE disagreement than is observed."
+123,1,123#1,742,number,"1,113","At NQ/RTH/1h the arms run on different time scales entirely, A1 switching 1,113 times at mean duration 3."
+123,1,123#1,742,number,3.3,"At NQ/RTH/1h the arms run on different time scales entirely, A1 switching 1,113 times at mean duration 3.3 against A2's 182 at 20."
+123,1,123#1,742,number,182,3 against A2's 182 at 20.
+123,1,123#1,742,number,20.4,"3 against A2's 182 at 20.4, with A2 at 46."
+123,1,123#1,742,number,46.03,"4, with A2 at 46.03 percent which is chance."
+124,1,124#1,752,path,NQ/RTH/30min,NQ/RTH/30min runs 48.
+124,1,124#1,752,code,NQ,NQ/RTH/30min runs 48.
+124,1,124#1,752,code,RTH,NQ/RTH/30min runs 48.
+124,1,124#1,752,number,124,124.
+124,1,124#1,752,number,48.48,NQ/RTH/30min runs 48.48 percent in sample and 26.
+124,1,124#1,752,number,26.53,48 percent in sample and 26.53 percent out of sample.
+125,1,125#1,757,code,A4,"ARM A4, THE CORRECTION ENTERS THE MODEL."
+125,1,125#1,757,code,S16,"S16 established that any affine correction to the observable is annihilated exactly by within-window z-scoring, which is a property of the whole class of linear proxy corrections upstream of a normalising classifier."
+125,1,125#1,757,code,A4,"A4 is the same two-state Gaussian HMM with the emission variance in each state decomposed into a state variance plus a KNOWN observation-noise variance taken from the measured lambda, held fixed during estimation rather "
+125,1,125#1,757,code,A1,"Window, state count, normalisation, labelling, reference classifier and allocation are identical to A1, so the comparison isolates the emission change."
+125,1,125#1,757,name,Gaussian,"A4 is the same two-state Gaussian HMM with the emission variance in each state decomposed into a state variance plus a KNOWN observation-noise variance taken from the measured lambda, held fixed during estimation rather "
+125,1,125#1,757,number,125,125.
+126,1,126#1,766,code,K12,"K12, MEASUREMENT ERROR IN THE EMISSION."
+126,1,126#1,766,code,K8,"Primary metric is misclassification against the finest-grid noise-robust reference, as in K8 and K11."
+126,1,126#1,766,code,K11,"Primary metric is misclassification against the finest-grid noise-robust reference, as in K8 and K11."
+126,1,126#1,766,code,K12,K12 FIRES if A4 reduces misclassification by less than 1 percentage point against A1 in every cell.
+126,1,126#1,766,code,A4,K12 FIRES if A4 reduces misclassification by less than 1 percentage point against A1 in every cell.
+126,1,126#1,766,code,A1,K12 FIRES if A4 reduces misclassification by less than 1 percentage point against A1 in every cell.
+126,1,126#1,766,number,126,126.
+126,1,126#1,766,number,1,K12 FIRES if A4 reduces misclassification by less than 1 percentage point against A1 in every cell.
+127,1,127#1,771,name,Hurst,"Var(eps) = (1 - lambda) * Var(log RV_M), the same construction item 109 used for the Hurst nugget, with lambda from the intercept route at both admissible and extended ranges per item 66."
+127,1,127#1,771,number,127,127.
+127,1,127#1,771,number,1,"Var(eps) = (1 - lambda) * Var(log RV_M), the same construction item 109 used for the Hurst nugget, with lambda from the intercept route at both admissible and extended ranges per item 66."
+127,1,127#1,771,number,109,"Var(eps) = (1 - lambda) * Var(log RV_M), the same construction item 109 used for the Hurst nugget, with lambda from the intercept route at both admissible and extended ranges per item 66."
+127,1,127#1,771,number,66,"Var(eps) = (1 - lambda) * Var(log RV_M), the same construction item 109 used for the Hurst nugget, with lambda from the intercept route at both admissible and extended ranges per item 66."
+127,1,127#1,771,number,0.25,"No value is chosen to improve any outcome, and a sensitivity across scalings of 0.25, 0."
+127,1,127#1,771,number,0.50,"25, 0.50, 0."
+127,1,127#1,771,number,0.75,"50, 0.75 and 1."
+127,1,127#1,771,number,1.00,75 and 1.00 is reported so the result's dependence on the magnitude is visible.
+128,1,128#1,777,code,S17,S17 is the last measurement session in the programme.
+128,1,128#1,777,number,128,128.
+128,1,128#1,777,number,4,"HOLDOUT OPENS A SEVENTH TIME, in Phase 4 only."
+129,1,129#1,783,code,S18,NO MEASUREMENT IS PERFORMED IN S18.
+129,1,129#1,783,number,129,129.
+129,1,129#1,783,number,9.12,"Restating figures from memory has produced contradictions against emitted CSVs in five consecutive sessions, which is why the 9.12 re-read requirement exists."
+130,1,130#1,789,path,DECISIONS.md,"DECISIONS.md, the spec, the session reports and the invariant test suite are all published."
+130,1,130#1,789,name,Databento,Raw Databento data is NOT published and is excluded by .
+130,1,130#1,789,number,130,130.
+131,1,131#1,793,code,S18,SECTION 5 IS NOT DRAFTED IN S18.
+131,1,131#1,793,code,K1,It carries K1 through K12 and its inclusion decisions are authorial.
+131,1,131#1,793,code,K12,It carries K1 through K12 and its inclusion decisions are authorial.
+131,1,131#1,793,code,S18,"S18 drafts sections 4, 6, 7 and 8 against the approved outline and leaves section 5 as a stub with its table generated."
+131,1,131#1,793,number,131,131.
+131,1,131#1,793,number,5,SECTION 5 IS NOT DRAFTED IN S18.
+131,1,131#1,793,number,4,"S18 drafts sections 4, 6, 7 and 8 against the approved outline and leaves section 5 as a stub with its table generated."
+131,1,131#1,793,number,6,"S18 drafts sections 4, 6, 7 and 8 against the approved outline and leaves section 5 as a stub with its table generated."
+131,1,131#1,793,number,7,"S18 drafts sections 4, 6, 7 and 8 against the approved outline and leaves section 5 as a stub with its table generated."
+131,1,131#1,793,number,8,"S18 drafts sections 4, 6, 7 and 8 against the approved outline and leaves section 5 as a stub with its table generated."
+131,1,131#1,793,number,5,"S18 drafts sections 4, 6, 7 and 8 against the approved outline and leaves section 5 as a stub with its table generated."
+132,1,132#1,796,code,S18,"A separate project is already blocked on a pandoc output-quality problem, so S18 builds a minimal document to PDF first and halts if the build fails, rather than discovering it at the end."
+132,1,132#1,796,number,132,132.
+133,1,133#1,803,code,S18,THE S18 DRAFT SHIPPED WITH ITS CENTRAL SECTION EMPTY.
+133,1,133#1,803,number,133,133.
+133,1,133#1,803,number,1,"Abstract, Section 1, Section 2 and Section 3 are headings with no body."
+133,1,133#1,803,number,2,"Abstract, Section 1, Section 2 and Section 3 are headings with no body."
+133,1,133#1,803,number,3,"Abstract, Section 1, Section 2 and Section 3 are headings with no body."
+133,1,133#1,803,number,3,"Section 3 carries the scaling result that every later section references, so the document argues from a premise it does not state."
+133,1,133#1,803,number,4,"Sections 4, 6, 7 and 8 were drafted as scoped; Section 3 was to be supplied as the register model and was neither supplied nor written."
+133,1,133#1,803,number,6,"Sections 4, 6, 7 and 8 were drafted as scoped; Section 3 was to be supplied as the register model and was neither supplied nor written."
+133,1,133#1,803,number,7,"Sections 4, 6, 7 and 8 were drafted as scoped; Section 3 was to be supplied as the register model and was neither supplied nor written."
+133,1,133#1,803,number,8,"Sections 4, 6, 7 and 8 were drafted as scoped; Section 3 was to be supplied as the register model and was neither supplied nor written."
+133,1,133#1,803,number,3,"Sections 4, 6, 7 and 8 were drafted as scoped; Section 3 was to be supplied as the register model and was neither supplied nor written."
+134,1,134#1,808,path,0/20/272/891,"The count of in-sample states moved by the emission floor appears as 20,462 in the S18 draft, 18,311 in the S17 report, and 0/20/272/891 summing to 1,183 in the S17 per-scaling table."
+134,1,134#1,808,code,S18,"The count of in-sample states moved by the emission floor appears as 20,462 in the S18 draft, 18,311 in the S17 report, and 0/20/272/891 summing to 1,183 in the S17 per-scaling table."
+134,1,134#1,808,code,S17,"The count of in-sample states moved by the emission floor appears as 20,462 in the S18 draft, 18,311 in the S17 report, and 0/20/272/891 summing to 1,183 in the S17 per-scaling table."
+134,1,134#1,808,code,S17,"The count of in-sample states moved by the emission floor appears as 20,462 in the S18 draft, 18,311 in the S17 report, and 0/20/272/891 summing to 1,183 in the S17 per-scaling table."
+134,1,134#1,808,number,134,134.
+134,1,134#1,808,number,"20,462","The count of in-sample states moved by the emission floor appears as 20,462 in the S18 draft, 18,311 in the S17 report, and 0/20/272/891 summing to 1,183 in the S17 per-scaling table."
+134,1,134#1,808,number,"18,311","The count of in-sample states moved by the emission floor appears as 20,462 in the S18 draft, 18,311 in the S17 report, and 0/20/272/891 summing to 1,183 in the S17 per-scaling table."
+134,1,134#1,808,number,"1,183","The count of in-sample states moved by the emission floor appears as 20,462 in the S18 draft, 18,311 in the S17 report, and 0/20/272/891 summing to 1,183 in the S17 per-scaling table."
+134,1,134#1,808,number,"153,613","The floor binding rate appears as 153,613 of 294,906 windows in Section 6."
+134,1,134#1,808,number,"294,906","The floor binding rate appears as 153,613 of 294,906 windows in Section 6."
+134,1,134#1,808,number,6.2,"The floor binding rate appears as 153,613 of 294,906 windows in Section 6.2 and as 63 percent in Table 1, which disagree."
+134,1,134#1,808,number,63,"2 and as 63 percent in Table 1, which disagree."
+134,1,134#1,808,number,1,"2 and as 63 percent in Table 1, which disagree."
+135,1,135#1,814,code,S18,THE BLAKE CITATION IN THE S18 DRAFT IS WRONG.
+135,1,135#1,814,name,Blake,"The paper is Blake, Gandhi and Jakkula, ""Improving S&P 500 Volatility Forecasting through Regime-Switching Methods"", arXiv:2510."
+135,1,135#1,814,name,Gandhi,"The paper is Blake, Gandhi and Jakkula, ""Improving S&P 500 Volatility Forecasting through Regime-Switching Methods"", arXiv:2510."
+135,1,135#1,814,name,Jakkula,"The paper is Blake, Gandhi and Jakkula, ""Improving S&P 500 Volatility Forecasting through Regime-Switching Methods"", arXiv:2510."
+135,1,135#1,814,number,135,135.
+135,1,135#1,814,number,2025,"It reads ""Regime detection in realized volatility with hidden markov models, 2025""."
+135,1,135#1,814,number,500,"The paper is Blake, Gandhi and Jakkula, ""Improving S&P 500 Volatility Forecasting through Regime-Switching Methods"", arXiv:2510."
+135,1,135#1,814,number,2510.03236,"The paper is Blake, Gandhi and Jakkula, ""Improving S&P 500 Volatility Forecasting through Regime-Switching Methods"", arXiv:2510.03236, 21 September 2025."
+135,1,135#1,814,number,21,"03236, 21 September 2025."
+135,1,135#1,814,number,2025,"03236, 21 September 2025."
+136,1,136#1,819,path,K1/K2,The K1/K2 collision from item 61 and the duplicate K3 are session-record artifacts.
+136,1,136#1,819,code,K1,The K1/K2 collision from item 61 and the duplicate K3 are session-record artifacts.
+136,1,136#1,819,code,K2,The K1/K2 collision from item 61 and the duplicate K3 are session-record artifacts.
+136,1,136#1,819,code,K3,The K1/K2 collision from item 61 and the duplicate K3 are session-record artifacts.
+136,1,136#1,819,number,136,136.
+136,1,136#1,819,number,61,The K1/K2 collision from item 61 and the duplicate K3 are session-record artifacts.
+137,1,137#1,826,code,S18,"S18 and S19 both produced a document with a Section 3 heading and no body, while the abstract, the introduction and Sections 4 through 8 all reference its result."
+137,1,137#1,826,code,S19,"S18 and S19 both produced a document with a Section 3 heading and no body, while the abstract, the introduction and Sections 4 through 8 all reference its result."
+137,1,137#1,826,code,S20,S20 writes it from the text supplied in this prompt and verifies its inclusion in the built PDF before the session closes.
+137,1,137#1,826,number,137,137.
+137,1,137#1,826,number,3,SECTION 3 SHIPPED EMPTY TWICE.
+137,1,137#1,826,number,3,"S18 and S19 both produced a document with a Section 3 heading and no body, while the abstract, the introduction and Sections 4 through 8 all reference its result."
+137,1,137#1,826,number,4,"S18 and S19 both produced a document with a Section 3 heading and no body, while the abstract, the introduction and Sections 4 through 8 all reference its result."
+137,1,137#1,826,number,8,"S18 and S19 both produced a document with a Section 3 heading and no body, while the abstract, the introduction and Sections 4 through 8 all reference its result."
+138,1,138#1,830,number,138,138.
+138,1,138#1,830,number,2,SECTION 2 CONTAINS FOUR DROPPED-TEXT DEFECTS.
+139,1,139#1,834,code,S19,"The abstract and the introduction are corrected, and Table 1 regains the margin column dropped in the S19 rewrite, without which the determinations are asserted rather than evidenced."
+139,1,139#1,834,number,139,139.
+139,1,139#1,834,number,1,THE PAPER SAYS TWELVE KILL CONDITIONS AND TABLE 1 LISTS THIRTEEN.
+139,1,139#1,834,number,136,The renumbering under item 136 produced the mismatch.
+139,1,139#1,834,number,1,"The abstract and the introduction are corrected, and Table 1 regains the margin column dropped in the S19 rewrite, without which the determinations are asserted rather than evidenced."
+140,1,140#1,838,name,Andersen,"And signature plots are Andersen, Bollerslev, Diebold and Labys (2000), ""Great Realizations"", Risk 13(3), not the 2001 JASA paper currently cited, which concerns the distribution of realized volatility."
+140,1,140#1,838,name,Bollerslev,"And signature plots are Andersen, Bollerslev, Diebold and Labys (2000), ""Great Realizations"", Risk 13(3), not the 2001 JASA paper currently cited, which concerns the distribution of realized volatility."
+140,1,140#1,838,name,Diebold,"And signature plots are Andersen, Bollerslev, Diebold and Labys (2000), ""Great Realizations"", Risk 13(3), not the 2001 JASA paper currently cited, which concerns the distribution of realized volatility."
+140,1,140#1,838,name,Labys,"And signature plots are Andersen, Bollerslev, Diebold and Labys (2000), ""Great Realizations"", Risk 13(3), not the 2001 JASA paper currently cited, which concerns the distribution of realized volatility."
+140,1,140#1,838,number,140,140.
+140,1,140#1,838,number,7.2,"Section 7.2 states that tercile boundaries place the threshold ""where the density is higher""; for a unimodal distribution the median sits nearer the mode and the tercile boundaries sit further out, so the stated mechanis"
+140,1,140#1,838,number,2000,"And signature plots are Andersen, Bollerslev, Diebold and Labys (2000), ""Great Realizations"", Risk 13(3), not the 2001 JASA paper currently cited, which concerns the distribution of realized volatility."
+140,1,140#1,838,number,13,"And signature plots are Andersen, Bollerslev, Diebold and Labys (2000), ""Great Realizations"", Risk 13(3), not the 2001 JASA paper currently cited, which concerns the distribution of realized volatility."
+140,1,140#1,838,number,3,"And signature plots are Andersen, Bollerslev, Diebold and Labys (2000), ""Great Realizations"", Risk 13(3), not the 2001 JASA paper currently cited, which concerns the distribution of realized volatility."
+140,1,140#1,838,number,2001,"And signature plots are Andersen, Bollerslev, Diebold and Labys (2000), ""Great Realizations"", Risk 13(3), not the 2001 JASA paper currently cited, which concerns the distribution of realized volatility."

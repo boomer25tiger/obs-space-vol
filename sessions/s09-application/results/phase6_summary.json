@@ -1,0 +1,65 @@
+{
+ "gate_phase6": {
+  "executable": "~/venvs/obs-space-vol/bin/python",
+  "realpath": "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3.13",
+  "numpy": "2.5.2",
+  "pandas": "3.0.5",
+  "python": "3.13.13",
+  "inside_sync_scope": false
+ },
+ "holdout_raw_rows": 2847047,
+ "rows_unresolved_symbol": 0,
+ "rows_spread_filtered": 373743,
+ "r3_rows_reassigned": 0,
+ "rows_in_holdout": 2473304,
+ "holdout_weekend_trade_dates": 0,
+ "r1_excluded_rth": {
+  "ES": 27,
+  "NQ": 27
+ },
+ "r1_excluded_globex": {
+  "ES": 7,
+  "NQ": 7
+ },
+ "holdout_degraded_dates": [
+  "2024-09-18",
+  "2025-09-17",
+  "2025-09-24",
+  "2025-11-28",
+  "2026-01-31",
+  "2026-03-15",
+  "2026-03-16",
+  "2026-03-21",
+  "2026-04-10",
+  "2026-05-24",
+  "2026-07-30"
+ ],
+ "ledger": {
+  "ES_RTH": {
+   "after_r1": 651,
+   "roll_excluded": 30,
+   "final": 621
+  },
+  "NQ_RTH": {
+   "after_r1": 651,
+   "roll_excluded": 30,
+   "final": 621
+  },
+  "ES_GLOBEX": {
+   "after_r1": 671,
+   "roll_excluded": 30,
+   "final": 641
+  },
+  "NQ_GLOBEX": {
+   "after_r1": 671,
+   "roll_excluded": 30,
+   "final": 641
+  }
+ },
+ "timers": {
+  "extract": 2.7,
+  "engineer": 54.8,
+  "panels": 82.0,
+  "total": 107.8
+ }
+}

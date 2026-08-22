@@ -1,0 +1,120 @@
+{
+ "r3_trace": [
+  {
+   "trade_date": "2018-08-05",
+   "trade_dow": 6,
+   "n_rows": 2,
+   "roots": [
+    "ES",
+    "NQ"
+   ],
+   "raw_symbols": [
+    "ESU8",
+    "NQU8"
+   ],
+   "instrument_ids": [
+    47511,
+    57287
+   ],
+   "ts_utc_min": "2018-08-05 21:59:00+00:00",
+   "ts_utc_max": "2018-08-05 21:59:00+00:00",
+   "ts_ny_min": "2018-08-05 17:59:00-04:00",
+   "ts_ny_max": "2018-08-05 17:59:00-04:00",
+   "ny_minutes": [
+    1079
+   ],
+   "volumes": [
+    302,
+    73
+   ],
+   "arithmetic": [
+    "2018-08-05 17:59 EDT NY + 6h = 2018-08-05 23:59 -> date 2018-08-05",
+    "2018-08-05 17:59 EDT NY + 6h = 2018-08-05 23:59 -> date 2018-08-05"
+   ]
+  }
+ ],
+ "r3_patch_rows_reassigned": 2,
+ "r3_weekend_trade_dates_after_patch": 0,
+ "s03_raw_sessions_per_root": 2065,
+ "r1_counts": {
+  "early_day_per_root": {
+   "ES": 68,
+   "NQ": 68
+  },
+  "designated_per_root": {
+   "ES": 16,
+   "NQ": 16
+  },
+  "excluded_rth_per_root": {
+   "ES": 68,
+   "NQ": 68
+  },
+  "excluded_globex_per_root": {
+   "ES": 16,
+   "NQ": 21
+  },
+  "globex_retained_holiday_sessions": {
+   "ES": 52,
+   "NQ": 47
+  }
+ },
+ "r1_designated_dates": [
+  "2016-11-25",
+  "2017-07-03",
+  "2017-11-24",
+  "2018-07-03",
+  "2018-11-23",
+  "2018-12-24",
+  "2019-07-03",
+  "2019-11-29",
+  "2019-12-24",
+  "2020-07-03",
+  "2020-11-27",
+  "2020-12-24",
+  "2021-11-26",
+  "2022-11-25",
+  "2023-07-03",
+  "2023-11-24"
+ ],
+ "r2_affected_trade_dates_realised": [
+  "2017-11-13",
+  "2017-11-14",
+  "2019-01-15",
+  "2019-01-16",
+  "2019-02-22",
+  "2019-03-13",
+  "2019-03-14",
+  "2019-03-26",
+  "2019-03-27",
+  "2020-02-27",
+  "2020-02-28",
+  "2020-06-30",
+  "2020-07-01",
+  "2020-07-02",
+  "2021-12-06",
+  "2022-01-03"
+ ],
+ "r2_affected_rows": 24305,
+ "ledger": {
+  "ES_RTH": {
+   "after_r1": 1997,
+   "roll_excluded": 96,
+   "final": 1901
+  },
+  "NQ_RTH": {
+   "after_r1": 1997,
+   "roll_excluded": 96,
+   "final": 1901
+  },
+  "ES_GLOBEX": {
+   "after_r1": 2049,
+   "roll_excluded": 96,
+   "final": 1953
+  },
+  "NQ_GLOBEX": {
+   "after_r1": 2044,
+   "roll_excluded": 96,
+   "final": 1948
+  }
+ }
+}

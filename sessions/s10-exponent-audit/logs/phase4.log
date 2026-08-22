@@ -1,0 +1,82 @@
+  GLOBEX  gaussian  signal    b=-1.2091 sd=0.0848 n=5
+  GLOBEX  gaussian  reference b=-1.1120 sd=0.0368 n=5
+  GLOBEX  nu2.95    signal    b=-1.1420 sd=0.1698 n=5
+  GLOBEX  nu2.95    reference b=-1.1379 sd=0.0524 n=5
+  GLOBEX  nu3       signal    b=-1.2202 sd=0.0691 n=5
+  GLOBEX  nu3       reference b=-1.1772 sd=0.0757 n=5
+  GLOBEX  nu3.67    signal    b=-1.0980 sd=0.1080 n=5
+  GLOBEX  nu3.67    reference b=-1.1258 sd=0.0965 n=5
+  GLOBEX  nu4       signal    b=-1.1220 sd=0.0673 n=5
+  GLOBEX  nu4       reference b=-1.1338 sd=0.0472 n=5
+  GLOBEX  nu6       signal    b=-1.1668 sd=0.1311 n=5
+  GLOBEX  nu6       reference b=-1.1200 sd=0.0480 n=5
+  GLOBEX  nu10      signal    b=-1.1834 sd=0.0748 n=5
+  GLOBEX  nu10      reference b=-1.0899 sd=0.0288 n=5
+  RTH     gaussian  signal    b=-1.1847 sd=0.1212 n=5
+  RTH     gaussian  reference b=-1.1186 sd=0.0593 n=5
+  RTH     nu2.95    signal    b=-1.0885 sd=0.1145 n=5
+  RTH     nu2.95    reference b=-1.1537 sd=0.0602 n=5
+  RTH     nu3       signal    b=-1.1578 sd=0.1239 n=5
+  RTH     nu3       reference b=-1.1172 sd=0.0361 n=5
+  RTH     nu3.67    signal    b=-1.2306 sd=0.0884 n=5
+  RTH     nu3.67    reference b=-1.1680 sd=0.0230 n=5
+  RTH     nu4       signal    b=-1.1194 sd=0.1066 n=5
+  RTH     nu4       reference b=-1.1616 sd=0.0451 n=5
+  RTH     nu6       signal    b=-1.1207 sd=0.0658 n=5
+  RTH     nu6       reference b=-1.1242 sd=0.0199 n=5
+  RTH     nu10      signal    b=-1.1555 sd=0.0822 n=5
+  RTH     nu10      reference b=-1.1526 sd=0.0484 n=5
+
+  geom       df  b_mean_signal  b_sd_signal  b_minus_gaussian  b_ref_same_law  gap_signal_minus_ref  in_observed_range
+GLOBEX gaussian      -1.209101     0.084816          0.000000       -1.111992             -0.097109              False
+GLOBEX   nu2.95      -1.142024     0.169776          0.067078       -1.137869             -0.004155              False
+GLOBEX      nu3      -1.220156     0.069097         -0.011055       -1.177176             -0.042980              False
+GLOBEX   nu3.67      -1.098016     0.108007          0.111085       -1.125772              0.027756              False
+GLOBEX      nu4      -1.122042     0.067302          0.087060       -1.133767              0.011725              False
+GLOBEX      nu6      -1.166821     0.131064          0.042280       -1.120039             -0.046783              False
+GLOBEX     nu10      -1.183381     0.074821          0.025721       -1.089926             -0.093455              False
+   RTH gaussian      -1.184745     0.121230          0.000000       -1.118646             -0.066099              False
+   RTH   nu2.95      -1.088452     0.114487          0.096293       -1.153654              0.065202              False
+   RTH      nu3      -1.157829     0.123898          0.026916       -1.117230             -0.040599              False
+   RTH   nu3.67      -1.230583     0.088377         -0.045838       -1.167982             -0.062601              False
+   RTH      nu4      -1.119376     0.106623          0.065369       -1.161629              0.042253              False
+   RTH      nu6      -1.120701     0.065816          0.064044       -1.124236              0.003535              False
+   RTH     nu10      -1.155533     0.082174          0.029212       -1.152591             -0.002941              False
+
+  geom     df  b_t_signal  move_from_gaussian  reference_move  real_gap_to_trigamma  share_of_real_gap  in_observed_range
+GLOBEX nu2.95   -1.142024            0.067078       -0.025877              0.572048           0.117259              False
+GLOBEX    nu3   -1.220156           -0.011055       -0.065183              0.572048          -0.019325              False
+GLOBEX nu3.67   -1.098016            0.111085       -0.013780              0.572048           0.194188              False
+   RTH nu2.95   -1.088452            0.096293       -0.035008              0.343451           0.280370              False
+   RTH    nu3   -1.157829            0.026916        0.001416              0.343451           0.078369              False
+   RTH nu3.67   -1.230583           -0.045838       -0.049336              0.343451          -0.133464              False
+
+{
+ "master": 20260821,
+ "n_seeds": 5,
+ "settings": [
+  "gaussian",
+  "nu2.95",
+  "nu3",
+  "nu3.67",
+  "nu4",
+  "nu6",
+  "nu10"
+ ],
+ "tail_index_range": [
+  2.95,
+  3.67
+ ],
+ "observed_b_range": [
+  -1.0,
+  -0.41
+ ],
+ "max_between_seed_sd": 0.1697758527616436,
+ "share_mean": 0.08623276486926834,
+ "share_max": 0.2803697113432011,
+ "any_in_observed_range": false,
+ "timers": {
+  "phase4": 37.6
+ }
+}
+PHASE4 DONE 38s

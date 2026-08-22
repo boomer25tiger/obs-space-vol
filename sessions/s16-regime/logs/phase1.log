@@ -1,0 +1,64 @@
+=== ANALYTIC: z-score identity under affine shrinkage ===
+root   geom horizon      lam  max_abs_zscore_difference  identical_to_machine_precision
+  ES GLOBEX    1day 0.827225               4.662937e-15                            True
+  NQ GLOBEX    1day 0.939947               2.220446e-15                            True
+  ES    RTH    1day 0.839780               3.996803e-15                            True
+  NQ    RTH    1day 0.931284               1.776357e-15                            True
+  ES    RTH      1h 0.588054               3.330669e-15                            True
+  NQ    RTH      1h 0.810175               2.220446e-15                            True
+  ES    RTH   30min 0.395824               6.328271e-15                            True
+  NQ    RTH   30min 0.676534               2.886580e-15                            True
+
+=== bands, both lambda ranges (item 66) ===
+root   geom horizon      lam_range        lam  median_minus_mean  band_published_spec_width  ceiling_published_spec_pp  threshold_shift_diagnostic  band_width_in_sd  share_in_band_diagnostic  ceiling_diagnostic_pp                                     note
+  ES GLOBEX    1day       extended    0.82723           -0.10104                        0.0                        0.0                    -0.02110           0.01888                   0.00819                0.81925                                         
+  ES GLOBEX    1day restricted_S05 -890.21051           -0.10104                        0.0                        0.0                         NaN               NaN                   0.00000                0.00000                                         
+  NQ GLOBEX    1day       extended    0.93995           -0.06180                        0.0                        0.0                    -0.00395           0.00367                   0.00205                0.20534                                         
+  NQ GLOBEX    1day restricted_S05    0.84963           -0.06180                        0.0                        0.0                    -0.01094           0.01018                   0.00308                0.30801                                         
+  ES    RTH    1day       extended    0.83978           -0.08931                        0.0                        0.0                    -0.01704           0.01502                   0.00789                0.78906                                         
+  ES    RTH    1day restricted_S05    0.34664           -0.08931                        0.0                        0.0                    -0.16833           0.14837                   0.05734                5.73382                                         
+  NQ    RTH    1day       extended    0.93128           -0.04729                        0.0                        0.0                    -0.00349           0.00328                   0.00210                0.21042                                         
+  NQ    RTH    1day restricted_S05    0.89760           -0.04729                        0.0                        0.0                    -0.00540           0.00506                   0.00368                0.36823                                         
+  ES    RTH      1h       extended    0.58805           -0.04094                        0.0                        0.0                    -0.02868           0.02144                   0.00894                0.89427                                         
+  ES    RTH      1h restricted_S05        NaN                NaN                        NaN                        NaN                         NaN               NaN                       NaN                    NaN lambda undefined on this range (item 66)
+  NQ    RTH      1h       extended    0.81017            0.00490                        0.0                        0.0                     0.00115           0.00087                   0.00044                0.04384                                         
+  NQ    RTH      1h restricted_S05        NaN                NaN                        NaN                        NaN                         NaN               NaN                       NaN                    NaN lambda undefined on this range (item 66)
+  ES    RTH   30min       extended    0.39582           -0.01623                        0.0                        0.0                    -0.02478           0.01726                   0.00785                0.78467                                         
+  ES    RTH   30min restricted_S05        NaN                NaN                        NaN                        NaN                         NaN               NaN                       NaN                    NaN lambda undefined on this range (item 66)
+  NQ    RTH   30min       extended    0.67653            0.00908                        0.0                        0.0                     0.00434           0.00305                   0.00083                0.08329                                         
+  NQ    RTH   30min restricted_S05        NaN                NaN                        NaN                        NaN                         NaN               NaN                       NaN                    NaN lambda undefined on this range (item 66)
+
+=== arm A2, the 5-day moving average, measured reach ===
+root   geom horizon    a2_n  a2_n_reflipped  a2_share_reflipped
+  ES GLOBEX    1day  1949.0           254.0             0.13032
+  NQ GLOBEX    1day  1944.0           256.0             0.13169
+  ES    RTH    1day  1897.0           270.0             0.14233
+  NQ    RTH    1day  1897.0           282.0             0.14866
+  ES    RTH      1h 11402.0          2042.0             0.17909
+  NQ    RTH      1h 11402.0          2289.0             0.20075
+  ES    RTH   30min 22808.0          4066.0             0.17827
+  NQ    RTH   30min 22808.0          4354.0             0.19090
+
+{
+ "analytic_result": "A3 is affine in A1 and the item-116 specification z-scores within each rolling window, which annihilates affine transforms exactly. The z-scored HMM input is identical under A1 and A3, the recoverable band under the published specification is EMPTY, and the ceiling on any improvement is exactly zero percentage points.",
+ "max_abs_zscore_difference": 6.328271240363392e-15,
+ "all_identical_to_machine_precision": true,
+ "ceiling_published_spec_pp": 0.0,
+ "diagnostic_note": "The fixed-threshold band below holds the K8 threshold on the raw scale instead of re-deriving it. That changes a component and is therefore a labelled DIAGNOSTIC, not a fourth arm.",
+ "diagnostic_band_share_range": [
+  0.000438365772400491,
+  0.008942661756970016
+ ],
+ "diagnostic_ceiling_pp_range": [
+  0.0438365772400491,
+  0.8942661756970016
+ ],
+ "a2_share_reflipped_range": [
+  0.13032324268855824,
+  0.20075425363971233
+ ],
+ "timers": {
+  "phase1": 0.5
+ }
+}
+PHASE1 DONE 0.5s

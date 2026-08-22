@@ -1,0 +1,246 @@
+{
+ "groups": [
+  {
+   "group": "ES/GLOBEX/B0/1day",
+   "n_windows": 1953,
+   "n_evaluated": 1453,
+   "D": 1,
+   "start": 500,
+   "warm": 500,
+   "m5_nonconv": 0,
+   "seconds": 49.0
+  },
+  {
+   "group": "ES/GLOBEX/B1/1day",
+   "n_windows": 1953,
+   "n_evaluated": 1453,
+   "D": 1,
+   "start": 500,
+   "warm": 500,
+   "m5_nonconv": 0,
+   "seconds": 49.7
+  },
+  {
+   "group": "NQ/GLOBEX/B0/1day",
+   "n_windows": 1948,
+   "n_evaluated": 1448,
+   "D": 1,
+   "start": 500,
+   "warm": 500,
+   "m5_nonconv": 0,
+   "seconds": 82.2
+  },
+  {
+   "group": "NQ/GLOBEX/B0/1h",
+   "n_windows": 42856,
+   "n_evaluated": 22259,
+   "D": 22,
+   "start": 584,
+   "warm": 584,
+   "m5_nonconv": 0,
+   "seconds": 252.1
+  },
+  {
+   "group": "NQ/GLOBEX/B1/1day",
+   "n_windows": 1948,
+   "n_evaluated": 1448,
+   "D": 1,
+   "start": 500,
+   "warm": 500,
+   "m5_nonconv": 0,
+   "seconds": 21.5
+  },
+  {
+   "group": "ES/GLOBEX/B1/1h",
+   "n_windows": 42966,
+   "n_evaluated": 1403,
+   "D": 22,
+   "start": 584,
+   "warm": 584,
+   "m5_nonconv": 0,
+   "seconds": 383.7
+  },
+  {
+   "group": "ES/GLOBEX/B0/1h",
+   "n_windows": 42966,
+   "n_evaluated": 40996,
+   "D": 22,
+   "start": 584,
+   "warm": 584,
+   "m5_nonconv": 0,
+   "seconds": 665.1
+  },
+  {
+   "group": "ES/RTH/B0/1day",
+   "n_windows": 1901,
+   "n_evaluated": 1401,
+   "D": 1,
+   "start": 500,
+   "warm": 500,
+   "m5_nonconv": 0,
+   "seconds": 25.3
+  },
+  {
+   "group": "ES/RTH/B0/1h",
+   "n_windows": 11406,
+   "n_evaluated": 10906,
+   "D": 6,
+   "start": 500,
+   "warm": 500,
+   "m5_nonconv": 0,
+   "seconds": 71.7
+  },
+  {
+   "group": "ES/GLOBEX/B1/30min",
+   "n_windows": 87885,
+   "n_evaluated": 79538,
+   "D": 45,
+   "start": 1090,
+   "warm": 1090,
+   "m5_nonconv": 0,
+   "seconds": 769.0
+  },
+  {
+   "group": "ES/RTH/B1/1day",
+   "n_windows": 1901,
+   "n_evaluated": 1401,
+   "D": 1,
+   "start": 500,
+   "warm": 500,
+   "m5_nonconv": 0,
+   "seconds": 14.9
+  },
+  {
+   "group": "NQ/GLOBEX/B1/1h",
+   "n_windows": 42856,
+   "n_evaluated": 39503,
+   "D": 22,
+   "start": 584,
+   "warm": 584,
+   "m5_nonconv": 0,
+   "seconds": 469.9
+  },
+  {
+   "group": "ES/RTH/B1/1h",
+   "n_windows": 11406,
+   "n_evaluated": 10906,
+   "D": 6,
+   "start": 500,
+   "warm": 500,
+   "m5_nonconv": 0,
+   "seconds": 67.5
+  },
+  {
+   "group": "NQ/RTH/B0/1day",
+   "n_windows": 1901,
+   "n_evaluated": 1401,
+   "D": 1,
+   "start": 500,
+   "warm": 500,
+   "m5_nonconv": 0,
+   "seconds": 14.7
+  },
+  {
+   "group": "ES/RTH/B0/30min",
+   "n_windows": 22812,
+   "n_evaluated": 22312,
+   "D": 12,
+   "start": 500,
+   "warm": 500,
+   "m5_nonconv": 0,
+   "seconds": 120.0
+  },
+  {
+   "group": "ES/GLOBEX/B0/30min",
+   "n_windows": 87885,
+   "n_evaluated": 21604,
+   "D": 45,
+   "start": 1090,
+   "warm": 1090,
+   "m5_nonconv": 0,
+   "seconds": 886.3
+  },
+  {
+   "group": "NQ/RTH/B1/1day",
+   "n_windows": 1901,
+   "n_evaluated": 1401,
+   "D": 1,
+   "start": 500,
+   "warm": 500,
+   "m5_nonconv": 0,
+   "seconds": 11.2
+  },
+  {
+   "group": "ES/RTH/B1/30min",
+   "n_windows": 22812,
+   "n_evaluated": 22312,
+   "D": 12,
+   "start": 500,
+   "warm": 500,
+   "m5_nonconv": 0,
+   "seconds": 115.0
+  },
+  {
+   "group": "NQ/RTH/B0/1h",
+   "n_windows": 11406,
+   "n_evaluated": 10906,
+   "D": 6,
+   "start": 500,
+   "warm": 500,
+   "m5_nonconv": 0,
+   "seconds": 69.4
+  },
+  {
+   "group": "NQ/RTH/B1/1h",
+   "n_windows": 11406,
+   "n_evaluated": 10906,
+   "D": 6,
+   "start": 500,
+   "warm": 500,
+   "m5_nonconv": 0,
+   "seconds": 78.9
+  },
+  {
+   "group": "NQ/RTH/B0/30min",
+   "n_windows": 22812,
+   "n_evaluated": 22312,
+   "D": 12,
+   "start": 500,
+   "warm": 500,
+   "m5_nonconv": 0,
+   "seconds": 102.2
+  },
+  {
+   "group": "NQ/RTH/B1/30min",
+   "n_windows": 22812,
+   "n_evaluated": 22312,
+   "D": 12,
+   "start": 500,
+   "warm": 500,
+   "m5_nonconv": 0,
+   "seconds": 91.2
+  },
+  {
+   "group": "NQ/GLOBEX/B0/30min",
+   "n_windows": 87660,
+   "n_evaluated": 80900,
+   "D": 45,
+   "start": 1090,
+   "warm": 1090,
+   "m5_nonconv": 0,
+   "seconds": 887.2
+  },
+  {
+   "group": "NQ/GLOBEX/B1/30min",
+   "n_windows": 87660,
+   "n_evaluated": 83735,
+   "D": 45,
+   "start": 1090,
+   "warm": 1090,
+   "m5_nonconv": 0,
+   "seconds": 635.8
+  }
+ ],
+ "total_seconds": 1060.1,
+ "note": "S05 persisted no forecasts; regenerated with partde.build_series/forecasts unmodified"
+}

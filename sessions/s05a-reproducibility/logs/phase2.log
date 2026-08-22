@@ -1,0 +1,144 @@
+running S03 ...
+--- load
+--- rule1_symbology
+--- rule2_spreads
+--- rule3_roots
+--- rule4_sessioncut
+--- rule6_front
+{
+ "label": "S03",
+ "n_rows_all": 7446530,
+ "n_rows_front_contract": 5590872,
+ "sha_ts_sorted": "1a0a7a88fa32065667e7c2dfbeadbd7ca173b5476de2fced117dbd81e6fc5d90",
+ "sha_ts_asis": "1a0a7a88fa32065667e7c2dfbeadbd7ca173b5476de2fced117dbd81e6fc5d90",
+ "sha_iid_sorted": "03464abc97b8801dcd5ec52b177a8df73066c8e7c972de4e4e93ffae7146da23",
+ "sha_iid_asis": "2953a01c33de487d17c20601b00a3b6494558a6b4e533d3d49b1600771ad3242",
+ "sha_tdate_sorted": "04c0f9e27635579c1fe5d1ddd775e806d7ace13846786b13b859955442cca2c9",
+ "sha_tdate_asis": "04c0f9e27635579c1fe5d1ddd775e806d7ace13846786b13b859955442cca2c9",
+ "sha_ny_min_sorted": "95caba7f9b2840e991f8c14026042b821c12a32b596991aa5139a5a5e8f3f649",
+ "sha_ny_min_asis": "95caba7f9b2840e991f8c14026042b821c12a32b596991aa5139a5a5e8f3f649",
+ "sha_raw_sorted": "08597e866c02d0b76b999035011014ce2be0cc30e6a3ac1913da1ca0bfa4d65e",
+ "n_unique_iid": 74,
+ "n_unique_raw": 73,
+ "n_trade_dates": 2066,
+ "tdate_min": "2016-01-04",
+ "tdate_max": "2023-12-29",
+ "front_n": 4132,
+ "sha_front": "4891c1d6fcec939ade583d6c7121b416748ad03faf793725b3a53706379369bf",
+ "sha_session_bar_counts": "96b8e3b23a4920eaf2cc1abcd153e39d153e9a562cadac2ff66fbe68c4519502",
+ "session_bar_count_total": 5590872,
+ "n_sessions": 4132,
+ "elapsed_s": 899.4969570636749
+}
+running S04_noR3 ...
+{
+ "label": "S04_noR3",
+ "n_rows_all": 7446530,
+ "n_rows_front_contract": 5590872,
+ "sha_ts_sorted": "1a0a7a88fa32065667e7c2dfbeadbd7ca173b5476de2fced117dbd81e6fc5d90",
+ "sha_ts_asis": "1a0a7a88fa32065667e7c2dfbeadbd7ca173b5476de2fced117dbd81e6fc5d90",
+ "sha_iid_sorted": "03464abc97b8801dcd5ec52b177a8df73066c8e7c972de4e4e93ffae7146da23",
+ "sha_iid_asis": "2953a01c33de487d17c20601b00a3b6494558a6b4e533d3d49b1600771ad3242",
+ "sha_tdate_sorted": "04c0f9e27635579c1fe5d1ddd775e806d7ace13846786b13b859955442cca2c9",
+ "sha_tdate_asis": "04c0f9e27635579c1fe5d1ddd775e806d7ace13846786b13b859955442cca2c9",
+ "sha_ny_min_sorted": "95caba7f9b2840e991f8c14026042b821c12a32b596991aa5139a5a5e8f3f649",
+ "sha_ny_min_asis": "95caba7f9b2840e991f8c14026042b821c12a32b596991aa5139a5a5e8f3f649",
+ "sha_raw_sorted": "08597e866c02d0b76b999035011014ce2be0cc30e6a3ac1913da1ca0bfa4d65e",
+ "n_unique_iid": 74,
+ "n_unique_raw": 73,
+ "n_trade_dates": 2066,
+ "tdate_min": "2016-01-04",
+ "tdate_max": "2023-12-29",
+ "front_n": 4132,
+ "sha_front": "4891c1d6fcec939ade583d6c7121b416748ad03faf793725b3a53706379369bf",
+ "sha_session_bar_counts": "96b8e3b23a4920eaf2cc1abcd153e39d153e9a562cadac2ff66fbe68c4519502",
+ "session_bar_count_total": 5590872,
+ "n_sessions": 4132,
+ "elapsed_s": 222.39818596839905
+}
+running S04_withR3 ...
+{
+ "label": "S04_withR3",
+ "n_rows_all": 7446530,
+ "n_rows_front_contract": 5590872,
+ "sha_ts_sorted": "1a0a7a88fa32065667e7c2dfbeadbd7ca173b5476de2fced117dbd81e6fc5d90",
+ "sha_ts_asis": "1a0a7a88fa32065667e7c2dfbeadbd7ca173b5476de2fced117dbd81e6fc5d90",
+ "sha_iid_sorted": "03464abc97b8801dcd5ec52b177a8df73066c8e7c972de4e4e93ffae7146da23",
+ "sha_iid_asis": "2953a01c33de487d17c20601b00a3b6494558a6b4e533d3d49b1600771ad3242",
+ "sha_tdate_sorted": "9cc8c5438d0c701f74138a0f4123faff6fe913dbfb40525097fc922168b9f785",
+ "sha_tdate_asis": "9cc8c5438d0c701f74138a0f4123faff6fe913dbfb40525097fc922168b9f785",
+ "sha_ny_min_sorted": "95caba7f9b2840e991f8c14026042b821c12a32b596991aa5139a5a5e8f3f649",
+ "sha_ny_min_asis": "95caba7f9b2840e991f8c14026042b821c12a32b596991aa5139a5a5e8f3f649",
+ "sha_raw_sorted": "08597e866c02d0b76b999035011014ce2be0cc30e6a3ac1913da1ca0bfa4d65e",
+ "n_unique_iid": 74,
+ "n_unique_raw": 73,
+ "n_trade_dates": 2065,
+ "tdate_min": "2016-01-04",
+ "tdate_max": "2023-12-29",
+ "front_n": 4130,
+ "sha_front": "da74db46ea648d544b4690e36ece13c56f6bb3dc536c20bcf65154ded7d1904e",
+ "sha_session_bar_counts": "ccbb0056c046cfa0b6ffcf61eb3391f86b7c26b7a7da21c4692b10cf68de8b7e",
+ "session_bar_count_total": 5590872,
+ "n_sessions": 4130,
+ "elapsed_s": 143.03462505340576
+}
+{
+ "like_for_like_S03_vs_S04noR3": {
+  "identical": true,
+  "differing_fields": {},
+  "fields_compared": 19
+ },
+ "expected_R3_divergence_S03_vs_S04withR3": {
+  "identical": false,
+  "differing_fields": {
+   "sha_tdate_sorted": [
+    "04c0f9e27635579c1fe5d1ddd775e806d7ace13846786b13b859955442cca2c9",
+    "9cc8c5438d0c701f74138a0f4123faff6fe913dbfb40525097fc922168b9f785"
+   ],
+   "sha_tdate_asis": [
+    "04c0f9e27635579c1fe5d1ddd775e806d7ace13846786b13b859955442cca2c9",
+    "9cc8c5438d0c701f74138a0f4123faff6fe913dbfb40525097fc922168b9f785"
+   ],
+   "n_trade_dates": [
+    2066,
+    2065
+   ],
+   "front_n": [
+    4132,
+    4130
+   ],
+   "sha_front": [
+    "4891c1d6fcec939ade583d6c7121b416748ad03faf793725b3a53706379369bf",
+    "da74db46ea648d544b4690e36ece13c56f6bb3dc536c20bcf65154ded7d1904e"
+   ],
+   "sha_session_bar_counts": [
+    "96b8e3b23a4920eaf2cc1abcd153e39d153e9a562cadac2ff66fbe68c4519502",
+    "ccbb0056c046cfa0b6ffcf61eb3391f86b7c26b7a7da21c4692b10cf68de8b7e"
+   ],
+   "n_sessions": [
+    4132,
+    4130
+   ]
+  }
+ },
+ "R3_row_level": {
+  "rows_only_in_S03": 0,
+  "rows_only_in_S04": 0,
+  "rows_with_different_tdate": 2,
+  "examples": [
+   {
+    "ts": "2018-08-05 21:59:00",
+    "iid": 47511,
+    "tdate_s03": "1970-01-01",
+    "tdate_s04": "1970-01-01"
+   },
+   {
+    "ts": "2018-08-05 21:59:00",
+    "iid": 57287,
+    "tdate_s03": "1970-01-01",
+    "tdate_s04": "1970-01-01"
+   }
+  ]
+ }
+}
+PHASE2 DONE 1313.3 s

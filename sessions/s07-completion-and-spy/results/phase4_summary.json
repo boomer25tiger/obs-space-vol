@@ -1,0 +1,132 @@
+{
+ "family_preregistered": 96,
+ "n_computed": 72,
+ "n_halted": 24,
+ "n_not_run": 0,
+ "n_differ": 22,
+ "cell_preregistered": "ES/RTH/B0/30min",
+ "cell_median": "ES/RTH/B1/1h",
+ "prereg_rows": [
+  {
+   "cell": "ES/RTH/B0/30min",
+   "root": "ES",
+   "geom": "RTH",
+   "btag": "B0",
+   "horizon": "30min",
+   "quantile": 0.8,
+   "level": "mcs75",
+   "differs": false,
+   "s_b": "M2_HAR",
+   "s_c": "M2_HAR",
+   "status": "ok"
+  },
+  {
+   "cell": "ES/RTH/B0/30min",
+   "root": "ES",
+   "geom": "RTH",
+   "btag": "B0",
+   "horizon": "30min",
+   "quantile": 0.8,
+   "level": "mcs90",
+   "differs": false,
+   "s_b": "M2_HAR",
+   "s_c": "M2_HAR",
+   "status": "ok"
+  },
+  {
+   "cell": "ES/RTH/B0/30min",
+   "root": "ES",
+   "geom": "RTH",
+   "btag": "B0",
+   "horizon": "30min",
+   "quantile": 0.9,
+   "level": "mcs75",
+   "differs": false,
+   "s_b": "M2_HAR",
+   "s_c": "M2_HAR",
+   "status": "ok"
+  },
+  {
+   "cell": "ES/RTH/B0/30min",
+   "root": "ES",
+   "geom": "RTH",
+   "btag": "B0",
+   "horizon": "30min",
+   "quantile": 0.9,
+   "level": "mcs90",
+   "differs": false,
+   "s_b": "M2_HAR",
+   "s_c": "M2_HAR",
+   "status": "ok"
+  }
+ ],
+ "median_rows": [
+  {
+   "cell": "ES/RTH/B1/1h",
+   "root": "ES",
+   "geom": "RTH",
+   "btag": "B1",
+   "horizon": "1h",
+   "quantile": 0.8,
+   "level": "mcs75",
+   "differs": false,
+   "s_b": "M2_HAR",
+   "s_c": "M2_HAR",
+   "status": "ok"
+  },
+  {
+   "cell": "ES/RTH/B1/1h",
+   "root": "ES",
+   "geom": "RTH",
+   "btag": "B1",
+   "horizon": "1h",
+   "quantile": 0.8,
+   "level": "mcs90",
+   "differs": false,
+   "s_b": "M2_HAR",
+   "s_c": "M2_HAR",
+   "status": "ok"
+  },
+  {
+   "cell": "ES/RTH/B1/1h",
+   "root": "ES",
+   "geom": "RTH",
+   "btag": "B1",
+   "horizon": "1h",
+   "quantile": 0.9,
+   "level": "mcs75",
+   "differs": false,
+   "s_b": "M2_HAR",
+   "s_c": "M2_HAR",
+   "status": "ok"
+  },
+  {
+   "cell": "ES/RTH/B1/1h",
+   "root": "ES",
+   "geom": "RTH",
+   "btag": "B1",
+   "horizon": "1h",
+   "quantile": 0.9,
+   "level": "mcs90",
+   "differs": false,
+   "s_b": "M2_HAR",
+   "s_c": "M2_HAR",
+   "status": "ok"
+  }
+ ],
+ "rgarch_unavailable": [
+  "ES/GLOBEX/B0/1h",
+  "ES/GLOBEX/B0/30min",
+  "ES/GLOBEX/B1/1h",
+  "ES/GLOBEX/B1/30min",
+  "NQ/GLOBEX/B0/1h",
+  "NQ/GLOBEX/B0/30min",
+  "NQ/GLOBEX/B1/1h",
+  "NQ/GLOBEX/B1/30min"
+ ],
+ "timers": {
+  "regen_globex_1day": 4.7,
+  "phase3": 111.3,
+  "phase4_mcs": 10.0
+ }
+}

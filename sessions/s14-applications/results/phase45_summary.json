@@ -1,0 +1,118 @@
+{
+ "phase4": {
+  "kappa_grid": [
+   1.0,
+   3.0,
+   6.0,
+   10.0,
+   20.0,
+   40.0,
+   80.0,
+   160.0,
+   320.0,
+   640.0,
+   1280.0,
+   2000.0
+  ],
+  "observed_range": [
+   -0.97,
+   -0.44
+  ],
+  "any_entered_range": false,
+  "max_share_reached": 0.5410995984352044,
+  "max_b_reached": -1.0382665746163855,
+  "b_at_max_kappa": {
+   "ES/GLOBEX": -1.130937258688682,
+   "NQ/GLOBEX": -1.1989063671608853,
+   "ES/RTH": -1.148240134459309,
+   "NQ/RTH": -1.1121891573544873
+  },
+  "share_at_max_kappa": {
+   "ES/GLOBEX": 0.40585240862533734,
+   "NQ/GLOBEX": 0.4013821920673798,
+   "ES/RTH": 0.5384031808399202,
+   "NQ/RTH": 0.5410995984352044
+  },
+  "max_between_seed_sd": 0.21901808975853276,
+  "required_share_range": [
+   0.16124871110607145,
+   0.3230097198750305
+  ],
+  "required_floor_range": [
+   0.052002293666738586,
+   0.20867055826749137
+  ],
+  "floor_supplied_by_measured_share": [
+   3.289530836900707e-05,
+   0.0032704582128657016
+  ],
+  "measured_share_range": [
+   0.0040555707594004,
+   0.0404379661510424
+  ],
+  "ratio_range": [
+   3.9875573985046926,
+   71.49436052754848
+  ],
+  "general_bound": "A localized feature carrying share s of realized variance contributes an M-invariant floor of 2 s^2 to Var(log RV_M). To supply the measured excess at the five-minute equivalent it must carry s = sqrt(excess/2). Any localized mechanism whose measured share falls short of that value is ruled out without simulating it."
+ },
+ "phase5": {
+  "univariate_A_over_c": {
+   "coef": -0.027179433493459068,
+   "se": 0.00741535807136968,
+   "t": -3.6652894212077873,
+   "r2": 0.19630999958662987
+  },
+  "univariate_log_cond": {
+   "coef": -1.1463478791371031,
+   "se": 0.048739048106079715,
+   "t": -23.520112182784043,
+   "r2": 0.9095685778907737
+  },
+  "univariate_rmse": {
+   "coef": 6.738550975917544,
+   "se": 2.3974845764592647,
+   "t": 2.8106754229340662,
+   "r2": 0.125594743292609
+  },
+  "univariate_is_2022": {
+   "coef": -0.40469631661625366,
+   "se": 0.06137844310449055,
+   "t": -6.5934601164011175,
+   "r2": 0.4414753290231087
+  },
+  "joint_identification": {
+   "coef_A_over_c": 0.002344176373032003,
+   "se_A_over_c": 0.002871131570071203,
+   "coef_log_cond": -1.1690766418695404,
+   "se_log_cond": 0.056257782890371026,
+   "r2": 0.9106713139238571
+  },
+  "with_2022_dummy": {
+   "coef_A_over_c": 0.003178164498691635,
+   "coef_log_cond": -1.0778996860727275,
+   "coef_is_2022": -0.08212514422609465,
+   "se_is_2022": 0.0297628335701825,
+   "t_is_2022": -2.759318733293279,
+   "r2": 0.9218920897926787
+  },
+  "2022_diagnostics": {
+   "mean_A_over_c_2022": 8.149795192206932,
+   "mean_A_over_c_other": 4.384578796153075,
+   "mean_log_cond_2022": 2.050102833108329,
+   "mean_log_cond_other": 1.7397421810064064,
+   "mean_rmse_2022": 0.015671900450561174,
+   "mean_rmse_other": 0.023672598424617726,
+   "mean_c_2022": 0.5691783591259252,
+   "mean_c_other": 0.8289628465483693,
+   "mean_dev_2022": -0.530142889100169
+  },
+  "verdict": "VOLATILITY-STATE EFFECT, not explained by identification",
+  "s10_note": "S10 found all 48 volatility-tercile sub-fits degenerate because conditioning on realized volatility removes the cross-sectional log-IV variation that identifies the intercept. A high-volatility YEAR is a milder version of the same conditioning, so the identification channel is the first thing to test before reading 2022 as a state effect."
+ },
+ "timers": {
+  "bound": 0.8,
+  "sweep": 175.7,
+  "phase5": 0.4
+ }
+}

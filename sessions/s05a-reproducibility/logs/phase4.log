@@ -1,0 +1,169 @@
+[
+ {
+  "part": "A",
+  "cell_id": "ES/RTH/B0/M13/MEDRQ_MEDRV/y2018",
+  "input_rows": 236
+ },
+ {
+  "part": "C",
+  "cell_id": "ES/GLOBEX/B0/1day/M138/y2020/t1",
+  "input_rows": 30
+ },
+ {
+  "part": "E",
+  "cell_id": "ES/RTH/B0/1day/S-B_q0.90",
+  "input_rows": 140
+ }
+]
+T1: {
+ "mu43": 0.8308609250295591,
+ "s04_wrong_constant": 1.417516616051075,
+ "ratio_of_means": 0.9995919012407788,
+ "mean_of_ratios_jensen": 1.0164170187681525,
+ "median_ratio": 0.9977721026558299,
+ "tol": 0.01,
+ "passed": true,
+ "s04_implied_bias_factor": 4.965917162430454
+}
+variant ranking:
+                 share  p95_over_med
+variant                            
+TRQ3_TRV3    0.000000      1.420263
+TRQ5_TRV5    0.000000      1.685184
+TRQ10_TRV10  0.000000      2.207050
+TQ_BV        0.000180      2.020228
+MEDRQ_MEDRV  0.000595      2.138309
+RQ_RV        0.002129      2.521295
+CHOSEN: TRQ3_TRV3 | elapsed 35s
+Part C: 11568 estimates, 1928 cells, 11s
+root   geom    M  E1_a_exp_L1-10  E1_a_exp_L1-5  E1_d_model_L1-10  E1_d_model_L1-5       E2       E4
+  ES GLOBEX   23        0.757633       0.776987          0.968253         0.882905 0.789213 0.932318
+  ES GLOBEX   46        0.791368       0.811977          1.011324         0.922688 0.824871 0.960230
+  ES GLOBEX  138        0.830601       0.852169          1.061452         0.968357 0.861986 0.985104
+  ES GLOBEX  345        0.850531       0.862403          1.054605         0.988507 0.856232 0.993404
+  ES GLOBEX 1380        0.866707       0.877977          1.091392         0.997689 0.845378 0.998054
+  ES    RTH   13        0.740624       0.766605          0.946582         0.885378 0.807275 0.913879
+  ES    RTH   26        0.790201       0.807029          0.979854         0.917032 0.859781 0.947695
+  ES    RTH   78        0.816722       0.845251          1.027896         0.960510 0.895416 0.978951
+  ES    RTH  195        0.837722       0.867704          1.054326         0.986035 0.907155 0.990655
+  ES    RTH  390        0.852675       0.872535          1.057263         0.991523 0.912258 0.994849
+  NQ GLOBEX   23        0.727906       0.745639          0.916689         0.861166 0.776996 0.921731
+  NQ GLOBEX   46        0.769757       0.788946          0.969301         0.888793 0.821958 0.955588
+  NQ GLOBEX  138        0.815038       0.827672          1.026346         0.940514 0.867796 0.982813
+  NQ GLOBEX  345        0.828844       0.849029          1.027737         0.964816 0.866910 0.992654
+  NQ GLOBEX 1380        0.843157       0.866844          1.077526         0.985038 0.876109 0.998026
+  NQ    RTH   13        0.717519       0.727542          0.889527         0.813383 0.796663 0.900865
+  NQ    RTH   26        0.769347       0.779907          0.953991         0.893919 0.859798 0.939199
+  NQ    RTH   78        0.809243       0.829860          1.018406         0.927846 0.908227 0.976005
+  NQ    RTH  195        0.839859       0.860024          1.025538         0.961588 0.925747 0.989816
+  NQ    RTH  390        0.844009       0.866880          1.062168         0.993601 0.935258 0.994627
+{
+ "selection": [
+  {
+   "part": "A",
+   "cell_id": "ES/RTH/B0/M13/MEDRQ_MEDRV/y2018",
+   "input_rows": 236
+  },
+  {
+   "part": "C",
+   "cell_id": "ES/GLOBEX/B0/1day/M138/y2020/t1",
+   "input_rows": 30
+  },
+  {
+   "part": "E",
+   "cell_id": "ES/RTH/B0/1day/S-B_q0.90",
+   "input_rows": 140
+  }
+ ],
+ "threads": "all *_NUM_THREADS = 1",
+ "partA_rerun_seconds": 34.6,
+ "partA_selected_cell": {
+  "median": {
+   "new": "np.float64(0.1239332930928729)",
+   "old": "np.float64(0.1239332930928729)",
+   "bitwise": true
+  },
+  "iqr": {
+   "new": "np.float64(0.0484050998438568)",
+   "old": "np.float64(0.0484050998438568)",
+   "bitwise": true
+  },
+  "p95": {
+   "new": "np.float64(0.2450786465416393)",
+   "old": "np.float64(0.2450786465416393)",
+   "bitwise": true
+  },
+  "p99": {
+   "new": "np.float64(0.2851588245690242)",
+   "old": "np.float64(0.2851588245690242)",
+   "bitwise": true
+  },
+  "share_gt10x_med": {
+   "new": "np.float64(0.0)",
+   "old": "np.float64(0.0)",
+   "bitwise": true
+  },
+  "med_over_ref": {
+   "new": "np.float64(0.8055664051036743)",
+   "old": "np.float64(0.8055664051036743)",
+   "bitwise": true
+  },
+  "acf1": {
+   "new": "np.float64(0.0400718472786461)",
+   "old": "np.float64(0.0400718472786461)",
+   "bitwise": true
+  },
+  "acf5": {
+   "new": "np.float64(-0.0220200583969571)",
+   "old": "np.float64(-0.0220200583969571)",
+   "bitwise": true
+  },
+  "acf10": {
+   "new": "np.float64(-0.1589388232692113)",
+   "old": "np.float64(-0.1589388232692113)",
+   "bitwise": true
+  }
+ },
+ "T1_reproduced": {
+  "new": {
+   "mu43": 0.8308609250295591,
+   "s04_wrong_constant": 1.417516616051075,
+   "ratio_of_means": 0.9995919012407788,
+   "mean_of_ratios_jensen": 1.0164170187681525,
+   "median_ratio": 0.9977721026558299,
+   "tol": 0.01,
+   "passed": true,
+   "s04_implied_bias_factor": 4.965917162430454
+  },
+  "old": {
+   "mu43": 0.8308609250295591,
+   "s04_wrong_constant": 1.417516616051075,
+   "ratio_of_means": 0.9995919012407788,
+   "mean_of_ratios_jensen": 1.0164170187681525,
+   "median_ratio": 0.9977721026558299,
+   "tol": 0.01,
+   "passed": true,
+   "s04_implied_bias_factor": 4.965917162430454
+  },
+  "bitwise": true
+ },
+ "variant_selection_reproduced": {
+  "new": "TRQ3_TRV3",
+  "old": "TRQ3_TRV3",
+  "same": true
+ },
+ "partC_rerun_seconds": 10.5,
+ "partC_selected_cell": [
+  {
+   "estimator": "E1_a_exp_L1-5",
+   "new": "0.5172818250944985",
+   "old": "0.5172818250944985",
+   "bitwise": true,
+   "abs_diff": 0.0
+  },
+  {
+   "estimator": "E1_d_model_L1-5",
+   "new": "-0
+PART A all-cells identical: True
+PART C all-cells identical: True
+PHASE4 DONE 54.2 s

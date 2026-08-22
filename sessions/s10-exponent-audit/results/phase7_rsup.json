@@ -1,0 +1,102 @@
+{
+ "n_windows_pathA": 11406,
+ "n_windows_pathB": 11406,
+ "rv_identical": true,
+ "rsu_identical": true,
+ "r2_insample_alignment": 0.01276153611486536,
+ "n_insample_alignment": 11405,
+ "r2_holdout_alignment": 0.01276153611486536,
+ "n_holdout_alignment": 11405,
+ "alignments_differ": false,
+ "lag_applied": "predictor index t-1, target index t (shift of exactly one window)",
+ "predictor_target_overlap": "none: predictor uses windows 0..T-2 and the target uses windows 1..T-1, and windows are disjoint index blocks of the minute grid by construction in cell_windows / wins",
+ "overlap_check_offset": 1,
+ "windows_are_disjoint_blocks": true,
+ "n_rsu_zero_insample": 3,
+ "share_rsu_zero_insample": 0.0002630194634402946,
+ "floor_log_value": -690.7755278982137,
+ "n_floored_in_regression": 3,
+ "r2_excluding_floored": 0.4285556885824302,
+ "n_excluding_floored": 11402,
+ "r2_raw": 0.01276153611486536,
+ "comparison_candidates": {
+  "RS_down": {
+   "n_zero": 4,
+   "r2_raw": 0.008771496897584663,
+   "r2_excluding_floored": 0.4827490624896424
+  },
+  "Parkinson": {
+   "n_zero": 0,
+   "r2_raw": 0.5524271874941276,
+   "r2_excluding_floored": 0.5524271874941276
+  },
+  "GarmanKlass": {
+   "n_zero": 0,
+   "r2_raw": 0.5630633582178372,
+   "r2_excluding_floored": 0.5630633582178372
+  },
+  "JumpVar": {
+   "n_zero": 5311,
+   "r2_raw": 0.0010249027412155079,
+   "r2_excluding_floored": 0.32992381192243525
+  },
+  "RealizedQuarticity": {
+   "n_zero": 0,
+   "r2_raw": 0.5520649368927352,
+   "r2_excluding_floored": 0.5520649368927352
+  }
+ },
+ "r2_lift_from_dropping_floored": 0.41579415246756485,
+ "r2_floor_replaced_by_min_positive": 0.42867107006735594,
+ "min_positive_rsu": 3.496097633615136e-09,
+ "zero_rate_by_year": [
+  {
+   "year": 2016,
+   "n": 1434,
+   "n_rsu_zero": 2,
+   "share": 0.001394700139470014
+  },
+  {
+   "year": 2017,
+   "n": 1422,
+   "n_rsu_zero": 0,
+   "share": 0.0
+  },
+  {
+   "year": 2018,
+   "n": 1416,
+   "n_rsu_zero": 0,
+   "share": 0.0
+  },
+  {
+   "year": 2019,
+   "n": 1422,
+   "n_rsu_zero": 1,
+   "share": 0.0007032348804500703
+  },
+  {
+   "year": 2020,
+   "n": 1434,
+   "n_rsu_zero": 0,
+   "share": 0.0
+  },
+  {
+   "year": 2021,
+   "n": 1434,
+   "n_rsu_zero": 0,
+   "share": 0.0
+  },
+  {
+   "year": 2022,
+   "n": 1428,
+   "n_rsu_zero": 0,
+   "share": 0.0
+  },
+  {
+   "year": 2023,
+   "n": 1416,
+   "n_rsu_zero": 0,
+   "share": 0.0
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+{
+ "phase2_close_identical": true,
+ "e3_park_gk_corr_new": 0.8460855210894119,
+ "e3_park_gk_corr_old": 0.8215297849397857,
+ "e3_max_offdiag_new": 0.9313931518066083,
+ "e3_excluded_at_0p20": true,
+ "phase3_zero_not_covered_total": 136,
+ "phase3_excluded_nonzero_total": 0,
+ "timers": {
+  "phase2_build": 13.1,
+  "phase2_m6": 0.1,
+  "phase2_e3": 0.1,
+  "phase3": 0.2,
+  "total": 13.4
+ }
+}

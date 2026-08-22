@@ -1,0 +1,9 @@
+cell,phase,assertion,message
+NQ/GLOBEX/B0/1h,Phase 5 filter,assert_forecasts_positive,"[assert_forecasts_positive] cell=NQ/GLOBEX/B0/1h model=M4_HARQ: 0 non-finite, 0 non-positive, 2 at or below the 1e-300 floor, of 22137 forecasts; min=1e-300"
+ES/GLOBEX/B1/1h,Phase 5 filter,assert_forecasts_positive,"[assert_forecasts_positive] cell=ES/GLOBEX/B1/1h model=M5_RGARCH: 0 non-finite, 1 non-positive, 1 at or below the 1e-300 floor, of 1384 forecasts; min=0"
+ES/GLOBEX/B1/30min,Phase 5 filter,assert_forecasts_positive,"[assert_forecasts_positive] cell=ES/GLOBEX/B1/30min model=M4_HARQ: 0 non-finite, 0 non-positive, 4 at or below the 1e-300 floor, of 79374 forecasts; min=1e-300"
+NQ/GLOBEX/B1/1h,Phase 5 filter,assert_forecasts_positive,"[assert_forecasts_positive] cell=NQ/GLOBEX/B1/1h model=M4_HARQ: 0 non-finite, 0 non-positive, 1 at or below the 1e-300 floor, of 17985 forecasts; min=1e-300"
+ES/GLOBEX/B0/1h,Phase 5 filter,assert_forecasts_positive,"[assert_forecasts_positive] cell=ES/GLOBEX/B0/1h model=M4_HARQ: 0 non-finite, 0 non-positive, 3 at or below the 1e-300 floor, of 40837 forecasts; min=1e-300"
+ES/GLOBEX/B0/30min,Phase 5 filter,assert_forecasts_positive,"[assert_forecasts_positive] cell=ES/GLOBEX/B0/30min model=M6_PARK: 0 non-finite, 17 non-positive, 17 at or below the 1e-300 floor, of 21480 forecasts; min=0"
+NQ/GLOBEX/B1/30min,Phase 5 filter,assert_forecasts_positive,"[assert_forecasts_positive] cell=NQ/GLOBEX/B1/30min model=M4_HARQ: 0 non-finite, 0 non-positive, 4 at or below the 1e-300 floor, of 83094 forecasts; min=1e-300"
+NQ/GLOBEX/B0/30min,Phase 5 filter,assert_forecasts_positive,"[assert_forecasts_positive] cell=NQ/GLOBEX/B0/30min model=M4_HARQ: 0 non-finite, 0 non-positive, 4 at or below the 1e-300 floor, of 80564 forecasts; min=1e-300"

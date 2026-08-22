@@ -1,0 +1,5 @@
+root,geom,shape,byte_identical,n_differing,max_abs_diff
+ES,GLOBEX,"(1953, 1380)",True,0,0.0
+NQ,GLOBEX,"(1948, 1380)",True,0,0.0
+ES,RTH,"(1901, 390)",True,0,0.0
+NQ,RTH,"(1901, 390)",True,0,0.0

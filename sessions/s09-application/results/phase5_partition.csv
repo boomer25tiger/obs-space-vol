@@ -1,0 +1,4 @@
+range,lam_in_unit,n,clears_under_both,clears_only_after_measured,clears_neither,clears_raw_but_not_measured,n_status_change,in_flip_band
+restricted_S05,True,54,42,1,11,0,1,1
+restricted_S05,False,18,0,0,4,14,14,4
+extended,True,144,96,3,45,0,3,3

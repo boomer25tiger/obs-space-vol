@@ -1,0 +1,89 @@
+ho_series equivalence against S07 series(): byte-identical on all 6 fields x 4 cells
+
+=== PHASE 8: K4 ===
+root   geom        limit  n_decision_points  both  spurious  missed  neither  spurious_rate  missed_rate  n_spurious_episodes  mean_spurious_duration  max_spurious_duration
+  ES GLOBEX leverage_cap                641     0         0       0      641       0.000000     0.000000                    0                     0.0                      0
+  ES GLOBEX     stop_out                641    20         2      13      606       0.003120     0.020281                    2                     1.0                      1
+  NQ GLOBEX leverage_cap                641     0         0       0      641       0.000000     0.000000                    0                     0.0                      0
+  NQ GLOBEX     stop_out                641    21         1       6      613       0.001560     0.009360                    1                     1.0                      1
+  ES    RTH leverage_cap                621     0         0       0      621       0.000000     0.000000                    0                     0.0                      0
+  ES    RTH     stop_out                621    20         4      14      583       0.006441     0.022544                    4                     1.0                      1
+  NQ    RTH leverage_cap                621     0         0       0      621       0.000000     0.000000                    0                     0.0                      0
+  NQ    RTH     stop_out                621    21         6       5      589       0.009662     0.008052                    6                     1.0                      1
+ticks                          0.5       1.0       2.0       4.0
+root geom   limit                                               
+ES   GLOBEX leverage_cap  0.000000  0.000000  0.000000  0.000000
+            stop_out      0.002531  0.005063  0.010126  0.020252
+     RTH    leverage_cap  0.000000  0.000000  0.000000  0.000000
+            stop_out      0.005225  0.010450  0.020900  0.041799
+NQ   GLOBEX leverage_cap  0.000000  0.000000  0.000000  0.000000
+            stop_out      0.000348  0.000696  0.001391  0.002782
+     RTH    leverage_cap  0.000000  0.000000  0.000000  0.000000
+            stop_out      0.002154  0.004308  0.008616  0.017232
+{
+ "max_spurious_rate": 0.00966183574879227,
+ "all_below_1pct": true,
+ "max_cost_bps": 0.041799218695532096,
+ "all_cost_below_1bp": true,
+ "leverage_cap": 2.0,
+ "stop_mult": 1.5,
+ "K4": "FIRES"
+}
+  K5 ES/GLOBEX: avail=7 excluded_corrected=[] noise=0.1710 mean|dw|=0.0200
+  K5 NQ/GLOBEX: avail=7 excluded_corrected=[] noise=0.0539 mean|dw|=0.0040
+  K5 ES/RTH: avail=7 excluded_corrected=[] noise=0.1513 mean|dw|=0.0108
+  K5 NQ/RTH: avail=7 excluded_corrected=[] noise=0.0515 mean|dw|=0.0045
+
+=== PHASE 9: K5 ===
+root   geom     mean      max
+  ES GLOBEX 0.019960 0.049965
+  ES    RTH 0.010772 0.019790
+  NQ GLOBEX 0.003955 0.013841
+  NQ    RTH 0.004498 0.007933
+root   geom  corrected    naive  rel_te_diff_pct
+  ES GLOBEX   0.345354 0.347097         0.502262
+  ES    RTH   0.341119 0.340639         0.140931
+  NQ GLOBEX   0.330949 0.331180         0.069933
+  NQ    RTH   0.319955 0.319814         0.044206
+{
+ "mean_abs_weight_change_max": 0.019959582876239203,
+ "max_abs_weight_change": 0.04996493246522582,
+ "all_mean_below_0p02": true,
+ "max_rel_te_diff_pct": 0.5022619311504904,
+ "all_te_below_5pct": true,
+ "n_excluded_corrected": 0,
+ "mean_forecast_corr": 0.655272082432306,
+ "K5": "FIRES"
+}
+
+=== PHASE 10: K6 ===
+root   geom btag horizon   M  s2_corrected  s2_naive  overstatement_prop  adj_vol_points_corrected  adj_vol_points_c_lo  adj_vol_points_c_hi  adj_vol_points_naive  diff_vol_points
+  ES GLOBEX   B0    1day 276      1.033910  1.249853            0.374049                  4.530096             3.842984             5.133751              6.224574         1.694478
+  ES GLOBEX   B1    1day 276      1.033910  1.249853            0.374049                  4.530096             3.860940             5.161658              6.224574         1.694478
+  ES    RTH   B0    1day  78      1.080938  1.287169            0.346645                  4.868611             4.275468             5.483274              6.556288         1.687677
+  ES    RTH   B0      1h  12      1.051937  1.788844            1.674192                  4.657978             3.944412             5.260655             12.456327         7.798350
+  ES    RTH   B0   30min   6      0.815322  2.059808            4.432535                  3.149756             2.229870             3.948852             17.111158        13.961403
+  ES    RTH   B1    1day  78      1.080938  1.287169            0.346645                  4.868611             4.270856             5.493863              6.556288         1.687677
+  ES    RTH   B1      1h  12      1.051937  1.788844            1.674192                  4.657978             4.012007             5.216617             12.456327         7.798350
+  ES    RTH   B1   30min   6      0.815322  2.059808            4.432535                  3.149756             2.234033             3.899473             17.111158        13.961403
+  NQ GLOBEX   B0    1day 276      1.085336  1.154678            0.108429                  4.901085             4.399093             5.458180              5.432503         0.531417
+  NQ GLOBEX   B1    1day 276      1.085336  1.154678            0.108429                  4.901085             4.392573             5.435215              5.432503         0.531417
+  NQ    RTH   B0    1day  78      1.056772  1.134747            0.124299                  4.692674             4.202132             5.183703              5.275967         0.583293
+  NQ    RTH   B0      1h  12      1.424897  1.758752            0.521868                  7.893569             7.417979             8.365478             12.012971         4.119402
+  NQ    RTH   B0   30min   6      1.368436  2.022716            1.239118                  7.322998             6.746647             7.826016             16.397060         9.074062
+  NQ    RTH   B1    1day  78      1.056772  1.134747            0.124299                  4.692674             4.230353             5.164022              5.275967         0.583293
+  NQ    RTH   B1      1h  12      1.424897  1.758752            0.521868                  7.893569             7.431919             8.367240             12.012971         4.119402
+  NQ    RTH   B1   30min   6      1.368436  2.022716            1.239118                  7.322998             6.745350             7.834684             16.397060         9.074062
+{
+ "max_overstatement_prop": 4.432535402762215,
+ "min_overstatement_prop": 0.1084285184826872,
+ "all_below_5pct": false,
+ "max_diff_vol_points": 13.96140281687703,
+ "strike_assumed_ann_vol": 0.2,
+ "relation": "Brockhaus and Long (2000), second-order Taylor expansion of sqrt around E[V]: K_vol = sqrt(E[V]) - Var(V)/(8 E[V]^{3/2}). With V lognormal, Var(V)/E[V]^2 = exp(s^2)-1, so the adjustment is sqrt(E[V]) * (exp(s^2)-1)/8 with s^2 = Var(log IV).",
+ "direction": "Naive s^2 exceeds c in every cell, so the naive convexity adjustment is too large and the implied volatility-swap strike too low. That favours the payer of fixed on a volatility swap, i.e. the side that is long volatility at the quoted strike.",
+ "no_pnl_claim": "No options data is held. This is a pricing-bias calculation on the adjustment term only and no claim is made about executable P&L.",
+ "K6": "DOES NOT FIRE"
+}
+
+PHASE8-10 DONE 17s

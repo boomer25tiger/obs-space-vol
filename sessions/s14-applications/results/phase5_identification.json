@@ -1,0 +1,54 @@
+{
+ "univariate_A_over_c": {
+  "coef": -0.027179433493459068,
+  "se": 0.00741535807136968,
+  "t": -3.6652894212077873,
+  "r2": 0.19630999958662987
+ },
+ "univariate_log_cond": {
+  "coef": -1.1463478791371031,
+  "se": 0.048739048106079715,
+  "t": -23.520112182784043,
+  "r2": 0.9095685778907737
+ },
+ "univariate_rmse": {
+  "coef": 6.738550975917544,
+  "se": 2.3974845764592647,
+  "t": 2.8106754229340662,
+  "r2": 0.125594743292609
+ },
+ "univariate_is_2022": {
+  "coef": -0.40469631661625366,
+  "se": 0.06137844310449055,
+  "t": -6.5934601164011175,
+  "r2": 0.4414753290231087
+ },
+ "joint_identification": {
+  "coef_A_over_c": 0.002344176373032003,
+  "se_A_over_c": 0.002871131570071203,
+  "coef_log_cond": -1.1690766418695404,
+  "se_log_cond": 0.056257782890371026,
+  "r2": 0.9106713139238571
+ },
+ "with_2022_dummy": {
+  "coef_A_over_c": 0.003178164498691635,
+  "coef_log_cond": -1.0778996860727275,
+  "coef_is_2022": -0.08212514422609465,
+  "se_is_2022": 0.0297628335701825,
+  "t_is_2022": -2.759318733293279,
+  "r2": 0.9218920897926787
+ },
+ "2022_diagnostics": {
+  "mean_A_over_c_2022": 8.149795192206932,
+  "mean_A_over_c_other": 4.384578796153075,
+  "mean_log_cond_2022": 2.050102833108329,
+  "mean_log_cond_other": 1.7397421810064064,
+  "mean_rmse_2022": 0.015671900450561174,
+  "mean_rmse_other": 0.023672598424617726,
+  "mean_c_2022": 0.5691783591259252,
+  "mean_c_other": 0.8289628465483693,
+  "mean_dev_2022": -0.530142889100169
+ },
+ "verdict": "VOLATILITY-STATE EFFECT, not explained by identification",
+ "s10_note": "S10 found all 48 volatility-tercile sub-fits degenerate because conditioning on realized volatility removes the cross-sectional log-IV variation that identifies the intercept. A high-volatility YEAR is a milder version of the same conditioning, so the identification channel is the first thing to test before reading 2022 as a state effect."
+}

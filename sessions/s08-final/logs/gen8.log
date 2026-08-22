@@ -1,0 +1,108 @@
+regenerating 24 cells under the revised filter
+  1/24 ES/GLOBEX/B0/1day (32.2s)
+  2/24 ES/GLOBEX/B1/1day (24.0s)
+  3/24 NQ/GLOBEX/B0/1day (10.6s)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: overflow encountered in scalar multiply
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: overflow encountered in exp
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:115: RuntimeWarning: overflow encountered in scalar multiply
+  F = float(np.exp(xi + ph * logh_next + 0.5 * np.exp(lsu)) * mgf)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:115: RuntimeWarning: overflow encountered in exp
+  F = float(np.exp(xi + ph * logh_next + 0.5 * np.exp(lsu)) * mgf)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: overflow encountered in exp
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:115: RuntimeWarning: overflow encountered in exp
+  F = float(np.exp(xi + ph * logh_next + 0.5 * np.exp(lsu)) * mgf)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:112: RuntimeWarning: overflow encountered in exp
+  * np.exp(t1 ** 2 / (2 * max(1 - 2 * t2, 1e-6)))
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:173: RuntimeWarning: overflow encountered in exp
+  * np.exp(t1 ** 2 / (2 * max(1 - 2 * t2, 1e-6)))
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:115: RuntimeWarning: overflow encountered in exp
+  F = float(np.exp(xi + ph * logh_next + 0.5 * np.exp(lsu)) * mgf)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: overflow encountered in exp
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:182: RuntimeWarning: divide by zero encountered in log
+  return x - np.log(x) - 1.0
+<REPO>/sessions/s08-final/src/gen8.py:48: RuntimeWarning: divide by zero encountered in log
+  ic=float(np.corrcoef(np.log(xf),np.log(rvv))[0,1])))
+<REPO>/.venv/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:2895: RuntimeWarning: invalid value encountered in subtract
+  X -= avg[:, None]
+  4/24 NQ/GLOBEX/B0/1h (38.3s)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:115: RuntimeWarning: overflow encountered in exp
+  F = float(np.exp(xi + ph * logh_next + 0.5 * np.exp(lsu)) * mgf)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: overflow encountered in exp
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+  5/24 NQ/GLOBEX/B1/1day (6.7s)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:115: RuntimeWarning: overflow encountered in exp
+  F = float(np.exp(xi + ph * logh_next + 0.5 * np.exp(lsu)) * mgf)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: overflow encountered in exp
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:112: RuntimeWarning: overflow encountered in exp
+  * np.exp(t1 ** 2 / (2 * max(1 - 2 * t2, 1e-6)))
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:173: RuntimeWarning: overflow encountered in exp
+  * np.exp(t1 ** 2 / (2 * max(1 - 2 * t2, 1e-6)))
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: invalid value encountered in scalar multiply
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:112: RuntimeWarning: overflow encountered in exp
+  * np.exp(t1 ** 2 / (2 * max(1 - 2 * t2, 1e-6)))
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:173: RuntimeWarning: overflow encountered in exp
+  * np.exp(t1 ** 2 / (2 * max(1 - 2 * t2, 1e-6)))
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: invalid value encountered in scalar multiply
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: overflow encountered in scalar multiply
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+  6/24 ES/GLOBEX/B1/1h (77.3s)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:115: RuntimeWarning: overflow encountered in exp
+  F = float(np.exp(xi + ph * logh_next + 0.5 * np.exp(lsu)) * mgf)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: overflow encountered in exp
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:182: RuntimeWarning: divide by zero encountered in log
+  return x - np.log(x) - 1.0
+<REPO>/sessions/s08-final/src/gen8.py:48: RuntimeWarning: divide by zero encountered in log
+  ic=float(np.corrcoef(np.log(xf),np.log(rvv))[0,1])))
+<REPO>/.venv/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:2895: RuntimeWarning: invalid value encountered in subtract
+  X -= avg[:, None]
+  7/24 ES/GLOBEX/B1/30min (85.5s)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:174: RuntimeWarning: overflow encountered in scalar multiply
+  F["M5_RGARCH"][t] = float(np.exp(xi + ph * lh_next
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:112: RuntimeWarning: overflow encountered in exp
+  * np.exp(t1 ** 2 / (2 * max(1 - 2 * t2, 1e-6)))
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:173: RuntimeWarning: overflow encountered in exp
+  * np.exp(t1 ** 2 / (2 * max(1 - 2 * t2, 1e-6)))
+  8/24 ES/RTH/B0/1day (4.2s)
+  9/24 NQ/GLOBEX/B1/1h (76.3s)
+  10/24 ES/RTH/B0/1h (54.7s)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:182: RuntimeWarning: divide by zero encountered in log
+  return x - np.log(x) - 1.0
+<REPO>/sessions/s08-final/src/gen8.py:48: RuntimeWarning: divide by zero encountered in log
+  ic=float(np.corrcoef(np.log(xf),np.log(rvv))[0,1])))
+<REPO>/.venv/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:2895: RuntimeWarning: invalid value encountered in subtract
+  X -= avg[:, None]
+  11/24 ES/GLOBEX/B0/1h (152.4s)
+  12/24 ES/RTH/B1/1day (4.8s)
+  13/24 ES/RTH/B1/1h (20.2s)
+  14/24 NQ/RTH/B0/1day (6.7s)
+  15/24 ES/RTH/B0/30min (37.2s)
+  16/24 ES/RTH/B1/30min (40.4s)
+  17/24 ES/GLOBEX/B0/30min (198.6s)
+  18/24 NQ/RTH/B1/1day (4.9s)
+  19/24 NQ/RTH/B0/1h (21.1s)
+  20/24 NQ/RTH/B0/30min (24.1s)
+  21/24 NQ/RTH/B1/1h (12.1s)
+  22/24 NQ/RTH/B1/30min (18.4s)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:182: RuntimeWarning: divide by zero encountered in log
+  return x - np.log(x) - 1.0
+<REPO>/sessions/s08-final/src/gen8.py:48: RuntimeWarning: divide by zero encountered in log
+  ic=float(np.corrcoef(np.log(xf),np.log(rvv))[0,1])))
+<REPO>/.venv/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:2895: RuntimeWarning: invalid value encountered in subtract
+  X -= avg[:, None]
+  23/24 NQ/GLOBEX/B1/30min (141.8s)
+<REPO>/sessions/s05-reliability-mcs/src/partde.py:182: RuntimeWarning: divide by zero encountered in log
+  return x - np.log(x) - 1.0
+<REPO>/sessions/s08-final/src/gen8.py:48: RuntimeWarning: divide by zero encountered in log
+  ic=float(np.corrcoef(np.log(xf),np.log(rvv))[0,1])))
+<REPO>/.venv/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:2895: RuntimeWarning: invalid value encountered in subtract
+  X -= avg[:, None]
+  24/24 NQ/GLOBEX/B0/30min (195.9s)
+GEN DONE 248s

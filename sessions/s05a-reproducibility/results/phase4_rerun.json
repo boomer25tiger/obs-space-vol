@@ -1,0 +1,286 @@
+{
+ "selection": [
+  {
+   "part": "A",
+   "cell_id": "ES/RTH/B0/M13/MEDRQ_MEDRV/y2018",
+   "input_rows": 236
+  },
+  {
+   "part": "C",
+   "cell_id": "ES/GLOBEX/B0/1day/M138/y2020/t1",
+   "input_rows": 30
+  },
+  {
+   "part": "E",
+   "cell_id": "ES/RTH/B0/1day/S-B_q0.90",
+   "input_rows": 140
+  }
+ ],
+ "threads": "all *_NUM_THREADS = 1",
+ "partA_rerun_seconds": 34.6,
+ "partA_all_cells": {
+  "label": "Part A, every cell",
+  "n_rows_compared": 2160,
+  "n_rows_new": 2160,
+  "n_rows_old": 2160,
+  "columns": {
+   "median": {
+    "n": 2160,
+    "n_bitwise_identical": 2160,
+    "max_abs_diff": 0.0,
+    "max_rel_diff": 0.0
+   },
+   "iqr": {
+    "n": 2160,
+    "n_bitwise_identical": 2160,
+    "max_abs_diff": 0.0,
+    "max_rel_diff": 0.0
+   },
+   "p95": {
+    "n": 2160,
+    "n_bitwise_identical": 2160,
+    "max_abs_diff": 0.0,
+    "max_rel_diff": 0.0
+   },
+   "p99": {
+    "n": 2160,
+    "n_bitwise_identical": 2160,
+    "max_abs_diff": 0.0,
+    "max_rel_diff": 0.0
+   },
+   "share_gt10x_med": {
+    "n": 2160,
+    "n_bitwise_identical": 2160,
+    "max_abs_diff": 0.0,
+    "max_rel_diff": 0.0
+   },
+   "med_over_ref": {
+    "n": 2160,
+    "n_bitwise_identical": 2160,
+    "max_abs_diff": 0.0,
+    "max_rel_diff": 0.0
+   },
+   "acf1": {
+    "n": 2160,
+    "n_bitwise_identical": 2160,
+    "max_abs_diff": 0.0,
+    "max_rel_diff": 0.0
+   },
+   "acf5": {
+    "n": 2160,
+    "n_bitwise_identical": 2160,
+    "max_abs_diff": 0.0,
+    "max_rel_diff": 0.0
+   },
+   "acf10": {
+    "n": 2160,
+    "n_bitwise_identical": 2160,
+    "max_abs_diff": 0.0,
+    "max_rel_diff": 0.0
+   }
+  },
+  "all_bitwise_identical": true
+ },
+ "partA_selected_cell": {
+  "median": {
+   "new": "np.float64(0.1239332930928729)",
+   "old": "np.float64(0.1239332930928729)",
+   "bitwise": true
+  },
+  "iqr": {
+   "new": "np.float64(0.0484050998438568)",
+   "old": "np.float64(0.0484050998438568)",
+   "bitwise": true
+  },
+  "p95": {
+   "new": "np.float64(0.2450786465416393)",
+   "old": "np.float64(0.2450786465416393)",
+   "bitwise": true
+  },
+  "p99": {
+   "new": "np.float64(0.2851588245690242)",
+   "old": "np.float64(0.2851588245690242)",
+   "bitwise": true
+  },
+  "share_gt10x_med": {
+   "new": "np.float64(0.0)",
+   "old": "np.float64(0.0)",
+   "bitwise": true
+  },
+  "med_over_ref": {
+   "new": "np.float64(0.8055664051036743)",
+   "old": "np.float64(0.8055664051036743)",
+   "bitwise": true
+  },
+  "acf1": {
+   "new": "np.float64(0.0400718472786461)",
+   "old": "np.float64(0.0400718472786461)",
+   "bitwise": true
+  },
+  "acf5": {
+   "new": "np.float64(-0.0220200583969571)",
+   "old": "np.float64(-0.0220200583969571)",
+   "bitwise": true
+  },
+  "acf10": {
+   "new": "np.float64(-0.1589388232692113)",
+   "old": "np.float64(-0.1589388232692113)",
+   "bitwise": true
+  }
+ },
+ "T1_reproduced": {
+  "new": {
+   "mu43": 0.8308609250295591,
+   "s04_wrong_constant": 1.417516616051075,
+   "ratio_of_means": 0.9995919012407788,
+   "mean_of_ratios_jensen": 1.0164170187681525,
+   "median_ratio": 0.9977721026558299,
+   "tol": 0.01,
+   "passed": true,
+   "s04_implied_bias_factor": 4.965917162430454
+  },
+  "old": {
+   "mu43": 0.8308609250295591,
+   "s04_wrong_constant": 1.417516616051075,
+   "ratio_of_means": 0.9995919012407788,
+   "mean_of_ratios_jensen": 1.0164170187681525,
+   "median_ratio": 0.9977721026558299,
+   "tol": 0.01,
+   "passed": true,
+   "s04_implied_bias_factor": 4.965917162430454
+  },
+  "bitwise": true
+ },
+ "variant_selection_reproduced": {
+  "new": "TRQ3_TRV3",
+  "old": "TRQ3_TRV3",
+  "same": true
+ },
+ "partC_rerun_seconds": 10.5,
+ "partC_all_cells": {
+  "label": "Part C, every estimate",
+  "n_rows_compared": 11568,
+  "n_rows_new": 11568,
+  "n_rows_old": 11568,
+  "columns": {
+   "lam": {
+    "n": 11568,
+    "n_bitwise_identical": 11568,
+    "max_abs_diff": 0.0,
+    "max_rel_diff": 0.0
+   }
+  },
+  "all_bitwise_identical": true
+ },
+ "partC_selected_cell": [
+  {
+   "estimator": "E1_a_exp_L1-5",
+   "new": "0.5172818250944985",
+   "old": "0.5172818250944985",
+   "bitwise": true,
+   "abs_diff": 0.0
+  },
+  {
+   "estimator": "E1_d_model_L1-5",
+   "new": "-0.3717617971107003",
+   "old": "-0.3717617971107003",
+   "bitwise": true,
+   "abs_diff": 0.0
+  },
+  {
+   "estimator": "E1_a_exp_L1-10",
+   "new": "0.5200078631635814",
+   "old": "0.5200078631635814",
+   "bitwise": true,
+   "abs_diff": 0.0
+  },
+  {
+   "estimator": "E1_d_model_L1-10",
+   "new": "-0.3724780956127678",
+   "old": "-0.3724780956127678",
+   "bitwise": true,
+   "abs_diff": 0.0
+  },
+  {
+   "estimator": "E2",
+   "new": "0.7100756545200382",
+   "old": "0.7100756545200382",
+   "bitwise": true,
+   "abs_diff": 0.0
+  },
+  {
+   "estimator": "E4",
+   "new": "0.9463597969302296",
+   "old": "0.9463597969302296",
+   "bitwise": true,
+   "abs_diff": 0.0
+  }
+ ],
+ "partE_rerun_seconds": 3.8,
+ "partE_selected_cell": {
+  "cell": "ES/RTH/B0/1day/S-B_q0.90",
+  "n_obs_new": 140,
+  "n_obs_old": 140,
+  "n_obs_match": true,
+  "deterministic_inputs": [
+   {
+    "model": "M1_EWMA",
+    "qlike_new": "0.7654141389782134",
+    "qlike_old": "0.7654141389782134",
+    "bitwise": true,
+    "abs_diff": 0.0,
+    "rel_diff": 0.0
+   },
+   {
+    "model": "M2_HAR",
+    "qlike_new": "0.3926494545330658",
+    "qlike_old": "0.3926494545330658",
+    "bitwise": true,
+    "abs_diff": 0.0,
+    "rel_diff": 0.0
+   },
+   {
+    "model": "M3_HARJ",
+    "qlike_new": "0.4160170748251248",
+    "qlike_old": "0.4160170748251248",
+    "bitwise": true,
+    "abs_diff": 0.0,
+    "rel_diff": 0.0
+   },
+   {
+    "model": "M4_HARQ",
+    "qlike_new": "7.418586033379273e+294",
+    "qlike_old": "7.418586033379274e+294",
+    "bitwise": false,
+    "abs_diff": 1.134503866941668e+279,
+    "rel_diff": 1.529272373248848e-16
+   },
+   {
+    "model": "M5_RGARCH",
+    "qlike_new": "0.6649398386897261",
+    "qlike_old": "0.6649398386897261",
+    "bitwise": true,
+    "abs_diff": 0.0,
+    "rel_diff": 0.0
+   },
+   {
+    "model": "M6_PARK",
+    "qlike_new": "0.725545625859001",
+    "qlike_old": "0.725545625859001",
+    "bitwise": true,
+    "abs_diff": 0.0,
+    "rel_diff": 0.0
+   },
+   {
+    "model": "M6_GK",
+    "qlike_new": "0.7254254705344182",
+    "qlike_old": "0.7254254705344182",
+    "bitwise": true,
+    "abs_diff": 0.0,
+    "rel_diff": 0.0
+   }
+  ],
+  "note": "MCS composition is not bitwise-testable in isolation; see Phase 3 seed set for this cell."
+ },
+ "total_seconds": 54.2
+}

@@ -1,0 +1,8 @@
+{
+ "criterion_preregistered_S06R": "largest effective sample",
+ "cell_preregistered": "ES/RTH/B0/30min",
+ "criterion_second": "median effective sample (post hoc, item 54)",
+ "cell_median": "ES/RTH/B1/1h",
+ "n_eval": 10906,
+ "logged_before_comparison": true
+}

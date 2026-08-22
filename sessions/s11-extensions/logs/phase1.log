@@ -1,0 +1,102 @@
+=== drop counts by candidate (in sample) ===
+                    cells  cells_with_drops  total_dropped  max_share
+candidate                                                            
+CrossLeadLag           16                 2             10   0.002561
+GarmanKlass            16                 0              0   0.000000
+JumpVar                16                16          70602   0.493841
+Parkinson              16                 0              0   0.000000
+RS_down                16                 8           1895   0.023497
+RS_up                  16                 8           1279   0.015037
+RealizedQuarticity     16                 0              0   0.000000
+SignatureSlope         16                 0              0   0.000000
+VolumeSurprise         16                 0              0   0.000000
+
+S09 partition: {"n": 144, "clears_under_both": 96, "clears_only_after_measured": 3, "clears_neither": 45, "clears_raw_but_not_measured": 0, "in_flip_band": 3}
+S11 partition: {"n": 144, "clears_under_both": 128, "clears_only_after_measured": 1, "clears_neither": 15, "clears_raw_but_not_measured": 0, "in_flip_band": 1}
+
+status changed: 32 of 144
+root   geom btag horizon candidate   r2_raw       r2  keep_raw_s09  keep_raw_s11  keep_measured_s09  keep_measured_s11
+  ES GLOBEX   B0    1day   JumpVar 0.013173 0.317352         False          True              False               True
+  ES GLOBEX   B1    1day   JumpVar 0.013448 0.326761         False          True              False               True
+  NQ GLOBEX   B0    1day   JumpVar 0.006098 0.285574         False          True              False               True
+  NQ GLOBEX   B1    1day   JumpVar 0.004875 0.288703         False          True              False               True
+  ES    RTH   B0    1day   JumpVar 0.002180 0.296753         False          True              False               True
+  ES    RTH   B0      1h     RS_up 0.012762 0.428556         False          True               True               True
+  ES    RTH   B0      1h   RS_down 0.008771 0.482749         False          True              False               True
+  ES    RTH   B0      1h   JumpVar 0.001025 0.329924         False          True              False               True
+  ES    RTH   B0   30min     RS_up 0.000009 0.306644         False          True              False               True
+  ES    RTH   B0   30min   RS_down 0.003867 0.368488         False          True              False               True
+  ES    RTH   B0   30min   JumpVar 0.000152 0.299631         False          True              False               True
+  ES    RTH   B1    1day   JumpVar 0.002074 0.288569         False          True              False               True
+  ES    RTH   B1      1h     RS_up 0.012817 0.433584         False          True               True               True
+  ES    RTH   B1      1h   RS_down 0.008919 0.488334         False          True              False               True
+  ES    RTH   B1      1h   JumpVar 0.001174 0.330229         False          True              False               True
+  ES    RTH   B1   30min     RS_up 0.000006 0.307311         False          True              False               True
+  ES    RTH   B1   30min   RS_down 0.003644 0.371531         False          True              False               True
+  ES    RTH   B1   30min   JumpVar 0.000182 0.298748         False          True              False               True
+  NQ    RTH   B0    1day   JumpVar 0.003924 0.238894         False          True              False               True
+  NQ    RTH   B0      1h     RS_up 0.009188 0.357524         False          True              False               True
+  NQ    RTH   B0      1h   RS_down 0.008001 0.415209         False          True              False               True
+  NQ    RTH   B0      1h   JumpVar 0.000120 0.263807         False          True              False               True
+  NQ    RTH   B0   30min     RS_up 0.000573 0.262806         False          True              False               True
+  NQ    RTH   B0   30min   RS_down 0.002074 0.321211         False          True              False               True
+  NQ    RTH   B0   30min   JumpVar 0.000104 0.283321         False          True              False               True
+  NQ    RTH   B1    1day   JumpVar 0.005019 0.229693         False          True              False               True
+  NQ    RTH   B1      1h     RS_up 0.009197 0.363559         False          True              False               True
+  NQ    RTH   B1      1h   RS_down 0.008074 0.420988         False          True              False               True
+  NQ    RTH   B1      1h   JumpVar 0.000276 0.271006         False          True              False               True
+  NQ    RTH   B1   30min     RS_up 0.000667 0.265112         False          True              False               True
+  NQ    RTH   B1   30min   RS_down 0.002008 0.323799         False          True              False               True
+  NQ    RTH   B1   30min   JumpVar 0.000143 0.283791         False          True              False               True
+
+=== holdout, touched candidates ===
+root   geom btag horizon candidate    r2_is  r2_is_s11  r2_oos_s09  r2_oos_s11  n_dropped_predictor
+  ES GLOBEX   B0    1day     RS_up 0.665699   0.665699    0.388108    0.388102                    0
+  ES GLOBEX   B0    1day   RS_down 0.696382   0.696382    0.454180    0.454181                    0
+  ES GLOBEX   B0    1day   JumpVar 0.013173   0.317352    0.005321    0.153999                  192
+  ES GLOBEX   B1    1day     RS_up 0.668917   0.668917    0.389982    0.389976                    0
+  ES GLOBEX   B1    1day   RS_down 0.696274   0.696274    0.458801    0.458805                    0
+  ES GLOBEX   B1    1day   JumpVar 0.013448   0.326761    0.002160    0.167093                  203
+  NQ GLOBEX   B0    1day     RS_up 0.623640   0.623640    0.360518    0.360507                    0
+  NQ GLOBEX   B0    1day   RS_down 0.658656   0.658656    0.430063    0.430051                    0
+  NQ GLOBEX   B0    1day   JumpVar 0.006098   0.285574    0.001508    0.128756                  204
+  NQ GLOBEX   B1    1day     RS_up 0.627216   0.627216    0.363992    0.363983                    0
+  NQ GLOBEX   B1    1day   RS_down 0.659175   0.659175    0.428401    0.428389                    0
+  NQ GLOBEX   B1    1day   JumpVar 0.004875   0.288703    0.000157    0.113209                  209
+  ES    RTH   B0    1day     RS_up 0.641870   0.641870    0.412567    0.412580                    0
+  ES    RTH   B0    1day   RS_down 0.629792   0.629792    0.442637    0.442639                    0
+  ES    RTH   B0    1day   JumpVar 0.002180   0.296753    0.005179    0.104294                  230
+  ES    RTH   B0      1h     RS_up 0.012762   0.428556    0.236909    0.236923                    0
+  ES    RTH   B0      1h   RS_down 0.008771   0.482749    0.010200    0.329819                    1
+  ES    RTH   B0      1h   JumpVar 0.001025   0.329924    0.000212    0.167113                 1832
+  ES    RTH   B0   30min     RS_up 0.000009   0.306644    0.002135    0.155404                  107
+  ES    RTH   B0   30min   RS_down 0.003867   0.368488    0.004322    0.252122                  171
+  ES    RTH   B0   30min   JumpVar 0.000152   0.299631    0.000062    0.179945                 3730
+  ES    RTH   B1    1day     RS_up 0.646521   0.646521    0.414575    0.414588                    0
+  ES    RTH   B1    1day   RS_down 0.627049   0.627049    0.436822    0.436820                    0
+  ES    RTH   B1    1day   JumpVar 0.002074   0.288569    0.002797    0.141056                  253
+  ES    RTH   B1      1h     RS_up 0.012817   0.433584    0.239696    0.239710                    0
+  ES    RTH   B1      1h   RS_down 0.008919   0.488334    0.010269    0.334637                    1
+  ES    RTH   B1      1h   JumpVar 0.001174   0.330229    0.000106    0.167064                 1840
+  ES    RTH   B1   30min     RS_up 0.000006   0.307311    0.002423    0.157676                  113
+  ES    RTH   B1   30min   RS_down 0.003644   0.371531    0.004461    0.253444                  168
+  ES    RTH   B1   30min   JumpVar 0.000182   0.298748    0.000092    0.182354                 3734
+  NQ    RTH   B0    1day     RS_up 0.610408   0.610408    0.386708    0.386699                    0
+  NQ    RTH   B0    1day   RS_down 0.599763   0.599763    0.416245    0.416238                    0
+  NQ    RTH   B0    1day   JumpVar 0.003924   0.238894    0.009674    0.163964                  256
+  NQ    RTH   B0      1h     RS_up 0.009188   0.357524    0.001670    0.173396                    1
+  NQ    RTH   B0      1h   RS_down 0.008001   0.415209    0.003658    0.261894                    1
+  NQ    RTH   B0      1h   JumpVar 0.000120   0.263807    0.000256    0.119918                 1873
+  NQ    RTH   B0   30min     RS_up 0.000573   0.262806    0.000795    0.124459                  109
+  NQ    RTH   B0   30min   RS_down 0.002074   0.321211    0.001990    0.226414                  147
+  NQ    RTH   B0   30min   JumpVar 0.000104   0.283321    0.000008    0.167759                 3846
+  NQ    RTH   B1    1day     RS_up 0.615526   0.615526    0.389896    0.389889                    0
+  NQ    RTH   B1    1day   RS_down 0.596387   0.596387    0.408135    0.408127                    0
+  NQ    RTH   B1    1day   JumpVar 0.005019   0.229693    0.004093    0.140455                  268
+  NQ    RTH   B1      1h     RS_up 0.009197   0.363559    0.001696    0.177857                    1
+  NQ    RTH   B1      1h   RS_down 0.008074   0.420988    0.003802    0.267177                    1
+  NQ    RTH   B1      1h   JumpVar 0.000276   0.271006    0.000470    0.129348                 1895
+  NQ    RTH   B1   30min     RS_up 0.000667   0.265112    0.000946    0.126675                  110
+  NQ    RTH   B1   30min   RS_down 0.002008   0.323799    0.002269    0.228476                  144
+  NQ    RTH   B1   30min   JumpVar 0.000143   0.283791    0.000002    0.168689                 3864
+PHASE1 DONE 6s

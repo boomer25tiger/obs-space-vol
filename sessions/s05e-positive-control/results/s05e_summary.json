@@ -1,0 +1,29 @@
+{
+ "seeds": [
+  3280325159,
+  10724713,
+  3527105160,
+  1168436609,
+  2339113406
+ ],
+ "master": 20260819,
+ "jump_calibration": {
+  "GLOBEX": {
+   "sigma_j": 0.48109401550292974,
+   "achieved_removed_share": 0.29378799230608366,
+   "target": 0.2938
+  },
+  "RTH": {
+   "sigma_j": 0.35707677917480474,
+   "achieved_removed_share": 0.17408498012926155,
+   "target": 0.1741
+  }
+ },
+ "timers": {
+  "phase1": 0.0,
+  "calibration": 1.6,
+  "phase2": 29.9,
+  "phase3": 0.3,
+  "total": 32.0
+ }
+}

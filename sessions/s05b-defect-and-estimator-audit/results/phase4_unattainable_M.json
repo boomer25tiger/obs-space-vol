@@ -1,0 +1,16 @@
+[
+ {
+  "geom": "RTH",
+  "horizon": "1day",
+  "nominal_M": 390,
+  "L": 389,
+  "reason": "panel supplies L = session_minutes - 1 returns; S05 reached nominal M by duplicating the final price point, injecting one zero return"
+ },
+ {
+  "geom": "GLOBEX",
+  "horizon": "1day",
+  "nominal_M": 1380,
+  "L": 1379,
+  "reason": "panel supplies L = session_minutes - 1 returns; S05 reached nominal M by duplicating the final price point, injecting one zero return"
+ }
+]

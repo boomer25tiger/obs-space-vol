@@ -1,0 +1,10 @@
+{
+ "mu43": 0.8308609250295591,
+ "s04_wrong_constant": 1.417516616051075,
+ "ratio_of_means": 0.9995919012407788,
+ "mean_of_ratios_jensen": 1.0164170187681525,
+ "median_ratio": 0.9977721026558299,
+ "tol": 0.01,
+ "passed": true,
+ "s04_implied_bias_factor": 4.965917162430454
+}

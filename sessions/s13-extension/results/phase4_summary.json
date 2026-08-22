@@ -1,0 +1,12 @@
+{
+ "threshold": 0.05,
+ "n_rows": 128,
+ "n_below_5pct": 14,
+ "n_cells_with_any_frequency_below_5pct": 10,
+ "n_cells": 16,
+ "min_overstatement_any": 0.006356950489432744,
+ "max_overstatement_any": 1.4303237938273048,
+ "max_bias_vp": 2.771791909288186,
+ "no_pnl_claim": "No options data is held. This is a pricing-bias calculation on the adjustment term only; no claim is made about executable P&L.",
+ "expansion_note": "The Brockhaus-Long column is reported only as a labelled sensitivity; per item 95 it is invalid at the measured kappa and the exact lognormal relation is used throughout."
+}

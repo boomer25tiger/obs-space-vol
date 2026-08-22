@@ -1,0 +1,44 @@
+{
+ "K8": {
+  "analytic_relation": "misclassification rate = arccos(sqrt(lambda)) / pi, exact",
+  "assumptions": "joint normality of log IV and the proxy noise, independence of the noise from log IV, thresholds at the respective medians",
+  "max_abs_analytic_vs_empirical_gap_prop": 0.7748483197563383,
+  "lambda_at_10pct_divergence": 0.3,
+  "empirical_rate_range_insample": [
+   0.026694045174537988,
+   0.04208311415044713
+  ],
+  "analytic_rate_range": [
+   0.07880676065922262,
+   0.13645008632664657
+  ],
+  "empirical_rate_range_holdout": [
+   0.030595813204508857,
+   0.05152979066022544
+  ],
+  "tercile_rate_range": [
+   0.059548254620123205,
+   0.11916264090177134
+  ],
+  "max_excess_cost_bps": 138.12789064278826,
+  "all_empirical_below_5pct": false,
+  "all_analytic_below_5pct": false,
+  "threshold": 0.05,
+  "caveat": "The empirical rate compares the five-minute-equivalent RV against the finest-grid realized kernel; neither is integrated variance, so it measures pairwise disagreement. If the kernel carries its own error the empirical rate understates disagreement with the truth, which is why the analytic rate, keyed to the measured reliability, is reported beside it.",
+  "illustration_label": "The two-state allocation is an ILLUSTRATION on measured misclassification, not a strategy backtest. No return series is claimed.",
+  "K8": "DOES NOT FIRE"
+ },
+ "holdout_read": {
+  "this_session": 1,
+  "running_total": 5,
+  "prior": [
+   "S09 Phase 6",
+   "S11 Phase 1",
+   "S11 Phases 8-9",
+   "S13 Phase 2"
+  ]
+ },
+ "timers": {
+  "k8": 1.6
+ }
+}

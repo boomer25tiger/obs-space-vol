@@ -1,0 +1,292 @@
+=== PHASE 4a: analytic bound ===
+root   geom  M_five_min  excess_observed_5min  trigamma_at_5min  required_floor_5min  required_share_5min_target  measured_share_5min  ratio_required_to_measured_5min  floor_from_measured_5min
+  ES GLOBEX         276              0.215943          0.007273             0.208671                    0.323010             0.004518                        71.494361                  0.000041
+  NQ GLOBEX         276              0.069342          0.007273             0.062069                    0.176166             0.004056                        43.438141                  0.000033
+  ES    RTH          78              0.206230          0.025973             0.180258                    0.300215             0.029281                        10.252961                  0.001715
+  NQ    RTH          78              0.077975          0.025973             0.052002                    0.161249             0.040438                         3.987557                  0.003270
+  (at the coarsest grid point, where the curve has all but converged to c:)
+root   geom  M_coarsest  excess_observed  trigamma_at_Mmax  required_floor  required_share
+  ES GLOBEX        1379         0.007019          0.001451        0.005568        0.052763
+  NQ GLOBEX        1379        -0.010527          0.001451        0.000000        0.000000
+  ES    RTH         389         0.008741          0.005155        0.003586        0.042343
+  NQ    RTH         389        -0.010185          0.005155        0.000000        0.000000
+  ES/GLOBEX kappa=    1.0 share=0.0029 b=-1.0383 sd=0.0704 in_range=False
+  ES/GLOBEX kappa=    3.0 share=0.0044 b=-1.1350 sd=0.1145 in_range=False
+  ES/GLOBEX kappa=    6.0 share=0.0065 b=-1.2562 sd=0.0976 in_range=False
+  ES/GLOBEX kappa=   10.0 share=0.0090 b=-1.1409 sd=0.0863 in_range=False
+  ES/GLOBEX kappa=   20.0 share=0.0161 b=-1.2132 sd=0.0868 in_range=False
+  ES/GLOBEX kappa=   40.0 share=0.0289 b=-1.1232 sd=0.1468 in_range=False
+  ES/GLOBEX kappa=   80.0 share=0.0522 b=-1.1536 sd=0.0871 in_range=False
+  ES/GLOBEX kappa=  160.0 share=0.0910 b=-1.1879 sd=0.1060 in_range=False
+  ES/GLOBEX kappa=  320.0 share=0.1524 b=-1.1288 sd=0.1004 in_range=False
+  ES/GLOBEX kappa=  640.0 share=0.2298 b=-1.1131 sd=0.0448 in_range=False
+  ES/GLOBEX kappa= 1280.0 share=0.3343 b=-1.1940 sd=0.1251 in_range=False
+  ES/GLOBEX kappa= 2000.0 share=0.4059 b=-1.1309 sd=0.2161 in_range=False
+  ES/GLOBEX: b never entered the observed range before share exceeded 0.5
+  NQ/GLOBEX kappa=    1.0 share=0.0029 b=-1.2193 sd=0.0875 in_range=False
+  NQ/GLOBEX kappa=    3.0 share=0.0043 b=-1.1810 sd=0.1017 in_range=False
+  NQ/GLOBEX kappa=    6.0 share=0.0065 b=-1.1301 sd=0.1422 in_range=False
+  NQ/GLOBEX kappa=   10.0 share=0.0093 b=-1.1349 sd=0.0773 in_range=False
+  NQ/GLOBEX kappa=   20.0 share=0.0165 b=-1.2054 sd=0.0566 in_range=False
+  NQ/GLOBEX kappa=   40.0 share=0.0285 b=-1.1535 sd=0.1243 in_range=False
+  NQ/GLOBEX kappa=   80.0 share=0.0523 b=-1.1663 sd=0.0890 in_range=False
+  NQ/GLOBEX kappa=  160.0 share=0.0913 b=-1.0828 sd=0.0785 in_range=False
+  NQ/GLOBEX kappa=  320.0 share=0.1514 b=-1.1502 sd=0.1351 in_range=False
+  NQ/GLOBEX kappa=  640.0 share=0.2348 b=-1.1648 sd=0.1350 in_range=False
+  NQ/GLOBEX kappa= 1280.0 share=0.3352 b=-1.1186 sd=0.2190 in_range=False
+  NQ/GLOBEX kappa= 2000.0 share=0.4014 b=-1.1989 sd=0.0787 in_range=False
+  NQ/GLOBEX: b never entered the observed range before share exceeded 0.5
+  ES/RTH kappa=    1.0 share=0.0103 b=-1.2009 sd=0.1019 in_range=False
+  ES/RTH kappa=    3.0 share=0.0153 b=-1.0993 sd=0.0829 in_range=False
+  ES/RTH kappa=    6.0 share=0.0221 b=-1.1865 sd=0.1764 in_range=False
+  ES/RTH kappa=   10.0 share=0.0312 b=-1.1458 sd=0.0608 in_range=False
+  ES/RTH kappa=   20.0 share=0.0524 b=-1.1366 sd=0.1266 in_range=False
+  ES/RTH kappa=   40.0 share=0.0875 b=-1.0704 sd=0.0948 in_range=False
+  ES/RTH kappa=   80.0 share=0.1425 b=-1.2475 sd=0.1628 in_range=False
+  ES/RTH kappa=  160.0 share=0.2241 b=-1.1534 sd=0.0822 in_range=False
+  ES/RTH kappa=  320.0 share=0.3179 b=-1.1924 sd=0.1240 in_range=False
+  ES/RTH kappa=  640.0 share=0.4324 b=-1.0823 sd=0.0720 in_range=False
+  ES/RTH kappa= 1280.0 share=0.5384 b=-1.1482 sd=0.0692 in_range=False
+  ES/RTH: b never entered the observed range before share exceeded 0.5
+  NQ/RTH kappa=    1.0 share=0.0105 b=-1.0736 sd=0.0943 in_range=False
+  NQ/RTH kappa=    3.0 share=0.0151 b=-1.1664 sd=0.0328 in_range=False
+  NQ/RTH kappa=    6.0 share=0.0227 b=-1.1514 sd=0.0600 in_range=False
+  NQ/RTH kappa=   10.0 share=0.0311 b=-1.1071 sd=0.1782 in_range=False
+  NQ/RTH kappa=   20.0 share=0.0522 b=-1.1886 sd=0.0990 in_range=False
+  NQ/RTH kappa=   40.0 share=0.0873 b=-1.0912 sd=0.1518 in_range=False
+  NQ/RTH kappa=   80.0 share=0.1432 b=-1.1805 sd=0.1009 in_range=False
+  NQ/RTH kappa=  160.0 share=0.2225 b=-1.1913 sd=0.1324 in_range=False
+  NQ/RTH kappa=  320.0 share=0.3154 b=-1.1609 sd=0.1381 in_range=False
+  NQ/RTH kappa=  640.0 share=0.4288 b=-1.1040 sd=0.1587 in_range=False
+  NQ/RTH kappa= 1280.0 share=0.5411 b=-1.1122 sd=0.1622 in_range=False
+  NQ/RTH: b never entered the observed range before share exceeded 0.5
+
+=== PHASE 4b: kappa sweep ===
+root   geom  kappa    share    b_mean     b_sd     rmse       cond  in_observed_range
+  ES GLOBEX    1.0 0.002932 -1.038267 0.070363 0.006669  75.426919              False
+  ES GLOBEX    3.0 0.004364 -1.134969 0.114481 0.011028  95.632887              False
+  ES GLOBEX    6.0 0.006492 -1.256176 0.097648 0.010886 124.881557              False
+  ES GLOBEX   10.0 0.009043 -1.140850 0.086265 0.008626  95.627758              False
+  ES GLOBEX   20.0 0.016092 -1.213180 0.086820 0.008231 112.642105              False
+  ES GLOBEX   40.0 0.028928 -1.123243 0.146765 0.007400  94.918600              False
+  ES GLOBEX   80.0 0.052180 -1.153636 0.087116 0.006595  98.575808              False
+  ES GLOBEX  160.0 0.090973 -1.187944 0.106009 0.006290 107.003751              False
+  ES GLOBEX  320.0 0.152386 -1.128779 0.100433 0.006916  93.560033              False
+  ES GLOBEX  640.0 0.229805 -1.113119 0.044753 0.008307  88.797555              False
+  ES GLOBEX 1280.0 0.334315 -1.194032 0.125092 0.006341 108.983744              False
+  ES GLOBEX 2000.0 0.405852 -1.130937 0.216074 0.009565 101.491540              False
+  ES    RTH    1.0 0.010349 -1.200912 0.101904 0.009009 108.390599              False
+  ES    RTH    3.0 0.015340 -1.099314 0.082867 0.008719  86.263622              False
+  ES    RTH    6.0 0.022088 -1.186458 0.176443 0.011217 109.218924              False
+  ES    RTH   10.0 0.031250 -1.145751 0.060781 0.009348  95.288981              False
+  ES    RTH   20.0 0.052363 -1.136608 0.126625 0.006421  94.950161              False
+  ES    RTH   40.0 0.087499 -1.070360 0.094763 0.005734  81.135965              False
+  ES    RTH   80.0 0.142528 -1.247480 0.162839 0.009786 123.868424              False
+  ES    RTH  160.0 0.224063 -1.153416 0.082157 0.012557  97.043214              False
+  ES    RTH  320.0 0.317942 -1.192428 0.124029 0.009032 107.983791              False
+  ES    RTH  640.0 0.432391 -1.082294 0.072045 0.005881  82.434670              False
+  ES    RTH 1280.0 0.538403 -1.148240 0.069232 0.007522  95.038436              False
+  NQ GLOBEX    1.0 0.002884 -1.219297 0.087520 0.010125 114.426102              False
+  NQ GLOBEX    3.0 0.004344 -1.180999 0.101707 0.007871 105.578537              False
+  NQ GLOBEX    6.0 0.006490 -1.130074 0.142240 0.009091  96.191166              False
+  NQ GLOBEX   10.0 0.009263 -1.134881 0.077306 0.010257  94.188883              False
+  NQ GLOBEX   20.0 0.016501 -1.205377 0.056615 0.007882 109.860366              False
+  NQ GLOBEX   40.0 0.028481 -1.153537 0.124275 0.005272 100.477966              False
+  NQ GLOBEX   80.0 0.052342 -1.166264 0.088956 0.008824 101.287621              False
+  NQ GLOBEX  160.0 0.091332 -1.082807 0.078500 0.010332  83.488184              False
+  NQ GLOBEX  320.0 0.151446 -1.150161 0.135110 0.007392  99.717475              False
+  NQ GLOBEX  640.0 0.234847 -1.164758 0.135015 0.009565 102.922729              False
+  NQ GLOBEX 1280.0 0.335220 -1.118555 0.219018 0.007771  98.867884              False
+  NQ GLOBEX 2000.0 0.401382 -1.198906 0.078682 0.007817 108.137947              False
+  NQ    RTH    1.0 0.010523 -1.073628 0.094255 0.007951  81.837513              False
+  NQ    RTH    3.0 0.015107 -1.166409 0.032784 0.012669  98.858601              False
+  NQ    RTH    6.0 0.022707 -1.151401 0.059967 0.007163  96.090642              False
+  NQ    RTH   10.0 0.031140 -1.107131 0.178195 0.005948  92.620210              False
+  NQ    RTH   20.0 0.052167 -1.188647 0.099037 0.008688 105.641616              False
+  NQ    RTH   40.0 0.087258 -1.091178 0.151751 0.009261  87.022117              False
+  NQ    RTH   80.0 0.143199 -1.180524 0.100894 0.010052 103.641859              False
+  NQ    RTH  160.0 0.222452 -1.191293 0.132374 0.006277 107.842689              False
+  NQ    RTH  320.0 0.315396 -1.160850 0.138066 0.009065 100.494955              False
+  NQ    RTH  640.0 0.428820 -1.104020 0.158680 0.009255  89.505601              False
+  NQ    RTH 1280.0 0.541100 -1.112189 0.162244 0.008338  91.425015              False
+
+{
+ "kappa_grid": [
+  1.0,
+  3.0,
+  6.0,
+  10.0,
+  20.0,
+  40.0,
+  80.0,
+  160.0,
+  320.0,
+  640.0,
+  1280.0,
+  2000.0
+ ],
+ "observed_range": [
+  -0.97,
+  -0.44
+ ],
+ "any_entered_range": false,
+ "max_share_reached": 0.5410995984352044,
+ "max_b_reached": -1.0382665746163855,
+ "b_at_max_kappa": {
+  "ES/GLOBEX": -1.130937258688682,
+  "NQ/GLOBEX": -1.1989063671608853,
+  "ES/RTH": -1.148240134459309,
+  "NQ/RTH": -1.1121891573544873
+ },
+ "share_at_max_kappa": {
+  "ES/GLOBEX": 0.40585240862533734,
+  "NQ/GLOBEX": 0.4013821920673798,
+  "ES/RTH": 0.5384031808399202,
+  "NQ/RTH": 0.5410995984352044
+ },
+ "max_between_seed_sd": 0.21901808975853276,
+ "required_share_range": [
+  0.16124871110607145,
+  0.3230097198750305
+ ],
+ "required_floor_range": [
+  0.052002293666738586,
+  0.20867055826749137
+ ],
+ "floor_supplied_by_measured_share": [
+  3.289530836900707e-05,
+  0.0032704582128657016
+ ],
+ "measured_share_range": [
+  0.0040555707594004,
+  0.0404379661510424
+ ],
+ "ratio_range": [
+  3.9875573985046926,
+  71.49436052754848
+ ],
+ "general_bound": "A localized feature carrying share s of realized variance contributes an M-invariant floor of 2 s^2 to Var(log RV_M). To supply the measured excess at the five-minute equivalent it must carry s = sqrt(excess/2). Any localized mechanism whose measured share falls short of that value is ruled out without simulating it."
+}
+
+=== PHASE 5: year-fit identification ===
+         distinct  year       b     dev      c      A  A_over_c  decaying_over_c     cond   rmse
+ES/GLOBEX/B0/1day  2016 -0.6328 -0.1902 0.7748 2.3290    3.0059           0.0310  34.4815 0.0594
+ES/GLOBEX/B0/1day  2017 -0.7040 -0.2614 0.2459 2.9143   11.8531           0.0730  41.8883 0.0361
+ES/GLOBEX/B0/1day  2018 -0.4864 -0.0437 0.9745 1.8732    1.9221           0.0571  25.4166 0.0673
+ES/GLOBEX/B0/1day  2019 -0.5443 -0.1016 0.5655 1.9104    3.3782           0.0660  27.9852 0.0222
+ES/GLOBEX/B0/1day  2020 -0.5399 -0.0973 1.4318 1.6232    1.1337           0.0229  26.4302 0.0300
+ES/GLOBEX/B0/1day  2021 -0.6832 -0.2405 0.7177 2.5834    3.5996           0.0258  38.6633 0.0520
+ES/GLOBEX/B0/1day  2022 -1.1314 -0.6887 0.4908 4.7053    9.5865           0.0027  97.7480 0.0130
+ES/GLOBEX/B0/1day  2023 -0.7363 -0.2936 0.4479 3.0101    6.7212           0.0328  44.4078 0.0113
+NQ/GLOBEX/B0/1day  2016 -0.7436 -0.0550 0.7554 2.9707    3.9328           0.0182  44.6239 0.0283
+NQ/GLOBEX/B0/1day  2017 -0.7254 -0.0368 0.3511 2.9615    8.4350           0.0445  43.4338 0.0565
+NQ/GLOBEX/B0/1day  2018 -0.9133 -0.2247 0.9507 3.7456    3.9399           0.0053  62.8815 0.0549
+NQ/GLOBEX/B0/1day  2019 -0.7922 -0.1036 0.5997 2.6324    4.3894           0.0143  46.2385 0.0256
+NQ/GLOBEX/B0/1day  2020 -0.6465  0.0421 1.1817 1.8089    1.5308           0.0143  32.7166 0.0220
+NQ/GLOBEX/B0/1day  2021 -0.7829 -0.0943 0.7113 3.0996    4.3576           0.0152  48.0505 0.0168
+NQ/GLOBEX/B0/1day  2022 -1.1001 -0.4116 0.4110 4.2102   10.2436           0.0036  90.0680 0.0374
+NQ/GLOBEX/B0/1day  2023 -0.8235 -0.1349 0.4438 3.4468    7.7666           0.0202  53.1703 0.0206
+   ES/RTH/B0/1day  2016 -0.4606  0.1669 0.6027 1.5404    2.5558           0.1639  24.9109 0.0326
+   ES/RTH/B0/1day  2017 -0.6312 -0.0037 0.2544 2.2207    8.7291           0.2024  36.0041 0.0399
+   ES/RTH/B0/1day  2018 -0.5095  0.1180 1.0350 1.9030    1.8387           0.0881  28.6567 0.0245
+   ES/RTH/B0/1day  2019 -0.9556 -0.3282 0.6901 3.3442    4.8457           0.0162  66.9720 0.0255
+   ES/RTH/B0/1day  2020 -1.1731 -0.5456 1.5051 4.0962    2.7216           0.0025 103.2310 0.0365
+   ES/RTH/B0/1day  2021 -0.6517 -0.0243 0.7495 2.1043    2.8077           0.0576  36.3619 0.0290
+   ES/RTH/B0/1day  2022 -1.4793 -0.8519 0.4377 6.3278   14.4571           0.0021 201.1331 0.0228
+   ES/RTH/B0/1day  2023 -1.2077 -0.5802 0.3891 4.7592   12.2308           0.0091 113.3387 0.0174
+     ES/RTH/B0/1h  2016 -0.4832 -0.0174 0.6048 2.1853    3.6135           0.4997  35.2143 0.0182
+     ES/RTH/B0/1h  2017 -0.5638 -0.0980 0.2768 2.5504    9.2147           0.9160  37.4066 0.0179
+     ES/RTH/B0/1h  2018 -0.6625 -0.1967 1.1993 2.3607    1.9684           0.1307  40.0405 0.0234
+     ES/RTH/B0/1h  2019 -0.6710 -0.2052 0.8667 2.5661    2.9609           0.1898  41.8049 0.0204
+     ES/RTH/B0/1h  2020 -0.5941 -0.1283 1.6614 2.0220    1.2171           0.1069  35.2202 0.0162
+     ES/RTH/B0/1h  2021 -0.5786 -0.1128 1.0019 2.0133    2.0094           0.1881  34.6376 0.0307
+     ES/RTH/B0/1h  2022 -1.1794 -0.7136 0.7348 3.4065    4.6362           0.0371  89.8068 0.0138
+     ES/RTH/B0/1h  2023 -0.6702 -0.2043 0.5127 1.9283    3.7612           0.2419  38.1986 0.0187
+  ES/RTH/B0/30min  2016 -0.5942 -0.1831 0.6144 2.6614    4.3315           0.5740  69.6697 0.0112
+  ES/RTH/B0/30min  2017 -0.5568 -0.1457 0.1666 2.7561   16.5398           2.4889  69.3577 0.0085
+  ES/RTH/B0/30min  2018 -0.3904  0.0207 0.8206 2.2218    2.7075           0.7177 102.0313 0.0346
+  ES/RTH/B0/30min  2019 -0.6290 -0.2178 0.7888 2.4975    3.1660           0.3728  69.8719 0.0016
+  ES/RTH/B0/30min  2020 -0.5114 -0.1003 1.5607 2.0981    1.3443           0.2361  62.2048 0.0060
+  ES/RTH/B0/30min  2021 -0.6254 -0.2143 0.9729 2.4118    2.4791           0.2955  68.6046 0.0229
+  ES/RTH/B0/30min  2022 -0.8996 -0.4885 0.7042 2.2447    3.1876           0.1495  95.7187 0.0071
+  ES/RTH/B0/30min  2023 -0.5645 -0.1534 0.3934 2.0843    5.2980           0.7768  61.9102 0.0065
+   NQ/RTH/B0/1day  2016 -0.8685  0.1059 0.7119 3.0436    4.2755           0.0241  56.6760 0.0318
+   NQ/RTH/B0/1day  2017 -0.8996  0.0748 0.3984 3.2868    8.2509           0.0386  60.9445 0.0225
+   NQ/RTH/B0/1day  2018 -0.7451  0.2293 0.9220 2.1280    2.3080           0.0271  42.1758 0.0290
+   NQ/RTH/B0/1day  2019 -1.0120 -0.0376 0.6533 3.6399    5.5717           0.0133  75.2877 0.0257
+   NQ/RTH/B0/1day  2020 -1.4619 -0.4875 1.1251 5.8412    5.1916           0.0008 192.3197 0.0158
+   NQ/RTH/B0/1day  2021 -1.1366 -0.1622 0.6473 4.6361    7.1623           0.0082  99.2499 0.0237
+   NQ/RTH/B0/1day  2022 -1.4111 -0.4367 0.3365 5.1181   15.2111           0.0034 170.8359 0.0127
+   NQ/RTH/B0/1day  2023 -1.0917 -0.1173 0.3150 4.0331   12.8038           0.0191  88.6366 0.0140
+     NQ/RTH/B0/1h  2016 -0.7547  0.0485 0.9727 2.4549    2.5238           0.1148  45.4903 0.0261
+     NQ/RTH/B0/1h  2017 -0.6824  0.1208 0.7177 2.2369    3.1167           0.1907  40.2866 0.0274
+     NQ/RTH/B0/1h  2018 -1.0781 -0.2749 1.3420 3.4841    2.5962           0.0314  77.6126 0.0093
+     NQ/RTH/B0/1h  2019 -0.9036 -0.1004 1.1312 2.8917    2.5562           0.0632  58.0875 0.0177
+     NQ/RTH/B0/1h  2020 -0.9119 -0.1087 1.4921 1.8577    1.2450           0.0298  54.7934 0.0191
+     NQ/RTH/B0/1h  2021 -0.9496 -0.1464 1.1555 2.6944    2.3318           0.0478  60.7598 0.0179
+     NQ/RTH/B0/1h  2022 -1.1050 -0.3018 0.7144 2.9422    4.1182           0.0447  78.0896 0.0117
+     NQ/RTH/B0/1h  2023 -0.8734 -0.0702 0.5951 2.4222    4.0702           0.1139  53.2082 0.0177
+  NQ/RTH/B0/30min  2016 -0.8657 -0.1647 1.0079 3.0254    3.0016           0.1580  99.4901 0.0046
+  NQ/RTH/B0/30min  2017 -0.6820  0.0190 0.6651 2.5809    3.8805           0.3816  75.1231 0.0163
+  NQ/RTH/B0/30min  2018 -0.7827 -0.0818 1.2948 2.2569    1.7430           0.1217  81.2803 0.0208
+  NQ/RTH/B0/30min  2019 -1.0981 -0.3971 1.2053 3.3317    2.7644           0.0660 138.9728 0.0062
+  NQ/RTH/B0/30min  2020 -0.8895 -0.1885 1.5239 2.0035    1.3148           0.0638  92.8211 0.0121
+  NQ/RTH/B0/30min  2021 -0.8776 -0.1767 1.1595 2.4790    2.1381           0.1081  94.7167 0.0194
+  NQ/RTH/B0/30min  2022 -1.0494 -0.3484 0.7240 2.7210    3.7581           0.1059 123.9317 0.0069
+  NQ/RTH/B0/30min  2023 -0.8209 -0.1200 0.5677 2.4885    4.3835           0.2687  87.8785 0.0036
+
+{
+ "univariate_A_over_c": {
+  "coef": -0.027179433493459068,
+  "se": 0.00741535807136968,
+  "t": -3.6652894212077873,
+  "r2": 0.19630999958662987
+ },
+ "univariate_log_cond": {
+  "coef": -1.1463478791371031,
+  "se": 0.048739048106079715,
+  "t": -23.520112182784043,
+  "r2": 0.9095685778907737
+ },
+ "univariate_rmse": {
+  "coef": 6.738550975917544,
+  "se": 2.3974845764592647,
+  "t": 2.8106754229340662,
+  "r2": 0.125594743292609
+ },
+ "univariate_is_2022": {
+  "coef": -0.40469631661625366,
+  "se": 0.06137844310449055,
+  "t": -6.5934601164011175,
+  "r2": 0.4414753290231087
+ },
+ "joint_identification": {
+  "coef_A_over_c": 0.002344176373032003,
+  "se_A_over_c": 0.002871131570071203,
+  "coef_log_cond": -1.1690766418695404,
+  "se_log_cond": 0.056257782890371026,
+  "r2": 0.9106713139238571
+ },
+ "with_2022_dummy": {
+  "coef_A_over_c": 0.003178164498691635,
+  "coef_log_cond": -1.0778996860727275,
+  "coef_is_2022": -0.08212514422609465,
+  "se_is_2022": 0.0297628335701825,
+  "t_is_2022": -2.759318733293279,
+  "r2": 0.9218920897926787
+ },
+ "2022_diagnostics": {
+  "mean_A_over_c_2022": 8.149795192206932,
+  "mean_A_over_c_other": 4.384578796153075,
+  "mean_log_cond_2022": 2.050102833108329,
+  "mean_log_cond_other": 1.7397421810064064,
+  "mean_rmse_2022": 0.015671900450561174,
+  "mean_rmse_other": 0.023672598424617726,
+  "mean_c_2022": 0.5691783591259252,
+  "mean_c_other": 0.8289628465483693,
+  "mean_dev_2022": -0.530142889100169
+ },
+ "verdict": "VOLATILITY-STATE EFFECT, not explained by identification",
+ "s10_note": "S10 found all 48 volatility-tercile sub-fits degenerate because conditioning on realized volatility removes the cross-sectional log-IV variation that identifies the intercept. A high-volatility YEAR is a milder version of the same conditioning, so the identification channel is the first thing to test before reading 2022 as a state effect."
+}
+PHASE4+5 DONE 177s

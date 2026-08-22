@@ -1,0 +1,30 @@
+{
+ "metric": "mean share of sessions with R > 10x cell median, B0, per (root,geom,year,M) cell",
+ "ranking": {
+  "TRQ3_TRV3": {
+   "share": 0.0,
+   "p95_over_med": 1.4202626439598327
+  },
+  "TRQ5_TRV5": {
+   "share": 0.0,
+   "p95_over_med": 1.6851840943956335
+  },
+  "TRQ10_TRV10": {
+   "share": 0.0,
+   "p95_over_med": 2.207050388492762
+  },
+  "TQ_BV": {
+   "share": 0.00018015178991859001,
+   "p95_over_med": 2.0202282501697217
+  },
+  "MEDRQ_MEDRV": {
+   "share": 0.0005945036993449932,
+   "p95_over_med": 2.13830881563695
+  },
+  "RQ_RV": {
+   "share": 0.0021291018453898276,
+   "p95_over_med": 2.521294809673481
+  }
+ },
+ "chosen": "TRQ3_TRV3"
+}

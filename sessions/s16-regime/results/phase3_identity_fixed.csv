@@ -1,0 +1,9 @@
+root,geom,horizon,n,n_differ
+ES,GLOBEX,1day,641,0
+NQ,GLOBEX,1day,641,0
+ES,RTH,1day,621,0
+NQ,RTH,1day,621,0
+ES,RTH,1h,3726,0
+NQ,RTH,1h,3726,0
+ES,RTH,30min,7452,0
+NQ,RTH,30min,7452,0

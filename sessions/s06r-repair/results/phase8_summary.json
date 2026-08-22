@@ -1,0 +1,55 @@
+{
+ "family_size_preregistered": 96,
+ "family_size_computable": 64,
+ "n_differ": 16,
+ "n_cells_available": 16,
+ "n_halted": 0,
+ "primary_cell": "ES/RTH/B0/30min",
+ "primary_cell_rows": [
+  {
+   "cell": "ES/RTH/B0/30min",
+   "quantile": 0.8,
+   "level": "mcs75",
+   "differs": false,
+   "s_b": "M2_HAR",
+   "s_c": "M2_HAR",
+   "status": "ok",
+   "is_primary_cell": true
+  },
+  {
+   "cell": "ES/RTH/B0/30min",
+   "quantile": 0.8,
+   "level": "mcs90",
+   "differs": false,
+   "s_b": "M2_HAR",
+   "s_c": "M2_HAR",
+   "status": "ok",
+   "is_primary_cell": true
+  },
+  {
+   "cell": "ES/RTH/B0/30min",
+   "quantile": 0.9,
+   "level": "mcs75",
+   "differs": false,
+   "s_b": "M2_HAR",
+   "s_c": "M2_HAR",
+   "status": "ok",
+   "is_primary_cell": true
+  },
+  {
+   "cell": "ES/RTH/B0/30min",
+   "quantile": 0.9,
+   "level": "mcs90",
+   "differs": false,
+   "s_b": "M2_HAR",
+   "s_c": "M2_HAR",
+   "status": "ok",
+   "is_primary_cell": true
+  }
+ ],
+ "correction_applied": "none (item 47); absence disclosed as a limitation",
+ "timers": {
+  "phase4": 0.1,
+  "phase7": 7.2
+ }
+}

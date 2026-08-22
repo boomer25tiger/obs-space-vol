@@ -1,0 +1,59 @@
+{
+ "venues": {
+  "ARCX.PILLAR": {
+   "dataset": "ARCX.PILLAR",
+   "schema": "ohlcv-1s",
+   "stype_in": "raw_symbol",
+   "stype_out": "instrument_id",
+   "symbols": [
+    "SPY"
+   ],
+   "columns": [
+    "length",
+    "rtype",
+    "publisher_id",
+    "instrument_id",
+    "ts_event",
+    "open",
+    "high",
+    "low",
+    "close",
+    "volume"
+   ],
+   "n_rows_total": 37940683,
+   "n_rows_pre_2024": 24381645,
+   "ts_min": "2018-05-01T08:00:00.000000000",
+   "ts_max": "2026-08-13T23:59:41.000000000",
+   "n_rth_sessions_pre2024": 1427,
+   "spans_2018_05_01_to_2023_12_31": true
+  },
+  "XNAS.ITCH": {
+   "dataset": "XNAS.ITCH",
+   "schema": "ohlcv-1s",
+   "stype_in": "raw_symbol",
+   "stype_out": "instrument_id",
+   "symbols": [
+    "SPY"
+   ],
+   "columns": [
+    "length",
+    "rtype",
+    "publisher_id",
+    "instrument_id",
+    "ts_event",
+    "open",
+    "high",
+    "low",
+    "close",
+    "volume"
+   ],
+   "n_rows_total": 36068770,
+   "n_rows_pre_2024": 23726446,
+   "ts_min": "2018-05-01T08:04:24.000000000",
+   "ts_max": "2026-08-13T23:59:35.000000000",
+   "n_rth_sessions_pre2024": 1427,
+   "spans_2018_05_01_to_2023_12_31": true
+  }
+ },
+ "seconds": 51.5
+}

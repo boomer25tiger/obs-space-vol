@@ -1,0 +1,68 @@
+master seeds: [3280325159, 10724713, 3527105160, 1168436609, 2339113406]
+jobs to run: 24500 (done: 0, grand total 24500)
+<REPO>/sessions/s02-mechanism-expansion/src/estimators2.py:63: RuntimeWarning: overflow encountered in scalar divide
+  return float(np.clip(1.0 - v.mean() / logP.var(), -1e30, 1e30))
+<REPO>/sessions/s02-mechanism-expansion/src/estimators2.py:63: RuntimeWarning: overflow encountered in scalar divide
+  return float(np.clip(1.0 - v.mean() / logP.var(), -1e30, 1e30))
+<REPO>/sessions/s02-mechanism-expansion/src/estimators2.py:63: RuntimeWarning: overflow encountered in scalar divide
+  return float(np.clip(1.0 - v.mean() / logP.var(), -1e30, 1e30))
+<REPO>/sessions/s02-mechanism-expansion/src/estimators2.py:63: RuntimeWarning: overflow encountered in scalar divide
+  return float(np.clip(1.0 - v.mean() / logP.var(), -1e30, 1e30))
+<REPO>/sessions/s02-mechanism-expansion/src/estimators2.py:63: RuntimeWarning: overflow encountered in scalar divide
+  return float(np.clip(1.0 - v.mean() / logP.var(), -1e30, 1e30))
+<REPO>/sessions/s02-mechanism-expansion/src/estimators2.py:63: RuntimeWarning: overflow encountered in scalar divide
+  return float(np.clip(1.0 - v.mean() / logP.var(), -1e30, 1e30))
+[25/24500] D1_ar1_sh0.98_W0_r1_js0_nsr3.16228e-05_g390_seed4 (79.9s) ETA 7542 min
+[50/24500] D1_ar1_sh0.98_W0_r1_js0_nsr0.000316228_g1380_seed3 (175.6s) ETA 8625 min
+[75/24500] D1_ar1_sh0.98_W0_r1_js0_nsr0.01_g390_seed4 (129.6s) ETA 8741 min
+[100/24500] D1_ar1_sh0.98_W0_r1_js0_nsr0.1_g1380_seed3 (300.2s) ETA 11666 min
+[125/24500] D1_ar1_sh0.98_W1_r1_js0_nsr3.16228e-05_g390_seed4 (91.0s) ETA 11381 min
+[150/24500] D1_ar1_sh0.98_W1_r1_js0_nsr0.000316228_g1380_seed3 (132.9s) ETA 10777 min
+[175/24500] D1_ar1_sh0.98_W1_r1_js0_nsr0.01_g390_seed4 (75.2s) ETA 10277 min
+[200/24500] D1_ar1_sh0.98_W1_r1_js0_nsr0.1_g1380_seed3 (144.4s) ETA 9973 min
+[225/24500] D1_ar1_sh0.98_W1_r3_js0_nsr3.16228e-05_g390_seed4 (72.6s) ETA 9656 min
+[250/24500] D1_ar1_sh0.98_W1_r3_js0_nsr0.000316228_g1380_seed3 (146.5s) ETA 9423 min
+[275/24500] D1_ar1_sh0.98_W1_r3_js0_nsr0.01_g390_seed4 (68.5s) ETA 9174 min
+[300/24500] D1_ar1_sh0.98_W1_r3_js0_nsr0.1_g1380_seed3 (132.8s) ETA 9078 min
+[325/24500] D1_ar1_sh0.98_W1_r10_js0_nsr3.16228e-05_g390_seed4 (70.9s) ETA 8877 min
+[350/24500] D1_ar1_sh0.98_W1_r10_js0_nsr0.000316228_g1380_seed3 (138.4s) ETA 8730 min
+[375/24500] D1_ar1_sh0.98_W1_r10_js0_nsr0.01_g390_seed4 (72.7s) ETA 8598 min
+[400/24500] D1_ar1_sh0.98_W1_r10_js0_nsr0.1_g1380_seed3 (154.8s) ETA 8543 min
+[425/24500] D1_ar1_sh0.98_W2_r1_js0_nsr3.16228e-05_g390_seed4 (139.7s) ETA 8645 min
+[450/24500] D1_ar1_sh0.98_W2_r1_js0_nsr0.000316228_g1380_seed3 (365.0s) ETA 9313 min
+[475/24500] D1_ar1_sh0.98_W2_r1_js0_nsr0.01_g390_seed4 (130.3s) ETA 9523 min
+[500/24500] D1_ar1_sh0.98_W2_r1_js0_nsr0.1_g1380_seed3 (297.6s) ETA 9817 min
+S02 grid paused at 508/24500 datasets (resumable via run2.py)
+master seeds: [3280325159, 10724713, 3527105160, 1168436609, 2339113406]
+jobs to run: 23979 (done: 521, grand total 24500)
+<REPO>/sessions/s02-mechanism-expansion/src/estimators2.py:63: RuntimeWarning: overflow encountered in scalar divide
+  return float(np.clip(1.0 - v.mean() / logP.var(), -1e30, 1e30))
+<REPO>/sessions/s02-mechanism-expansion/src/estimators2.py:63: RuntimeWarning: overflow encountered in scalar divide
+  return float(np.clip(1.0 - v.mean() / logP.var(), -1e30, 1e30))
+<REPO>/sessions/s02-mechanism-expansion/src/estimators2.py:63: RuntimeWarning: overflow encountered in scalar divide
+  return float(np.clip(1.0 - v.mean() / logP.var(), -1e30, 1e30))
+<REPO>/sessions/s02-mechanism-expansion/src/estimators2.py:63: RuntimeWarning: overflow encountered in scalar divide
+  return float(np.clip(1.0 - v.mean() / logP.var(), -1e30, 1e30))
+<REPO>/sessions/s02-mechanism-expansion/src/estimators2.py:63: RuntimeWarning: overflow encountered in scalar divide
+  return float(np.clip(1.0 - v.mean() / logP.var(), -1e30, 1e30))
+<REPO>/sessions/s02-mechanism-expansion/src/estimators2.py:63: RuntimeWarning: overflow encountered in scalar divide
+  return float(np.clip(1.0 - v.mean() / logP.var(), -1e30, 1e30))
+S02 grid paused for S05A at 535/24500
+master seeds: [3280325159, 10724713, 3527105160, 1168436609, 2339113406]
+jobs to run: 23952 (done: 548, grand total 24500)
+<REPO>/sessions/s02-mechanism-expansion/src/estimators2.py:63: RuntimeWarning: overflow encountered in scalar divide
+  return float(np.clip(1.0 - v.mean() / logP.var(), -1e30, 1e30))
+<REPO>/sessions/s02-mechanism-expansion/src/estimators2.py:63: RuntimeWarning: overflow encountered in scalar divide
+  return float(np.clip(1.0 - v.mean() / logP.var(), -1e30, 1e30))
+<REPO>/sessions/s02-mechanism-expansion/src/estimators2.py:63: RuntimeWarning: overflow encountered in scalar divide
+  return float(np.clip(1.0 - v.mean() / logP.var(), -1e30, 1e30))
+<REPO>/sessions/s02-mechanism-expansion/src/estimators2.py:63: RuntimeWarning: overflow encountered in scalar divide
+  return float(np.clip(1.0 - v.mean() / logP.var(), -1e30, 1e30))
+<REPO>/sessions/s02-mechanism-expansion/src/estimators2.py:63: RuntimeWarning: overflow encountered in scalar divide
+  return float(np.clip(1.0 - v.mean() / logP.var(), -1e30, 1e30))
+<REPO>/sessions/s02-mechanism-expansion/src/estimators2.py:63: RuntimeWarning: overflow encountered in scalar divide
+  return float(np.clip(1.0 - v.mean() / logP.var(), -1e30, 1e30))
+[25/23952] D1_ar1_sh0.98_W2_r3_js0_nsr0.01_g390_seed2 (145.6s) ETA 14386 min
+[50/23952] D1_ar1_sh0.98_W2_r3_js0_nsr0.1_g1380_seed1 (305.6s) ETA 13728 min
+[75/23952] D1_ar1_sh0.98_W2_r10_js0_nsr3.16228e-05_g390_seed3 (123.9s) ETA 13704 min
+S02 grid paused for S05B at 645/24500

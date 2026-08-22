@@ -1,0 +1,95 @@
+{
+ "panels": {
+  "panel_ES_GLOBEX_B0.npz": {
+   "shape": [
+    1953,
+    1380
+   ],
+   "dtype": "float32",
+   "sessions": 1953,
+   "price_cols": 1380,
+   "returns": 2693187,
+   "read_s": 0.249
+  },
+  "panel_ES_GLOBEX_B1.npz": {
+   "shape": [
+    1953,
+    1380
+   ],
+   "dtype": "float32",
+   "sessions": 1953,
+   "price_cols": 1380,
+   "returns": 2693187,
+   "read_s": 0.159
+  },
+  "panel_ES_RTH_B0.npz": {
+   "shape": [
+    1901,
+    390
+   ],
+   "dtype": "float32",
+   "sessions": 1901,
+   "price_cols": 390,
+   "returns": 739489,
+   "read_s": 0.053
+  },
+  "panel_ES_RTH_B1.npz": {
+   "shape": [
+    1901,
+    390
+   ],
+   "dtype": "float32",
+   "sessions": 1901,
+   "price_cols": 390,
+   "returns": 739489,
+   "read_s": 0.039
+  },
+  "panel_NQ_GLOBEX_B0.npz": {
+   "shape": [
+    1948,
+    1380
+   ],
+   "dtype": "float32",
+   "sessions": 1948,
+   "price_cols": 1380,
+   "returns": 2686292,
+   "read_s": 0.194
+  },
+  "panel_NQ_GLOBEX_B1.npz": {
+   "shape": [
+    1948,
+    1380
+   ],
+   "dtype": "float32",
+   "sessions": 1948,
+   "price_cols": 1380,
+   "returns": 2686292,
+   "read_s": 0.17
+  },
+  "panel_NQ_RTH_B0.npz": {
+   "shape": [
+    1901,
+    390
+   ],
+   "dtype": "float32",
+   "sessions": 1901,
+   "price_cols": 390,
+   "returns": 739489,
+   "read_s": 0.029
+  },
+  "panel_NQ_RTH_B1.npz": {
+   "shape": [
+    1901,
+    390
+   ],
+   "dtype": "float32",
+   "sessions": 1901,
+   "price_cols": 390,
+   "returns": 739489,
+   "read_s": 0.159
+  }
+ },
+ "total_price_points": 13732320,
+ "total_returns": 13716914,
+ "full_pass_seconds": 1.053
+}

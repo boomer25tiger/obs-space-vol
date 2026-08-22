@@ -1,0 +1,87 @@
+{
+ "phase1_mapping": {
+  "globex_col0_ny": "18:00 (slot = (ny_min - 1080) % 1440, so slot 0 is ny_min 1080)",
+  "globex_offset": "FIXED at 1080 minutes (18:00 New York); not derived per session",
+  "globex_last_col": "slot 1379 = 16:59 New York the following day (`ok = slot < 1380` drops 17:00-17:59)",
+  "rth_col0_ny": "09:30 (slot = ny_min - 570)",
+  "rth_offset": "FIXED at 570 minutes (09:30 New York)",
+  "rth_last_col": "slot 389 = 15:59 New York",
+  "dst_handling": "`ny_min` is built in the pipeline from a tz-aware conversion to America/New_York (pipeline.py: `ny = ts.tz_convert('America/New_York')`, `ny_min = ny.hour*60 + ny.minute`), so every column carries TRUE New York wall-clock. DST is therefore handled correctly for the mapping itself. The consequence not handled is that a Globex session spans 23 wall-clock hours on the spring-forward date and 25 on the fall-back date, so those two sessions per year have one fewer / one more real column than the fixed 1380-column frame assumes.",
+  "col_for_1300": 1140,
+  "col_for_1400": 1200,
+  "col_for_1500": 1260
+ },
+ "phase1_n_sessions_sampled": 20,
+ "phase1_n_sessions_absent_from_RTH": 0,
+ "phase1_total_minute_disagreements": 0,
+ "phase2_total_zero_windows_at_13_14_15": 156,
+ "phase2_sampled": 50,
+ "phase2_with_zero_underlying_bars": 49,
+ "phase2_with_price_variation": 0,
+ "phase2_n_distinct_sessions": 52,
+ "phase2_by_year": {
+  "2016": 6,
+  "2017": 6,
+  "2018": 7,
+  "2019": 6,
+  "2020": 5,
+  "2021": 7,
+  "2022": 7,
+  "2023": 8
+ },
+ "phase2_by_weekday": {
+  "Monday": 37,
+  "Thursday": 9,
+  "Tuesday": 2,
+  "Wednesday": 2,
+  "Friday": 2
+ },
+ "phase2_by_dst": {
+  "EDT": 27,
+  "EST": 25
+ },
+ "phase2_by_month_day": {
+  "07-04": 6,
+  "01-18": 2,
+  "02-15": 2,
+  "05-30": 2,
+  "09-05": 2,
+  "11-24": 2,
+  "01-16": 2,
+  "02-20": 2,
+  "05-29": 2,
+  "09-04": 2,
+  "11-23": 2,
+  "01-15": 1,
+  "02-19": 1,
+  "05-28": 1,
+  "09-03": 1
+ },
+ "phase2_roll_proximity_min": 5,
+ "phase2_n_within_1day_of_roll": 0,
+ "phase2_n_in_RTH_panel": 0,
+ "phase3_fill_mechanism": "`filled = pd.DataFrame(px).ffill(axis=1).bfill(axis=1).values` (analysis.py:41): forward fill of the last observed close within the session, with a leading backfill for columns before the session's first bar. Not zero, not a sentinel.",
+ "phase3_padding_distinguishable": "NO. The stored S05 panel npz files contain only `logpx` and `dates`; the boolean `present` mask that `build_panels` returns is not saved with them. In the stored panel a padded column is byte-identical to a genuine unchanged close, and nothing downstream of the panel can tell them apart. S05D recovers the mask only by re-running `build_panels` on the S04 bars.",
+ "phase4_free_intercept_fits": {
+  "as_is": {
+   "c": 1.0178464024985823,
+   "A": 2.0816735374402224,
+   "b": -0.43929371362519365,
+   "rmse": 0.04983756899877298
+  },
+  "excluding_padded": {
+   "c": 1.018733565445556,
+   "A": 2.0828056253524583,
+   "b": -0.44009196065782613,
+   "rmse": 0.049739298422818976
+  }
+ },
+ "timers": {
+  "load": 0.1,
+  "phase1": 0.2,
+  "phase2": 3.2,
+  "phase3": 0.0,
+  "phase4": 1.0,
+  "total": 4.4
+ }
+}
