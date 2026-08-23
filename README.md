@@ -24,9 +24,10 @@ estimate and more data does not reduce the contamination.
 
 ## Provenance
 
-The analysis was produced with Claude Code across twenty-six logged sessions, S01
-through S22, including the S05A to S05E, S06R and S09-PRE repair and audit
-sessions. Every decision and every emitted artifact is in the repository:
+The analysis was produced with Claude Code across thirty logged sessions, S01
+through S23D, including the S05A to S05E, S06R and S09-PRE repair and audit
+sessions. There is no S21: a session was specified under that label and never ran,
+which DECISIONS item 150 records. Every decision and every emitted artifact is in the repository:
 per-session source under `sessions/sNN-*/src/`, emitted CSV and JSON under
 `sessions/sNN-*/results/`, and a report and runlog for each session except S02,
 which retains its source and raw output but no written report. The session
@@ -42,7 +43,7 @@ else in the repository.
 
 | path | contents |
 |---|---|
-| `DECISIONS.md` | the decision log, 155 entries numbered to 148, append-only |
+| `DECISIONS.md` | the decision log, 164 entries numbered to 157, append-only |
 | `DECISIONS-as-run.md` | the unmodified log as written during the sessions |
 | `specs/` | the specification, updated per session with determinations |
 | `sessions/sNN-*/src/` | every measurement script, by session |
@@ -50,6 +51,9 @@ else in the repository.
 | `sessions/s06r-repair/tests/` | the invariant test suite |
 | `paper/` | LaTeX source, `numbers.csv` provenance table, `k_table.csv` |
 | `figures/src/` | figure generators, each reading only persisted artifacts |
+| `results/` | reports for the paper-era sessions, which have no `sessions/` directory |
+| `ENVIRONMENT.md` | the interpreter and package versions every session gates on |
+| `ENVIRONMENT-pre-20260819.md` | the same, as it stood before the environment rebuild of item 76 |
 
 Nothing is redacted. The audit trail, including the sessions that found defects
 in earlier sessions and the corrections they forced, is part of the deliverable.
@@ -72,7 +76,10 @@ cd paper && pdflatex main && bibtex main && pdflatex main && pdflatex main
 ```
 
 Both figure scripts read only from `sessions/*/results/` and write a provenance
-JSON recording every artifact path and row count they touched. `paper/numbers.csv`
+JSON recording every artifact path and row count they touched. They are the only
+scripts a reader can run against the published tree: the per-session measurement
+scripts under `sessions/*/src/` read the raw vendor data, which is not published,
+and will not run from a clone. `paper/numbers.csv`
 carries one row per quantity cited in the draft, with its value at full precision,
 the artifact path and the field it was read from.
 
@@ -84,7 +91,9 @@ halts otherwise. The environment lives outside any file-sync scope (item 79).
 
 ## Status
 
-Measurement is complete as of session 17. The paper is in draft: sections 1, 2,
-3, 4, 6, 7 and 8 are written; section 5 remains a stub whose table is generated
-from the determination artifacts, its inclusion decisions being authorial
-(item 131).
+Measurement is complete as of session 17. All eight sections of the paper are
+written, section 5 having been drafted in S23B against the table generated from
+the determination artifacts. What remains open is recorded in the session reports
+under `results/`: the numeric claims in section 8's thirty-minute-inversion
+paragraph carry no `numbers.csv` citation, and twelve quantities are registered
+MISSING, of which eleven are undefined rather than uncomputed.

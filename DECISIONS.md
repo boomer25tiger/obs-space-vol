@@ -945,3 +945,11 @@ alongside this file as `DECISIONS-as-run.md`.
 157. THE COMMIT EMAIL IS 208218876+boomer25tiger@users.noreply.github.com, confirmed by
      the author. S23C halted rather than inferring it from the authenticated session,
      which is the correct handling of a value that is permanent once pushed.
+158. THE README CARRIED FOUR STALE FACTS AFTER THE FIRST PUSH, corrected here. It
+     described section 5 as a stub after S23B had written it, gave the log as 155 entries
+     numbered to 148 against 164 and 157, gave the session count as twenty-six through
+     S22, and omitted `results/`, `ENVIRONMENT.md` and `ENVIRONMENT-pre-20260819.md` from
+     the contents table. The status section now also records what remains open, and the
+     reproducibility section states that the per-session measurement scripts cannot run
+     from a clone because they read the unpublished vendor data, which the clone
+     verification in S23D established and the README did not say.
