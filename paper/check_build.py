@@ -94,7 +94,7 @@ def run():
     spec.loader.exec_module(br)
     n, hi = br.counts()
     chk("README decision-log count is current",
-        f"the decision log, {n} entries numbered to {hi}" in readme,
+        f"append-only, {n} entries numbered to {hi}" in readme,
         f"DECISIONS.md has {n} entries numbered to {hi}")
     chk("README MISSING-count phrase found despite wrapping",
         "twelve quantities are registered MISSING" in readme,

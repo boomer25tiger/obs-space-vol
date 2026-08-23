@@ -7,4 +7,4 @@ change to realized quarticity, aerospace provenance correction, MC3 rewrite,
 "Superseded, retained for the record" appendix) therefore could not be applied.
 The corresponding decisions are recorded in `DECISIONS.md` at the repository
 root; the edits should be applied to the spec files when they are restored to
-`specs/`. No spec content was fabricated as a substitute.
+`docs/specs/`. No spec content was fabricated as a substitute.

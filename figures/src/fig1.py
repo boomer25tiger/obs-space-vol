@@ -9,11 +9,11 @@ from scipy.special import polygamma
 ROOT=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 R=lambda p: os.path.join(ROOT,p)
 SRC=dict(
- futures_grid="sessions/s08-final/results/phase4_lambda.csv",
- fits="sessions/s10-exponent-audit/results/phase1_bootstrap.csv",
- screen="sessions/s10-exponent-audit/results/phase2_screen.csv",
- spy_arcx="sessions/s07-completion-and-spy/results/phase6_spy_grid_ARCX.csv",
- spy_xnas="sessions/s07-completion-and-spy/results/phase6_spy_grid_XNAS.csv")
+ futures_grid="artifacts/s08-final/phase4_lambda.csv",
+ fits="artifacts/s10-exponent-audit/phase1_bootstrap.csv",
+ screen="artifacts/s10-exponent-audit/phase2_screen.csv",
+ spy_arcx="artifacts/s07-completion-and-spy/phase6_spy_grid_ARCX.csv",
+ spy_xnas="artifacts/s07-completion-and-spy/phase6_spy_grid_XNAS.csv")
 G=pd.read_csv(R(SRC["futures_grid"])); F=pd.read_csv(R(SRC["fits"]))
 S=pd.read_csv(R(SRC["screen"]))
 keep=set(S[(S["range"]=="extended")&(S.screen_tight_pass)].cell)

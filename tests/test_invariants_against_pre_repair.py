@@ -27,9 +27,9 @@ import pytest
 
 ROOT = Path(__file__).resolve().parents[1]
 LIB = ROOT / "sessions" / "s06r-repair" / "tests" / "test_invariants.py"
-ARTIFACT = ROOT / "sessions" / "s06r-repair" / "results" / "phase1_invariants_on_s05.csv"
+ARTIFACT = ROOT / "artifacts" / "s06r-repair" / "phase1_invariants_on_s05.csv"
 
-# Counts recorded in sessions/s06r-repair/results/S06R-report.md, the run of the
+# Counts recorded in artifacts/s06r-repair/S06R-report.md, the run of the
 # five assertions against the pre-repair S05 artifacts.
 RECORDED = {
     "assert_forecasts_positive": 46,

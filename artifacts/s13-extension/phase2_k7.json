@@ -1,0 +1,213 @@
+{
+ "expansion_boundary_var_log_sigma_hat_at_10pct": 0.3753714530236461,
+ "noise": {
+  "ES": {
+   "noise_var_logRV": 0.15127833063199528,
+   "v_single_day": 0.03781958265799882,
+   "v_lookback": 0.0018009325075237534,
+   "lam_intercept": 0.8397800078923314,
+   "bias_exact_single": 1.0190897137421018,
+   "bias_exact_lookback": 1.0009008717952153,
+   "bias_2nd_single": 1.0189097913289995,
+   "expansion_valid_single": true
+  },
+  "NQ": {
+   "noise_var_logRV": 0.051452370299718074,
+   "v_single_day": 0.012863092574929519,
+   "v_lookback": 0.0006125282178537866,
+   "lam_intercept": 0.9312843759268288,
+   "bias_exact_single": 1.0064522730925984,
+   "bias_exact_lookback": 1.0003063110125672,
+   "bias_2nd_single": 1.0064315462874647,
+   "expansion_valid_single": true
+  }
+ },
+ "books": {
+  "is_v_lookback": {
+   "naive": {
+    "realized_vol_ann": 0.14724313395826472,
+    "risk_imbalance": 0.008141171854497017,
+    "turnover_per_rebalance": 0.021623135513886706,
+    "w_ES_mean": 0.5712360446071724,
+    "w_NQ_mean": 0.42876395539282763,
+    "n": 1880
+   },
+   "corrected": {
+    "realized_vol_ann": 0.1472489159804137,
+    "risk_imbalance": 0.007832645004345887,
+    "turnover_per_rebalance": 0.02162505542349878,
+    "w_ES_mean": 0.5710910911816045,
+    "w_NQ_mean": 0.4289089088183954,
+    "n": 1880
+   },
+   "weight_deviation": {
+    "mean": 0.00014495342556776188,
+    "max": 0.00014854946174513994,
+    "overweighted_asset": "ES",
+    "mean_signed_ES": 0.00014495342556776188
+   },
+   "rel_vol_diff_pct": 0.003926699297233479
+  },
+  "is_v_single_day": {
+   "naive": {
+    "realized_vol_ann": 0.14737237037733472,
+    "risk_imbalance": 0.021007825599186025,
+    "turnover_per_rebalance": 0.03808803254026934,
+    "w_ES_mean": 0.5785371695355078,
+    "w_NQ_mean": 0.4214628304644921,
+    "n": 1900
+   },
+   "corrected": {
+    "realized_vol_ann": 0.14749247192537399,
+    "risk_imbalance": 0.014555357923274422,
+    "turnover_per_rebalance": 0.03816963513352485,
+    "w_ES_mean": 0.5755144846385698,
+    "w_NQ_mean": 0.4244855153614302,
+    "n": 1900
+   },
+   "weight_deviation": {
+    "mean": 0.0030226848969380467,
+    "max": 0.0031189129395259307,
+    "overweighted_asset": "ES",
+    "mean_signed_ES": 0.0030226848969380467
+   },
+   "rel_vol_diff_pct": 0.08142893428488429
+  },
+  "ho_v_lookback": {
+   "naive": {
+    "realized_vol_ann": 0.14553004103624226,
+    "risk_imbalance": 0.019048505452372425,
+    "turnover_per_rebalance": 0.018112611735492647,
+    "w_ES_mean": 0.5750860252412593,
+    "w_NQ_mean": 0.42491397475874076,
+    "n": 600
+   },
+   "corrected": {
+    "realized_vol_ann": 0.1455355185452178,
+    "risk_imbalance": 0.018743118062292993,
+    "turnover_per_rebalance": 0.018114125648161995,
+    "w_ES_mean": 0.5749411271363882,
+    "w_NQ_mean": 0.42505887286361177,
+    "n": 600
+   },
+   "weight_deviation": {
+    "mean": 0.00014489810487097797,
+    "max": 0.0001481718474977134,
+    "overweighted_asset": "ES",
+    "mean_signed_ES": 0.00014489810487097797
+   },
+   "rel_vol_diff_pct": 0.0037636922108675902
+  },
+  "ho_v_single_day": {
+   "naive": {
+    "realized_vol_ann": 0.14408813523960992,
+    "risk_imbalance": 0.026164629889457957,
+    "turnover_per_rebalance": 0.029499008900685297,
+    "w_ES_mean": 0.5775616002682021,
+    "w_NQ_mean": 0.4224383997317979,
+    "n": 620
+   },
+   "corrected": {
+    "realized_vol_ann": 0.1442017524987747,
+    "risk_imbalance": 0.019755148332381355,
+    "turnover_per_rebalance": 0.029560286469118374,
+    "w_ES_mean": 0.5745251379261602,
+    "w_NQ_mean": 0.4254748620738397,
+    "n": 620
+   },
+   "weight_deviation": {
+    "mean": 0.003036462342041791,
+    "max": 0.003102502426197473,
+    "overweighted_asset": "ES",
+    "mean_signed_ES": 0.003036462342041791
+   },
+   "rel_vol_diff_pct": 0.07879048430132546
+  }
+ },
+ "cost_sweep": [
+  {
+   "ticks": 0.5,
+   "corrected": 0.1471772708913162,
+   "naive": 0.14716497035087775,
+   "rel_diff_pct": 0.00835763590664775
+  },
+  {
+   "ticks": 1.0,
+   "corrected": 0.2943545417826324,
+   "naive": 0.2943299407017555,
+   "rel_diff_pct": 0.00835763590664775
+  },
+  {
+   "ticks": 2.0,
+   "corrected": 0.5887090835652647,
+   "naive": 0.588659881403511,
+   "rel_diff_pct": 0.00835763590664775
+  },
+  {
+   "ticks": 4.0,
+   "corrected": 1.1774181671305295,
+   "naive": 1.177319762807022,
+   "rel_diff_pct": 0.00835763590664775
+  }
+ ],
+ "K7": {
+  "threshold_weight": 0.02,
+  "threshold_vol": 0.05,
+  "mean_abs_weight_deviation": 0.00014489810487097797,
+  "max_abs_weight_deviation": 0.0001481718474977134,
+  "overweighted_asset": "ES",
+  "weight_criterion_met": true,
+  "rel_vol_diff_pct": 0.0037636922108675902,
+  "vol_criterion_met": true,
+  "vol_criterion_met_all_sweep_points": true,
+  "single_day_bound": {
+   "mean_abs_weight_deviation": 0.003036462342041791,
+   "rel_vol_diff_pct": 0.07879048430132546
+  },
+  "lookback": 21,
+  "rebalance": 21,
+  "K7": "FIRES"
+ },
+ "illustration": {
+  "rows": [
+   {
+    "leg": "lowest_lambda",
+    "cell": "ES/RTH/B0/30min",
+    "lam_intercept": 0.3958240376050629,
+    "noise_var_logRV": 1.2390217893608642,
+    "v_single_day": 0.30975544734021604,
+    "v_lookback": 0.014750259397153145,
+    "bias_exact_single": 1.1675151929038357,
+    "bias_exact_lookback": 1.0074023929497373
+   },
+   {
+    "leg": "highest_lambda",
+    "cell": "NQ/GLOBEX/B0/1day",
+    "lam_intercept": 0.9399469453085768,
+    "noise_var_logRV": 0.05393494114035343,
+    "v_single_day": 0.013483735285088358,
+    "v_lookback": 0.0006420826326232551,
+    "bias_exact_single": 1.006764645191167,
+    "bias_exact_lookback": 1.0003210928555903
+   }
+  ],
+  "bias_ratio_single_day": 1.1596704338799513,
+  "bias_ratio_lookback": 1.0070790270691306,
+  "implied_weight_deviation_single_day": 0.0369663888006041,
+  "implied_weight_deviation_lookback": 0.0017635147828403142,
+  "label": "ILLUSTRATION on measured reliabilities, not a backtest. These two cells are not a tradeable pair; the calculation bounds how large the inverse-volatility bias can get given the reliability spread this programme actually measured."
+ },
+ "holdout_read_count": {
+  "this_session": 1,
+  "running_total": 4,
+  "prior": [
+   "S09 Phase 6",
+   "S11 Phase 1",
+   "S11 Phases 8-9"
+  ]
+ },
+ "timers": {
+  "build": 0.6,
+  "book": 0.1
+ }
+}

@@ -4,7 +4,7 @@ Captured 2026-08-19T19:01:05+00:00 (UTC) during Session 9-PRE, immediately after
 
 ## Provenance of this record
 
-The environment that S05A captured, and that sessions S05B through S08 ran under, failed on 2026-08-19: `pandas/core/dtypes/common.py` reported 56,234 bytes under `wc -c` but returned 0 lines and could not be read, so `pandas.core.dtypes.missing` could not import `DT64NS_DTYPE` from it. The environment was REBUILT from `requirements.lock`, not patched. The broken environment is retained at `.venv-broken-20260819`. The prior record is retained at `ENVIRONMENT-pre-20260819.md`.
+The environment that S05A captured, and that sessions S05B through S08 ran under, failed on 2026-08-19: `pandas/core/dtypes/common.py` reported 56,234 bytes under `wc -c` but returned 0 lines and could not be read, so `pandas.core.dtypes.missing` could not import `DT64NS_DTYPE` from it. The environment was REBUILT from `requirements.lock`, not patched. The broken environment is retained at `.venv-broken-20260819`. The prior record is retained at `docs/ENVIRONMENT-pre-20260819.md`.
 
 **Installed versions matched `requirements.lock` exactly before the failure** (verified from `.dist-info` directories without importing): numpy 2.5.2, pandas 3.0.5, scipy 1.18.0, arch 8.0.0, statsmodels 0.14.6. There was no version drift, so sessions S05B through S08 did run under the versions their runlogs record.
 

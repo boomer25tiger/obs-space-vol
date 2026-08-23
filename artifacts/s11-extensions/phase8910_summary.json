@@ -1,0 +1,38 @@
+{
+ "ho_series_equivalence_failures": [],
+ "K4": {
+  "max_spurious_rate": 0.00966183574879227,
+  "all_below_1pct": true,
+  "max_cost_bps": 0.041799218695532096,
+  "all_cost_below_1bp": true,
+  "leverage_cap": 2.0,
+  "stop_mult": 1.5,
+  "K4": "FIRES"
+ },
+ "K5": {
+  "mean_abs_weight_change_max": 0.019959582876239203,
+  "max_abs_weight_change": 0.04996493246522582,
+  "all_mean_below_0p02": true,
+  "max_rel_te_diff_pct": 0.5022619311504904,
+  "all_te_below_5pct": true,
+  "n_excluded_corrected": 0,
+  "mean_forecast_corr": 0.655272082432306,
+  "K5": "FIRES"
+ },
+ "K6": {
+  "max_overstatement_prop": 4.432535402762215,
+  "min_overstatement_prop": 0.1084285184826872,
+  "all_below_5pct": false,
+  "max_diff_vol_points": 13.96140281687703,
+  "strike_assumed_ann_vol": 0.2,
+  "relation": "Brockhaus and Long (2000), second-order Taylor expansion of sqrt around E[V]: K_vol = sqrt(E[V]) - Var(V)/(8 E[V]^{3/2}). With V lognormal, Var(V)/E[V]^2 = exp(s^2)-1, so the adjustment is sqrt(E[V]) * (exp(s^2)-1)/8 with s^2 = Var(log IV).",
+  "direction": "Naive s^2 exceeds c in every cell, so the naive convexity adjustment is too large and the implied volatility-swap strike too low. That favours the payer of fixed on a volatility swap, i.e. the side that is long volatility at the quoted strike.",
+  "no_pnl_claim": "No options data is held. This is a pricing-bias calculation on the adjustment term only and no claim is made about executable P&L.",
+  "K6": "DOES NOT FIRE"
+ },
+ "timers": {
+  "phase8": 2.1,
+  "phase9": 13.9,
+  "phase10": 0.0
+ }
+}

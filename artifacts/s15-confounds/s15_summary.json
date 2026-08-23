@@ -1,0 +1,102 @@
+{
+ "K10": {
+  "common_lag_window": [
+   2,
+   40
+  ],
+  "n_common_lags": 39,
+  "lags_dropped_by_cell": {
+   "ES/GLOBEX/q0.5": 1,
+   "ES/GLOBEX/q1.0": 1,
+   "ES/GLOBEX/q2.0": 1,
+   "NQ/GLOBEX/q0.5": 0,
+   "NQ/GLOBEX/q1.0": 0,
+   "NQ/GLOBEX/q2.0": 0,
+   "ES/RTH/q0.5": 0,
+   "ES/RTH/q1.0": 0,
+   "ES/RTH/q2.0": 0,
+   "NQ/RTH/q0.5": 0,
+   "NQ/RTH/q1.0": 0,
+   "NQ/RTH/q2.0": 0
+  },
+  "max_share_lag_selection": 0.0,
+  "min_share_lag_selection": -0.030226140041389373,
+  "max_abs_shift_from_lag_selection": 0.005279808663962798,
+  "n_rows_lag_selection_majority": 0,
+  "n_rows": 12,
+  "max_common_shift": 0.21343232292536954,
+  "min_common_shift": 0.026451556611297444,
+  "all_common_shift_above_0p02": true,
+  "threshold": 0.02,
+  "K10_survives": true
+ },
+ "K9": {
+  "threshold": 0.1,
+  "rho_err_level_range": [
+   -0.36685513819926124,
+   -0.13053153819316557
+  ],
+  "max_abs_t_rho": 17.418487960409532,
+  "frac_classical_range": [
+   0.8654173075768009,
+   0.9829615175369262
+  ],
+  "ratio_measured_to_fitted_range": [
+   0.09130365483637558,
+   0.41813053488779434
+  ],
+  "min_eig_Sxx_range": [
+   0.073904847880306,
+   0.08525888719151521
+  ],
+  "min_eig_full_range": [
+   0.04544496945049669,
+   0.06773350757391776
+  ],
+  "cond_full_range": [
+   36.72918612674765,
+   58.2991405979952
+  ],
+  "shift_full_range": [
+   0.1930387496181678,
+   1.1591537944185895
+  ],
+  "shift_partial_range": [
+   0.18912029306487765,
+   0.8661557259170771
+  ],
+  "all_partial_below_10pct": false,
+  "all_full_below_10pct": false,
+  "shift_measured_range": [
+   0.04801908091500828,
+   0.07248077113478923
+  ],
+  "all_measured_below_10pct": true,
+  "n_weekly_sign_flip_measured": 0,
+  "n_weekly_sign_flip_full": 1,
+  "n_weekly_sign_flip_partial": 1,
+  "K9_determination_survives": true
+ },
+ "trend": {
+  "nrep": 9999,
+  "master_seed": 20260836,
+  "n_clusters": 8,
+  "rademacher_floor": 0.0078125,
+  "year_coef_no_control": -0.04690369993539321,
+  "year_coef_with_cond": -0.010459327999401474,
+  "year_coef_with_both": -0.01035793510963907,
+  "p_no_control": 0.007600760076007601,
+  "p_with_cond": 0.0036003600360036,
+  "p_with_both": 0.003000300030003,
+  "shrinkage_from_control": 0.777004201932715,
+  "vif_year_with_cond": 1.2701760941569693,
+  "s11_s13_figure": -0.04690369993539321,
+  "eight_cluster_note": "Eight clusters throughout. The wild cluster bootstrap with the null imposed is the recommended small-G correction but is only asymptotically valid in G, and the attainable floor is 2^-7 = 0.00781. No result here is conventional evidence at any nominal level, whichever way it comes out.",
+  "trend_survives_control": true
+ },
+ "timers": {
+  "phase1": 0.4,
+  "phase2": 0.5,
+  "phase3": 40.6
+ }
+}

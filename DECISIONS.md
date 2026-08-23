@@ -968,3 +968,20 @@ alongside this file as `DECISIONS-as-run.md`.
      pipeline failures, and a reader running pytest against a clone sees an empty suite.
      S24 adds a wrapper that exercises the five against the pre-repair S05 artifacts at
      their recorded counts. The library is unchanged.
+
+## 2026-08-22, S24B repository restructure for a public reader
+
+162. THE LOAD-BEARING ARTIFACTS ARE PROMOTED OUT OF sessions/. Every figure the paper
+     cites resolved into `sessions/*/results/`, one directory among 533 tracked files, so
+     the data behind the paper was invisible to a reader arriving from it. The 47
+     artifacts the paper, its tables, its figures and its tests actually read are copied
+     to `artifacts/<session>/<file>` and every consumer is repointed there. sessions/
+     stays tracked and unchanged as the audit trail, which item 130 requires.
+163. THE PROMOTED COPIES ARE GUARDED BY A TEST. Two copies of a file can drift.
+     `tests/test_artifacts_match_sessions.py` asserts every file under `artifacts/` is
+     byte-identical to its origin under `sessions/`, so a divergence fails rather than
+     propagating into the paper.
+164. THE TOP LEVEL IS REORGANISED FOR NAVIGATION, NOT FOR CONCEALMENT. `reports/` is
+     renamed `reports/`, which is what it holds; `docs/ENVIRONMENT.md`,
+     `docs/ENVIRONMENT-pre-20260819.md` and `docs/specs/` move under `docs/`. Nothing is removed
+     from the published tree and item 130 stands.

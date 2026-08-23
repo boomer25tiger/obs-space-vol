@@ -1,14 +1,14 @@
 condition,content,determination,margin,artifact,key,chosen,paper_label,session_label
-K1/K2,reliability correction does not change MCS composition,INDETERMINATE,"excess 20.8pp on clean geometry, not tracking lambda",sessions/s09-application/results/phase12_summary.json,"K2, excess_rth",before,K1,K1/K2
-K2 (grid),no reliability estimator is grid-invariant,FIRES,"lambda*Var(log RV) max/min ratio 1.05 best, 1.97 worst",specs/SPEC-obs-space-vol-eval.md,section 7 null abstract,before,K2,K2 (grid)
-K3 (scaling),proxy-error scaling inconsistent with sampling theory,STANDS,reference inside the 95% interval in 0 of 54 proxy fits,sessions/s11-extensions/results/phase7_summary.json,ref_inside_by_proxy,before,K3,K3 (scaling)
-K3 (sizing),sizing consequence null,FIRES,max R2-vs-R3 relative TE difference 1.008% vs 5%,sessions/s09-application/results/phase7_k3.json,extended.K3,before,K4,K3 (sizing)
-K4,risk-limit breaches,stop-out FIRES; cap UNTESTED,spurious 0.966% vs 1%; cap bound 0 of 2524,sessions/s12-correction/results/phase4_k4.json,"stop_out, leverage_cap",before,K5,K4
-K5,inverse-MSE combination weights,FIRES,max relative TE difference 0.50% vs 5%,sessions/s11-extensions/results/phase8910_summary.json,K5,before,K6,K5
-K6,variance-to-volatility convexity adjustment,DOES NOT FIRE,overstatement 5.9-134.3% vs 5%,sessions/s12-correction/results/phase1_k6.json,K6,before,K7,K6
-K7,inverse-volatility risk parity,FIRES,mean |dw| 0.000145 vs 0.02,sessions/s13-extension/results/phase2_k7.json,K7,before,K8,K7
-K8,regime misclassification at a median threshold,DOES NOT FIRE,analytic 7.9-13.6% vs 5%,sessions/s14-applications/results/phase1_k8.json,K8,after,K9,K8
-K9,HAR persistence attenuation,INDETERMINATE,"daily shift 4.8-116% vs 10%, spanning the threshold on the Sigma_E choice",sessions/s15-confounds/results/s15_summary.json,K9,after,K10,K9
-K10,Hurst exponent bias from proxy noise,DOES NOT FIRE,shift 0.026-0.213 vs 0.02 on a fixed lag window,sessions/s15-confounds/results/s15_summary.json,K10,after,K11,K10
-K11,regime classification under an observable-side correction,DOES NOT FIRE,0.00pp from the correction; effect is A3 not being A2,sessions/s16-regime/results/phase4_k11_final.json,K11,after,K12,K11
-K12,measurement error in the emission,FIRES,"0.00pp maximum reduction at every scaling, floor binding in 63% of windows",sessions/s17-emission/results/phase345_summary.json,K12,after,K13,K12
+K1/K2,reliability correction does not change MCS composition,INDETERMINATE,"excess 20.8pp on clean geometry, not tracking lambda",artifacts/s09-application/phase12_summary.json,"K2, excess_rth",before,K1,K1/K2
+K2 (grid),no reliability estimator is grid-invariant,FIRES,"lambda*Var(log RV) max/min ratio 1.05 best, 1.97 worst",docs/specs/SPEC-obs-space-vol-eval.md,section 7 null abstract,before,K2,K2 (grid)
+K3 (scaling),proxy-error scaling inconsistent with sampling theory,STANDS,reference inside the 95% interval in 0 of 54 proxy fits,artifacts/s11-extensions/phase7_summary.json,ref_inside_by_proxy,before,K3,K3 (scaling)
+K3 (sizing),sizing consequence null,FIRES,max R2-vs-R3 relative TE difference 1.008% vs 5%,artifacts/s09-application/phase7_k3.json,extended.K3,before,K4,K3 (sizing)
+K4,risk-limit breaches,stop-out FIRES; cap UNTESTED,spurious 0.966% vs 1%; cap bound 0 of 2524,artifacts/s12-correction/phase4_k4.json,"stop_out, leverage_cap",before,K5,K4
+K5,inverse-MSE combination weights,FIRES,max relative TE difference 0.50% vs 5%,artifacts/s11-extensions/phase8910_summary.json,K5,before,K6,K5
+K6,variance-to-volatility convexity adjustment,DOES NOT FIRE,overstatement 5.9-134.3% vs 5%,artifacts/s12-correction/phase1_k6.json,K6,before,K7,K6
+K7,inverse-volatility risk parity,FIRES,mean |dw| 0.000145 vs 0.02,artifacts/s13-extension/phase2_k7.json,K7,before,K8,K7
+K8,regime misclassification at a median threshold,DOES NOT FIRE,analytic 7.9-13.6% vs 5%,artifacts/s14-applications/phase1_k8.json,K8,after,K9,K8
+K9,HAR persistence attenuation,INDETERMINATE,"daily shift 4.8-116% vs 10%, spanning the threshold on the Sigma_E choice",artifacts/s15-confounds/s15_summary.json,K9,after,K10,K9
+K10,Hurst exponent bias from proxy noise,DOES NOT FIRE,shift 0.026-0.213 vs 0.02 on a fixed lag window,artifacts/s15-confounds/s15_summary.json,K10,after,K11,K10
+K11,regime classification under an observable-side correction,DOES NOT FIRE,0.00pp from the correction; effect is A3 not being A2,artifacts/s16-regime/phase4_k11_final.json,K11,after,K12,K11
+K12,measurement error in the emission,FIRES,"0.00pp maximum reduction at every scaling, floor binding in 63% of windows",artifacts/s17-emission/phase345_summary.json,K12,after,K13,K12

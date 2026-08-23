@@ -1,0 +1,34 @@
+{
+ "n_cells": 18,
+ "n_fits": 54,
+ "n_boot": 2000,
+ "master": 20260825,
+ "ref_inside_by_proxy": {
+  "RV": 0,
+  "RK": 0,
+  "TSRV": 0
+ },
+ "n_by_proxy": {
+  "RV": 18,
+  "RK": 18,
+  "TSRV": 18
+ },
+ "mean_b": {
+  "RV": -0.6311196132994588,
+  "RK": -0.5213795394315187,
+  "TSRV": -0.49527021755808537
+ },
+ "mean_RK_minus_RV": 0.10974007386794019,
+ "mean_TSRV_minus_RV": 0.13584939574137347,
+ "n_RK_steeper": 8,
+ "n_TSRV_steeper": 5,
+ "n_cells_compared": 18,
+ "screen_tight_by_proxy": {
+  "RV": 14,
+  "RK": 14,
+  "TSRV": 14
+ },
+ "timers": {
+  "phase7": 121.8
+ }
+}

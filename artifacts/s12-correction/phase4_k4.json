@@ -1,0 +1,32 @@
+{
+ "stop_out": {
+  "max_spurious_rate": 0.00966183574879227,
+  "all_spurious_below_1pct": true,
+  "max_cost_bps": 0.041799218695532096,
+  "all_cost_below_1bp": true,
+  "determination": "FIRES"
+ },
+ "leverage_cap": {
+  "n_bound_total": 0,
+  "n_decision_points_total": 2524,
+  "max_leverage_any_cell": 1.4340665802401198,
+  "cap_that_would_first_bind": 1.4340665802401198,
+  "min_headroom_ratio": 1.3946353869184516,
+  "determination": "UNTESTED"
+ },
+ "item99_asymmetry": {
+  "n_cells_missed_exceeds_spurious": 3,
+  "n_cells": 4,
+  "missed_rate_range": [
+   0.008051529790660225,
+   0.02254428341384863
+  ],
+  "spurious_rate_range": [
+   0.0015600624024961,
+   0.00966183574879227
+  ],
+  "mechanism": "Microstructure and sampling noise inflate the estimated volatility that enters the position size, so the proxy-sized position is smaller than the kernel-sized one exactly on the days when volatility is genuinely high. A smaller position produces a smaller realized portfolio volatility, so the stop-out is not triggered on days when it should be. The asymmetry is a consequence of sizing on a noisy estimate, not of the threshold.",
+  "status": "DIRECTIONAL FINDING, not a kill-condition outcome (item 99)"
+ },
+ "supersedes": "The S11 joint K4 determination is superseded. K4 is reported per limit: the stop-out at 1.5x target is tested and fires; the leverage cap at 2.0x is untested because it never bound."
+}

@@ -12,6 +12,6 @@ spec.loader.exec_module(br)
 def test_readme_decision_log_count_is_current():
     n, hi = br.counts()
     text = (ROOT / "README.md").read_text()
-    assert f"the decision log, {n} entries numbered to {hi}, append-only" in text, (
+    assert f"append-only, {n} entries numbered to {hi}" in text, (
         f"README is stale; DECISIONS.md has {n} entries numbered to {hi}. "
         "Run: python paper/build_readme.py")

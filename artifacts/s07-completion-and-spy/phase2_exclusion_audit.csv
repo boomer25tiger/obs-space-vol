@@ -1,0 +1,9 @@
+root,geom,horizon,n_windows,n_excluded,n_excluded_with_nonzero_rv,n_zero_rv_remaining
+ES,GLOBEX,1h,42966,169,0,17
+ES,GLOBEX,30min,87885,396,1,42
+NQ,GLOBEX,1h,42856,154,0,15
+NQ,GLOBEX,30min,87660,363,1,36
+ES,RTH,1h,11406,0,0,0
+ES,RTH,30min,22812,0,0,0
+NQ,RTH,1h,11406,0,0,0
+NQ,RTH,30min,22812,0,0,0

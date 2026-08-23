@@ -7,8 +7,8 @@ import matplotlib; matplotlib.use("pdf")
 import matplotlib.pyplot as plt
 ROOT=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 R=lambda p: os.path.join(ROOT,p)
-SRC=dict(k8="sessions/s14-applications/results/phase1_k8_rates.csv",
-         lam="sessions/s09-application/results/phase3_sizing_params.csv")
+SRC=dict(k8="artifacts/s14-applications/phase1_k8_rates.csv",
+         lam="artifacts/s09-application/phase3_sizing_params.csv")
 K=pd.read_csv(R(SRC["k8"])); L=pd.read_csv(R(SRC["lam"]))
 ins=K[(K["sample"]=="insample")&(K.split=="median")]
 prov=dict(rows_k8=len(K),rows_lambda=len(L),n_marked=len(ins))

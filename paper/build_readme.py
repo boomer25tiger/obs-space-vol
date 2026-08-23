@@ -16,7 +16,8 @@ LOG = ROOT / "DECISIONS.md"
 README = ROOT / "README.md"
 
 ROW = re.compile(
-    r"(\| `DECISIONS\.md` \| the decision log, )\d+( entries numbered to )\d+(, append-only \|)")
+    r"(\| `DECISIONS\.md` \| the pre-registration record, append-only, )\d+"
+    r"( entries numbered to )\d+( \|)")
 
 
 def counts():

@@ -41,20 +41,20 @@ else in the repository.
 
 ## Repository contents
 
+Start with `paper/main.pdf`. Every figure it cites is in `artifacts/`, and
+`paper/numbers.csv` maps each one to the file and field it was read from.
+
 | path | contents |
 |---|---|
-| `DECISIONS.md` | the decision log, 168 entries numbered to 161, append-only |
-| `DECISIONS-as-run.md` | the unmodified log as written during the sessions |
-| `specs/` | the specification, updated per session with determinations |
-| `sessions/sNN-*/src/` | every measurement script, by session |
-| `sessions/sNN-*/results/` | emitted CSV and JSON artifacts, per-session report and runlog |
-| `sessions/s06r-repair/tests/` | the invariant assertion library, called from inside the pipeline |
-| `tests/` | pytest wrappers: the five invariants against the pre-repair artifacts, and a README-count guard |
-| `paper/` | LaTeX source, `numbers.csv` provenance table, `k_table.csv` |
-| `figures/src/` | figure generators, each reading only persisted artifacts |
-| `results/` | reports for the paper-era sessions, which have no `sessions/` directory |
-| `ENVIRONMENT.md` | the interpreter and package versions every session gates on |
-| `ENVIRONMENT-pre-20260819.md` | the same, as it stood before the environment rebuild of item 76 |
+| `paper/` | LaTeX source and the built PDF, plus `numbers.csv`, which carries one row per quantity cited with its value at full precision, its artifact path and its field |
+| `artifacts/` | every result file the paper, its tables, its figures and its tests read, one directory per session. Copies of files under `sessions/`, guarded against drift by `tests/test_artifacts_match_sessions.py` |
+| `figures/` | the two figure generators and their output, each reading only from `artifacts/` |
+| `tests/` | `pytest tests/` runs everything: the five S06R invariants against the pre-repair record, the artifact drift guard, and a README-count guard |
+| `DECISIONS.md` | the pre-registration record, append-only, 171 entries numbered to 164 |
+| `DECISIONS-as-run.md` | the same log unmodified, as written during the sessions |
+| `docs/` | the specification and its per-session determinations, and the environment records |
+| `reports/` | session reports for S18 onward, which produced the paper rather than measurements and so have no `sessions/` directory |
+| `sessions/` | the full audit trail: per-session measurement source under `sNN-*/src/`, every emitted artifact under `sNN-*/results/`, run logs, and a report and runlog per session. The invariant assertion library lives at `sessions/s06r-repair/tests/` because the pipeline imports it |
 
 Nothing is redacted. The audit trail, including the sessions that found defects
 in earlier sessions and the corrections they forced, is part of the deliverable.
@@ -95,6 +95,6 @@ halts otherwise. The environment lives outside any file-sync scope (item 79).
 Measurement is complete as of session 17. All eight sections of the paper are
 written, section 5 having been drafted in S23B against the table generated from
 the determination artifacts. What remains open is recorded in the session reports
-under `results/`: the numeric claims in section 8's thirty-minute-inversion
+under `reports/`: the numeric claims in section 8's thirty-minute-inversion
 paragraph carry no `numbers.csv` citation, and twelve quantities are registered
 MISSING, of which eleven are undefined rather than uncomputed.

@@ -18,7 +18,7 @@ def jload(p):
     return json.load(open(f)) if os.path.exists(f) else None
 
 # --- 1/2. fitted b, c, A, RMSE per cell with bootstrap intervals; trigamma ref
-P="sessions/s10-exponent-audit/results/phase1_bootstrap.csv"; B=load(P)
+P="artifacts/s10-exponent-audit/phase1_bootstrap.csv"; B=load(P)
 if B is None: add("b,c,A,rmse per cell",None,P,"whole file","S10")
 else:
     for _,r in B.iterrows():
@@ -32,7 +32,7 @@ else:
     add("n_cells_total",int(len(B)),P,"row count","S10")
     add("median_b_se",float(B.b_se.median()),P,"median of col b_se","S10")
 # --- identifiability: c-b correlation
-P="sessions/s10-exponent-audit/results/phase1_corr.csv"; C=load(P)
+P="artifacts/s10-exponent-audit/phase1_corr.csv"; C=load(P)
 if C is None: add("corr_cb",None,P,"par_i=c,par_j=b","S10")
 else:
     cb=C[(C.par_i=="c")&(C.par_j=="b")]
@@ -41,7 +41,7 @@ else:
     add("corr_cb_asym_min",float(cb.asym_corr.min()),P,"min of asym_corr where c,b","S10")
     add("corr_cb_asym_max",float(cb.asym_corr.max()),P,"max of asym_corr where c,b","S10")
 # --- screen
-P="sessions/s10-exponent-audit/results/phase2_screen.csv"; S=load(P)
+P="artifacts/s10-exponent-audit/phase2_screen.csv"; S=load(P)
 if S is None: add("screen",None,P,"whole file","S10")
 else:
     e=S[S["range"].isin(["extended","tick_full"])]
@@ -54,7 +54,7 @@ else:
     add("n_screen_pass_old",int(S.screen_old_pass.sum()),P,"count over all 34 rows","S10")
     add("n_screen_rows_all",int(len(S)),P,"row count","S10")
 # --- 3. the 54 proxy fits
-P="sessions/s11-extensions/results/phase7_proxy_fits.csv"; PF=load(P)
+P="artifacts/s11-extensions/phase7_proxy_fits.csv"; PF=load(P)
 if PF is None: add("proxy_fits",None,P,"whole file","S11")
 else:
     add("n_proxy_fits",int(len(PF)),P,"row count","S11")
@@ -67,9 +67,9 @@ else:
         add(f"median_cond_{px}",float(d["cond"].median()),P,f"median cond, proxy={px}","S11")
         add(f"n_screen_pass_{px}",int(d.screen_tight.sum()),P,f"count, proxy={px}","S11")
 # --- 4. positive control
-P="sessions/s05e-positive-control/results/phase2_arm_summary.csv"; PC=load(P)
+P="artifacts/s05e-positive-control/phase2_arm_summary.csv"; PC=load(P)
 if PC is None:
-    P2="sessions/s05e-positive-control/results/s05e_summary.json"; J=jload(P2)
+    P2="artifacts/s05e-positive-control/s05e_summary.json"; J=jload(P2)
     if J is None: add("positive_control_b",None,P,"arm summary","S05E")
     else: add("positive_control_json_keys",list(J.keys()),P2,"top-level keys","S05E")
 else:
@@ -80,7 +80,7 @@ else:
             f"arm={r.arm},grid={r.grid}, col=b_sd","S05E")
         add(f"arm_recovery_err[{r.arm}/{r.grid}]",float(r.recovery_error_mean),P,
             f"arm={r.arm},grid={r.grid}, col=recovery_error_mean","S05E")
-P="sessions/s05e-positive-control/results/phase1_trigamma_reference.csv"; TR=load(P)
+P="artifacts/s05e-positive-control/phase1_trigamma_reference.csv"; TR=load(P)
 if TR is None: add("trigamma_reference_fit",None,P,"whole file","S05E")
 else:
     for _,r in TR.iterrows():
@@ -90,7 +90,7 @@ else:
         add(f"trigamma_ref_rmse[{r.grid}]",float(r.free_rmse),P,
             f"grid={r.grid}, col=free_rmse","S05E")
 # --- 5. mechanism arms
-P="sessions/s10-exponent-audit/results/phase4_a5_agg.csv"; A5=load(P)
+P="artifacts/s10-exponent-audit/phase4_a5_agg.csv"; A5=load(P)
 if A5 is None: add("A5_arms",None,P,"whole file","S10")
 else:
     for _,r in A5[A5.subarm=="signal"].iterrows():
@@ -101,7 +101,7 @@ else:
     for _,r in A5[A5.subarm=="reference"].iterrows():
         add(f"A5ref_b[{r.geom}/{r.df}]",float(r.b_mean),P,
             f"geom={r.geom}, df={r.df}, subarm=reference, col=b_mean","S10")
-P="sessions/s11-extensions/results/phase6_a6cal_agg.csv"; A6=load(P)
+P="artifacts/s11-extensions/phase6_a6cal_agg.csv"; A6=load(P)
 if A6 is None: add("A6_calibrated",None,P,"whole file","S11")
 else:
     for _,r in A6.iterrows():
@@ -109,7 +109,7 @@ else:
             f"root={r.root},geom={r.geom},H={r.H}, col=b_mean","S11")
         add(f"A6_sigmaw[{r.root}/{r.geom}/H{r.H:.2f}]",float(r.sigma_w),P,
             f"root={r.root},geom={r.geom},H={r.H}, col=sigma_w","S11")
-P="sessions/s13-extension/results/phase1_arms_agg.csv"; A78=load(P)
+P="artifacts/s13-extension/phase1_arms_agg.csv"; A78=load(P)
 if A78 is None: add("A7_A8_arms",None,P,"whole file","S13")
 else:
     for _,r in A78[A78.arm=="A7"].iterrows():
@@ -118,7 +118,7 @@ else:
     for _,r in A78[A78.arm=="A8"].iterrows():
         add(f"A8_b[{r.root}/{r.geom}/H{r.H:.2f}]",float(r.b_mean),P,
             f"arm=A8,root={r.root},geom={r.geom},H={r.H}, col=b_mean","S13")
-P="sessions/s14-applications/results/phase4_analytic_bound.csv"; BD=load(P)
+P="artifacts/s14-applications/phase4_analytic_bound.csv"; BD=load(P)
 if BD is None: add("localized_bound",None,P,"whole file","S14")
 else:
     for _,r in BD.iterrows():
@@ -129,7 +129,7 @@ else:
         add(f"share_ratio[{r.root}/{r.geom}]",float(r.ratio_required_to_measured_5min),P,
             f"root={r.root},geom={r.geom}, col=ratio_required_to_measured_5min","S14")
 # --- 6. pooling and trend
-P="sessions/s10-exponent-audit/results/phase3_pooling.csv"; PL=load(P)
+P="artifacts/s10-exponent-audit/phase3_pooling.csv"; PL=load(P)
 if PL is None: add("pooling",None,P,"whole file","S10")
 else:
     add("pooling_share_mean",float(PL.share_gap_from_year_pooling.mean()),P,
@@ -140,7 +140,7 @@ else:
         "mean of b_year_mean - b_pooled","S10")
     add("residual_gap_mean",float((PL.b_year_mean-PL.b_ref).mean()),P,
         "mean of b_year_mean - b_ref","S10")
-P="sessions/s15-confounds/results/phase3_trend_control.csv"; TC=load(P)
+P="artifacts/s15-confounds/phase3_trend_control.csv"; TC=load(P)
 if TC is None: add("trend_control",None,P,"whole file","S15")
 else:
     for _,r in TC.iterrows():
@@ -151,9 +151,9 @@ else:
         add(f"trend_vif[{r.spec}]",float(r.vif_year),P,f"spec={r.spec}, col=vif_year","S15")
         add(f"trend_r2w[{r.spec}]",float(r.r2_within),P,f"spec={r.spec}, col=r2_within","S15")
     add("rademacher_floor_G8",float(2**-7),
-        "sessions/s15-confounds/results/s15_summary.json","trend.rademacher_floor","S15")
+        "artifacts/s15-confounds/s15_summary.json","trend.rademacher_floor","S15")
 # --- 7. lambda both ranges
-P="sessions/s09-application/results/phase3_sizing_params.csv"; LM=load(P)
+P="artifacts/s09-application/phase3_sizing_params.csv"; LM=load(P)
 if LM is None: add("lambda",None,P,"whole file","S09")
 else:
     for _,r in LM[LM.btag=="B0"].iterrows():
@@ -166,12 +166,12 @@ else:
         add(f"lambda_theory[{cell}/{r['range']}]",vt,P,
             f"...,range={r['range']}, col=lam_theory","S09")
 # --- 8. bound violations
-P="sessions/s08-final/results/phase4_bound_violations.json"; BV=jload(P)
+P="artifacts/s08-final/phase4_bound_violations.json"; BV=jload(P)
 if BV is None: add("bound_violations",None,P,"whole file","S08")
 else:
     for k,v in BV.items(): add(f"bound_violations_{k}",int(v),P,f"key={k}","S08")
 # --- 9. convexity, exact relation
-P="sessions/s12-correction/results/phase1_convexity_exact.csv"; CX=load(P)
+P="artifacts/s12-correction/phase1_convexity_exact.csv"; CX=load(P)
 if CX is None: add("convexity_exact",None,P,"whole file","S12")
 else:
     for _,r in CX[CX.btag=="B0"].iterrows():
@@ -181,7 +181,7 @@ else:
         add(f"convex_adj_vp[{cell}]",float(r.adj_exact_intercept_vp),P,
             f"{cell}, col=adj_exact_intercept_vp","S12")
         add(f"convex_diff_vp[{cell}]",float(r.diff_vp),P,f"{cell}, col=diff_vp","S12")
-P="sessions/s12-correction/results/phase1_k6.json"; K6=jload(P)
+P="artifacts/s12-correction/phase1_k6.json"; K6=jload(P)
 if K6 is None: add("convex_validity_boundary",None,P,"whole file","S12")
 else:
     add("convex_kappa_boundary",float(K6["validity_boundary_kappa_at_10pct"]),P,
@@ -190,7 +190,7 @@ else:
         "key=measured_kappa_range[0]","S12")
     add("convex_kappa_measured_hi",float(K6["measured_kappa_range"][1]),P,
         "key=measured_kappa_range[1]","S12")
-P="sessions/s13-extension/results/phase4_frequency_guide.csv"; FG=load(P)
+P="artifacts/s13-extension/phase4_frequency_guide.csv"; FG=load(P)
 if FG is None: add("convexity_frequency",None,P,"whole file","S13")
 else:
     for _,r in FG[FG.btag=="B0"].iterrows():
@@ -202,7 +202,7 @@ else:
         add(f"freq_at_5min_overstatement[{cell}]",float(r.at_5min_overstatement),P,
             f"{cell}, col=at_5min_overstatement","S13")
 # --- 10. Hurst on the common lag window
-P="sessions/s15-confounds/results/phase1_k10_decomposition.csv"; HK=load(P)
+P="artifacts/s15-confounds/phase1_k10_decomposition.csv"; HK=load(P)
 if HK is None: add("hurst",None,P,"whole file","S15")
 else:
     for _,r in HK.iterrows():
@@ -212,7 +212,7 @@ else:
         add(f"H_shift_common[{k}]",float(r.common_shift),P,f"{k}, col=common_shift","S15")
         add(f"H_share_lagsel[{k}]",float(r.share_lag_selection),P,f"{k}, col=share_lag_selection","S15")
 # --- composition limitation
-P="sessions/s15-confounds/results/phase2_k9_check.csv"; K9=load(P)
+P="artifacts/s15-confounds/phase2_k9_check.csv"; K9=load(P)
 if K9 is None: add("v_ratio",None,P,"whole file","S15")
 else:
     for _,r in K9.iterrows():
@@ -221,19 +221,19 @@ else:
     add("v_ratio_min",float(K9.ratio_measured_to_fitted.min()),P,"min","S15")
     add("v_ratio_max",float(K9.ratio_measured_to_fitted.max()),P,"max","S15")
 # --- 11. misclassification
-P="sessions/s14-applications/results/phase1_k8_rates.csv"; K8=load(P)
+P="artifacts/s14-applications/phase1_k8_rates.csv"; K8=load(P)
 if K8 is None: add("k8_rates",None,P,"whole file","S14")
 else:
     for _,r in K8.iterrows():
         k=f"{r.root}/{r.geom}/{r['sample']}"
         add(f"mis_analytic[{k}]",float(r.analytic_rate),P,f"{k}, col=analytic_rate","S14")
         add(f"mis_empirical[{k}]",float(r.empirical_rate),P,f"{k}, col=empirical_rate","S14")
-P="sessions/s14-applications/results/phase1_tercile.csv"; TCd=load(P)
+P="artifacts/s14-applications/phase1_tercile.csv"; TCd=load(P)
 if TCd is None: add("k8_tercile",None,P,"whole file","S14")
 else:
     add("mis_tercile_min",float(TCd.empirical_rate.min()),P,"min empirical_rate","S14")
     add("mis_tercile_max",float(TCd.empirical_rate.max()),P,"max empirical_rate","S14")
-P="sessions/s16-regime/results/phase4_k11_final.csv"; K11=load(P)
+P="artifacts/s16-regime/phase4_k11_final.csv"; K11=load(P)
 if K11 is None: add("k11",None,P,"whole file","S16")
 else:
     for _,r in K11.iterrows():
@@ -241,7 +241,7 @@ else:
         add(f"k11_mis_A1[{k}]",float(r.mis_A1),P,f"{k}, col=mis_A1","S16")
         add(f"k11_mis_A3[{k}]",float(r.mis_A3),P,f"{k}, col=mis_A3","S16")
         add(f"k11_red_vs_A1[{k}]",float(r.reduction_vs_A1_pp),P,f"{k}, col=reduction_vs_A1_pp","S16")
-P="sessions/s17-emission/results/phase4_a4_holdout.csv"; A4=load(P)
+P="artifacts/s17-emission/phase4_a4_holdout.csv"; A4=load(P)
 if A4 is None: add("k12",None,P,"whole file","S17")
 else:
     d=A4[(A4.lam_range=="extended")&(A4.scale==1.00)]
@@ -251,7 +251,7 @@ else:
         add(f"k12_states_differ[{k}]",int(r.states_differ_vs_A1),P,
             f"{k}, scale=1.0, col=states_differ_vs_A1","S17")
     add("k12_max_reduction_pp",float(d.reduction_pp.max()),P,"max over extended, scale=1.0","S17")
-P="sessions/s17-emission/results/phase3_a4_insample.csv"; A4i=load(P)
+P="artifacts/s17-emission/phase3_a4_insample.csv"; A4i=load(P)
 if A4i is None: add("k12_binding",None,P,"whole file","S17")
 else:
     add("k12_windows_binding",int(A4i.n_windows_binding.sum()),P,"sum of n_windows_binding","S17")
