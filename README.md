@@ -43,12 +43,13 @@ else in the repository.
 
 | path | contents |
 |---|---|
-| `DECISIONS.md` | the decision log, 165 entries numbered to 158, append-only |
+| `DECISIONS.md` | the decision log, 168 entries numbered to 161, append-only |
 | `DECISIONS-as-run.md` | the unmodified log as written during the sessions |
 | `specs/` | the specification, updated per session with determinations |
 | `sessions/sNN-*/src/` | every measurement script, by session |
 | `sessions/sNN-*/results/` | emitted CSV and JSON artifacts, per-session report and runlog |
-| `sessions/s06r-repair/tests/` | the invariant test suite |
+| `sessions/s06r-repair/tests/` | the invariant assertion library, called from inside the pipeline |
+| `tests/` | pytest wrappers: the five invariants against the pre-repair artifacts, and a README-count guard |
 | `paper/` | LaTeX source, `numbers.csv` provenance table, `k_table.csv` |
 | `figures/src/` | figure generators, each reading only persisted artifacts |
 | `results/` | reports for the paper-era sessions, which have no `sessions/` directory |

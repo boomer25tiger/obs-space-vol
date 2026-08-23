@@ -953,3 +953,18 @@ alongside this file as `DECISIONS-as-run.md`.
      reproducibility section states that the per-session measurement scripts cannot run
      from a clone because they read the unpublished vendor data, which the clone
      verification in S23D established and the README did not say.
+159. A COUNT OF THE LOG MUST NOT BE TYPED INTO A FILE COMMITTED ALONGSIDE AN APPEND TO
+     THAT LOG. The README stated an entry count and the same commit appended item 158,
+     making the figure wrong on arrival. The same trap was hit once before. The count is
+     generated from DECISIONS.md at build time from S24 onward.
+160. CHECKS RUN AGAINST EXTRACTED, NORMALISED TEXT, NOT SOURCE. Four checker failures
+     across S20 to S23D were false positives caused by regexes meeting real typography: a
+     typographic apostrophe, an underscore rendered under OT1, and two phrases wrapping
+     across a line. Every check normalises whitespace and unicode punctuation before
+     matching.
+161. tests/test_invariants.py IS AN ASSERTION LIBRARY, NOT A PYTEST SUITE. Item 39
+     specifies assertions called from inside the pipeline, so pytest reports that no
+     tests ran. The paper claims twice that five invariants reproduce five silent
+     pipeline failures, and a reader running pytest against a clone sees an empty suite.
+     S24 adds a wrapper that exercises the five against the pre-repair S05 artifacts at
+     their recorded counts. The library is unchanged.

@@ -739,3 +739,13 @@ n_fire_before,5.0,paper/k_table.csv,FIRES among chosen==before,S23B,registered i
 n_material_after,3.0,paper/k_table.csv,DOES NOT FIRE among chosen==after,S23B,registered in S23B for Section 5,False
 k1_raw_rate_rth,0.6875,sessions/s09-application/results/phase12_summary.json,bc_rate_rth,S09,registered in S23C for Section 5.4,False
 k1_placebo_rate_rth,0.4791666666666667,sessions/s09-application/results/phase12_summary.json,dc_rate_rth,S09,registered in S23C for Section 5.4,False
+inv30_mis_insample,0.4847577328803862,sessions/s17-emission/results/phase12_summary.json,phase2.rows[2].mis (NQ/RTH/30min insample),S17,registered in S24 for Section 8,False
+inv30_mis_holdout,0.26529790660225444,sessions/s17-emission/results/phase12_summary.json,phase2.rows[3].mis (NQ/RTH/30min holdout),S17,registered in S24 for Section 8,False
+inv30_gap_threshold,0.25,sessions/s17-emission/results/phase2_stability_restricted.csv,mu_gap_threshold column value; also the 0p25 in share_gap_below_0p25,S17,registered in S24 for Section 8,False
+inv30_share_gap_insample,0.17428035043804757,sessions/s17-emission/results/phase12_summary.json,phase2.stability[2].share_gap_below_0p25,S17,registered in S24 for Section 8,False
+inv30_share_gap_holdout,0.06896551724137931,sessions/s17-emission/results/phase12_summary.json,phase2.stability[3].share_gap_below_0p25,S17,registered in S24 for Section 8,False
+inv30_restrict_move_insample,0.6681257061246726,sessions/s17-emission/results/phase2_stability_restricted.csv,"100*(misclass at mu_gap_threshold 0.00 minus 0.50), NQ/RTH/30min insample",S17,registered in S24 for Section 8,False
+inv30_restrict_move_holdout,-0.03822452156165279,sessions/s17-emission/results/phase2_stability_restricted.csv,"100*(misclass at mu_gap_threshold 0.00 minus 0.50), NQ/RTH/30min holdout",S17,registered in S24 for Section 8,False
+inv30_inversion_pp,21.949542240138452,sessions/s17-emission/results/phase2_stability_restricted.csv,100*(insample minus holdout misclass at mu_gap_threshold 0.00),S17,registered in S24 for Section 8,False
+inv30_separation_insample,1.7086224134645949,sessions/s17-emission/results/phase12_summary.json,phase2.rows[2].separation_mean,S17,registered in S24 for Section 8,False
+inv30_separation_holdout,1.6680181295851042,sessions/s17-emission/results/phase12_summary.json,phase2.rows[3].separation_mean,S17,registered in S24 for Section 8,False
