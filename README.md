@@ -43,7 +43,7 @@ else in the repository.
 
 | path | contents |
 |---|---|
-| `DECISIONS.md` | the decision log, 164 entries numbered to 157, append-only |
+| `DECISIONS.md` | the decision log, 165 entries numbered to 158, append-only |
 | `DECISIONS-as-run.md` | the unmodified log as written during the sessions |
 | `specs/` | the specification, updated per session with determinations |
 | `sessions/sNN-*/src/` | every measurement script, by session |
